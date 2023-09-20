@@ -1,7 +1,18 @@
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate
+} from 'react-router-dom'
+import { Home } from 'presentation/pages/home'
+
 export function App() {
   return (
-    <div>
-      <h1 className="color">Olá mundo</h1>
-    </div>
-  );
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Navigate to="/inicio" />} />
+      </Routes>
+    </Router>
+  )
 }
