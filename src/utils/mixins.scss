@@ -1,0 +1,32 @@
+@mixin breakpoint($point) {
+  @if $point == md {
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
+}
+
+@mixin centralize_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin center_around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin center_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin transition {
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+

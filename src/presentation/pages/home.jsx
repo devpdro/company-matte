@@ -1,9 +1,10 @@
-import { Navbar } from "presentation/components/layout/content/header/navbar"
+import { Header } from "presentation/components/layout/content/header/header"
+
 
 export function Home() {
 	return (
 		<main>
-			<Navbar />
+			<Header />
 		</main>
 	)
 }
