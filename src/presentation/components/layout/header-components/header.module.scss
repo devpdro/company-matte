@@ -14,25 +14,28 @@
 
 .container {
   height: 100vh;
-  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.6), #111),
-    url(../../../assets/images/img/header.jpg);
-
+  background-color: #333;
+  background-image: linear-gradient(rgba(17, 17, 17, 0.6), #111);
   .box_header {
     h1 {
+      font-family: 'Montserrat', sans-serif;
       position: absolute;
-      top: 50%;
+      top: 45%;
       left: 50%;
       transform: translate(-50%, -50%);
-      text-align: center;
+      max-width: 780px;
+      margin: 0 auto;
+      text-align: left;
       color: #fff;
       line-height: 4.5rem;
-      font-size: 4rem;
+      font-size: 70px;
     }
     .scroll_down {
       position: absolute;
-      top: 78%;
+      top: 68%;
       left: 50%;
       transform: translate(-50%, -50%);
+      cursor: pointer;
       span {
         display: block;
         width: 20px;

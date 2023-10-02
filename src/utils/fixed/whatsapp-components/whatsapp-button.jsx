@@ -1,6 +1,6 @@
 import { ICON } from 'presentation/assets/icons/icon'
 
-import styles from 'utils/whatsapp-button-fixed.module.scss'
+import styles from 'utils/fixed/whatsapp-components/whatsapp-button.module.scss'
 export function WhatsAppButton() {
   return (
     <div className={styles.whatsapp_button}>

@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 100px;
+  right: 17px;
+  transform: rotate(-180deg);
+  transform-origin: center center;
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+  z-index: 1;
+  p {
+    z-index: 999;
+    color: #fff;
+    font-size: 1rem;
+    transform: rotate(-180deg);
+    transform-origin: center center;
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+  }
+}
