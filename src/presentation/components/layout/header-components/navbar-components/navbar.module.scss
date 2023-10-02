@@ -4,14 +4,14 @@
 .navbar {
   position: fixed;
   top: 0;
-  height: 80px;
+  height: 70px;
   width: 100%;
   color: #fff;
   z-index: 1;
 
   .header__content {
     @include center_between;
-    padding: 0 2rem 0 1rem;
+    padding: 0 1.1rem 0 1.1rem;
     position: relative;
     height: 100%;
     z-index: 999;
@@ -23,8 +23,10 @@
     .box_logo {
       a {
         .img_logo {
-          width: 70px;
-          height: 100px;
+          padding-top: 0.6rem;
+          width: 30px;
+          height: 70px;
+          color: #fff;
         }
       }
     }

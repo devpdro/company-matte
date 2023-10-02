@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
-import Logo from 'presentation/assets/logo/logo.png'
+import { ICON } from 'presentation/assets/icons/icon'
 
 import { useWindowSize } from 'presentation/hooks/navbar-window-size'
 
@@ -20,7 +19,6 @@ export function Navbar() {
       <div className={styles.header__content}>
         <div className={styles.box_logo}>
           <a href="#pesqueiro">
-            <img className={styles.img_logo} src={Logo} alt="Logo" />
           </a>
         </div>
         <nav
@@ -87,9 +85,9 @@ export function Navbar() {
         </nav>
         <div className={styles.header__content__toggle}>
           {!menuOpen ? (
-            <AiOutlineMenu onClick={menuToggleHandler} />
+            <ICON.AiOutlineMenu onClick={menuToggleHandler} />
           ) : (
-            <AiOutlineClose onClick={menuToggleHandler} />
+            <ICON.AiOutlineClose onClick={menuToggleHandler} />
           )}
         </div>
       </div>

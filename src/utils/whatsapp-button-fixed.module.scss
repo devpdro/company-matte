@@ -1,0 +1,40 @@
+@keyframes whatsapp-aura {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.7);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 128, 0, 0.5);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.7);
+  }
+}
+
+.whatsapp_button {
+  background-color: #4cc85a;
+  min-width: 220px;
+  position: fixed;
+  bottom: 20px;
+  padding: 0.4rem 1rem;
+  right: 70px;
+  z-index: 999;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    .icon {
+      font-size: 2rem;
+      color: #fff;
+    }
+    p {
+      font-family: "Poppins", sans-serif;
+      color: #fff;
+    }
+  }
+}
