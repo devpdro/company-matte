@@ -1,12 +1,12 @@
 @mixin breakpoint($point) {
   @if $point == md {
-    @media (min-width: 48em) {
+    @media (min-width: 240em) {
       @content;
     }
   }
 }
 
-@mixin centralize_content {
+@mixin center_content {
   display: flex;
   justify-content: center;
   align-items: center;

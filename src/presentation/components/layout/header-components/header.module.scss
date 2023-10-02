@@ -1,0 +1,19 @@
+.container {
+  height: 100vh;
+  background-color: #333;
+  background-image: linear-gradient(rgba(17, 17, 17, 0.51), #111),
+    url(https://assets.website-files.com/56b9f7a…/5d71089…_cartographer_%402X.png);
+  .box_header {
+    max-width: 860px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    h1 {
+        text-align: center;
+        color: #fff;
+        line-height: 80px;
+        font-size: 70px;
+    }
+  }
+}
