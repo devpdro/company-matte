@@ -15,26 +15,17 @@
 
 .whatsapp_button {
   background-color: #4cc85a;
-  min-width: 215px;
+  padding: 1rem 1rem;
+  border-radius: 50%;
   position: fixed;
-  bottom: 20px;
-  padding: 0.4rem 1rem;
-  right: 70px;
+  bottom: 40px;
+  right: 30px;
   z-index: 999;
   transition: transform 0.2s ease-in-out;
+  animation: whatsapp-aura 2s infinite;
   cursor: pointer;
-  a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    .icon {
-      font-size: 1.8rem;
-      color: #fff;
-    }
-    p {
-      font-family: 'Poppins', sans-serif;
-      color: #fff;
-    }
+  .icon {
+    font-size: 2rem;
+    color: #fff;
   }
 }

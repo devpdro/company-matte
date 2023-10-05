@@ -23,7 +23,33 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
   background-color: #f1f1f1;
 }
+.dark_bg_start {
+  animation: animation_dark_bg 0.6s ease forwards;
+}
 
+@keyframes animation_dark_bg {
+  from {
+    background-color: #fff;
+  }
+  to {
+    background-color: #1c1c1c
+  }
+}
 
+.light_bg {
+  animation: animation_light_bg 0.6s ease forwards;
+}
 
+@keyframes animation_light_bg {
+  from {
+    background-color: #1c1c1c;
+  }
+  to {
+    background-color: #fff
+  }
+}
+
+.light_text_start {
+  color: #fff;
+}
 

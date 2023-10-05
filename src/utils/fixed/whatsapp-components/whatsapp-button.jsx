@@ -9,7 +9,7 @@ export function WhatsAppButton() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <ICON.BiLogoWhatsapp className={styles.icon} /> <p>Entrar em contato</p>
+        <ICON.BiLogoWhatsapp className={styles.icon} />
       </a>
     </div>
   )
