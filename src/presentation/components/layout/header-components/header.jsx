@@ -50,7 +50,7 @@ export function Header({ textColor }) {
       </div>
       <div className={styles.box_header}>
         <p style={{ textColor }} className={`${styles.title} animateTitle`}>
-          <span>D</span>estaque sua <br /> Pre<span>s</span>ença Profissi<span>o</span>nal com a Criação do seu S<span>i</span>te
+          Destaque sua Presença <span>Profissional</span>
         </p>
         <div className={styles.box_subtitle}>
           <p className={`${styles.subtitle} animateSubtitle`}>

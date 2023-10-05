@@ -1,39 +1,31 @@
 .container {
   height: 100vh;
-  font-family:
-    'Montserrat',
-    -apple-system,
-    Roboto,
-    Arial,
-    sans-serif;
+  font-family: 'Darker Grotesque';
   .box_header {
     max-width: 1180px;
     margin: 0 auto;
     .title {
-      text-transform: uppercase;
-      font-size: 120px;
+      text-align: center;
       margin: 10px 0;
-      font-weight: 600;
-      font-size: 3rem;
-      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 7rem;
+      line-height: 8rem;
       padding-top: 11rem;
-      font-size: 79px;
     }
     .box_subtitle {
       display: flex;
       justify-content: space-between;
       align-items: center;
-
       .subtitle {
         margin-top: 3.2rem;
         margin-bottom: 3.7rem;
         font-size: 22px;
-        font-weight: 600;
+       
       }
       .since {
         text-transform: uppercase;
         font-size: 18px;
-        font-weight: 800;
+        
       }
     }
     a {

@@ -1,18 +1,9 @@
 import Notebook from 'presentation/assets/images/img/notebook.png'
 
-import styles from 'presentation/components/layout/main-components/explanation-components//explanation-features.module.scss'
-export function ExplanationFeatures() {
+import styles from 'presentation/components/layout/main-components/explanation-components/explanation-features-two.module.scss'
+export function ExplanationFeaturesTwo() {
   return (
     <section id="beneficios" className={`${styles.container}`}>
-      <div className={styles.box_title}>
-        <div className={styles.box_text}>
-          <h2 className={styles.title}>Vantagens</h2>
-          <h3 className={styles.subtitle}>
-            Como um site pode ajudar o seu negocio?
-          </h3>
-        </div>
-        <h6 className={styles.lead}>Leia mais</h6>
-      </div>
       <div className={styles.container_explanation}>
         <div className={styles.box_explanation}>
           <div className={styles.box_have_customers}>
