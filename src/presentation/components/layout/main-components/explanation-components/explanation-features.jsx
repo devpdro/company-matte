@@ -1,44 +1,63 @@
-import Notebook from 'presentation/assets/images/img/notebook.png'
+import React, { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
-import styles from 'presentation/components/layout/main-components/explanation-components//explanation-features.module.scss'
+import Notebook from 'presentation/assets/images/img/notebook.png'
+import Frutas from 'presentation/assets/images/img/frutas.jpg'
+
+import styles from 'presentation/components/layout/main-components/explanation-components/explanation-features.module.scss'
+
 export function ExplanationFeatures() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
-    <section id="beneficios" className={`${styles.container}`}>
+    <section id="second-section" className={`${styles.container}`}>
       <div className={styles.box_title}>
-        <div className={styles.box_text}>
-          <h2 className={styles.title}>Vantagens</h2>
-          <h3 className={styles.subtitle}>
-            Como um site pode ajudar o seu negocio?
+        <div className={`${styles.box_text}`}>
+          <p data-aos="fade-up" className={`${styles.title}`}>
+            Trabalho <span>selecionado</span>
+          </p>
+          <h3 data-aos="fade-up" className={`${styles.subtitle}`}>
+            Como um site pode impulsionar o seu negócio?
           </h3>
         </div>
-        <h6 className={styles.lead}>Leia mais</h6>
       </div>
       <div className={styles.container_explanation}>
         <div className={styles.box_explanation}>
           <div className={styles.box_have_customers}>
-            <img src={Notebook} alt="Notebook" />
-            <p className={styles.subtitle}>SITE</p>
-            <p className={styles.text}>
-              <span>Destaque-se no seu mercado-alvo!</span> Ter um site é a
-              pedra angular para alcançar essa conquista. É a ferramenta que
-              diferencia você no mercado, destacando suas qualidades e serviços.
-            </p>
-          </div>
-          <div className={styles.achieve_success}>
-            <img src={Notebook} alt="Notebook" />
-            <p className={styles.subtitle}>SITE</p>
-            <p className={styles.text}>
-              <span>Alcance o sucesso global!</span> Um site próprio assegura a
-              visibilidade global da sua marca, colocando-a no mapa.
+            <div className={styles.box_img}>
+              <img data-aos="fade-up" src={Notebook} alt="Notebook" />
+              <div data-aos="fade-up" className={styles.box_text}>
+                <p className={styles.title}>Destaque-se no seu mercado-alvo!</p>
+                <p className={styles.text}>
+                  Ter um site é a pedra angular para alcançar essa
+                  <span> conquista</span>.
+                </p>
+              </div>
+            </div>
+            <p data-aos="fade-up" className={styles.subtitle}>Ver mais benefícios</p>
+            <p data-aos="fade-up" className={styles.text_information}>
+              É a ferramenta que diferencia você no mercado, destacando suas
+              qualidades e serviços.
             </p>
           </div>
           <div className={styles.brand_visibility}>
-            <img src={Notebook} alt="Notebook" />
-            <p className={styles.subtitle}>SITE</p>
-            <p className={styles.text}>
-              <span>Maximize a visibilidade da sua marca!</span> Conquiste o
-              publico online com um site poderoso. Mais visibilidade significa
-              mais impacto. Vamos fazer sua marca brilhar!
+            <div className={styles.box_img}>
+              <img data-aos="fade-up" src={Frutas} alt="Frutas" />
+              <div data-aos="fade-up" className={styles.box_text}>
+                <p className={styles.title}>
+                  Maximize a visibilidade da sua marca!
+                </p>
+                <p className={styles.text}>
+                  Conquiste o público online com um site <span>poderoso</span>.
+                </p>
+              </div>
+            </div>
+            <p data-aos="fade-up" className={styles.subtitle}>Ver mais benefícios</p>
+            <p data-aos="fade-up" className={styles.text_information}>
+              Mais visibilidade significa mais impacto. Vamos fazer sua marca
+              brilhar!
             </p>
           </div>
         </div>

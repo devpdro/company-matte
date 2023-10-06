@@ -33,7 +33,7 @@ export function Navbar() {
                 href="#pesqueiro"
                 onClick={menuToggleHandler}
               >
-                Pesqueiro
+                Sobre nós
               </a>
             </li>
             <li>
@@ -42,7 +42,7 @@ export function Navbar() {
                 href="#sobre-nos"
                 onClick={menuToggleHandler}
               >
-                Sobre nós
+                Benefícios
               </a>
             </li>
             <li>
@@ -72,16 +72,10 @@ export function Navbar() {
                 Localização
               </a>
             </li>
-            <li>
-              <a
-                className={styles.link}
-                href="#rodape"
-                onClick={menuToggleHandler}
-              >
-                Contato
-              </a>
-            </li>
           </ul>
+          <div>
+            colocar horario
+          </div>
         </nav>
         <div className={styles.header__content__toggle}>
           {!menuOpen ? (

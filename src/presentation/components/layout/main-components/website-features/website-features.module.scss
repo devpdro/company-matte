@@ -1,0 +1,94 @@
+.container {
+  margin-top: 6rem;
+  margin-bottom: 5.5rem;
+  font-family:
+    'Darker Grotesque',
+    -apple-system,
+    Roboto,
+    Arial,
+    sans-serif;
+  .box_container {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .box_title {
+      font-size: 3.4rem;
+      font-weight: 900;
+      position: sticky;
+      top: 80px;
+    }
+    .box_information {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 50%;
+      .box_one {
+        padding: 3rem 2rem;
+        width: 100%;
+        height: auto;
+        background-color: #c6a1f8;
+        box-shadow:
+          rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        .icon {
+          font-size: 7rem;
+          font-weight: 0;
+          margin-bottom: 1rem;
+        }
+        .title {
+          font-size: 3rem;
+          padding-bottom: 1rem;
+        }
+        .explication {
+          font-size: 2rem;
+        }
+      }
+      .box_two {
+        margin: 4rem 0rem;
+        padding: 3rem 2rem;
+        width: 100%;
+        height: auto;
+        background-color: #c6a1f8;
+        box-shadow:
+          rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        .icon {
+          font-size: 7rem;
+          font-weight: 0;
+          margin-bottom: 1rem;
+        }
+        .title {
+          font-size: 3rem;
+          padding-bottom: 1rem;
+        }
+        .explication {
+          font-size: 2rem;
+        }
+      }
+      .box_three {
+        padding: 3rem 2rem;
+        width: 100%;
+        height: auto;
+        background-color: #c6a1f8;
+        box-shadow:
+          rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        .icon {
+          font-size: 7rem;
+          font-weight: 0;
+          margin-bottom: 1rem;
+        }
+        .title {
+          font-size: 3rem;
+          padding-bottom: 1rem;
+        }
+        .explication {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

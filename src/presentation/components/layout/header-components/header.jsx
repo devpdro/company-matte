@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'react-scroll';
 import anime from 'animejs';
 
 import { ICON } from 'presentation/assets/icons/icon';
@@ -6,7 +7,7 @@ import { Navbar } from 'presentation/components/layout/header-components/navbar-
 
 import styles from 'presentation/components/layout/header-components/header.module.scss';
 
-export function Header({ textColor }) {
+export function Header() {
   useEffect(() => {
     const animateTitle = () => {
       anime.timeline()
@@ -49,7 +50,7 @@ export function Header({ textColor }) {
         <Navbar />
       </div>
       <div className={styles.box_header}>
-        <p style={{ textColor }} className={`${styles.title} animateTitle`}>
+        <p className={`${styles.title} animateTitle`}>
           Destaque sua Presença <span>Profissional</span>
         </p>
         <div className={styles.box_subtitle}>
@@ -59,7 +60,7 @@ export function Header({ textColor }) {
           </p>
           <p className={`${styles.since} animateSince`}>Desde 2023</p>
         </div>
-        <a href="#beneficios"><ICON.BsArrowDownShort className={`${styles.icon} animateIcon`} /></a>
+        <Link to="second-section" smooth={true} duration={500}><ICON.BsArrowDownShort className={`${styles.icon} animateIcon`} /></Link>
       </div>
     </main>
   );
