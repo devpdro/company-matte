@@ -3,7 +3,7 @@ import styles from 'presentation/components/layout/main-components/website-featu
 
 export function WebsiteFeatures() {
   return (
-    <section className={`${styles.container} `}>
+    <section className={`${styles.container} panel`} data-color="white">
       <div className={styles.box_container}>
         <div className={`${styles.box_title}`}>
           <p>Como <span>funciona?</span> </p>

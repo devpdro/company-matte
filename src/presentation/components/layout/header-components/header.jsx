@@ -45,7 +45,7 @@ export function Header() {
   }, []);
 
   return (
-    <main className={`${styles.container}`}>
+    <main className={`${styles.container} panel`} data-color="black">
       <div>
         <Navbar />
       </div>

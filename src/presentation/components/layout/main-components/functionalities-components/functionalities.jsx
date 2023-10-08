@@ -33,7 +33,7 @@ export function Functionalities() {
   )
 
   return (
-    <section className={styles.container}>
+    <section className={`${styles.container} panel`} data-color="black">
       <div className={styles.box_title}>
         <p>
           Nossas <span>Funcionalidades</span>
