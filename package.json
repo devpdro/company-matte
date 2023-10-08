@@ -20,6 +20,7 @@
     "react-scroll": "^1.9.0",
     "react-visibility-sensor": "^5.1.1",
     "sass": "^1.67.0",
+    "styled-components": "^6.0.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

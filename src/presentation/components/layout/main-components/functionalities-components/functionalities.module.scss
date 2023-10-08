@@ -1,0 +1,111 @@
+.container {
+  margin-top: 6rem;
+  margin-bottom: 3.5rem;
+  font-family:
+    'Darker Grotesque',
+    -apple-system,
+    Roboto,
+    Arial,
+    sans-serif;
+  .box_container {
+    max-width: 1380px;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    .box_title {
+      text-align: center;
+      p {
+        font-size: 4rem;
+        span {
+          font-weight: 900;
+        }
+      }
+    }
+    .box_functionalities {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 7.5rem;
+      .box_one {
+        padding: 3rem 2rem;
+        background-color: #f75000;
+        width: 34%;
+        height: 580px;
+        margin-right: 3rem;
+        box-shadow:
+          rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        img {
+          width: 100px;
+          margin-bottom: 1rem;
+        }
+        .title {
+          color: #1c1c1c;
+          font-size: 3rem;
+          padding-bottom: 1rem;
+          span {
+            font-weight: 900;
+          }
+        }
+        .explication {
+          color: #1c1c1c;
+          font-size: 2rem;
+        }
+      }
+      .box_two {
+        background-color: #25cc8a;
+        width: 34%;
+        height: 580px;
+        padding: 3rem 2rem;
+        box-shadow:
+          rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        img {
+          width: 100px;
+          margin-bottom: 1rem;
+        }
+        .title {
+          color: #1c1c1c;
+          font-size: 3rem;
+          padding-bottom: 1rem;
+          span {
+            font-weight: 900;
+          }
+        }
+        .explication {
+          color: #1c1c1c;
+          font-size: 2rem;
+        }
+      }
+      .box_three {
+        background-color: #92aafe;
+        width: 34%;
+        height: 580px;
+        margin-left: 3rem;
+        padding: 3rem 2rem;
+        box-shadow:
+          rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        img {
+          width: 100px;
+          margin-bottom: 1rem;
+        }
+        .title {
+          color: #1c1c1c;
+          font-size: 3rem;
+          padding-bottom: 1rem;
+          span {
+            font-weight: 900;
+          }
+        }
+        .explication {
+          color: #1c1c1c;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

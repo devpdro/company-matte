@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { ICON } from 'presentation/assets/icons/icon'
-import { useWindowSize } from 'presentation/hooks/navbar-window-size'
+import { useWindowSize } from 'presentation/hooks/navbar/navbar-window-size'
 
 import styles from 'presentation/components/layout/header-components/navbar-components/navbar.module.scss'
 
