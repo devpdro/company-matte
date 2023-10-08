@@ -3,6 +3,7 @@ import { OthersExplanationFeaturesTwo } from "presentation/components/layout/mai
 import { Functionalities } from "presentation/components/layout/main-components/functionalities-components/functionalities";
 import { WebsiteFeatures } from "presentation/components/layout/main-components/website-features-components/website-features";
 import { Price } from "./price-component/price";
+import { ConvinceHim } from "./convince-him-components/convince-him";
 
 export function Main() { 
 
@@ -10,6 +11,7 @@ export function Main() {
     <main>
       <WebsiteFeatures />
       <Functionalities />
+      <ConvinceHim />
       <Price />
       <ExplanationFeatures />
       <OthersExplanationFeaturesTwo />

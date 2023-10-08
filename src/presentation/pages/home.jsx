@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Header } from 'presentation/components/layout/header-components/header'
 import { Main } from 'presentation/components/layout/main-components/main'
+import { Footer } from 'presentation/components/layout/footer-components/footer'
 import 'presentation/styles/global.scss'
 
 const SCROLL_THRESHOLD = 350
@@ -35,6 +36,7 @@ export function Home() {
     <main className={`${backgroundClass} ${textClass} ${borderClass}`}>
       <Header />
       <Main />
+      <Footer />
     </main>
   )
 }
