@@ -1,18 +1,18 @@
-import { ExplanationFeatures } from "./explanation-components/explanation-features";
-import { ExplanationFeaturesTwo } from "./explanation-components/explanation-features-two";
-import { Functionalities } from "./functionalities-components/functionalities";
-import { FunctionalitiesTwo } from "./functionalities-components/functionalities-two";
-import { WebsiteFeatures } from "./website-features-components/website-features";
+import { ExplanationFeatures } from "presentation/components/layout/main-components/explanation-components/explanation-features";
+import { OthersExplanationFeaturesTwo } from "presentation/components/layout/main-components/explanation-components/others-explanation-features";
+import { Functionalities } from "presentation/components/layout/main-components/functionalities-components/functionalities";
+import { WebsiteFeatures } from "presentation/components/layout/main-components/website-features-components/website-features";
+import { Price } from "./price-component/price";
 
-export function Main({ isDarkMode }) { 
+export function Main() { 
 
   return (
-    <main className={isDarkMode ? 'dark-mode' : 'light-mode'}>
+    <main>
       <WebsiteFeatures />
       <Functionalities />
-      <FunctionalitiesTwo />
+      <Price />
       <ExplanationFeatures />
-      <ExplanationFeaturesTwo />
+      <OthersExplanationFeaturesTwo />
     </main>
   );
 }

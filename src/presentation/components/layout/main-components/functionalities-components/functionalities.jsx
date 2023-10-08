@@ -1,68 +1,51 @@
-import React from "react";
-import HorizontalScroll from "presentation/hooks/carousel/horizontal-scroll";
-
-import tipo_site from 'presentation/assets/images/img/tipo-site.png'
-import styles from 'presentation/components/layout/main-components/functionalities-components/functionalities.module.scss'
+import React from 'react'
+import cardData from 'main/providers/data/cardData'
+import HorizontalScroll from 'presentation/hooks/carousel/horizontal-scroll'
 
 import {
-  Main,
   HorizontalSection,
-  BumperSection,
   CardsContainer,
   SampleCard,
   CardImage,
-  CardText,
-} from './functionalities-carousel-styles';
+  TitleBox,
+  SubtitleBox
+} from './functionalities-carousel-styles'
+import styles from 'presentation/components/layout/main-components/functionalities-components/functionalities.module.scss'
 
 export function Functionalities() {
-  const SampleCards = React.memo(() =>
-  Array(5)
-    .fill(0)
-    .map((_e, i) => (
-      <SampleCard key={`sampleCard-${i}`}>
-        <CardImage src={`imagem-${i}.jpg`} alt={`Imagem ${i}`} />
-        <CardText>Texto do Card {i + 1}</CardText>
+  const colors = [
+    '#92AAFE',
+    '#25CC8A',
+    '#C6A1F8',
+    '#F2D147',
+    '#F9F7F1',
+    '#F75000'
+  ]
+
+  const SampleCards = React.memo(({ cardData }) =>
+    cardData.map((data, i) => (
+      <SampleCard key={`sampleCard-${i}`} cardColor={colors[i % colors.length]}>
+        <CardImage src={data.image} alt={`Imagem ${i}`} />
+        <TitleBox>{data.title}</TitleBox>
+        <SubtitleBox>{data.text}</SubtitleBox>
       </SampleCard>
     ))
-);
+  )
 
   return (
-    <section className={`${styles.container}`}>
-      <div className={styles.box_container}>
-        <div className={`${styles.box_title}`}>
-          <p>
-            Nossas <span>Funcionalidades</span>
-          </p>
-        </div>
-        <div className={styles.box_functionalities}>
-          <div className={styles.box_one}>
-            <img src={tipo_site} alt="Ilustração de Responsividade" />
-            <h6 className={styles.title}>Responsividade</h6>
-            <p className={styles.explication}>
-              Proporcionamos uma experiência perfeita em qualquer dispositivo:
-              Computador, Notebook, Tablet e Celular, utilizando tecnologia de
-              ponta para adaptação completa.
-            </p>
-          </div>
-          <div className={styles.box_two}>
-            <img src={tipo_site} alt="Ilustração de Blog" />
-            <h6 className={styles.title}>Blog Integrado</h6>
-            <p className={styles.explication}>
-              Conte sua história, compartilhe notícias e artigos diretamente no
-              seu site. Mantenha seus visitantes atualizados e envolvidos com
-              seu conteúdo exclusivo.
-            </p>
-          </div>
-          <div className={styles.box_three}>
-            <img src={tipo_site} alt="Ilustração de SEO" />
-            <h6 className={styles.title}>Otimização para o Google (SEO)</h6>
-            <p className={styles.explication}>
-              Desenvolvemos todos os sites com foco no melhor desempenho no
-              Google, seguindo suas diretrizes para máxima visibilidade online.
-            </p>
-          </div>
-        </div>
+    <section className={styles.container}>
+      <div className={styles.box_title}>
+        <p>
+          Nossas <span>Funcionalidades</span>
+        </p>
       </div>
+      <HorizontalSection>
+        <HorizontalScroll>
+          <CardsContainer>
+            <SampleCards cardData={cardData} />
+          </CardsContainer>
+        </HorizontalScroll>
+      </HorizontalSection>
     </section>
   )
 }

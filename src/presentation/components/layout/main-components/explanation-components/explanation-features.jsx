@@ -2,9 +2,7 @@ import React, { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-import Notebook from 'presentation/assets/images/img/notebook.png'
-import Frutas from 'presentation/assets/images/img/frutas.jpg'
-
+import images from 'presentation/assets/images/images'
 import styles from 'presentation/components/layout/main-components/explanation-components/explanation-features.module.scss'
 
 export function ExplanationFeatures() {
@@ -27,7 +25,7 @@ export function ExplanationFeatures() {
         <div className={styles.box_explanation}>
           <div className={styles.box_have_customers}>
             <div className={styles.box_img}>
-              <img data-aos="fade-up" src={Notebook} alt="Notebook" />
+              <img data-aos="fade-up" src={images.notebook} alt="Notebook" />
               <div data-aos="fade-up" className={styles.box_text}>
                 <p className={styles.title}>Destaque-se no seu mercado-alvo!</p>
                 <p className={styles.text}>
@@ -44,7 +42,7 @@ export function ExplanationFeatures() {
           </div>
           <div className={styles.brand_visibility}>
             <div className={styles.box_img}>
-              <img data-aos="fade-up" src={Frutas} alt="Frutas" />
+              <img data-aos="fade-up" src={images.frutas} alt="Frutas" />
               <div data-aos="fade-up" className={styles.box_text}>
                 <p className={styles.title}>
                   Maximize a visibilidade da sua marca!

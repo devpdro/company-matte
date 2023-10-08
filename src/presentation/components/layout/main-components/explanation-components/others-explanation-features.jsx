@@ -2,11 +2,10 @@ import { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-import Mundi from 'presentation/assets/images/img/mundi.jpg'
-import Pessoa from 'presentation/assets/images/img/pessoa.jpg'
+import images from 'presentation/assets/images/images'
+import styles from 'presentation/components/layout/main-components/explanation-components/others-explanation-features.module.scss'
 
-import styles from 'presentation/components/layout/main-components/explanation-components/explanation-features-two.module.scss'
-export function ExplanationFeaturesTwo() {
+export function OthersExplanationFeaturesTwo() {
   useEffect(() => {
     AOS.init()
   }, [])
@@ -16,7 +15,7 @@ export function ExplanationFeaturesTwo() {
         <div className={styles.box_explanation}>
           <div className={styles.box_have_customers}>
             <div className={styles.box_img}>
-              <img data-aos="fade-up" src={Mundi} alt="Globo" />
+              <img data-aos="fade-up" src={images.mundi} alt="Globo" />
               <div data-aos="fade-up" className={styles.box_text}>
                 <p className={styles.title}>Alcance o sucesso global!</p>
                 <p className={styles.text}>
@@ -33,7 +32,7 @@ export function ExplanationFeaturesTwo() {
           </div>
           <div className={styles.brand_visibility}>
             <div className={styles.box_img}>
-              <img data-aos="fade-up" src={Pessoa} alt="Pessoa" />
+              <img data-aos="fade-up" src={images.pessoa} alt="Pessoa" />
               <div data-aos="fade-up" className={styles.box_text}>
                 <p className={styles.title}>Aumente suas vendas!</p>
                 <p className={styles.text}>

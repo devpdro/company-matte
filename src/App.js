@@ -12,10 +12,9 @@ export function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simule um atraso para a demonstração (você pode substituir isso com seu código de carregamento real)
     setTimeout(() => {
-      setLoading(false); // Quando o carregamento estiver concluído, defina o estado para false
-    }, 2000); // Simulando um carregamento de 2 segundos
+      setLoading(false); 
+    }, 2000); 
   }, []);
 
   return (

@@ -1,0 +1,114 @@
+@keyframes subirDescer {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Ajuste a altura desejada */
+  }
+}
+
+@keyframes descerSubir {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px); /* Ajuste a altura desejada */
+  }
+}
+
+
+.container {
+  max-width: 1180px;
+  margin: 10rem auto 25rem auto;
+  font-family:
+    'Darker Grotesque',
+    -apple-system,
+    Roboto,
+    Arial,
+    sans-serif;
+  .box_price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .box_text {
+      max-width: 600px;
+      p {
+        font-size: 4rem;
+        line-height: 3.8rem;
+        span {
+            font-weight: 900;
+        }
+      }
+    }
+    .box_information {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .box_whats {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 2rem;
+        margin-bottom: 1rem;
+        .box_icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 62px;
+            height: 62px;
+            animation: subirDescer 3s ease-in-out infinite;
+          }
+        }
+        .box_text {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          margin-left: 1rem;
+          p {
+            font-size: 1.5rem;
+            text-align: right;
+          }
+          h6 {
+            font-size: 3rem;
+            line-height: 3rem;
+          }
+        }
+      }
+      .box_email {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 2rem;
+        margin-bottom: 1rem;
+        .box_icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 62px;
+            height: 62px;
+            animation: descerSubir 3s ease-in-out infinite;
+          }
+        }
+        .box_text {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          margin-left: 1rem;
+          p {
+            font-size: 1.5rem;
+            text-align: right;
+          }
+          h6 {
+            font-size: 3rem;
+            line-height: 3rem;
+          }
+        }
+      }
+    }
+  }
+}

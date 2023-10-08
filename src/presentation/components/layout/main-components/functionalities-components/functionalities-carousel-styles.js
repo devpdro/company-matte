@@ -1,19 +1,11 @@
-import styled from 'styled-components';
-
-export const Main = styled.main``;
+import styled from 'styled-components'
 
 export const HorizontalSection = styled.section`
   position: relative;
   width: 100%;
   min-height: 100vh;
-  border: 1px solid red;
-`;
 
-export const BumperSection = styled.section`
-  text-align: center;
-  padding: 128px 16px;
-  background-color: #efefef;
-`;
+`
 
 export const CardsContainer = styled.div`
   position: relative;
@@ -23,30 +15,37 @@ export const CardsContainer = styled.div`
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
-`;
+`
 
 export const SampleCard = styled.div`
   position: relative;
-  height: 300px;
-  width: 800px;
-  background-color: #111f30;
-  margin-right: 75px;
+  padding: 3rem 3rem;
+  background-color: ${(props) => props.cardColor};
+  width: 34%;
+  height: 530px;
+  margin-right: 7.5rem;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   flex-shrink: 0;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  color: white;
-`;
+`
 
 export const CardImage = styled.img`
-  max-width: 100%;
-  max-height: 60%;
-  object-fit: cover;
-  margin-bottom: 16px;
-`;
+  width: 130px;
+  margin-bottom: 1rem;
+`
 
-export const CardText = styled.p`
-  font-size: 18px;
-`;
+export const TitleBox = styled.h6`
+  color: #1c1c1c;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+`
+
+export const SubtitleBox = styled.h6`
+  color: #1c1c1c;
+  font-size: 2rem;
+`
