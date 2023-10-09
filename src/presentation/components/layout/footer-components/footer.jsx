@@ -10,10 +10,8 @@ export function Footer() {
           </div>
           <div className={styles.box_links}>
             <ul className={styles.list}>
-              <li>Lar</li>
-              <li>Trabalhar</li>
-              <li>Sobre</li>
-              <li>Carreiras</li>
+              <li>Início</li>
+              <li>Benefícios</li>
               <li>Contato</li>
             </ul>
           </div>

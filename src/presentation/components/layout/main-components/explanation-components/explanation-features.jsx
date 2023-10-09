@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -10,7 +10,7 @@ export function ExplanationFeatures() {
     AOS.init()
   }, [])
   return (
-    <section id="second-section" className={`${styles.container}`}>
+    <section className={`${styles.container}`}>
       <div className={styles.box_title}>
         <div className={`${styles.box_text}`}>
           <p data-aos="fade-up" className={`${styles.title}`}>

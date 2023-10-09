@@ -21,9 +21,9 @@ export const SampleCard = styled.div`
   position: relative;
   padding: 3rem 3rem;
   background-color: ${(props) => props.cardColor};
-  width: 34%;
-  height: 530px;
-  margin-right: 7.5rem;
+  width: 30%;
+  height: 490px;
+  margin-right: 8.5rem;
   box-shadow:
     rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -45,7 +45,7 @@ export const TitleBox = styled.h6`
   padding-bottom: 1rem;
 `
 
-export const SubtitleBox = styled.h6`
+export const SubtitleBox = styled.p`
   color: #1c1c1c;
   font-size: 2rem;
 `

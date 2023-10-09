@@ -9,6 +9,7 @@
   width: 100%;
   z-index: 1;
   color: #fff;
+
   .box_information {
     display: flex;
     justify-content: center;
@@ -16,19 +17,24 @@
     position: absolute;
     margin-left: 4.5rem;
     bottom: 40px;
+
     .box_time {
       display: flex;
       align-items: center;
       justify-content: center;
+      padding-bottom: 0.2rem;
+
       .box_icon {
         display: flex;
         align-items: center;
         justify-content: center;
+
         .icon {
           margin-right: 0.5rem;
           font-size: 1.4rem;
         }
       }
+
       .box_text {
         p {
           margin-right: 2rem;
@@ -36,27 +42,40 @@
         }
       }
     }
+
     .box_contact {
       display: flex;
       align-items: center;
       justify-content: center;
-      .box_icon {
+
+      a {
         display: flex;
         align-items: center;
         justify-content: center;
-        .icon {
-          margin-right: 0.5rem;
-          font-size: 1.4rem;
+        color: #fff;
+        text-decoration: none;
+
+        .box_icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .icon {
+            margin-right: 0.5rem;
+            font-size: 1.4rem;
+          }
         }
-      }
-      .box_text {
-        p {
-          margin-right: 2rem;
-          font-size: 1.3rem;
+
+        .box_text {
+          p {
+            margin-right: 2rem;
+            font-size: 1.3rem;
+          }
         }
       }
     }
   }
+
   .header__content {
     @include center_between;
     max-width: 1180px;
@@ -68,6 +87,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .box_logo {
       a {
         .img_logo {
@@ -88,6 +108,7 @@
         height: 100%;
         position: static;
       }
+
       @include center_content;
       top: 0;
       right: 100%;
@@ -101,6 +122,7 @@
       backdrop-filter: blur(3px);
       transform: translate(0);
       transition: 0.3s ease transform;
+
       ul {
         @include breakpoint(md) {
           flex-direction: row;
@@ -108,19 +130,23 @@
           margin-bottom: 0;
           margin-right: calc(0.5rem + #{16px});
         }
+
         list-style: none;
         padding: 0;
         display: flex;
         flex-direction: column;
         margin-bottom: 32px;
+
         li {
           &:not(:last-child) {
             margin-bottom: 1.2rem;
+
             @include breakpoint(md) {
               margin-bottom: 0;
               margin-right: 16px;
             }
           }
+
           .link {
             display: flex;
             justify-content: center;
@@ -133,12 +159,14 @@
             line-height: 4rem;
             padding: 0.3rem 0.2rem;
             transition: all 0.3s ease;
+
             &:hover {
               color: #fff;
             }
           }
         }
       }
+
       &.isMenu {
         transform: translate(100%);
       }

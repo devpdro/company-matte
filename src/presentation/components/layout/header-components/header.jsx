@@ -14,14 +14,14 @@ export function Header() {
         .add({
           targets: '.animateTitle',
           opacity: [0, 1],
-          translateY: [-40, 0],
+          translateY: [-80, 0],
           easing: 'easeOutExpo',
           duration: 2500,
         })
         .add({
           targets: '.animateSubtitle',
           opacity: [0, 1],
-          translateY: [-80, 0],
+          translateY: [-40, 0],
           easing: 'easeOutExpo',
           duration: 2500,
         }, '-=2000')
@@ -32,10 +32,10 @@ export function Header() {
           easing: 'easeOutExpo',
           duration: 2500,
         }, '-=2000')
-        .add({
+       .add({
           targets: '.animateIcon',
           opacity: [0, 1],
-          translateY: [-40, 0],
+          translateY: [-45, 0],
           easing: 'easeOutExpo',
           duration: 2500,
         }, '-=2000')
@@ -51,7 +51,7 @@ export function Header() {
       </div>
       <div className={styles.box_header}>
         <p className={`${styles.title} animateTitle`}>
-          Destaque sua Presença <span>Profissional</span>
+          Destaque sua <br /> Presença Online com <br /> um Website Profissional
         </p>
         <div className={styles.box_subtitle}>
           <p className={`${styles.subtitle} animateSubtitle`}>

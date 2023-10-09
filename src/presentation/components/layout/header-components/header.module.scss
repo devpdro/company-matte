@@ -1,40 +1,57 @@
 .container {
   height: 100vh;
-  font-family: 'Darker Grotesque';
+  font-family:
+    'Darker Grotesque',
+    -apple-system,
+    Roboto,
+    Arial,
+    sans-serif;
+
   .box_header {
     max-width: 1180px;
     margin: 0 auto;
+
     .title {
-      text-align: center;
-      margin: 10px 0;
-      font-weight: 500;
-      font-size: 7rem;
-      line-height: 8rem;
-      padding-top: 11rem;
+      text-align: left;
+      font-size: 5rem;
+      text-transform: uppercase;
+      line-height: 6rem;
+      padding-top: 10rem;
+      font-family: '', -apple-system,
+        Roboto,
+        Arial,
+        sans-serif;
+      ;
     }
+
     .box_subtitle {
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       .subtitle {
         margin-top: 3.2rem;
         margin-bottom: 3.7rem;
         font-size: 1.7rem;
       }
+
       .since {
         text-transform: uppercase;
         font-size: 1.5rem;
       }
     }
+
     a {
       color: #fff;
+
       .icon {
         border: 2px solid;
         border-radius: 50%;
         padding: 0.2rem 0.5rem;
         font-size: 3.5rem;
-        transition: all 0.4s ease;
+        
         cursor: pointer;
+
         &:hover {
           background-color: #fff;
           color: #000;

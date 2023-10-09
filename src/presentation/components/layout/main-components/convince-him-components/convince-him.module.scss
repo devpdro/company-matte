@@ -18,16 +18,20 @@
     height: 400px;
     overflow-x: hidden;
     font-size: 9.5rem;
-    font-family:
-        'Darker Grotesque',
-        -apple-system,
-        Roboto,
-        Arial,
-        sans-serif;
+    font-family: 'Darker Grotesque', -apple-system, Roboto, Arial, sans-serif;
+
     .box_convince {
         position: absolute;
         white-space: nowrap;
         will-change: transform;
         animation: marquee 84s linear infinite;
+
+        .title {
+            transition: all 0.4s ease;
+
+            &:hover {
+                color: #f9f7f1;
+            }
+        }
     }
 }

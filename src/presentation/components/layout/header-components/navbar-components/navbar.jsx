@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+
 import { ICON } from 'presentation/assets/icons/icon'
 import { useWindowSize } from 'presentation/hooks/navbar/navbar-window-size'
 
@@ -37,8 +39,8 @@ export function Navbar() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentTime(new Date())
-    }, 1000) 
-   
+    }, 1000)
+
     return () => clearInterval(intervalId)
   }, [])
 
@@ -46,7 +48,7 @@ export function Navbar() {
     <nav className={styles.navbar} id="navbar">
       <div className={styles.header__content}>
         <div className={styles.box_logo}>
-          <a href="#inicio">LOGO</a>
+          <Link to="/"></Link>
         </div>
         <nav
           className={`${styles.header__content__nav} ${
@@ -55,49 +57,28 @@ export function Navbar() {
         >
           <ul>
             <li>
-              <a
-                className={styles.link}
-                href="#pesqueiro"
-                onClick={menuToggleHandler}
-              >
+              <Link to="/" className={styles.link} onClick={menuToggleHandler}>
                 Início
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
+                to="/beneficios"
                 className={styles.link}
-                href="#sobre-nos"
                 onClick={menuToggleHandler}
               >
-               Processo
-              </a>
+                Benefícios
+              </Link>
             </li>
             <li>
-              <a
+              <Link
+                to="/contato"
                 className={styles.link}
                 href="#fotos"
                 onClick={menuToggleHandler}
               >
-                Benefícios
-              </a>
-            </li>
-            <li>
-              <a
-                className={`${styles.link}`}
-                href="#preco"
-                onClick={menuToggleHandler}
-              >
                 Contato
-              </a>
-            </li>
-            <li>
-              <a
-                className={`${styles.link}`}
-                href="#preco"
-                onClick={menuToggleHandler}
-              >
-                FAQ
-              </a>
+              </Link>
             </li>
           </ul>
           <div className={styles.box_information}>
@@ -116,12 +97,18 @@ export function Navbar() {
               </div>
             </div>
             <div className={styles.box_contact}>
-              <div className={styles.box_icon}>
-                <ICON.AiOutlineWhatsApp className={styles.icon} />
-              </div>
-              <div className={styles.box_text}>
-                <p>+55 (19) 99677-6847</p>
-              </div>
+              <a
+                href="https://api.whatsapp.com/send?phone=5519996776847"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className={styles.box_icon}>
+                  <ICON.AiOutlineWhatsApp className={styles.icon} />
+                </div>
+                <div className={styles.box_text}>
+                  <p>+55 (19) 99677-6847</p>
+                </div>
+              </a>
             </div>
           </div>
         </nav>

@@ -8,7 +8,7 @@ export function Main() {
   return (
     <main>
       <WebsiteFeatures className="panel" data-color="white"/>
-      <Functionalities className="panel" data-color="black"/>
+      <Functionalities className="panel" data-color="white"/>
       <ConvinceHim className="panel" data-color="purple"/>
       <Price className="panel" data-color="white"/>
     </main>

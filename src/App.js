@@ -5,8 +5,10 @@ import {
   Route,
   Navigate,
 } from 'react-router-dom';
-import { Home } from 'presentation/pages/home';
 import { Loading } from 'utils/loading/loading';
+import { Home } from 'presentation/pages/home';
+import { Benefits } from 'presentation/pages/benefits';
+import { Contact } from 'presentation/pages/contact';
 
 export function App() {
   const [loading, setLoading] = useState(true);
@@ -21,6 +23,8 @@ export function App() {
     <Router>
       <Routes>
         <Route path="/" element={loading ? <Loading /> : <Home />} />
+        <Route path="/beneficios" element={<Benefits />} />
+        <Route path="/contato" element={<Contact />} />
         <Route path="*" element={<Navigate to="/inicio" />} />
       </Routes>
     </Router>

@@ -27,12 +27,22 @@
             }
 
             .box_links {
-                margin-left: 5rem;
+                margin-left: 10.5rem;
 
-                li {
-                    margin-top: 0.2rem;
-                    font-size: 2.9rem;
-                    list-style: none;
+                ul {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    li {
+                        margin-top: 0.2rem;
+                        font-size: 2.9rem;
+                        list-style: none;
+                        transition: border-bottom 2s ease;
+                        opacity: 0.8;
+
+                    }
                 }
             }
         }
@@ -42,6 +52,7 @@
             align-items: last baseline;
             justify-content: space-between;
             flex-direction: column;
+
             .box_email {
 
                 .title {
@@ -57,6 +68,7 @@
 
             .social_media {
                 margin-top: 9rem;
+
                 .text_follow {
                     font-size: 1.2rem;
                 }
