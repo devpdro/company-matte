@@ -23,10 +23,10 @@ export function Functionalities() {
   const colors = [
     '#92AAFE',
     '#25CC8A',
-    '#C6A1F8',
     '#F2D147',
+    '#C6A1F8',
     '#F9F7F1',
-    '#F75000'
+    '#F1C957'
   ]
 
   const SampleCards = React.memo(({ cardData }) =>
@@ -46,7 +46,7 @@ export function Functionalities() {
   )
 
   return (
-    <section className={`${styles.container} panel`} data-color="white">
+    <section id='funcionalidades' className={`${styles.container} panel`} data-color="black">
       <div
         data-aos="fade-down"
         data-aos-easing="ease"

@@ -1,60 +1,145 @@
 .container {
   height: 100vh;
   font-family:
-    'Darker Grotesque',
+    'Poppins',
     -apple-system,
     Roboto,
     Arial,
     sans-serif;
 
   .box_header {
-    max-width: 1180px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: right;
+    position: relative;
 
-    .title {
-      text-align: left;
-      font-size: 5rem;
-      text-transform: uppercase;
-      line-height: 6rem;
-      padding-top: 10rem;
-      font-family: '', -apple-system,
-        Roboto,
-        Arial,
-        sans-serif;
-      ;
-    }
+    .box_img {
+      background-image:
+        linear-gradient(rgba(28, 28, 28, 0.5), #1c1c1c), url(../../../assets/images/img/header.jpg);
+      width: 60%;
+      box-shadow:
+        rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      height: 100vh;
+      position: relative;
 
-    .box_subtitle {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .subtitle {
-        margin-top: 3.2rem;
-        margin-bottom: 3.7rem;
-        font-size: 1.7rem;
-      }
-
-      .since {
-        text-transform: uppercase;
-        font-size: 1.5rem;
-      }
-    }
-
-    a {
-      color: #fff;
-
-      .icon {
-        border: 2px solid;
-        border-radius: 50%;
-        padding: 0.2rem 0.5rem;
-        font-size: 3.5rem;
-        
+      .box_icon {
+        position: absolute;
+        bottom: 65px;
+        right: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s ease;
         cursor: pointer;
 
         &:hover {
-          background-color: #fff;
-          color: #000;
+          transform: translateY(10px);
+        }
+
+        p {
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          font-size: 1rem;
+          align-items: center;
+        }
+
+        .icon {
+          font-size: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 2.5rem;
+        }
+      }
+
+      .box_text {
+        position: absolute;
+        border-radius: 1px;
+        top: 57%;
+        box-shadow:
+          rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        right: 35%;
+        transform: translate(-50%, -50%);
+        background-color: #F1C957;
+        width: 770px;
+        height: 560px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        color: #1c1c1c;
+        padding: 2rem 3rem 2rem 2rem;
+
+        .subtitle {
+          margin-top: 1rem;
+          font-size: 1.2rem;
+          text-align: left;
+          text-transform: uppercase;
+        }
+
+        .title {
+          margin-top: 1.3rem;
+          font-size: 2.3rem;
+          text-transform: uppercase;
+          text-align: left;
+          line-height: 3.5rem;
+        }
+
+        .information {
+          margin-top: 2rem;
+          font-size: 1.2rem;
+          text-align: left;
+
+          span {
+            font-weight: 900;
+          }
+        }
+
+        .btn_container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          a {
+            text-decoration: none;
+
+            .btn {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: auto;
+              font-family:
+                'Poppins',
+                -apple-system,
+                Roboto,
+                Arial,
+                sans-serif;
+              margin-top: 2.8rem;
+              padding: 1rem 1.4rem 1.1rem 1.6rem;
+              font-size: 1.2rem;
+              border: 2px solid #1c1c1c;
+              border-radius: 50px;
+              transition: all 0.3s ease;
+              cursor: pointer;
+              background-color: #F1C957;
+              text-transform: uppercase;
+
+              &:hover {
+                background-color: #1c1c1c;
+                color: #F9F7F1;
+              }
+
+              .icon {
+                margin-left: 0.3rem;
+                margin-top: 0.1rem;
+                display: flex;
+                align-items: center;
+                font-size: 2rem;
+              }
+            }
+          }
         }
       }
     }

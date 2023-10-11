@@ -3,7 +3,7 @@ import styles from 'presentation/components/layout/main-components/price-compone
 
 export function Price() {
   return (
-    <section className={`${styles.container} panel`} data-color="white">
+    <section id='inicie-agora' className={`${styles.container} panel`} data-color="white">
       <div className={styles.box_price}>
         <div className={styles.box_text}>
           <p>

@@ -21,27 +21,77 @@
             justify-content: center;
 
             .box_logo {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+
                 .logo {
-                    font-size: 3.2rem;
+                    width: 100px;
+                }
+
+                p {
+                    margin-top: 5rem;
+                    font-size: 3rem;
                 }
             }
 
-            .box_links {
-                margin-left: 10.5rem;
+            .container_list {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
 
-                ul {
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: center;
-                    flex-direction: column;
+                .box_links_one {
+                    margin-left: 3.5rem;
 
-                    li {
-                        margin-top: 0.2rem;
-                        font-size: 2.9rem;
-                        list-style: none;
-                        transition: border-bottom 2s ease;
-                        opacity: 0.8;
+                    .list {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        flex-direction: column;
 
+                        .link {
+                            margin-top: 0.2rem;
+                            font-size: 2.5rem;
+                            list-style: none;
+                            opacity: 0.8;
+                            border-bottom: 2px solid transparent;
+                            transition: border-bottom 0.3s ease;
+
+                            &:hover {
+                                border-bottom: 2px solid #F9F7F1;
+                            }
+                        }
+                    }
+                }
+
+                .box_links_two {
+                    margin-left: 2.5rem;
+
+                    .list {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        flex-direction: column;
+
+                        a {
+                            text-decoration: none;
+                            color: #F9F7F1;
+
+                            .link {
+                                margin-top: 0.2rem;
+                                font-size: 2.5rem;
+                                list-style: none;
+                                transition: border-bottom 2s ease;
+                                opacity: 0.8;
+                                border-bottom: 2px solid transparent;
+                                transition: border-bottom 0.3s ease;
+
+                                &:hover {
+                                    border-bottom: 2px solid #F9F7F1;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -54,15 +104,34 @@
             flex-direction: column;
 
             .box_email {
-
                 .title {
                     font-size: 4rem;
                     line-height: 3.5rem;
                 }
 
-                .subtitle {
-                    margin-top: 1.2rem;
-                    font-size: 1.5rem;
+                a {
+                    text-decoration: none;
+                    color: #F9F7F1;
+
+                    .subtitle {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 0.5rem;
+                        font-size: 1.5rem;
+                        border-bottom: 2px solid transparent;
+                        transition: border-bottom 0.3s ease;
+                        padding-bottom: 0.2rem;
+
+                        &:hover {
+                            border-bottom: 2px solid #F9F7F1;
+                        }
+
+                        .icon {
+                            font-size: 1.2rem;
+                            margin: 1rem 0rem 0.5rem 0rem;
+                        }
+                    }
                 }
             }
 
@@ -75,4 +144,5 @@
             }
         }
     }
+
 }

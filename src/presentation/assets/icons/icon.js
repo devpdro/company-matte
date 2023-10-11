@@ -4,6 +4,10 @@ import { BsArrowDownShort } from 'react-icons/bs'
 import { FaUserPlus } from 'react-icons/fa'
 import { MdOutlineWidgets } from 'react-icons/md'
 import { RxHamburgerMenu } from 'react-icons/rx'
+import { VscArrowSmallRight } from 'react-icons/vsc'
+import { CgArrowLongDown } from 'react-icons/cg'
+import { LuArrowUpRight } from 'react-icons/lu'
+
 
 export const ICON = {
   BiLogoWhatsapp,
@@ -15,4 +19,7 @@ export const ICON = {
   FaUserPlus,
   MdOutlineWidgets,
   RxHamburgerMenu,
+  VscArrowSmallRight,
+  CgArrowLongDown,
+  LuArrowUpRight,
 }

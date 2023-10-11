@@ -1,0 +1,102 @@
+.container {
+    background-color: #fff;
+    color: #000;
+    height: 100vh;
+    font-family:
+        'Darker Grotesque',
+        -apple-system,
+        Roboto,
+        Arial,
+        sans-serif;
+
+    .box_benefits {
+        max-width: 1280px;
+        margin: 0 auto;
+
+        .box_title {
+            margin-bottom: 5rem;
+
+            .title {
+                text-align: left;
+                font-size: 4rem;
+            }
+        }
+
+        .line_one_box {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+
+            .box_one {
+                padding: 2rem 2rem;
+                width: 32%;
+                border: 1px solid blue;
+
+                img {
+                    width: 85px;
+                }
+
+                h6 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .box_two {
+                width: 32%;
+                border: 1px solid green;
+            }
+        }
+
+        .line_two_box {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+
+            .box_one {
+                width: 35%;
+                border: 1px solid blue;
+            }
+
+            .box_two {
+                width: 35%;
+                border: 1px solid green;
+            }
+        }
+
+        .line_three_box {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+
+            .box_one {
+                width: 35%;
+                border: 1px solid blue;
+            }
+
+            .box_two {
+                width: 35%;
+                border: 1px solid green;
+            }
+        }
+
+        .line_four_box {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+
+            .box_one {
+                width: 35%;
+                border: 1px solid blue;
+            }
+
+            .box_two {
+                width: 35%;
+                border: 1px solid green;
+            }
+        }
+    }
+}

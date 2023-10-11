@@ -10,7 +10,7 @@ export function WebsiteFeatures() {
     AOS.init()
   }, [])
   return (
-    <section className={`${styles.container} panel`} data-color="white">
+    <section id='como-funciona?' className={`${styles.container} panel`} data-color="white">
       <div className={styles.box_container}>
         <div
           data-aos="fade-right"

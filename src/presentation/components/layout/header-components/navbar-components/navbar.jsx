@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
+import Logo from 'presentation/assets/logo/VR_LOGO-removebg-preview.png'
 import { ICON } from 'presentation/assets/icons/icon'
 import { useWindowSize } from 'presentation/hooks/navbar/navbar-window-size'
 
@@ -48,7 +49,9 @@ export function Navbar() {
     <nav className={styles.navbar} id="navbar">
       <div className={styles.header__content}>
         <div className={styles.box_logo}>
-          <Link to="/"></Link>
+          <Link to="/">
+            <img className={styles.img_logo} src={Logo} alt="" />
+          </Link>
         </div>
         <nav
           className={`${styles.header__content__nav} ${

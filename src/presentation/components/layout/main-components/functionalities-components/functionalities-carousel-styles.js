@@ -21,8 +21,8 @@ export const SampleCard = styled.div`
   position: relative;
   padding: 3rem 3rem;
   background-color: ${(props) => props.cardColor};
-  width: 30%;
-  height: 490px;
+  width: 28%;
+  height: 530px;
   margin-right: 8.5rem;
   box-shadow:
     rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
