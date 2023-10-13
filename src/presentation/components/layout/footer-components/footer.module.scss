@@ -22,17 +22,18 @@
 
             .box_logo {
                 display: flex;
-                justify-content: flex-start;
+                justify-content: space-between;
                 align-items: flex-start;
                 flex-direction: column;
-
+                border-right: 2px solid #F9F7F1;
+                padding-right: 4rem;
                 .logo {
                     width: 100px;
                 }
 
                 p {
                     margin-top: 5rem;
-                    font-size: 3rem;
+                    font-size: 2.5rem;
                 }
             }
 
@@ -51,8 +52,9 @@
                         flex-direction: column;
 
                         .link {
-                            margin-top: 0.2rem;
-                            font-size: 2.5rem;
+                            margin-left: 1.1rem;
+                            margin-top: 0.8rem;
+                            font-size: 2.1rem;
                             list-style: none;
                             opacity: 0.8;
                             border-bottom: 2px solid transparent;
@@ -79,8 +81,8 @@
                             color: #F9F7F1;
 
                             .link {
-                                margin-top: 0.2rem;
-                                font-size: 2.5rem;
+                                margin-top: 0.8rem;
+                                font-size: 2.1rem;
                                 list-style: none;
                                 transition: border-bottom 2s ease;
                                 opacity: 0.8;

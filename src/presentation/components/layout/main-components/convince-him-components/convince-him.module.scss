@@ -1,3 +1,17 @@
+@keyframes moveBall {
+    0% {
+        display: none;
+        transform: translate(-50%, -50%) scale(0);
+        /* Comece com escala 0 para ocultar e tamanho 0 */
+    }
+
+    100% {
+        display: block;
+        transform: translate(-50%, -50%) scale(1);
+        /* Termine com escala 1 para mostrar e tamanho original */
+    }
+}
+
 @keyframes marquee {
 
     0%,
@@ -25,9 +39,14 @@
         white-space: nowrap;
         will-change: transform;
         animation: marquee 84s linear infinite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
 
         .title {
             transition: all 0.4s ease;
+            cursor: none;
 
             &:hover {
                 color: #f9f7f1;

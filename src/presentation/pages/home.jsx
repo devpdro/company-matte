@@ -3,7 +3,6 @@ import { Header } from 'presentation/components/layout/header-components/header'
 import { Main } from 'presentation/components/layout/main-components/main';
 import { Footer } from 'presentation/components/layout/footer-components/footer';
 import 'presentation/pages/home.scss';
-
 export function Home() {
   useEffect(() => {
     const handleScroll = () => {

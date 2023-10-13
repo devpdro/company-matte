@@ -49,7 +49,23 @@ export function Footer() {
                   spy={true}
                   smooth={true}
                 >
+                  <li className={styles.link}>Benefícios</li>
+                </ScrollLink>
+                <ScrollLink
+                  activeClass="active"
+                  to="inicie-agora"
+                  spy={true}
+                  smooth={true}
+                >
                   <li className={styles.link}>Inicie sua jornada</li>
+                </ScrollLink>
+                <ScrollLink
+                  activeClass="active"
+                  to="inicie-agora"
+                  spy={true}
+                  smooth={true}
+                >
+                  <li className={styles.link}>Perguntas frequentes</li>
                 </ScrollLink>
               </ul>
             </div>
@@ -57,9 +73,6 @@ export function Footer() {
               <ul className={styles.list}>
                 <Link to="/">
                   <li className={styles.link}>Início</li>
-                </Link>
-                <Link to="/beneficios">
-                  <li className={styles.link}>Benefícios</li>
                 </Link>
                 <Link to="/contato">
                   <li className={styles.link}>Contato</li>

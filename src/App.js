@@ -15,7 +15,7 @@ export function App() {
         <Route path="/" element={<Home />} />
         <Route path="/beneficios" element={<Benefits />} />
         <Route path="/contato" element={<Contact />} />
-        <Route path="*" element={<Navigate to="/inicio" />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
   );

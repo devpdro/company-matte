@@ -19,7 +19,14 @@ import vendas from 'presentation/assets/images/img/vendas.png'
 import visibilidade from 'presentation/assets/images/img/visibilidade.png'
 import presencaOnlineSite from 'presentation/assets/images/img/presenca-on-line (1).png'
 import presencaOnlineCor from 'presentation/assets/images/img/presenca-on-line (2).png'
-
+import publicoAlvoCor from 'presentation/assets/images/img/publico-alvo (1).png'
+import publicoAlvo from 'presentation/assets/images/img/publico-alvo.png'
+import visibilidadeWeb from 'presentation/assets/images/img/visibilidade-da-web.png'
+import visibilidadeWebCor from 'presentation/assets/images/img/visibilidade-da-web-cor.png'
+import hours from 'presentation/assets/images/img/24-hours.png'
+import analiseDeMercado from 'presentation/assets/images/img/analise-de-mercado (1).png'
+import pesquisa from 'presentation/assets/images/img/pesquisa.png'
+import aumentar from 'presentation/assets/images/img/aumentar.png'
 
 const images = {
   computadorPortatil,
@@ -42,7 +49,15 @@ const images = {
   vendas,
   visibilidade,
   presencaOnlineSite,
-  presencaOnlineCor
+  presencaOnlineCor,
+  publicoAlvoCor,
+  publicoAlvo,
+  visibilidadeWeb,
+  visibilidadeWebCor,
+  hours,
+  analiseDeMercado,
+  pesquisa,
+  aumentar
 }
 
 export default images
