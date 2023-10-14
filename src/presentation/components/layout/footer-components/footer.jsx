@@ -45,7 +45,7 @@ export function Footer() {
                 </ScrollLink>
                 <ScrollLink
                   activeClass="active"
-                  to="inicie-agora"
+                  to="beneficios"
                   spy={true}
                   smooth={true}
                 >
@@ -61,7 +61,7 @@ export function Footer() {
                 </ScrollLink>
                 <ScrollLink
                   activeClass="active"
-                  to="inicie-agora"
+                  to="perguntas-frequentes"
                   spy={true}
                   smooth={true}
                 >

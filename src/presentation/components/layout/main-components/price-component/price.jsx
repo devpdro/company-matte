@@ -1,38 +1,41 @@
-import images from 'presentation/assets/images/images'
+import { ICON } from 'presentation/assets/icons/icon'
 import styles from 'presentation/components/layout/main-components/price-component/price.module.scss'
 
 export function Price() {
   return (
-    <section id='inicie-agora' className={`${styles.container} panel`} data-color="white">
+    <section
+      id="inicie-agora"
+      className={`${styles.container} panel`}
+      data-color="white"
+    >
       <div className={styles.box_price}>
         <div className={styles.box_text}>
-          <p>
-            Descubra agora o preço ideal para criar o seu site e{' '}
-            <span>inicie sua jornada online de sucesso!</span>
+          <p className={styles.title}>Interessado em nosso trabalho?</p>
+          <p className={styles.subtitle}>
+            Descubra agora o preço ideal para criar o seu site e inicie sua
+            jornada online de sucesso!
           </p>
-        </div>
-        <div className={styles.box_information}>
-          <div className={styles.box_whats}>
-            <div className={styles.box_icon}>
-              <img src={images.whatsApp} alt="Icone gmail" />
-            </div>
-            <div className={styles.box_text}>
-              <p>+55 (19) 99677-6747</p>
-              <h6>
-                Inicie uma <br /> conversa
-              </h6>
-            </div>
-          </div>
-          <div className={styles.box_email}>
-            <div className={styles.box_icon}>
-              <img src={images.email} alt="Icone whatsApp" />
-            </div>
-            <div className={styles.box_text}>
-              <p>+55 (19) 99677-6747</p>
-              <h6>
-                Envie uma <br /> mensagem
-              </h6>
-            </div>
+          <p className={styles.email}>vrw.developers@gmail.com</p>
+          <div className={styles.box_icons}>
+            <p className={styles.tile}>Encontre nós em</p>
+            <a
+              href="https://api.whatsapp.com/send?phone=5519996776847"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>
+                <ICON.IoLogoWhatsapp className={styles.icon} />
+              </div>
+            </a>
+            <a
+              href="mailto:vrw.developers@gmail.com?subject=Sobre"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>
+                <ICON.MdEmail className={styles.icon} />
+              </div>
+            </a>
           </div>
         </div>
       </div>

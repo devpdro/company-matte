@@ -1,50 +1,47 @@
-import React, { useState } from 'react';
-import { FaQuestionCircle, FaAngleDown, FaAngleUp } from 'react-icons/fa';
-import styles from './faq.module.scss';
+import { useState } from 'react'
+
+import faqItems from 'main/providers/data/faqData'
+
+import { ICON } from 'presentation/assets/icons/icon'
+import styles from 'presentation/components/layout/main-components/faq-components/faq.module.scss'
 
 export function Faq() {
-  const [isOpen1, setIsOpen1] = useState(false);
-  const [isOpen2, setIsOpen2] = useState(false);
+  const [isOpen, setIsOpen] = useState(Array(4).fill(false))
 
-  const toggleOpen1 = () => {
-    setIsOpen1(!isOpen1);
-  };
-
-  const toggleOpen2 = () => {
-    setIsOpen2(!isOpen2);
-  };
+  const toggleOpen = (index) => {
+    const newOpenState = [...isOpen]
+    newOpenState[index] = !newOpenState[index]
+    setIsOpen(newOpenState)
+  }
 
   return (
-    <div className={styles['faq-container']}>
-      <h2>Frequently Asked Questions</h2>
-      <div className={styles['faq-list']}>
-        <div className={`${styles['faq-item']} ${isOpen1 ? styles.open : ''}`}>
-          <div className={styles.question} onClick={toggleOpen1}>
-            <FaQuestionCircle className={styles['icon-help']} />
-            What is lorem?
-            {isOpen1 ? <FaAngleUp className={styles['icon-close']} /> : <FaAngleDown className={styles['icon-show']} />}
-          </div>
-          {isOpen1 && (
-            <p className={styles.answer}>
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book.
-            </p>
-          )}
-        </div>
-
-        <div className={`${styles['faq-item']} ${isOpen2 ? styles.open : ''}`}>
-          <div className={styles.question} onClick={toggleOpen2}>
-            <FaQuestionCircle className={styles['icon-help']} />
-            What is another question?
-            {isOpen2 ? <FaAngleUp className={styles['icon-close']} /> : <FaAngleDown className={styles['icon-show']} />}
-          </div>
-          {isOpen2 && (
-            <p className={styles.answer}>
-              Answer to another question.
-            </p>
-          )}
+    <section id="perguntas-frequentes" className={styles['faq-container']}>
+      <div className={styles.faq_box}>
+        <h2>Perguntas frequentes</h2>
+        <div className={styles['faq-list']}>
+          {faqItems.map((item, index) => (
+            <div
+              className={`${styles['faq-item']} ${
+                isOpen[index] ? styles.open : ''
+              }`}
+              key={index}
+            >
+              <div
+                className={styles.question}
+                onClick={() => toggleOpen(index)}
+              >
+                {`0${index + 1} / ${item.question}`}
+                {isOpen[index] ? (
+                  <ICON.FaAngleUp className={styles['icon-close']} />
+                ) : (
+                  <ICON.FaAngleDown className={styles['icon-show']} />
+                )}
+              </div>
+              {isOpen[index] && <p className={styles.answer}>{item.answer}</p>}
+            </div>
+          ))}
         </div>
       </div>
-    </div>
-  );
+    </section>
+  )
 }

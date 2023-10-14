@@ -1,4 +1,4 @@
-import React from 'react'
+import { ICON } from 'presentation/assets/icons/icon'
 import styles from 'presentation/components/layout/main-components/convince-him-components/convince-him.module.scss'
 
 export function ConvinceHim() {
@@ -6,9 +6,10 @@ export function ConvinceHim() {
     <section className={`${styles.container} panel`} data-color="purple">
       <div className={styles.box_convince}>
         <h5 className={styles.title}>
-          Aumente o faturamento do seu negócio com um site profissional e
-          sofisticado! Aumente o faturamento do seu negócio com um site
-          profissional e sofisticado!{' '}
+          <ICON.PiStarFourDuotone className={styles.icon} /> Aumente o faturamento do seu negócio{' '}
+          <ICON.PiStarFourDuotone className={styles.icon} /> Aumente o faturamento do seu negócio{' '}
+          <ICON.PiStarFourDuotone className={styles.icon} /> Aumente o faturamento do seu negócio
+          <ICON.PiStarFourDuotone className={styles.icon} />
         </h5>
       </div>
     </section>

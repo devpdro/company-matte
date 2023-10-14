@@ -1,5 +1,4 @@
 import { useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import anime from 'animejs'
 import { Link as ScrollLink } from 'react-scroll'
 
@@ -87,12 +86,15 @@ export function Header() {
               hoje mesmo e leve a sua presença online para o próximo nível!
             </p>
             <div class={styles.btn_container}>
-              <Link to="/beneficios">
+              <ScrollLink  activeClass="active"
+            to="beneficios"
+            spy={true}
+            smooth={true}>
                 <button className={styles.btn} type="submit">
-                  Vantagens de um site{' '}
-                  <ICON.VscArrowSmallRight className={styles.icon} />
+                  Benefícios de um site{' '}
+                  <ICON.FiArrowDown className={styles.icon} />
                 </button>
-              </Link>
+              </ScrollLink>
             </div>
           </div>
         </div>

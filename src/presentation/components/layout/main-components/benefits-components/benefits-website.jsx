@@ -2,7 +2,7 @@ import images from 'presentation/assets/images/images'
 import styles from 'presentation/components/layout/main-components/benefits-components/benefits-website.module.scss'
 export function BenefitsWebsite() {
   return (
-    <section className={`${styles.container} panel`} data-color="white">
+    <section id='beneficios' className={`${styles.container} panel`} data-color="white">
       <div className={styles.box_benefits}>
         <div className={styles.box_title}>
           <h1 className={styles.title}>Benefícios</h1>

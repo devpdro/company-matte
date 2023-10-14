@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+
+import { Link } from 'react-scroll'
 
 import Logo from 'presentation/assets/logo/VR_LOGO-removebg-preview.png'
 import { ICON } from 'presentation/assets/icons/icon'
@@ -60,14 +61,51 @@ export function Navbar() {
         >
           <ul>
             <li>
-              <Link to="/" className={styles.link} onClick={menuToggleHandler}>
+              <Link
+                activeClass="active"
+                to="inicio"
+                spy={true}
+                smooth={true}
+                className={styles.link}
+                onClick={menuToggleHandler}
+              >
                 Início
               </Link>
             </li>
             <li>
               <Link
-                to="/beneficios"
+                activeClass="active"
+                to="como-funciona?"
+                spy={true}
+                smooth={true}
                 className={styles.link}
+                onClick={menuToggleHandler}
+              >
+                Funciona
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="funcionalidades"
+                spy={true}
+                beneficios
+                smooth={true}
+                className={styles.link}
+                href="#fotos"
+                onClick={menuToggleHandler}
+              >
+                Funcionalidades
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="beneficios"
+                spy={true}
+                smooth={true}
+                className={styles.link}
+                href="#fotos"
                 onClick={menuToggleHandler}
               >
                 Benefícios
@@ -75,12 +113,28 @@ export function Navbar() {
             </li>
             <li>
               <Link
-                to="/contato"
+                activeClass="active"
+                to="inicie-agora"
+                spy={true}
+                smooth={true}
                 className={styles.link}
                 href="#fotos"
                 onClick={menuToggleHandler}
               >
-                Contato
+                Inicie agora
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="perguntas-frequentes"
+                spy={true}
+                smooth={true}
+                className={styles.link}
+                href="#fotos"
+                onClick={menuToggleHandler}
+              >
+                Perguntas
               </Link>
             </li>
           </ul>
