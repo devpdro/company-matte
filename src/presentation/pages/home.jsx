@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Header } from 'presentation/components/layout/header-components/header';
 import { Main } from 'presentation/components/layout/main-components/main';
 import { Footer } from 'presentation/components/layout/footer-components/footer';
@@ -45,7 +45,7 @@ export function Home() {
     <main>
       <Header className="panel" data-color="black" />
       <Main className="panel" data-color="black white purple" />
-      <Footer className="panel" data-color="blue" />
+      <Footer />
     </main>
   );
 }
