@@ -9,6 +9,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    background-color: #1c1c1c;
+    color: #F9F7F1;
 
     .box_container {
         width: 1280px;
@@ -90,7 +92,7 @@
         .box_text {
             padding-left: 0.4rem;
             padding-right: 0.6rem;
-            padding-top: 30rem;
+            padding-top: 26.5rem!important;
             width: 100%;
             font-size: 1rem;
             display: flex;
