@@ -16,6 +16,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 0 2rem;
 
         .box_text {
             width: 100%;
@@ -73,6 +74,81 @@
 
         .box_form {
             width: 90%;
+        }
+    }
+}
+
+@media (max-width: 776px) {
+    .box_container {
+        width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        .box_text {
+            padding-left: 0.4rem;
+            padding-right: 0.6rem;
+            padding-top: 34rem;
+            width: 100%;
+            font-size: 1rem;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+
+            .subtitle {
+                font-size: 1.4rem;
+                line-height: 0rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .title {
+                font-size: 4rem!important;
+                line-height: 4rem!important;
+                margin-bottom: 0.5rem;
+            }
+
+            .information {
+                font-size: 1.8rem;
+            }
+
+            .text_email {
+                margin-top: 3.5rem;
+                font-size: 1.8rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: #F9F7F1;
+
+                .email {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 0.1rem;
+                    font-size: 1.5rem;
+                    font-weight: 550;
+                    border-bottom: 2px solid transparent;
+                    transition: border-bottom 0.3s ease;
+                    padding-bottom: 0.2rem;
+
+                    &:hover {
+                        border-bottom: 2px solid #F9F7F1;
+                    }
+
+                    .icon {
+                        font-size: 1.2rem;
+                        margin: 1rem 0rem 0.5rem 0rem;
+                    }
+                }
+            }
+        }
+
+        .box_form {
+            width: 90%;
+            padding-bottom: 4rem;
         }
     }
 }

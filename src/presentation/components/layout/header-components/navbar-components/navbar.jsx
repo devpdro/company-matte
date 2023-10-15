@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { Link as LinkRouter } from 'react-router-dom'
-import { Link } from 'react-scroll'
 
 import Logo from 'presentation/assets/logo/VR_LOGO-removebg-preview.png'
 import { ICON } from 'presentation/assets/icons/icon'
@@ -61,52 +60,16 @@ export function Navbar() {
         >
           <ul>
             <li>
-              <Link
+              <LinkRouter
                 activeClass="active"
-                to="inicio"
+                to="/"
                 spy={true}
                 smooth={true}
                 className={styles.link}
                 onClick={menuToggleHandler}
               >
                 Início
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="como-funciona?"
-                spy={true}
-                smooth={true}
-                className={styles.link}
-                onClick={menuToggleHandler}
-              >
-                Funciona
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="beneficios"
-                spy={true}
-                smooth={true}
-                className={styles.link}
-                onClick={menuToggleHandler}
-              >
-                Benefícios
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="perguntas-frequentes"
-                spy={true}
-                smooth={true}
-                className={styles.link}
-                onClick={menuToggleHandler}
-              >
-                Perguntas
-              </Link>
+              </LinkRouter>
             </li>
             <li>
               <LinkRouter

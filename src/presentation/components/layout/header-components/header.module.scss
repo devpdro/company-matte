@@ -156,7 +156,7 @@
     position: absolute;
     bottom: 65px;
     right: 50px;
-    display: none!important;
+    display: none !important;
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
@@ -172,15 +172,15 @@
   .box_text {
     position: absolute;
     border-radius: 1px;
-    top: 55% !important;
+    top: 57% !important;
     box-shadow:
       rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
       rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     left: 17% !important;
     transform: translate(-50%, -50%);
     background-color: #F1C957;
-    width: 440px !important;
-    height: 600px !important;
+    width: 420px !important;
+    height: 500px !important;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -189,27 +189,71 @@
     padding: 1.5rem 1.5rem 2rem 1.5rem !important;
 
     .subtitle {
-      margin-top: 1rem;
-      font-size: 1.4rem !important;
+      margin-top: 0.7rem!important;
+      font-size: 1.2rem !important;
       text-align: left;
       text-transform: uppercase;
     }
 
     .title {
-      margin-top: 1.3rem;
-      font-size: 2.3rem !important;
+      margin-top: 0.8rem!important;
+      font-size: 2rem !important;
       text-transform: uppercase;
       text-align: justify;
       line-height: 2.8rem !important;
     }
 
     .information {
-      margin-top: 2rem;
-      font-size: 1.5rem !important;
+      margin-top: 1.5rem!important;
+      font-size: 1.3rem !important;
       text-align: left;
 
       span {
         font-weight: 900;
+      }
+    }
+
+    .btn_container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        text-decoration: none;
+
+        .btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: auto;
+          font-family:
+            'Darker Grotesque',
+            -apple-system,
+            Roboto,
+            Arial,
+            sans-serif;
+          margin-top: 2rem!important;
+          padding: 0.7rem 1.4rem 1.2rem 1.6rem;
+          font-size: 1.5rem!important;
+          border: 2px solid #1c1c1c;
+          border-radius: 50px;
+          transition: all 0.3s ease;
+          cursor: pointer;
+          background-color: #F1C957;
+
+          &:hover {
+            background-color: #1c1c1c;
+            color: #F9F7F1;
+          }
+
+          .icon {
+            margin-left: 0.3rem;
+            margin-top: 0.6rem;
+            display: flex;
+            align-items: center;
+            font-size: 1.7rem;
+          }
+        }
       }
     }
   }
@@ -333,7 +377,7 @@
     }
 
     .information {
-      margin-top: 2rem!important;
+      margin-top: 2rem !important;
       font-size: 1.5rem !important;
       text-align: left;
 

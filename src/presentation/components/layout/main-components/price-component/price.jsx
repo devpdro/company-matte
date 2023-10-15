@@ -18,7 +18,7 @@ export function Price() {
           <div className={styles.box_icons}>
             <p className={styles.tile}>Encontre nós em</p>
             <a
-              href="https://api.whatsapp.com/send?phone=5519996776847"
+             href="https://api.whatsapp.com/send?phone=5519998853434"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -1,7 +1,8 @@
 @import '../../../../styles/mixins.scss';
 
 .navbar {
-  padding: 0rem 3rem 0rem 2rem;
+  font-family: 'Darker Grotesque';
+  padding: 0rem 3rem 0rem 3rem;
   background-color: #1c1c1c;
   position: fixed;
   top: 0;
@@ -96,7 +97,7 @@
       a {
         .img_logo {
           padding-top: 0.5rem;
-          width: 58px;
+          width: 55px;
         }
       }
     }
@@ -200,5 +201,17 @@
   .link {
     font-size: 3.6rem !important;
     line-height: 2.4rem !important;
+  }
+
+  .navbar {
+    padding: 0rem 3.5rem 0rem 2.5rem !important;
+    background-color: #1c1c1c;
+    position: fixed;
+    top: 0;
+    transition: top 0.4s;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    color: #F9F7F1;
   }
 }

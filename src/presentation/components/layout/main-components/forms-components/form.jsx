@@ -54,7 +54,7 @@ export function Form() {
         )}
         <div className={`${styles.form_group} ${errors.email ? styles.error : ''}`}>
           <label htmlFor="email" className={styles.label}>
-            E-mail:
+            Email:
           </label>
           <Controller
             name="email"
