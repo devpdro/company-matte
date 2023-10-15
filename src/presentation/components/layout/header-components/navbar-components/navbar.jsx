@@ -135,7 +135,7 @@ export function Navbar() {
             </div>
             <div className={styles.box_contact}>
               <a
-                href="https://api.whatsapp.com/send?phone=5519996776847"
+                href="https://api.whatsapp.com/send?phone=5519998853434"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -143,7 +143,7 @@ export function Navbar() {
                   <ICON.AiOutlineWhatsApp className={styles.icon} />
                 </div>
                 <div className={styles.box_text}>
-                  <p>+55 (19) 99677-6847</p>
+                  <p>+55 (19) 99885-3434</p>
                 </div>
               </a>
             </div>
