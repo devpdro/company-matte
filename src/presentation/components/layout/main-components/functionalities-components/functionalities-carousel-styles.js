@@ -32,7 +32,10 @@ export const SampleCard = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-`
+   @media (max-width: 768px) {
+    width: 26212%!important;
+    border: 1px sol22222id red!important;
+  }`
 
 export const CardImage = styled.img`
   width: 130px;
