@@ -180,6 +180,7 @@
       @include transition;
       display: flex;
       align-items: center;
+      justify-content: center;
       font-size: 2rem;
       position: relative;
 
@@ -204,13 +205,13 @@
   }
 
   .navbar {
-    padding: 0rem 3.5rem 0rem 2.5rem !important;
+    padding: 0rem 4rem 0rem 2.5rem !important;
     background-color: #1c1c1c;
     position: fixed;
     top: 0;
     transition: top 0.4s;
     height: 100px;
-    width: 100%;
+    width: 100vw;
     z-index: 1;
     color: #F9F7F1;
   }

@@ -152,7 +152,7 @@
     flex-wrap: wrap;
 
     .box_title {
-      padding-left: 1rem;
+      padding-left: 0rem!important;
       position: relative !important;
       top: none !important;
 
@@ -171,9 +171,8 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      width: 92% !important;
-      margin-right: 0.2rem;
-      margin-left: 0.8rem;
+      width: 90% !important;
+      margin-left: 0rem!important;
 
       .box_one {
         width: 100%;
