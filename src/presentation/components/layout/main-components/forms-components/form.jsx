@@ -3,6 +3,8 @@ import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { ICON } from 'presentation/assets/icons/icon';
 import styles from 'presentation/components/layout/main-components/forms-components/form.module.scss';
 
@@ -24,18 +26,21 @@ export function Form() {
     resolver: yupResolver(schema),
   });
 
- const sendEmail = handleSubmit(async (data, event) => {
-  try {
-    const formElement = event.target; // Obtenha o elemento do formulário
-    await emailjs.sendForm('gmailContact', 'template_3hs5z6j', formElement, 'GSlDlk4aAeWqGnnRW');
-    console.log('Email enviado com sucesso!');
-  } catch (error) {
-    console.error('Erro ao enviar o email:', error);
-  }
-});
+  const sendEmail = handleSubmit(async (data, event) => {
+    try {
+      const formElement = event.target;
+      await emailjs.sendForm('gmailContact', 'template_3hs5z6j', formElement, 'GSlDlk4aAeWqGnnRW');
+      toast.success('Email enviado com sucesso!');
+    } catch (error) {
+      console.error('Erro ao enviar o email:', error);
+
+      toast.error('Erro ao enviar o email');
+    }
+  });
 
   return (
     <section className={styles.container}>
+      <ToastContainer />
       <form onSubmit={sendEmail}>
         <div className={`${styles.form_group} ${errors.nome ? styles.error : ''}`}>
           <label htmlFor="nome" className={styles.label}>
@@ -45,7 +50,7 @@ export function Form() {
             name="nome"
             control={control}
             render={({ field }) => (
-              <input type="text" {...field} className={styles.input} />
+              <input autocomplete="off" type="text" {...field} className={styles.input} />
             )}
           />
         </div>
@@ -60,7 +65,7 @@ export function Form() {
             name="email"
             control={control}
             render={({ field }) => (
-              <input
+              <input autocomplete="off"
                 type="email"
                 {...field}
                 className={`${styles.input} ${errors.email ? styles.error : ''}`}
@@ -79,7 +84,7 @@ export function Form() {
             name="mensagem"
             control={control}
             render={({ field }) => (
-              <textarea {...field} className={styles.textarea} />
+              <textarea {...field} autocomplete="off" className={styles.textarea} />
             )}
           />
         </div>
