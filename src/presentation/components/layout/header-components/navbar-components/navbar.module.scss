@@ -1,6 +1,7 @@
 @import '../../../../styles/mixins.scss';
 
 .navbar {
+  padding: 0rem 3rem 0rem 2rem;
   background-color: #1c1c1c;
   position: fixed;
   top: 0;
@@ -40,7 +41,6 @@
         p {
           margin-right: 2rem;
           font-size: 1.3rem;
-
         }
       }
     }
@@ -57,12 +57,6 @@
         color: #F9F7F1;
         text-decoration: none;
         padding-bottom: 0.3rem;
-        border-bottom: 2px solid transparent;
-        transition: border-bottom 0.3s ease;
-
-        &:hover {
-          border-bottom: 2px solid #F9F7F1;
-        }
 
         .box_icon {
           display: flex;
@@ -77,9 +71,9 @@
 
         .box_text {
           p {
+            margin-right: 3rem;
             font-size: 1.3rem;
             padding-bottom: 0.1rem;
-            margin-right: 2.2rem;
           }
         }
       }
@@ -102,7 +96,7 @@
       a {
         .img_logo {
           padding-top: 0.5rem;
-          width: 65px;
+          width: 58px;
         }
       }
     }
@@ -165,8 +159,8 @@
             text-transform: uppercase;
             text-decoration: none;
             font-size: 4rem;
-            line-height: 3rem;
-            padding: 0.2rem 0.2rem;
+            line-height: 3.2rem;
+            padding: 0.3rem 0.2rem;
             transition: all 0.3s ease;
 
             &:hover {
@@ -196,5 +190,15 @@
         display: none;
       }
     }
+  }
+}
+
+
+
+
+@media (max-width: 767px) {
+  .link {
+    font-size: 3.9rem!important;
+    line-height: 2.6rem!important;
   }
 }

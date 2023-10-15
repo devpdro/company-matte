@@ -31,5 +31,5 @@ export const ICON = {
   FiArrowDown,
   PiStarFourDuotone,
   FaAngleDown,
-  FaAngleUp
+  FaAngleUp,
 }

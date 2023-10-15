@@ -2,21 +2,29 @@
     margin-top: 3rem;
     padding-right: 2rem;
     padding-left: 1rem;
-    font-family:
-        'Darker Grotesque',
-        -apple-system,
-        Roboto,
-        Arial,
-        sans-serif;
+    font-family: 'Darker Grotesque', -apple-system, Roboto, Arial, sans-serif;
 
     form {
+        display: block;
+
+        .error {
+            margin-bottom: 0.1rem;
+            font-size: 1rem;
+            color: #F58484;
+        }
 
         .form_group {
             display: flex;
             align-items: center;
             justify-content: flex-start;
             border-bottom: 2px solid #F9F7F1;
-            margin-bottom: 2rem;
+            margin-top: 1.2rem;
+
+            &.error {
+                margin-bottom: 0.1rem;
+                font-size: 1rem;
+                border-bottom: 2px solid #F58484;
+            }
 
             label {
                 padding-bottom: 1rem;
@@ -24,12 +32,7 @@
             }
 
             input {
-                font-family:
-                    'Darker Grotesque',
-                    -apple-system,
-                    Roboto,
-                    Arial,
-                    sans-serif;
+                font-family: 'Darker Grotesque', -apple-system, Roboto, Arial, sans-serif;
                 width: 90%;
                 padding-left: 1rem;
                 color: #F9F7F1;
@@ -45,12 +48,7 @@
             }
 
             textarea {
-                font-family:
-                    'Darker Grotesque',
-                    -apple-system,
-                    Roboto,
-                    Arial,
-                    sans-serif;
+                font-family: 'Darker Grotesque', -apple-system, Roboto, Arial, sans-serif;
                 width: 90%;
                 padding-left: 1rem;
                 color: #F9F7F1;
@@ -59,6 +57,7 @@
                 font-size: 1.4rem;
                 background-color: #1C1C1C;
                 padding-bottom: 3.4rem;
+                resize: none;
             }
         }
 
@@ -68,12 +67,7 @@
                 align-items: center;
                 justify-content: center;
                 width: auto;
-                font-family:
-                    'Darker Grotesque',
-                    -apple-system,
-                    Roboto,
-                    Arial,
-                    sans-serif;
+                font-family: 'Darker Grotesque', -apple-system, Roboto, Arial, sans-serif;
                 margin-top: 3.2rem;
                 padding: 0.7rem 1.4rem 1.2rem 1.6rem;
                 font-size: 1.8rem;

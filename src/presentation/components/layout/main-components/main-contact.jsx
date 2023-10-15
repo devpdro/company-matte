@@ -7,7 +7,7 @@ export function MainContact() {
       <div className={styles.box_container}>
         <div className={styles.box_text}>
           <p className={styles.subtitle}>CONTATE-NOS</p>
-          <h6 className={styles.title}>vamos conversar</h6>
+          <h6 className={styles.title}>Vamos conversar</h6>
           <p className={styles.information}>
             Diga-nos quem você é e como podemos ajudar.
           </p>

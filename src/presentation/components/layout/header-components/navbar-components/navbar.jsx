@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-
+import { useState, useEffect } from 'react'
+import { Link as LinkRouter } from 'react-router-dom'
 import { Link } from 'react-scroll'
 
 import Logo from 'presentation/assets/logo/VR_LOGO-removebg-preview.png'
@@ -50,9 +50,9 @@ export function Navbar() {
     <nav className={styles.navbar} id="navbar">
       <div className={styles.header__content}>
         <div className={styles.box_logo}>
-          <Link to="/">
+          <LinkRouter to="/">
             <img className={styles.img_logo} src={Logo} alt="" />
-          </Link>
+          </LinkRouter>
         </div>
         <nav
           className={`${styles.header__content__nav} ${
@@ -87,41 +87,13 @@ export function Navbar() {
             <li>
               <Link
                 activeClass="active"
-                to="funcionalidades"
-                spy={true}
-                beneficios
-                smooth={true}
-                className={styles.link}
-                href="#fotos"
-                onClick={menuToggleHandler}
-              >
-                Funcionalidades
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
                 to="beneficios"
                 spy={true}
                 smooth={true}
                 className={styles.link}
-                href="#fotos"
                 onClick={menuToggleHandler}
               >
                 Benefícios
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="inicie-agora"
-                spy={true}
-                smooth={true}
-                className={styles.link}
-                href="#fotos"
-                onClick={menuToggleHandler}
-              >
-                Inicie agora
               </Link>
             </li>
             <li>
@@ -131,11 +103,19 @@ export function Navbar() {
                 spy={true}
                 smooth={true}
                 className={styles.link}
-                href="#fotos"
                 onClick={menuToggleHandler}
               >
                 Perguntas
               </Link>
+            </li>
+            <li>
+              <LinkRouter
+                to="/contato"
+                className={styles.link}
+                onClick={menuToggleHandler}
+              >
+                Contato
+              </LinkRouter>
             </li>
           </ul>
           <div className={styles.box_information}>
@@ -171,7 +151,7 @@ export function Navbar() {
         </nav>
         <div className={styles.header__content__toggle}>
           {!menuOpen ? (
-            <ICON.RxHamburgerMenu onClick={menuToggleHandler} />
+            <ICON.AiOutlineMenu onClick={menuToggleHandler} />
           ) : (
             <ICON.AiOutlineClose onClick={menuToggleHandler} />
           )}

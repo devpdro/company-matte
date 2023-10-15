@@ -1,114 +1,95 @@
-import { useState } from 'react';
+import React from 'react';
+import { useForm, Controller } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
 import emailjs from 'emailjs-com';
-import styles from 'presentation/components/layout/main-components/forms-components/form.module.scss'
 import { ICON } from 'presentation/assets/icons/icon';
+import styles from 'presentation/components/layout/main-components/forms-components/form.module.scss';
+
+const schema = yup.object().shape({
+  nome: yup.string().required('Campo Nome é obrigatório'),
+  email: yup
+    .string()
+    .email('E-mail inválido')
+    .required('Campo E-mail é obrigatório'),
+  mensagem: yup.string().required('Campo Mensagem é obrigatório'),
+});
+
 export function Form() {
-  const [formData, setFormData] = useState({
-    nome: '',
-    email: '',
-    mensagem: '',
+  const {
+    handleSubmit,
+    control,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
   });
 
-  const [formErrors, setFormErrors] = useState({
-    nome: '',
-    email: '',
-    mensagem: '',
-  });
-
-  function validateForm() {
-    const errors = {
-      nome: '',
-      email: '',
-      mensagem: '',
-    };
-
-    if (formData.nome.trim() === '') {
-      errors.nome = 'O campo Nome é obrigatório.';
-    }
-
-    if (formData.email.trim() === '') {
-      errors.email = 'O campo Email é obrigatório.';
-    } else if (!isValidEmail(formData.email)) {
-      errors.email = 'Por favor, insira um email válido.';
-    }
-
-    if (formData.mensagem.trim() === '') {
-      errors.mensagem = 'O campo Mensagem é obrigatório.';
-    }
-
-    setFormErrors(errors);
-
-    return Object.values(errors).every((error) => error === '');
+ const sendEmail = handleSubmit(async (data, event) => {
+  try {
+    const formElement = event.target; // Obtenha o elemento do formulário
+    await emailjs.sendForm('gmailContact', 'template_3hs5z6j', formElement, 'GSlDlk4aAeWqGnnRW');
+    console.log('Email enviado com sucesso!');
+  } catch (error) {
+    console.error('Erro ao enviar o email:', error);
   }
-
-  function isValidEmail(email) {
-    // Implemente uma validação de email adequada, se necessário.
-    // Aqui, estamos apenas verificando se o email contém um "@".
-    return email.includes('@');
-  }
-
-  function enviarEmail(e) {
-    e.preventDefault();
-
-    if (validateForm()) {
-      emailjs
-        .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-        .then((result) => {
-          console.log('E-mail enviado com sucesso', result.text);
-        })
-        .catch((error) => {
-          console.error('Ocorreu um erro ao enviar o e-mail', error);
-        });
-    } else {
-      console.error('O formulário contém erros. Por favor, corrija-os antes de enviar.');
-    }
-  }
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
+});
 
   return (
     <section className={styles.container}>
-      <form onSubmit={enviarEmail}>
-        <div className={styles.form_group}>
-          <label htmlFor="nome">Nome:</label>
-          <input
-            type="text"
+      <form onSubmit={sendEmail}>
+        <div className={`${styles.form_group} ${errors.nome ? styles.error : ''}`}>
+          <label htmlFor="nome" className={styles.label}>
+            Nome:
+          </label>
+          <Controller
             name="nome"
-            value={formData.nome}
-            onChange={handleChange}
-            required
+            control={control}
+            render={({ field }) => (
+              <input type="text" {...field} className={styles.input} />
+            )}
           />
-          <div className="error-message">{formErrors.nome}</div>
         </div>
-        <div className={styles.form_group}>
-          <label htmlFor="email">E-mail:</label>
-          <input
-            type="email"
+        {errors.nome && (
+          <div className={styles.error}>{errors.nome.message}</div>
+        )}
+        <div className={`${styles.form_group} ${errors.email ? styles.error : ''}`}>
+          <label htmlFor="email" className={styles.label}>
+            E-mail:
+          </label>
+          <Controller
             name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
+            control={control}
+            render={({ field }) => (
+              <input
+                type="email"
+                {...field}
+                className={`${styles.input} ${errors.email ? styles.error : ''}`}
+              />
+            )}
           />
-          <div className="error-message">{formErrors.email}</div>
         </div>
-        <div className={styles.form_group}>
-          <label className={styles.label_textarea} htmlFor="mensagem">Mensagem:</label>
-          <textarea
+        {errors.email && (
+          <div className={styles.error}>{errors.email.message}</div>
+        )}
+        <div className={`${styles.form_group} ${errors.mensagem ? styles.error : ''}`}>
+          <label className={styles.label_textarea} htmlFor="mensagem">
+            Mensagem:
+          </label>
+          <Controller
             name="mensagem"
-            value={formData.mensagem}
-            onChange={handleChange}
-            required
-          ></textarea>
-          <div className="error-message">{formErrors.mensagem}</div>
+            control={control}
+            render={({ field }) => (
+              <textarea {...field} className={styles.textarea} />
+            )}
+          />
         </div>
+        {errors.mensagem && (
+          <div className={styles.error}>{errors.mensagem.message}</div>
+        )}
         <div className={styles.btn_form}>
-          <button type="submit">Enviar <ICON.VscArrowSmallRight className={styles.icon} /></button>
+          <button type="submit">
+            Enviar <ICON.VscArrowSmallRight className={styles.icon} />
+          </button>
         </div>
       </form>
     </section>
