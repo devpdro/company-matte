@@ -23,13 +23,13 @@
       margin: 3.5rem 0rem 8.5rem 0rem;
 
       .faq-item {
+        text-align: left;
         margin-top: 1rem;
         padding: 1rem 0rem 2rem 0rem;
         cursor: pointer;
         transition: 0.3s;
         border-bottom: 2px solid #F9F7F1;
-        transition: max-height 0.3s cubic-bezier(0.77, 0, 0.175, 1);
-        max-height: 500px;
+        max-height: auto;
         overflow: hidden;
 
         &.open {
@@ -59,4 +59,11 @@
       }
     }
   }
+}
+
+@media (max-width: 776px) {
+    h2 {
+        font-size: 3.2rem!important;
+        text-align: left;
+      }
 }

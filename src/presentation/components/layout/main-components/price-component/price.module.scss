@@ -1,6 +1,6 @@
 .container {
   max-width: 1180px;
-  margin: 12.2rem auto 19.5rem auto;
+  margin: 17.2rem auto 16.5rem auto;
   font-family:
     'Darker Grotesque',
     -apple-system,
@@ -15,26 +15,23 @@
     justify-content: center;
 
     .box_text {
+      padding: 0 2rem;
       max-width: 980px;
       text-align: center;
 
       .title {
-        font-size: 4.5rem;
+        font-size: 4rem;
         line-height: 4.5rem;
+        
       }
 
       .subtitle {
-        font-size: 1.5rem;
-
-      }
-
-      .email {
-        margin: 2rem 0rem 5.5rem 0rem;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
       }
 
       .box_icons {
-        p {
+        .tile {
+          margin-top: 2.5rem;
           font-size: 1.5rem;
         }
 
@@ -58,6 +55,18 @@
         }
       }
     }
+
+  }
+}
+
+@media (max-width: 1006px) {
+  .title {
+    font-size: 4rem!important;
+    line-height: 4rem!important;
+  }
+
+  .subtitle {
+    display: none;
 
   }
 }

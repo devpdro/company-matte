@@ -19,6 +19,7 @@
         .box_information {
             display: flex;
             justify-content: center;
+            padding: 0 1.4rem;
 
             .box_logo {
                 display: flex;
@@ -26,6 +27,7 @@
                 align-items: flex-start;
                 flex-direction: column;
                 padding-right: 2rem;
+
                 .logo {
                     width: 100px;
                 }
@@ -103,6 +105,7 @@
             align-items: last baseline;
             justify-content: space-between;
             flex-direction: column;
+            margin: 2rem 2rem 0rem 2rem;
 
             .box_email {
                 .title {
@@ -146,4 +149,102 @@
         }
     }
 
+}
+
+@media (max-width: 867px) {
+    .box_footer {
+        padding: 2.5rem 0rem 4rem 0rem !important;
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between !important;
+        flex-wrap: wrap;
+
+        .box_information {
+            .box_logo {
+                display: none !important;
+            }
+
+            .container_list {
+                display: flex !important;
+                justify-content: flex-start;
+                align-items: flex-end;
+
+
+                .box_links_one {
+                    margin-left: 0.5rem !important;
+
+                    .list {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        flex-direction: column;
+
+                        .link {
+                            margin-left: 0.5rem !important;
+                            margin-top: 0.8rem;
+                            font-size: 2.5rem !important;
+                            list-style: none;
+                            opacity: 0.8;
+                            border-bottom: 2px solid transparent;
+                            transition: border-bottom 0.3s ease;
+
+                            &:hover {
+                                border-bottom: 2px solid #F9F7F1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .box_contact {
+            display: flex;
+            align-items: flex-start !important;
+            justify-content: flex-start !important;
+            flex-direction: column;
+            margin: 2rem 2rem 0rem 2.2rem!important;
+
+            .box_email {
+                .title {
+                    font-size: 4rem;
+                    line-height: 3.5rem;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #F9F7F1;
+
+                    .subtitle {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 0.5rem;
+                        font-size: 1.5rem;
+                        border-bottom: 2px solid transparent;
+                        transition: border-bottom 0.3s ease;
+                        padding-bottom: 0.2rem;
+
+                        &:hover {
+                            border-bottom: 2px solid #F9F7F1;
+                        }
+
+                        .icon {
+                            font-size: 1.2rem;
+                            margin: 1rem 0rem 0.5rem 0rem;
+                        }
+                    }
+                }
+            }
+
+            .social_media {
+                margin-top: 3rem !important;
+
+                .text_follow {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
 }

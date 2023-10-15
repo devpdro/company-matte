@@ -15,7 +15,6 @@ export function Price() {
             Descubra agora o preço ideal para criar o seu site e inicie sua
             jornada online de sucesso!
           </p>
-          <p className={styles.email}>vrw.developers@gmail.com</p>
           <div className={styles.box_icons}>
             <p className={styles.tile}>Encontre nós em</p>
             <a

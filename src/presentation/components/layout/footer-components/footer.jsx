@@ -69,16 +69,6 @@ export function Footer() {
                 </ScrollLink>
               </ul>
             </div>
-            <div className={styles.box_links_two}>
-              <ul className={styles.list}>
-                <Link to="/">
-                  <li className={styles.link}>Início</li>
-                </Link>
-                <Link to="/contato">
-                  <li className={styles.link}>Contato</li>
-                </Link>
-              </ul>
-            </div>
           </div>
         </div>
         <div className={styles.box_contact}>
