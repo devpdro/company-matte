@@ -11,7 +11,7 @@ export function Header() {
       anime
         .timeline()
         .add({
-          targets: '.animateTitle',
+          targets: '.animateSubtitle',
           opacity: [0, 1],
           translateY: [-80, 0],
           easing: 'easeOutExpo',
@@ -19,7 +19,7 @@ export function Header() {
         })
         .add(
           {
-            targets: '.animateSubtitle',
+            targets: '.animateTitle',
             opacity: [0, 1],
             translateY: [-40, 0],
             easing: 'easeOutExpo',
@@ -29,7 +29,7 @@ export function Header() {
         )
         .add(
           {
-            targets: '.animateSince',
+            targets: '.animateInformation',
             opacity: [0, 1],
             translateX: [80, 0],
             easing: 'easeOutExpo',
@@ -39,11 +39,21 @@ export function Header() {
         )
         .add(
           {
+            targets: '.animateButton',
+            opacity: [0, 1],
+            translateY: [-45, 0],
+            easing: 'easeOutExpo',
+            duration: 1500
+          },
+          '-=2000'
+        )
+        .add(
+          {
             targets: '.animateIcon',
             opacity: [0, 1],
             translateY: [-45, 0],
             easing: 'easeOutExpo',
-            duration: 2500
+            duration: 1500
           },
           '-=2000'
         )
@@ -63,29 +73,26 @@ export function Header() {
             spy={true}
             smooth={true}
           >
-            <div className={styles.box_icon}>
+            <div className={`${styles.box_icon} animateIcon`}>
               <p>
                 Por <br /> aqui
               </p>
-              <ICON.CgArrowLongDown className={styles.icon} />
+              <ICON.CgArrowLongDown className={`${styles.icon}`} />
             </div>
           </ScrollLink>
-          <div className={styles.box_text}>
-            <p className={styles.subtitle}>Carreira</p>
-            <h6 className={styles.title}>
+          <div className={`${styles.box_text}`}>
+            <p className={`${styles.subtitle} animateSubtitle`}>Carreira</p>
+            <h6 className={`${styles.title} animateTitle`}>
               Destaque a sua <br /> presença online com a <br /> criação de um
               site profissional
             </h6>
-            <p className={styles.information}>
+        <p className={`${styles.information} animateInformation`}>
               Não perca mais tempo com sites ultrapassados, entre em contato
               hoje mesmo e leve a sua presença online para o próximo nível!
             </p>
-            <div class={styles.btn_container}>
-              <ScrollLink  activeClass="active"
-            to="beneficios"
-            spy={true}
-            smooth={true}>
-                <button className={styles.btn} type="submit">
+            <div className={styles.btn_container}>
+              <ScrollLink activeClass="active" to="beneficios" spy={true} smooth={true}>
+                <button className={` ${styles.btn} animateButton`} type="submit">
                   Benefícios de um site{' '}
                   <ICON.FiArrowDown className={styles.icon} />
                 </button>

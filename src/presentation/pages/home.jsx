@@ -21,21 +21,19 @@ export function Home() {
           $this.offsetTop <= scroll &&
           $this.offsetTop + $this.offsetHeight > scroll
         ) {
-          // Remove all classes on body with color-
+         
           $body.className = $body.className
             .split(" ")
             .filter((className) => !className.startsWith("color-"))
             .join(" ");
-
-          // Add class of currently active div
+         
           $body.classList.add("color-" + $this.getAttribute("data-color"));
         }
       });
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    // Execute handleScroll once to initialize
+ 
     handleScroll();
 
     return () => {
