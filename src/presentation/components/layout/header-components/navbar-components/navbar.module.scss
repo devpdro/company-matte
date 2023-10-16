@@ -1,8 +1,12 @@
 @import '../../../../styles/mixins.scss';
 
+.disableScroll {
+  overflow: hidden;
+}
+
 .navbar {
   font-family: 'Darker Grotesque';
-  margin: 0rem 3rem 0rem 0rem;
+  padding: 0rem 3rem 0rem 0rem;
   background-color: #1c1c1c;
   position: fixed;
   top: 0;
@@ -13,11 +17,12 @@
   color: #F9F7F1;
 
   .box_information {
+    max-width: 1280px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    margin-left: 4.5rem;
     bottom: 40px;
 
     .box_time {
@@ -25,6 +30,7 @@
       align-items: center;
       justify-content: center;
       padding-bottom: 0.6rem;
+      margin-left: 4.5rem;
 
 
       .box_icon {
@@ -33,7 +39,7 @@
         justify-content: center;
 
         .icon {
-         margin-right: 0.5rem;
+          margin-right: 0.5rem;
           font-size: 1.4rem;
         }
       }
@@ -201,13 +207,13 @@
 
 @media (max-width: 867px) {
   .navbar {
-    margin: 0rem 4rem 0rem 2.5rem !important;
+    padding: 0rem 4rem 0rem 2.5rem !important;
     background-color: #1c1c1c;
     position: fixed;
     top: 0;
     transition: top 0.4s;
     height: 100px;
-    width: 100vw!important;
+    width: 100vw !important;
     z-index: 1;
     color: #F9F7F1;
 
@@ -216,8 +222,8 @@
       justify-content: center;
       align-items: center;
       position: absolute;
-      padding-bottom: 0.2rem!important;
-      margin-left: 3.2rem!important;
+      padding-bottom: 0.2rem !important;
+      margin-left: 3.2rem !important;
       bottom: 40px;
 
       .box_time {
