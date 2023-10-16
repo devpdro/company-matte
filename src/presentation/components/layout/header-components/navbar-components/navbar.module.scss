@@ -2,15 +2,14 @@
 
 .navbar {
   font-family: 'Darker Grotesque';
-  padding: 0rem 3rem 0rem 0rem;
+  margin: 0rem 3rem 0rem 0rem;
   background-color: #1c1c1c;
   position: fixed;
   top: 0;
   transition: top 0.4s;
   height: 100px;
-  width: 100%;
+  width: 100vw;
   z-index: 1;
-  border: 1px solid red;
   color: #F9F7F1;
 
   .box_information {
@@ -202,13 +201,13 @@
 
 @media (max-width: 867px) {
   .navbar {
-    padding: 0rem 4rem 0rem 2.5rem !important;
+    margin: 0rem 4rem 0rem 2.5rem !important;
     background-color: #1c1c1c;
     position: fixed;
     top: 0;
     transition: top 0.4s;
     height: 100px;
-    width: 90%!important;
+    width: 100vw!important;
     z-index: 1;
     color: #F9F7F1;
 
