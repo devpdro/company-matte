@@ -4,6 +4,7 @@ import { Main } from 'presentation/components/layout/main-components/main';
 import { Footer } from 'presentation/components/layout/footer-components/footer';
 import 'presentation/pages/home.scss';
 import { Navbar } from 'presentation/components/layout/header-components/navbar-components/navbar';
+import { WhatsAppButton } from 'utils/fixed/whatsapp-components/whatsapp-button';
 export function Home() {
   useEffect(() => {
     const handleScroll = () => {
@@ -48,6 +49,8 @@ export function Home() {
       <Header className="panel" data-color="black" />
       <Main className="panel" data-color="black white purple" />
       <Footer />
+
+      <WhatsAppButton />
     </main>
   );
 }
