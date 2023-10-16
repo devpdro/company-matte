@@ -11,7 +11,7 @@
   position: fixed;
   top: 0;
   transition: top 0.4s;
-  height: 80px;
+  height: 85px;
   width: 100vw;
   z-index: 1;
   color: #F9F7F1;
@@ -30,7 +30,7 @@
       align-items: center;
       justify-content: center;
       padding-bottom: 0.6rem;
-      margin-left: 5.5rem;
+      margin-left: 4.5rem;
 
 
       .box_icon {
@@ -160,9 +160,8 @@
           .link {
             cursor: pointer;
             display: flex;
-            justify-content: left;
-            align-items: left;
-            margin-left: 2.2rem;
+            justify-content: center;
+            align-items: center;
             font-family: 'Darker Grotesque';
             color: #8F8B81;
             text-align: left;
@@ -181,7 +180,7 @@
       }
 
       &.isMenu {
-        transform: translate(88%);
+        transform: translate(100%);
       }
     }
 
@@ -209,12 +208,12 @@
 
 @media (max-width: 867px) {
   .navbar {
-    padding: 0rem 3.5rem 0rem 2.5rem !important;
+    padding: 0rem 4rem 0rem 2.5rem !important;
     background-color: #1c1c1c;
     position: fixed;
     top: 0;
     transition: top 0.4s;
-    height: 80px;
+    height: 85px;
     width: 100vw !important;
     z-index: 1;
     color: #F9F7F1;
@@ -232,7 +231,7 @@
         align-items: center;
         justify-content: center;
         padding-bottom: 0.6rem;
-      margin-left: 3.5rem!important;
+      margin-left: 2rem!important;
 
         .box_icon {
           display: flex;
@@ -289,8 +288,8 @@
     }
 
     .link {
-      font-size: 2.8rem !important;
-      line-height: 2rem !important;
+      font-size: 3rem !important;
+      line-height: 2.4rem !important;
     }
   }
 
