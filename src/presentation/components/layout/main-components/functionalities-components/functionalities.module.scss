@@ -7,10 +7,27 @@
     Roboto,
     Arial,
     sans-serif;
+
   .box_title {
     text-align: center;
+
     p {
       font-size: 4rem;
+
+      span {
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+@media (max-width: 867px) {
+  .box_title {
+    text-align: center;
+
+    p {
+      font-size: 3.6rem!important;
+
       span {
         font-weight: 900;
       }

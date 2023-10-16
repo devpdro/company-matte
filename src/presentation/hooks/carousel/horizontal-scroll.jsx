@@ -12,7 +12,7 @@ const StickyInnerContainer = styled.div`
   position: sticky;
   top: 0;
   height: 100vh;
-  width: 100%;
+  width: 90%;
   overflow-x: hidden;
 `;
 
