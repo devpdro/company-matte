@@ -2,8 +2,6 @@ import { useEffect } from 'react'
 import anime from 'animejs'
 import { Link as ScrollLink } from 'react-scroll'
 
-import { Navbar } from 'presentation/components/layout/header-components/navbar-components/navbar'
-
 import styles from 'presentation/components/layout/header-components/header.module.scss'
 import { ICON } from 'presentation/assets/icons/icon'
 
@@ -56,9 +54,6 @@ export function Header() {
 
   return (
     <header id='inicio' className={`${styles.container} panel`} data-color="black">
-      <div>
-        <Navbar />
-      </div>
       <div className={styles.box_header}>
         <div className={styles.box_background}></div>
         <div className={styles.box_img}>

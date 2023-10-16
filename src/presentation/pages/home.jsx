@@ -3,6 +3,7 @@ import { Header } from 'presentation/components/layout/header-components/header'
 import { Main } from 'presentation/components/layout/main-components/main';
 import { Footer } from 'presentation/components/layout/footer-components/footer';
 import 'presentation/pages/home.scss';
+import { Navbar } from 'presentation/components/layout/header-components/navbar-components/navbar';
 export function Home() {
   useEffect(() => {
     const handleScroll = () => {
@@ -43,6 +44,7 @@ export function Home() {
 
   return (
     <main>
+      <Navbar />
       <Header className="panel" data-color="black" />
       <Main className="panel" data-color="black white purple" />
       <Footer />
