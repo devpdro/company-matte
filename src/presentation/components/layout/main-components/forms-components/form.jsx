@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import anime from 'animejs';
 import emailjs from 'emailjs-com';
 import { useForm, Controller } from 'react-hook-form';
@@ -16,6 +16,10 @@ const schema = yup.object().shape({
 });
 
 export function Form() {
+  const [nomeValue, setNomeValue] = useState('');
+  const [emailValue, setEmailValue] = useState('');
+  const [mensagemValue, setMensagemValue] = useState('');
+
   useEffect(() => {
     const animateForm = () => {
       anime.timeline().add({
@@ -70,6 +74,10 @@ export function Form() {
       const formElement = event.target;
       await emailjs.sendForm('gmailContact', 'template_3hs5z6j', formElement, 'GSlDlk4aAeWqGnnRW');
       toast.success('Email enviado com sucesso!');
+      
+      setNomeValue('');
+      setEmailValue('');
+      setMensagemValue('');
     } catch (error) {
       console.error('Erro ao enviar o email:', error);
       toast.error('Erro ao enviar o email');
@@ -88,7 +96,17 @@ export function Form() {
             name="nome"
             control={control}
             render={({ field }) => (
-              <input autoComplete="off" type="text" {...field} className={styles.input} />
+              <input
+                autoComplete="off"
+                type="text"
+                {...field}
+                value={nomeValue}
+                onChange={(e) => {
+                  field.onChange(e);
+                  setNomeValue(e.target.value);
+                }}
+                className={styles.input}
+              />
             )}
           />
         </div>
@@ -101,7 +119,17 @@ export function Form() {
             name="email"
             control={control}
             render={({ field }) => (
-              <input autoComplete="off" type="email" {...field} className={`${styles.input} ${errors.email ? styles.error : ''}`} />
+              <input
+                autoComplete="off"
+                type="email"
+                {...field}
+                value={emailValue}
+                onChange={(e) => {
+                  field.onChange(e);
+                  setEmailValue(e.target.value);
+                }}
+                className={`${styles.input} ${errors.email ? styles.error : ''}`}
+              />
             )}
           />
         </div>
@@ -114,7 +142,16 @@ export function Form() {
             name="mensagem"
             control={control}
             render={({ field }) => (
-              <textarea {...field} autoComplete="off" className={styles.textarea} />
+              <textarea
+                {...field}
+                autoComplete="off"
+                value={mensagemValue}
+                onChange={(e) => {
+                  field.onChange(e);
+                  setMensagemValue(e.target.value);
+                }}
+                className={styles.textarea}
+              />
             )}
           />
         </div>
