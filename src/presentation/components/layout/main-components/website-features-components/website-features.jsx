@@ -13,7 +13,7 @@ export function WebsiteFeatures() {
     <section id='como-funciona?' className={`${styles.container} panel`} data-color="white">
       <div className={styles.box_container}>
         <div
-          data-aos="fade-right"
+          data-aos="fade-left"
           data-aos-easing="ease"
           data-aos-duration="950"
           className={`${styles.box_title}`}

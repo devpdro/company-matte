@@ -63,7 +63,11 @@ export function Header() {
   }, [])
 
   return (
-    <header id='inicio' className={`${styles.container} panel`} data-color="black">
+    <header
+      id="inicio"
+      className={`${styles.container} panel`}
+      data-color="black"
+    >
       <div className={styles.box_header}>
         <div className={styles.box_background}></div>
         <div className={styles.box_img}>
@@ -86,13 +90,21 @@ export function Header() {
               Destaque a sua <br /> presença online com a <br /> criação de um
               site profissional
             </h6>
-        <p className={`${styles.information} animateInformation`}>
+            <p className={`${styles.information} animateInformation`}>
               Não perca mais tempo com sites ultrapassados, entre em contato
               hoje mesmo e leve a sua presença online para o próximo nível!
             </p>
             <div className={styles.btn_container}>
-              <ScrollLink activeClass="active" to="beneficios" spy={true} smooth={true}>
-                <button className={` ${styles.btn} animateButton`} type="submit">
+              <ScrollLink
+                activeClass="active"
+                to="beneficios"
+                spy={true}
+                smooth={true}
+              >
+                <button
+                  className={` ${styles.btn} animateButton`}
+                  type="submit"
+                >
                   Benefícios de um site{' '}
                   <ICON.FiArrowDown className={styles.icon} />
                 </button>

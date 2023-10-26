@@ -8,6 +8,7 @@ import { useWindowSize } from 'presentation/hooks/navbar/navbar-window-size'
 import styles from 'presentation/components/layout/header-components/navbar-components/navbar.module.scss'
 
 export function Navbar() {
+  const [currentTime, setCurrentTime] = useState(new Date())
   const { width: screenWidth } = useWindowSize()
   const [menuOpen, setMenuOpen] = useState(false)
   const headerHeight = 550
@@ -35,6 +36,14 @@ export function Navbar() {
   const menuToggleHandler = () => {
     setMenuOpen((prevMenuOpen) => !prevMenuOpen)
   }
+
+   useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentTime(new Date())
+    }, 1000)
+
+    return () => clearInterval(intervalId)
+  }, [])
 
   return (
     <nav className={styles.navbar} id="navbar">
@@ -72,6 +81,22 @@ export function Navbar() {
               </LinkRouter>
             </li>
           </ul>
+          <div className={styles.box_information}>
+            <div className={styles.box_time}>
+              <div className={styles.box_icon}>
+                <ICON.BiTime className={styles.icon} />
+              </div>
+              <div className={styles.box_text}>
+                <p>
+                  {currentTime.toLocaleTimeString([], {
+                    hour: '2-digit',
+                    minute: '2-digit'
+                  })}{' '}
+                  / Brazil
+                </p>
+              </div>
+            </div>
+          </div>
         </nav>
         <div className={styles.header__content__toggle}>
           {!menuOpen ? (
