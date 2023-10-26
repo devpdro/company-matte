@@ -59,7 +59,7 @@ export const CardImage = styled.img`
 export const TitleBox = styled.h6`
   color: #1c1c1c;
   font-size: 3rem;
-  padding: 0rem 2rem 1rem 2rem;
+  padding: 0rem 0rem 1rem 0rem;
    @media (max-width: 867px) {
        font-size: 2.4rem!important;
   }
