@@ -7,9 +7,9 @@ import { Faq } from 'presentation/components/layout/main-components/faq-componen
 export function Main() {
   return (
     <main>
-     
       
-     
+      <BenefitsWebsite className="panel" data-color="white" />
+
       <Faq />
     </main>
   )
