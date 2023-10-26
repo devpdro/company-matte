@@ -44,7 +44,7 @@ export function Home() {
 
   return (
     <main>
-      <Navbar />
+     
       <Main className="panel" data-color="black white purple" />
       <Footer />
 
