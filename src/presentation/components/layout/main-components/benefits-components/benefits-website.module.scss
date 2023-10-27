@@ -6,16 +6,18 @@
         Roboto,
         Arial,
         sans-serif;
+    overflow-x: hidden;
 
     .box_benefits {
         max-width: 1280px;
         margin: 0 auto;
-       
+        padding: 0.1rem 0.1rem;
 
         .box_title {
             margin-bottom: 5rem;
 
             .title {
+                padding-left: 0.5rem;
                 text-align: left;
                 font-size: 4rem;
             }
@@ -28,6 +30,7 @@
 
 
             .box_one {
+
                 padding: 2rem 2rem;
                 width: 34%;
                 height: 440px;
@@ -201,6 +204,7 @@
                 padding: 2rem 2rem;
                 width: 34%;
                 height: 420px;
+
                 img {
                     width: 120px;
                     padding-bottom: 0.7rem;
@@ -238,7 +242,6 @@
                 margin-bottom: 5rem;
 
                 .title {
-                    padding-left: 0.5rem!important;
                     text-align: center !important;
                     font-size: 3.8rem;
                 }
@@ -251,8 +254,8 @@
                 flex-direction: column;
 
                 .box_one {
-                    padding: 2rem 2rem;
-                    width: 100% !important;
+
+                    width: 98% !important;
                     height: auto !important;
                     margin-bottom: 2.5rem;
 
@@ -274,8 +277,7 @@
                 }
 
                 .box_two {
-                    padding: 2rem 2rem;
-                    width: 100% !important;
+                    width: 98% !important;
                     height: auto !important;
                     margin-bottom: 2.5rem;
 
@@ -303,8 +305,7 @@
                 flex-direction: column;
 
                 .box_one {
-                    padding: 2rem 2rem;
-                    width: 100% !important;
+                    width: 98% !important;
                     height: auto !important;
 
 
@@ -325,8 +326,7 @@
                 }
 
                 .box_two {
-                    padding: 2rem 2rem;
-                    width: 100% !important;
+                    width: 98% !important;
                     height: auto !important;
 
 
@@ -354,8 +354,7 @@
                 flex-direction: column;
 
                 .box_one {
-                    padding: 2rem 2rem;
-                    width: 100% !important;
+                    width: 98% !important;
                     height: auto !important;
 
                     img {
@@ -375,8 +374,7 @@
                 }
 
                 .box_two {
-                    padding: 2rem 2rem;
-                    width: 100% !important;
+                    width: 98% !important;
                     height: auto !important;
 
                     img {
@@ -403,8 +401,7 @@
                 flex-direction: column;
 
                 .box_one {
-                    padding: 2rem 2rem;
-                    width: 100% !important;
+                    width: 98% !important;
                     height: auto !important;
 
                     img {
@@ -424,8 +421,7 @@
                 }
 
                 .box_two {
-                    padding: 2rem 2rem;
-                    width: 100% !important;
+                    width: 98% !important;
                     height: auto !important;
 
                     img {
@@ -506,7 +502,7 @@
                     padding: 2rem 1.5rem 2rem 2rem !important;
                     width: 50% !important;
                     height: 500px !important;
-                margin-bottom: 2.5rem !important;
+                    margin-bottom: 2.5rem !important;
 
                     img {
                         width: 120px;

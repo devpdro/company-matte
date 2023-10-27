@@ -1,0 +1,57 @@
+.social-btn {
+  display: flex;
+  width: 160px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: 1px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-bottom: 5px;
+  position: relative;
+  left: -115px;
+  transition: left 1s;
+}
+
+.social-btn:hover {
+  left: -10px;
+  transition: left 1s;
+}
+
+.social {
+  position: fixed;
+  top: 320px;
+}
+
+.social a {
+  color: #F9F7F1;
+  text-decoration: none;
+}
+
+.social-btn p {
+  color: F9F7F1;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-family:
+    'Darker Grotesque',
+    -apple-system,
+    Roboto,
+    Arial,
+    sans-serif;
+}
+
+.icon {
+  font-size: 3rem;
+  color: #F9F7F1;
+}
+
+.color-whatsapp {
+  background-color: #24cc63;
+}
+
+.color-form {
+  background-color: #ffcd3e;
+}

@@ -35,6 +35,11 @@ export function Navbar() {
 
   const menuToggleHandler = () => {
     setMenuOpen((prevMenuOpen) => !prevMenuOpen)
+      if (!menuOpen) {
+        document.body.style.overflow = 'hidden'
+      } else {
+        document.body.style.overflow = 'auto'
+      }
   }
 
    useEffect(() => {

@@ -1,10 +1,11 @@
 @import '../../../../styles/mixins.scss';
 
-.disableScroll {
+.body-scroll-lock {
   overflow: hidden;
 }
 
 .navbar {
+  height: 100vw;
   font-family: 'Darker Grotesque';
   padding: 0rem 3rem 0rem 0rem;
   background-color: #1c1c1c;
@@ -15,7 +16,7 @@
   width: 100vw;
   z-index: 1;
   color: #F9F7F1;
-
+  
   .box_information {
     max-width: 1280px;
     margin: 0 auto;
@@ -132,6 +133,7 @@
       backdrop-filter: blur(3px);
       transform: translate(0);
       transition: 0.3s ease transform;
+      
 
       ul {
         @include breakpoint(md) {
