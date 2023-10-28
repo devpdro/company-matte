@@ -7,21 +7,22 @@ import './whatsapp-button.css';
 export function WhatsAppButton() {
   return (
     <div className="social">
-      <a href="https://api.whatsapp.com/send?phone=5519998853434"
-          target="_blank"
-          rel="noopener noreferrer">
+      <a
+        href="https://api.whatsapp.com/send?phone=5519998853434"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <div className="social-btn color-whatsapp">
           <p className="margin-telgram">Entrar em contato</p>
-           <ICON.AiOutlineWhatsApp className="icon" />
+          <ICON.AiOutlineWhatsApp className="icon" />
         </div>
       </a>
-      <Link
- to="/contato">
+      <Link to="/contato">
         <div className="social-btn color-form">
-          <p className="margin-instagram">Faça seu orgamento!</p>
-           <ICON.AiOutlineForm className="icon"/>
+          <p className="margin-instagram">Faça seu orçamento!</p>
+          <ICON.AiOutlineForm className="icon" />
         </div>
       </Link>
     </div>
-  );
+  )
 };

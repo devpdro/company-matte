@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Link as ScrollLink } from 'react-scroll'
 
 import { ICON } from 'presentation/assets/icons/icon'
@@ -50,14 +51,9 @@ export function Footer() {
                 >
                   <li className={styles.link}>Benefícios</li>
                 </ScrollLink>
-                <ScrollLink
-                  activeClass="active"
-                  to="inicie-agora"
-                  spy={true}
-                  smooth={true}
-                >
+                <Link style={{ color: '#F9F7F1',  textDecoration: "none"}} to="/contato">
                   <li className={styles.link}>Inicie sua jornada</li>
-                </ScrollLink>
+                </Link>
                 <ScrollLink
                   activeClass="active"
                   to="perguntas-frequentes"

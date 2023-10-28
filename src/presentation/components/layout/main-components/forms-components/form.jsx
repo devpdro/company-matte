@@ -73,7 +73,7 @@ export function Form() {
     try {
       const formElement = event.target;
       await emailjs.sendForm('gmailContact', 'template_3hs5z6j', formElement, 'GSlDlk4aAeWqGnnRW');
-      toast.success('Email enviado com sucesso!');
+      toast.success('Email enviado com sucesso! Retornaremos em breve.')
       
       setNomeValue('');
       setEmailValue('');

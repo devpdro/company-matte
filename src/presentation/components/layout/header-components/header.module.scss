@@ -6,11 +6,13 @@
     Roboto,
     Arial,
     sans-serif;
+  overflow-x: hidden;
 
   .box_header {
     display: flex;
     justify-content: flex-end;
     position: relative;
+
     .box_img {
       background-image:
         linear-gradient(rgba(28, 28, 28, 0.5), #1c1c1c), url(../../../assets/images/img/header.jpg);
@@ -62,7 +64,7 @@
         position: absolute;
         border-radius: 1px;
         top: 55%;
-      box-shadow:
+        box-shadow:
           rgba(241, 201, 87, 0.25) 0px 13px 27px -5px,
           rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
         right: 35%;
@@ -192,6 +194,7 @@
       font-size: 1.2rem !important;
       text-align: left;
       text-transform: uppercase;
+      display: none !important;
     }
 
     .title {

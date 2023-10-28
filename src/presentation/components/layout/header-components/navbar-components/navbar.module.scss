@@ -25,12 +25,12 @@
     align-items: center;
     position: absolute;
     bottom: 40px;
-
+  overflow-x: hidden;
     .box_time {
       display: flex;
       align-items: center;
       justify-content: center;
-      padding-bottom: 0.6rem;
+      padding-bottom: 2rem;
       margin-left: 4.5rem;
 
 

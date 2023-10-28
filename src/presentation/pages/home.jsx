@@ -5,11 +5,9 @@ import { Main } from 'presentation/components/layout/main-components/main';
 import { Footer } from 'presentation/components/layout/footer-components/footer';
 import { Navbar } from 'presentation/components/layout/header-components/navbar-components/navbar';
 import { WhatsAppButton } from 'utils/fixed/contact-buttons-components/whatsapp-button';
-import { LoadingBall } from 'utils/fixed/loading-ball-components/loading-ball';
-
-import 'presentation/pages/home.scss';
 import { ScrollTop } from 'utils/fixed/scroll-top-components/scroll-top';
 
+import 'presentation/pages/home.scss';
 
 export function Home() {
   useEffect(() => {
@@ -55,7 +53,6 @@ export function Home() {
       <Footer />
 
       <WhatsAppButton />
-      <LoadingBall/>
       <ScrollTop />
     </main>
   );
