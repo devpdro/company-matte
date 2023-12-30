@@ -43,7 +43,7 @@
         color: #F9F7F1;
         font-size: 1.1rem;
         margin-top: 1.5rem;
-        padding: 0.8rem 1.2rem 0.9rem 1.2rem;
+        padding: 0.9rem 1.2rem 1rem 1.2rem;
         background-color: #48BB78;
         transition: all 0.3s ease-in-out;
         margin-bottom: 1.5rem;
@@ -64,7 +64,7 @@
         color: #F9F7F1;
         font-size: 1.1rem;
         margin-top: 1.5rem;
-        padding: 0.8rem 1.4rem 0.9rem 1.4rem;
+        padding: 0.9rem 1.4rem 1rem 1.4rem;
         background-color: #1c1c1cd8;
         transition: all 0.3s ease-in-out;
         margin-bottom: 1.5rem;
@@ -504,6 +504,118 @@
 
       .btn_email {
         margin-right: 0rem!important;
+        font-family: 'Lexend', sans-serif;
+        outline: none;
+        border-radius: 23px;
+        border: none;
+        color: #F9F7F1;
+        font-size: 1.1rem;
+        margin-top: 1.5rem;
+        padding: 0.8rem 1.4rem 0.9rem 1.4rem;
+        background-color: #1c1c1cd8;
+        transition: all 0.3s ease-in-out;
+        margin-bottom: 1.5rem;
+
+        &:hover {
+          cursor: pointer;
+          background-color: seagreen;
+        }
+      }
+
+      .box_icon {
+        display: none !important;
+        position: absolute;
+        bottom: 75px;
+        right: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        font-family:
+          'Poppins',
+          -apple-system,
+          Roboto,
+          Arial,
+          sans-serif;
+
+        &:hover {
+          transform: translateY(10px);
+        }
+
+        p {
+          text-align: center;
+          display: flex;
+          justify-content: start;
+          font-size: 1rem;
+          line-height: 1.5rem;
+
+        }
+
+        .icon {
+          font-size: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .box_header {
+    margin-top: 20rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+      text-align: center;
+      font-size: 2.8rem !important;
+      line-height: 3.2rem !important;
+      letter-spacing: 0.1rem;
+      color: #1c1c1cee;
+      font-weight: 600;
+      padding: 0 1.2rem;
+
+      span {
+        color: #48BB78;
+        font-weight: 900;
+      }
+    }
+
+    .box_inputs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .btn_whatsapp {
+        margin-left: 0.5rem;
+        margin-right: 1.5rem;
+        font-family: 'Lexend', sans-serif;
+        outline: none;
+        border-radius: 25px;
+        border: none;
+        color: #F9F7F1;
+        font-size: 1.1rem;
+        margin-top: 1.5rem;
+        padding: 0.8rem 1.2rem 0.9rem 1.2rem;
+        background-color: #48BB78;
+        transition: all 0.3s ease-in-out;
+        margin-bottom: 1.5rem;
+
+        &:hover {
+          cursor: pointer;
+          background-color: seagreen;
+          transform: scale(1.1);
+        }
+      }
+
+      .btn_email {
+        margin-right: 0rem !important;
         font-family: 'Lexend', sans-serif;
         outline: none;
         border-radius: 23px;
