@@ -55,18 +55,14 @@ export function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <input
-              className={styles.btn_whatsapp}
-              type="submit"
-              value="Whatsapp"
-            />
+            <button type="submit" className={styles.btn_whatsapp}>
+              Whatsapp
+            </button>
           </a>
           <Link className="btn2" to="/contato">
-            <input
-              className={styles.btn_email}
-              type="submit"
-              value="Enviar e-mail"
-            />
+            <button type="submit" className={styles.btn_email}>
+              Enviar e-mail
+            </button>
           </Link>
           <ScrollLink
             activeClass="active"
@@ -76,7 +72,7 @@ export function Header() {
           >
             <div className={`${styles.box_icon} animateIcon`}>
               <p>
-                Por <br/> aqui
+                Por <br /> aqui
               </p>
               <ICON.CgArrowLongDown className={`${styles.icon}`} />
             </div>
