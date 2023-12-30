@@ -10,10 +10,14 @@ export function WebsiteFeatures() {
     AOS.init()
   }, [])
   return (
-    <section id='como-funciona?' className={`${styles.container} panel`} data-color="black">
+    <section
+      id="como-funciona?"
+      className={`${styles.container} panel`}
+      data-color="black"
+    >
       <div className={styles.box_container}>
         <div
-          data-aos="fade-right"
+          data-aos="fade-left"
           data-aos-easing="ease"
           data-aos-duration="950"
           className={`${styles.box_title}`}
@@ -59,9 +63,9 @@ export function WebsiteFeatures() {
             <img src={images.realidadeAumentada} alt="Realidade aumentada" />
             <h6 className={styles.title}>Transforme sua visão em realidade</h6>
             <p className={styles.explication}>
-              Com a nossa ajuda e suas ideias em mãos, nossa equipe
-              trabalhará para transformar sua visão em um site
-              espetacular em questão de dias! Seu novo site está a caminho.
+              Com a nossa ajuda e suas ideias em mãos, nossa equipe trabalhará
+              para transformar sua visão em um site espetacular em questão de
+              dias! Seu novo site está a caminho.
             </p>
           </div>
         </div>
