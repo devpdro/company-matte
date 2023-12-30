@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link as LinkRouter } from 'react-router-dom'
 
-import Logo from 'presentation/assets/logo/VR_LOGO-removebg-preview.png'
 import { ICON } from 'presentation/assets/icons/icon'
 import { useWindowSize } from 'presentation/hooks/navbar/navbar-window-size'
 
@@ -11,7 +10,7 @@ export function Navbar() {
   const [currentTime, setCurrentTime] = useState(new Date())
   const { width: screenWidth } = useWindowSize()
   const [menuOpen, setMenuOpen] = useState(false)
-  const headerHeight = 550
+  const headerHeight = 250
 
   useEffect(() => {
     let prevScrollPos = window.pageYOffset
@@ -54,8 +53,8 @@ export function Navbar() {
     <nav className={styles.navbar} id="navbar">
       <div className={styles.header__content}>
         <div className={styles.box_logo}>
-          <LinkRouter to="/">
-            <img className={styles.img_logo} src={Logo} alt="" />
+          <LinkRouter className={styles.link_router} to="/contato">
+            <h3>VRWEB</h3>
           </LinkRouter>
         </div>
         <nav

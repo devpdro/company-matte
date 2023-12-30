@@ -107,7 +107,7 @@ export function Functionalities() {
     <section
       id="funcionalidades"
       className={`${styles.container} panel`}
-      data-color="black"
+      data-color="white"
     >
       <div
         data-aos="fade-down"

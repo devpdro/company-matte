@@ -2,15 +2,13 @@ import { Functionalities } from 'presentation/components/layout/main-components/
 import { WebsiteFeatures } from 'presentation/components/layout/main-components/website-features-components/website-features'
 import { BenefitsWebsite } from 'presentation/components/layout/main-components/benefits-components/benefits-website'
 import { Faq } from 'presentation/components/layout/main-components/faq-components/faq'
-import { Price } from 'presentation/components/layout/main-components/price-component/price'
 
 export function Main() {
   return (
     <main>
-      <WebsiteFeatures className="panel" data-color="white" />
-      <Functionalities className="panel" data-color="black" />
+      <WebsiteFeatures className="panel" data-color="black" />
+      <Functionalities className="panel" data-color="white" />
       <BenefitsWebsite className="panel" data-color="white" />
-      <Price className="panel" data-color="white" />
       <Faq />
     </main>
   )
