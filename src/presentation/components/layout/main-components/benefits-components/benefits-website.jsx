@@ -88,7 +88,6 @@ export function BenefitsWebsite() {
             </p>
           </div>
         </div>
-        <div className={styles.line_three_box}></div>
       </div>
     </section>
   )

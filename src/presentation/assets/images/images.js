@@ -27,8 +27,10 @@ import hours from 'presentation/assets/images/img/24-hours.png'
 import analiseDeMercado from 'presentation/assets/images/img/analise-de-mercado (1).png'
 import pesquisa from 'presentation/assets/images/img/pesquisa.png'
 import aumentar from 'presentation/assets/images/img/aumentar.png'
+import certificado from 'presentation/assets/images/img/certificado-de-garantia.png'
 
 const images = {
+  certificado,
   computadorPortatil,
   realidadeAumentada,
   tipoSite,

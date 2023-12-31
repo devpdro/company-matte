@@ -16,7 +16,7 @@ export function Header() {
           opacity: [0, 1],
           translateY: [-80, 0],
           easing: 'easeOutExpo',
-          duration: 2000
+          duration: 1500
         })
         .add({
           targets: '.btn1',
