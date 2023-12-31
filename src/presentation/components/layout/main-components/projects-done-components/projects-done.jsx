@@ -14,7 +14,7 @@ export function ProjectsDone() {
       </p>
       <div className={styles.box_images_one1}>
         <div className={styles.box_one}>
-          <img src={imageProject1} alt="" />
+          <img className={styles.img_project} src={imageProject1} alt="" />
           <button className={styles.visit_button}>
             <a
               href="https://tecmasters.com.br/"
@@ -29,7 +29,7 @@ export function ProjectsDone() {
           </button>
         </div>
         <div className={styles.box_two}>
-          <img src={imageProject2} alt="" />
+          <img className={styles.img_project} src={imageProject2} alt="" />
           <button className={styles.visit_button}>
             <a href="https://evowatt.com.br/" target="_blank" rel="noreferrer">
               <div className={styles.box_icon}>
@@ -42,7 +42,7 @@ export function ProjectsDone() {
       </div>
       <div className={styles.box_images_two2}>
         <div className={styles.box_one}>
-          <img src={imageProject3} alt="" />
+          <img className={styles.img_project} src={imageProject3} alt="" />
           <button className={styles.visit_button}>
             <a href="https://asksuite.com/br/" target="_blank" rel="noreferrer">
               <div className={styles.box_icon}>
@@ -53,7 +53,7 @@ export function ProjectsDone() {
           </button>
         </div>
         <div className={styles.box_two}>
-          <img src={imageProject4} alt="" />
+          <img className={styles.img_project}  src={imageProject4} alt="" />
           <button className={styles.visit_button}>
             <a href="https://agapro.com.br/" target="_blank" rel="noreferrer">
               <div className={styles.box_icon}>
