@@ -12,7 +12,7 @@ export function ProjectsDone() {
       <p>
         Projetos <span>Destaques</span>
       </p>
-      <div className={styles.box_images_one}>
+      <div className={styles.box_images_one1}>
         <div className={styles.box_one}>
           <img src={imageProject1} alt="" />
           <button className={styles.visit_button}>
@@ -40,7 +40,7 @@ export function ProjectsDone() {
           </button>
         </div>
       </div>
-      <div className={styles.box_images_two}>
+      <div className={styles.box_images_two2}>
         <div className={styles.box_one}>
           <img src={imageProject3} alt="" />
           <button className={styles.visit_button}>

@@ -9,7 +9,7 @@ export function Main() {
     <main>
       <WebsiteFeatures className="panel" data-color="black" />
       <Functionalities className="panel" data-color="white" />
-      <ProjectsDone />
+   
       <BenefitsWebsite className="panel" data-color="white" />
       <Faq />
     </main>
