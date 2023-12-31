@@ -44,10 +44,10 @@ export function Header() {
       data-color="white"
     >
       <div className={styles.box_header}>
-        <p className="animateSubtitle">
+        <h6 className={`${styles.title_header} animateSubtitle`}>
           Desenvolvimento personalizado de <br /> <span>aplicativos</span>{' '}
           digitais
-        </p>
+        </h6>
         <div className={styles.box_inputs}>
           <a
             className="btn1"
@@ -71,9 +71,9 @@ export function Header() {
             smooth={true}
           >
             <div className={`${styles.box_icon} animateIcon`}>
-              <p>
+              <h6 className={styles.subtitle_header}>
                 Por <br /> aqui
-              </p>
+              </h6>
               <ICON.CgArrowLongDown className={`${styles.icon}`} />
             </div>
           </ScrollLink>

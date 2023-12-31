@@ -11,7 +11,8 @@
   .box_title {
     text-align: center;
 
-    p {
+    .title {
+      font-weight: 0 !important;
       font-size: 3.5rem;
 
       span {
@@ -23,11 +24,12 @@
 
 @media (max-width: 867px) {
   .box_title {
-    text-align: center;
 
-    p {
-      padding: 0rem 2rem 1rem 2rem;
-      font-size: 3.3rem!important;
+
+    .title {
+      padding: 0rem 2rem 0rem 2rem!important;
+      font-size: 3.3rem !important;
+
 
       span {
         font-weight: 900;
@@ -40,9 +42,10 @@
   .box_title {
     text-align: center;
 
-    p {
-      padding: 0rem 2rem 1rem 2rem;
+    .title {
+      padding: 0rem 2rem 0rem 2rem!important;
       font-size: 2.8rem !important;
+
 
       span {
         font-weight: 900;

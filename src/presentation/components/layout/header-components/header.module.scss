@@ -14,7 +14,7 @@
     align-items: center;
     flex-direction: column;
 
-    p {
+    .title_header {
       text-align: center;
       font-size: 4.5rem;
       line-height: 3.8rem;
@@ -95,7 +95,7 @@
           transform: translateY(10px);
         }
 
-        p {
+        .subtitle_header {
           text-align: center;
           display: flex;
           justify-content: start;
@@ -116,7 +116,7 @@
   }
 }
 
-@media (max-width: 1018px) {
+@media screen and (min-width: 919px) and (max-width: 1018px) {
   .box_header {
     margin-top: 20rem !important;
     display: flex;
@@ -127,7 +127,7 @@
     p {
       text-align: center;
       font-size: 4rem !important;
-      line-height: 3.8rem;
+      line-height: 3rem;
       letter-spacing: 0.1rem;
       color: #1c1c1cee;
       font-weight: 600;
@@ -227,7 +227,7 @@
   }
 }
 
-@media (max-width: 918px) {
+@media screen and (min-width: 831px) and (max-width: 918px) {
   .box_header {
     margin-top: 20rem !important;
     display: flex;
@@ -339,7 +339,7 @@
 
 }
 
-@media (max-width: 830px) {
+@media screen and (min-width: 641px) and (max-width: 830px) {
   .box_header {
     margin-top: 20rem !important;
     display: flex;
@@ -452,7 +452,7 @@
 
 }
 
-@media (max-width: 640px) {
+@media screen and (min-width: 581px) and (max-width: 640px) {
   .box_header {
     margin-top: 20rem !important;
     display: flex;
@@ -564,8 +564,9 @@
   }
 }
 
-@media (max-width: 580px) {
+@media screen and (max-width: 580px) {
   .box_header {
+
     margin-top: 20rem !important;
     display: flex;
     justify-content: center;

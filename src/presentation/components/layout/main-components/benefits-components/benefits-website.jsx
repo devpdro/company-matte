@@ -32,11 +32,11 @@ export function BenefitsWebsite() {
           >
             <img src={images.publicoAlvo} alt="Ilustração publico alvo" />
             <h6>Destaque-se no seu mercado-alvo!</h6>
-            <p>
+            <span>
               Ter um site é fundamental para{' '}
-              <span>alcançar essa conquista</span>. É a ferramenta que destaca
+              <strong>alcançar essa conquista</strong>. É a ferramenta que destaca
               suas qualidades e serviços.
-            </p>
+            </span>
           </div>
           <div
             data-aos="fade-left"
@@ -49,11 +49,11 @@ export function BenefitsWebsite() {
               alt="Ilustração visibilidade web"
             />
             <h6>Maximize a visibilidade da sua marca!</h6>
-            <p>
+            <span>
               Conquiste o público online com um site atraente e intuitivo.{' '}
-              <span>Mais visibilidade e maior impacto</span>. Vamos destacar a
+              <strong>Mais visibilidade e maior impacto</strong>. Vamos destacar a
               sua marca!
-            </p>
+            </span>
           </div>
         </div>
         <div className={styles.line_two_box}>
@@ -65,11 +65,11 @@ export function BenefitsWebsite() {
           >
             <img src={images.hours} alt="Ilustração 24horas" />
             <h6>Presença global 24/7</h6>
-            <p>
-              Um site próprio assegura a <span>visibilidade da sua marca</span>.
+            <span>
+              Um site próprio assegura a <strong>visibilidade da sua marca</strong>.
               Esse é o caminho certo para garantir que sua marca seja
               reconhecida.
-            </p>
+            </span>
           </div>
           <div
             data-aos="fade-left"
@@ -82,10 +82,10 @@ export function BenefitsWebsite() {
               alt="Ilustração analise de mercado"
             />
             <h6>Aumente suas vendas!</h6>
-            <p>
+            <span>
               Um site é uma ferramenta indispensável para expandir seus negócios
-              e <span>aumentar suas vendas de forma significativa</span>.
-            </p>
+              e <strong>aumentar suas vendas de forma significativa</strong>.
+            </span>
           </div>
         </div>
       </div>

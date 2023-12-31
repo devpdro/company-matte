@@ -35,10 +35,10 @@ export function WebsiteFeatures() {
           >
             <img src={images.tipoSite} alt="Escolhendo seu tipo de site" />
             <h6 className={styles.title}>Escolha o tipo de site</h6>
-            <p className={styles.explication}>
+            <span className={styles.explication}>
               Imagine um site que se adapta perfeitamente às suas necessidades e
               ao seu negócio. Nós ajudamos a escolher a melhor opção para você!
-            </p>
+            </span>
           </div>
           <div
             data-aos="fade-left"
@@ -48,11 +48,11 @@ export function WebsiteFeatures() {
           >
             <img src={images.computadorPortatil} alt="Computador portatil" />
             <h6 className={styles.title}>Personalize seu site</h6>
-            <p className={styles.explication}>
+            <span className={styles.explication}>
               Adicione recursos incríveis ao seu site - um blog dinâmico,
               depoimentos cativantes, uma área restrita exclusiva e muito mais!
               Faça seu site ser verdadeiramente único.
-            </p>
+            </span>
           </div>
           <div
             data-aos="fade-left"
@@ -62,11 +62,11 @@ export function WebsiteFeatures() {
           >
             <img src={images.realidadeAumentada} alt="Realidade aumentada" />
             <h6 className={styles.title}>Transforme sua visão em realidade</h6>
-            <p className={styles.explication}>
+            <span className={styles.explication}>
               Com a nossa ajuda e suas ideias em mãos, nossa equipe trabalhará
               para transformar sua visão em um site espetacular em questão de
               dias! Seu novo site está a caminho.
-            </p>
+            </span>
           </div>
         </div>
       </div>

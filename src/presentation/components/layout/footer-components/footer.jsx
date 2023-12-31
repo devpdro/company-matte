@@ -12,9 +12,9 @@ export function Footer() {
         <div className={styles.box_information}>
           <div className={styles.box_logo}>
             <img className={styles.logo} src={Logo} alt="Logo" />
-            <p>
+            <span>
               Aproveite essa <br /> oportunidade!
-            </p>
+            </span>
           </div>
           <div className={styles.container_list}>
             <div className={styles.box_links_one}>
@@ -76,16 +76,16 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <p className={styles.subtitle}>
+              <span className={styles.subtitle}>
                 vrw.developers@gmail.com{' '}
                 <ICON.LuArrowUpRight className={styles.icon} />
-              </p>
+              </span>
             </a>
           </div>
           <div className={styles.social_media}>
-            <p className={styles.text_follow}>
+            <span className={styles.text_follow}>
               © 2023, VR Developers. <br /> Todos os direitos reservados.
-            </p>
+            </span>
           </div>
         </div>
       </div>

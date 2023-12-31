@@ -22,7 +22,7 @@ export const CardsContainer = styled.div`
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
-   @media (max-width: 867px) {
+  @media (max-width: 867px) {
   }
 `
 
@@ -31,45 +31,56 @@ export const SampleCard = styled.div`
   padding: 3rem 3rem;
   background-color: ${(props) => props.cardColor};
   width: 28%;
-  height: 530px;
+  height: 510px !important;
   margin-right: 8.5rem;
+
   box-shadow:
     rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  @media (max-width: 867px) {
-    width: 19% !important;
-    height: 540px !important;
+  @media screen and (min-width: 868px) and (max-width: 1180px) {
+    padding: 2rem 3rem 2rem 3rem !important;
+    width: 24% !important;
+    height: 570px !important;
+    margin-right: 5.5rem !important;
+  }
+
+  @media screen and (max-width: 867px) {
+    padding: 2rem 3rem 3rem 3rem !important;
+    width: 20% !important;
+    height: 580px !important;
     margin-right: 5.5rem !important;
   }
 `
 
 export const CardImage = styled.img`
   width: 130px;
-  margin-bottom: 1rem;
-     @media (max-width: 867px) {
-        width: 110px!important;
+  margin-bottom: 0.5rem;
+  @media (max-width: 867px) {
+    width: 110px !important;
   }
 `
 
 export const TitleBox = styled.h6`
   color: #1c1c1c;
   font-size: 3rem;
-  padding: 0rem 0rem 1rem 0rem;
-   @media (max-width: 867px) {
-       font-size: 2.4rem!important;
+  @media (max-width: 867px) {
+    font-size: 2.4rem !important;
   }
 `
 
 export const SubtitleBox = styled.p`
   color: #1c1c1c;
-  font-size: 2rem;
-   @media (max-width: 867px) {
-        font-size: 1.8rem!important;
+  font-size: 2rem !important;
+  margin-top: 1rem;
+  text-align: left !important;
+  padding: 0rem;
+
+  @media (max-width: 867px) {
+    margin-top: 1rem!important;
+    font-size: 1.8rem !important;
   }
 `
 
@@ -115,7 +126,7 @@ export function Functionalities() {
         data-aos-duration="850"
         className={styles.box_title}
       >
-        <p>
+        <p className={styles.title}>
           Nossas <span>Funcionalidades</span>
         </p>
       </div>
