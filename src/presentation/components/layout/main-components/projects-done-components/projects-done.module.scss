@@ -291,3 +291,102 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    p {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center !important;
+        font-size: 3.1rem !important;
+        margin-bottom: 6rem !important;
+        padding-left: 0rem !important;
+
+        span {
+            font-weight: 800;
+        }
+    }
+
+    .box_images_one,
+    .box_images_two {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2rem;
+        max-width: 1380px;
+        margin: 2rem auto 2rem auto;
+
+
+        .box_one,
+        .box_two {
+            margin-top: 15px;
+            margin-bottom: 1rem;
+            margin-right: 15px;
+            margin-left: 15px;
+            position: relative;
+
+            &:hover {
+                img {
+                    filter: blur(2px);
+                    transition: filter 0.5s ease-in-out;
+                }
+
+                .visit_button {
+                    display: block;
+                    border-radius: 25px;
+                    background-color: #1c1c1c;
+                    opacity: 1;
+                    border-radius: 2;
+                    transition: background-color 0.5s ease-in-out;
+                    font-family: 'Lexend', sans-serif;
+
+                }
+            }
+
+            img {
+                margin-top: 1rem;
+                padding: 3rem !important;
+                width: 289px !important;
+                border-radius: 17px;
+                height: 89px!important;
+                filter: blur(4px);
+                transition: filter 0.5s ease-in-out;
+            }
+
+            .visit_button {
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: none;
+                background-color: #1c1c1c;
+                color: #F9F7F1;
+                font-size: 1rem;
+                border: none;
+                padding: 1rem 1.4rem 1.2rem 1.4rem;
+                border-radius: 5px;
+                cursor: pointer;
+                opacity: 0;
+                display: flex;
+                align-items: center;
+
+                justify-content: center;
+
+                a {
+                    text-decoration: none;
+                    color: #F9F7F1;
+
+                    .box_icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .icon {
+                            margin-right: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

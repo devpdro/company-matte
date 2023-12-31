@@ -59,24 +59,24 @@ export function MainContact() {
     <main className={`${styles.container} panel`} data-color="black">
       <div className={styles.box_container}>
         <div className={styles.box_text}>
-          <p className={`${styles.subtitle} animateSubtitle`}>CONTATE-NOS</p>
+          <span className={`${styles.subtitle} animateSubtitle`}>CONTATE-NOS</span>
           <h6 className={`${styles.title} animateTitle`}>Vamos conversar</h6>
-          <p className={`${styles.information} animateInformation`}>
+          <span className={`${styles.information} animateInformation`}>
             Diga-nos quem você é e como podemos ajudar.
-          </p>
+          </span>
 
-          <p className={`${styles.text_email} animateTextEmail`}>
+          <span className={`${styles.text_email} animateTextEmail`}>
             Você também pode nos escrever um email:
-          </p>
+          </span>
           <a
             href="mailto:vrw.developers@gmail.com?subject=Sobre"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p className={`${styles.email} animateEmail`}>
+            <span className={`${styles.email} animateEmail`}>
               vrw.developers@gmail.com{' '}
               <ICON.LuArrowUpRight className={styles.icon} />
-            </p>
+            </span>
           </a>
         </div>
         <div className={styles.box_form}>

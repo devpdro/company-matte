@@ -91,13 +91,13 @@ export function Navbar() {
                 <ICON.BiTime className={styles.icon} />
               </div>
               <div className={styles.box_text}>
-                <p>
+                <span>
                   {currentTime.toLocaleTimeString([], {
                     hour: '2-digit',
                     minute: '2-digit'
                   })}{' '}
                   / Brazil
-                </p>
+                </span>
               </div>
             </div>
           </div>
