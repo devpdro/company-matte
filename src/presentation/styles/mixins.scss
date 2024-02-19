@@ -1,6 +1,6 @@
 @mixin breakpoint($point) {
-  @if $point == md {
-    @media (min-width: 240em) {
+  @if $point ==md {
+    @media (min-width: 1024px) {
       @content;
     }
   }
@@ -28,5 +28,3 @@
   transition: all 0.4s ease;
   cursor: pointer;
 }
-
-

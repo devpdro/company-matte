@@ -20,7 +20,7 @@ export function Navbar() {
       if (prevScrollPos > currentScrollPos || currentScrollPos < headerHeight) {
         document.getElementById('navbar').style.top = '0'
       } else {
-        document.getElementById('navbar').style.top = '-100px'
+        document.getElementById('navbar').style.top = '-115px'
       }
       prevScrollPos = currentScrollPos
     }
@@ -34,14 +34,14 @@ export function Navbar() {
 
   const menuToggleHandler = () => {
     setMenuOpen((prevMenuOpen) => !prevMenuOpen)
-      if (!menuOpen) {
-        document.body.style.overflow = 'hidden'
-      } else {
-        document.body.style.overflow = 'auto'
-      }
+    if (!menuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'auto'
+    }
   }
 
-   useEffect(() => {
+  useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentTime(new Date())
     }, 1000)
@@ -53,9 +53,6 @@ export function Navbar() {
     <nav className={styles.navbar} id="navbar">
       <div className={styles.header__content}>
         <div className={styles.box_logo}>
-          <LinkRouter className={styles.link_router} to="/contato">
-            <h3>VRWEB</h3>
-          </LinkRouter>
         </div>
         <nav
           className={`${styles.header__content__nav} ${
@@ -77,6 +74,24 @@ export function Navbar() {
             </li>
             <li>
               <LinkRouter
+                to="/sobre"
+                className={styles.link}
+                onClick={menuToggleHandler}
+              >
+                Sobre
+              </LinkRouter>
+            </li>
+            <li>
+              <LinkRouter
+                to="/servicos"
+                className={styles.link}
+                onClick={menuToggleHandler}
+              >
+                Serviços
+              </LinkRouter>
+            </li>
+            <li>
+              <LinkRouter
                 to="/contato"
                 className={styles.link}
                 onClick={menuToggleHandler}
@@ -84,23 +99,12 @@ export function Navbar() {
                 Contato
               </LinkRouter>
             </li>
+            <li>
+              <button className={styles.btn_hire}>
+                Análise gratuita
+              </button>
+            </li>
           </ul>
-          <div className={styles.box_information}>
-            <div className={styles.box_time}>
-              <div className={styles.box_icon}>
-                <ICON.BiTime className={styles.icon} />
-              </div>
-              <div className={styles.box_text}>
-                <span>
-                  {currentTime.toLocaleTimeString([], {
-                    hour: '2-digit',
-                    minute: '2-digit'
-                  })}{' '}
-                  / Brazil
-                </span>
-              </div>
-            </div>
-          </div>
         </nav>
         <div className={styles.header__content__toggle}>
           {!menuOpen ? (
