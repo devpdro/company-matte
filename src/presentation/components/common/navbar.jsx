@@ -4,10 +4,9 @@ import { Link as LinkRouter } from 'react-router-dom'
 import { ICON } from 'presentation/assets/icons/icon'
 import { useWindowSize } from 'presentation/hooks/navbar/navbar-window-size'
 
-import styles from 'presentation/components/layout/header-components/navbar-components/navbar.module.scss'
+import styles from 'presentation/styles/components/navbar.module.scss'
 
 export function Navbar() {
-  const [currentTime, setCurrentTime] = useState(new Date())
   const { width: screenWidth } = useWindowSize()
   const [menuOpen, setMenuOpen] = useState(false)
   const headerHeight = 250
@@ -41,19 +40,10 @@ export function Navbar() {
     }
   }
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentTime(new Date())
-    }, 1000)
-
-    return () => clearInterval(intervalId)
-  }, [])
-
   return (
     <nav className={styles.navbar} id="navbar">
       <div className={styles.header__content}>
-        <div className={styles.box_logo}>
-        </div>
+        <div className={styles.box_logo}></div>
         <nav
           className={`${styles.header__content__nav} ${
             menuOpen && screenWidth <= 3840 ? styles.isMenu : ''
@@ -61,54 +51,35 @@ export function Navbar() {
         >
           <ul>
             <li>
-              <LinkRouter
-                activeClass="active"
-                to="/"
-                spy={true}
-                smooth={true}
-                className={styles.link}
-                onClick={menuToggleHandler}
-              >
-                Início
-              </LinkRouter>
-            </li>
-            <li>
-              <LinkRouter
-                to="/sobre"
-                className={styles.link}
-                onClick={menuToggleHandler}
-              >
+              <LinkRouter className={styles.link} onClick={menuToggleHandler}>
                 Sobre
               </LinkRouter>
             </li>
             <li>
-              <LinkRouter
-                to="/servicos"
-                className={styles.link}
-                onClick={menuToggleHandler}
-              >
+              <LinkRouter className={styles.link} onClick={menuToggleHandler}>
                 Serviços
               </LinkRouter>
             </li>
             <li>
-              <LinkRouter
-                to="/contato"
-                className={styles.link}
-                onClick={menuToggleHandler}
-              >
-                Contato
+              <LinkRouter className={styles.link} onClick={menuToggleHandler}>
+                Como funciona?
               </LinkRouter>
             </li>
             <li>
-              <button className={styles.btn_hire}>
-                Análise gratuita
-              </button>
+              <LinkRouter className={styles.link} onClick={menuToggleHandler}>
+                Blog
+              </LinkRouter>
+            </li>
+            <li>
+              <LinkRouter className={styles.link} onClick={menuToggleHandler}>
+                Contato
+              </LinkRouter>
             </li>
           </ul>
         </nav>
         <div className={styles.header__content__toggle}>
           {!menuOpen ? (
-            <ICON.AiOutlineMenu onClick={menuToggleHandler} />
+            <ICON.RxTextAlignRight onClick={menuToggleHandler} />
           ) : (
             <ICON.AiOutlineClose onClick={menuToggleHandler} />
           )}

@@ -3,7 +3,7 @@ import { AiOutlineMenu, AiOutlineClose, AiOutlineWhatsApp, AiOutlineForm } from 
 import { BsArrowDownShort } from 'react-icons/bs'
 import { FaUserPlus, FaAngleDown, FaAngleUp } from 'react-icons/fa'
 import { MdOutlineWidgets } from 'react-icons/md'
-import { RxHamburgerMenu } from 'react-icons/rx'
+import { RxTextAlignRight } from 'react-icons/rx'
 import { VscArrowSmallRight } from 'react-icons/vsc'
 import { CgArrowLongDown } from 'react-icons/cg'
 import { LuArrowUpRight } from 'react-icons/lu'
@@ -21,7 +21,7 @@ export const ICON = {
   BsArrowDownShort,
   FaUserPlus,
   MdOutlineWidgets,
-  RxHamburgerMenu,
+  RxTextAlignRight,
   VscArrowSmallRight,
   CgArrowLongDown,
   LuArrowUpRight,

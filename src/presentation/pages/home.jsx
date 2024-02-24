@@ -1,56 +1,58 @@
-import { useEffect } from 'react';
+import { useEffect } from 'react'
 
-import { Header } from 'presentation/components/layout/header-components/header';
-import { Main } from 'presentation/components/layout/main-components/main';
-import { Footer } from 'presentation/components/layout/footer-components/footer';
-import { Navbar } from 'presentation/components/layout/header-components/navbar-components/navbar';
-import { ScrollTop } from 'utils/fixed/scroll-top-components/scroll-top';
+import { Navbar } from 'presentation/components/common/navbar'
+import { Header } from 'presentation/components/pages/home-header/home-header'
+import { CompanyActivities } from 'presentation/components/pages/company-activities/company-activities'
+import { Main } from 'presentation/components/layout/main-components/main'
+import { Footer } from 'presentation/components/layout/footer-components/footer'
+import { ScrollTop } from 'utils/fixed/scroll-top-components/scroll-top'
 
-import 'presentation/pages/home.scss';
+import 'presentation/styles/pages/home.scss'
+
 export function Home() {
   useEffect(() => {
     const handleScroll = () => {
-      const $window = window;
-      const $body = document.body;
-      const $panel = document.querySelectorAll(".panel");
+      const $window = window
+      const $body = document.body
+      const $panel = document.querySelectorAll('.panel')
 
-      const scroll = $window.pageYOffset + $window.innerHeight / 2;
+      const scroll = $window.pageYOffset + $window.innerHeight / 2
 
       $panel.forEach((panel) => {
-        const $this = panel;
+        const $this = panel
 
         if (
           $this.offsetTop <= scroll &&
           $this.offsetTop + $this.offsetHeight > scroll
         ) {
-         
           $body.className = $body.className
-            .split(" ")
-            .filter((className) => !className.startsWith("color-"))
-            .join(" ");
-         
-          $body.classList.add("color-" + $this.getAttribute("data-color"));
-        }
-      });
-    };
+            .split(' ')
+            .filter((className) => !className.startsWith('color-'))
+            .join(' ')
 
-    window.addEventListener("scroll", handleScroll);
- 
-    handleScroll();
+          $body.classList.add('color-' + $this.getAttribute('data-color'))
+        }
+      })
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    handleScroll()
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
     <main>
       <Navbar />
       <Header className="panel" data-color="white" />
+      <CompanyActivities />
       <Main className="panel" data-color="black white purple" />
       <Footer />
-   
+
       <ScrollTop />
     </main>
-  );
+  )
 }

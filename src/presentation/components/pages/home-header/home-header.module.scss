@@ -1,0 +1,135 @@
+.container {
+  overflow-x: hidden;
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+
+  .header {
+    margin-top: 7rem;
+    position: relative;
+    height: 86vh;
+    background-image: url(../../../assets/images/img/grupo-de-pessoas-escritorio.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .box_title {
+      position: absolute;
+      top: 20%;
+      left: 10%;
+      z-index: 2;
+
+      .title {
+        font-size: 4.5rem;
+        color: #F9F7F1;
+      }
+
+      .btn {
+        font-family: "Archivo", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 1rem 1.5rem;
+        margin-top: 2rem;
+        outline: none;
+        border: none;
+        transition: background-color 0.3s ease;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+          color: #F9F7F1;
+          background-color: #1c1c1c;
+        }
+
+        .text_btn {
+          overflow: hidden;
+          position: relative;
+          padding: 0.2rem 0;
+
+          &::after,
+          &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background-color: #F9F7F1;
+            transition: width 0.5s ease, right 8s ease 1.5s;
+          }
+
+          &:hover::after {
+            width: 100%;
+            left: 0;
+          }
+        }
+      }
+    }
+
+    .box_overlay {
+      position: absolute;
+      bottom: 0%;
+      right: 0%;
+      z-index: 2;
+
+      .text_overlay {
+        width: 580px;
+        height: 200px;
+        padding: 2.5rem 4.5rem;
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        background-color: #F9F7F1;
+        font-size: 2.3rem;
+        font-weight: 200;
+        color: #1c1c1c;
+
+        .linha {
+          display: inline-block;
+          margin-left: 2rem;
+          margin-bottom: 0.5rem;
+          width: 2.5rem;
+          border-top: 2px solid #DDA827;
+        }
+
+        span {
+          position: relative;
+          text-transform: uppercase;
+          font-size: 0.9rem;
+          font-weight: 400;
+          overflow: hidden;
+          color: #1c1c1c;
+          padding: 0.2rem 0;
+
+          &::after,
+          &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background-color: #DDA827;
+            transition: width 0.5s ease, right 8s ease 1.5s;
+          }
+
+          &:hover::after {
+            width: 100%;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 919px) and (max-width: 1018px) {}
