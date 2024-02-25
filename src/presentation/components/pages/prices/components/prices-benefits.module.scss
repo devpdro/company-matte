@@ -1,0 +1,22 @@
+.list {
+    list-style: none;
+    margin-top: 2rem;
+
+    .text_benefits {
+        display: flex;
+        align-items: center;
+        background-color: #dda92746;
+        padding: 0.8rem 1.2rem;
+        margin-top: 1rem;
+        border-radius: 25px;
+        font-size: 1.1rem;
+        font-weight: 500;
+
+
+        .icon {
+            margin-right: 1rem;
+            font-size: 1.5rem;
+            color: #DDA827;
+        }
+    }
+}

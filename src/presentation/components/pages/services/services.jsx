@@ -13,9 +13,11 @@ export function Services() {
               <hr style={{ marginLeft: '0.5rem' }} className={styles.linha} />
             </p>
             <h1 className={styles.title}>
-              Prontos para <br /> construir juntos?
+              Pronto para <br /> trabalhar juntos?
             </h1>
-            <button className={styles.btn} type="submit">Construa um projeto conosco</button>
+            <button className={styles.btn} type="submit">
+              Construa um projeto conosco
+            </button>
           </div>
         </div>
         <div className={styles.contents}>

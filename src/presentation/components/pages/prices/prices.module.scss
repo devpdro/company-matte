@@ -1,6 +1,8 @@
 .container {
     max-width: 1280px;
-    margin: 0 auto;
+    margin: 8rem auto;
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
 
     .subtitle {}
 
@@ -12,9 +14,98 @@
         justify-content: space-around;
 
         .basic {
+            padding: 2rem 2rem;
+            width: 400px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+
+            .icon_box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1rem;
+
+                .icon_desktop {
+                    background-color: #dda92746;
+                    font-size: 4rem;
+                    padding: 1rem;
+                    border-radius: 50%;
+                    color: #2E2D2D;
+                }
+            }
+
+
+            .title {
+                text-align: center;
+                font-size: 2rem;
+            }
+
+            .prices_box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 3rem;
+                padding-bottom: 1.2rem;
+                border-bottom: 1px solid #2e2d2d52;
+
+
+                .discount {
+                    font-size: 1rem;
+                    text-decoration: line-through;
+                    margin-right: 1rem;
+                    color: #2E2D2D;
+                }
+
+                .total_box {
+                    display: flex;
+                    color: red;
+
+                    .coin {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                    }
+
+                    .value {
+                        font-size: 2.5rem;
+                    }
+
+                    .month {
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: center;
+                    }
+                }
+            }
+
+            .payment {
+                text-align: center;
+                font-size: 1rem;
+                color: #2E2D2D;
+                margin-top: 0.7rem;
+            }
+
+            .choose_box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .choose_btn {
+                    font-family: "Archivo", sans-serif;
+                    font-weight: 600;
+                    background-color: #2E2D2D;
+                    color: #F9F7F1;
+                    margin-top: 2rem;
+                    padding: 1rem 3rem;
+                    border-radius: 35px;
+                    border: none;
+                    outline: none;
+                    font-size: 1.5rem;
+                    margin-bottom: 0.2rem;
+
+                }
+            }
         }
-
-
 
         .custom {
             border: 1px solid red;

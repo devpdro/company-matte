@@ -12,6 +12,7 @@ import { ScrollTop } from 'utils/fixed/scroll-top-components/scroll-top'
 import 'presentation/styles/pages/Home.scss'
 import { Blog } from 'presentation/components/pages/blog/blog'
 import { Faq } from 'presentation/components/pages/faq/faq'
+import { Prices } from 'presentation/components/pages/prices/prices'
 
 export function Home() {
   useEffect(() => {
@@ -55,6 +56,7 @@ export function Home() {
       <CompanyActivities className="panel" data-color="black" />
       <ChooseBenefits className="panel" data-color="white" />
       <Services />
+      <Prices className="panel" data-color="white" />
       <Blog className="panel" data-color="white" />
       <Faq />
       <Footer />

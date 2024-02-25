@@ -1,7 +1,7 @@
-import { BiLogoWhatsapp, BiTime } from 'react-icons/bi'
+import { BiLogoWhatsapp, BiTime, BiDesktop  } from 'react-icons/bi'
 import { AiOutlineMenu, AiOutlineClose, AiOutlineWhatsApp, AiOutlineForm } from 'react-icons/ai'
 import { BsArrowDownShort } from 'react-icons/bs'
-import { FaUserPlus, FaAngleDown, FaAngleUp } from 'react-icons/fa'
+import { FaUserPlus, FaAngleDown, FaAngleUp, FaCheck  } from 'react-icons/fa'
 import { MdOutlineWidgets, MdOutlinePriceCheck  } from 'react-icons/md'
 import { RxTextAlignRight } from 'react-icons/rx'
 import { VscArrowSmallRight } from 'react-icons/vsc'
@@ -14,8 +14,10 @@ import { PiStarFourDuotone } from 'react-icons/pi'
 
 export const ICON = {
   BiLogoWhatsapp,
+  BiDesktop,
   BiTime,
   AiOutlineMenu,
+  FaCheck,
   AiOutlineClose,
   AiOutlineWhatsApp,
   BsArrowDownShort,
