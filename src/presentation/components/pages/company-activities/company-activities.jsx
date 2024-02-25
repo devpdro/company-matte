@@ -1,6 +1,6 @@
 import { Topic } from 'presentation/components/pages/company-activities/components/topic'
 
-import styles from 'presentation/components/pages/company-activities/company-activities.module.scss'
+import styles from 'presentation/components/pages/company-culture/culture.module.scss'
 
 export function CompanyActivities() {
   return (

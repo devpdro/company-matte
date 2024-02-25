@@ -1,6 +1,6 @@
 {
   "short_name": "VRWEB",
-  "name": "VRWEB - Criação de Sites Profissionais",
+  "name": "VRWEB - Criação e Desenvolvimento de Sites",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#1c1c1c",
-  "background_color": "#F9F7F1"
+  "theme_color": "#F9F7F1",
+  "background_color": "#1c1c1c"
 }

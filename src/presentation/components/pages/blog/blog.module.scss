@@ -2,19 +2,20 @@
     font-family: "Archivo", sans-serif;
     font-weight: 500;
     max-width: 1280px;
-    margin: 0 auto;
+    margin: 14rem auto 14rem auto;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    color: #000;
+    color: #1c1c1c;
 
     .texts {
-        width: 25%;
-        margin-right: 3rem;
+        width: 30%;
+        margin-right: 8rem;
+
 
         .subtitle {
             font-size: 1.2rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
             font-weight: 300;
 
             .linha {
@@ -27,7 +28,7 @@
 
         .title {
             font-size: 3.5em;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             font-weight: 400;
         }
 
@@ -35,15 +36,62 @@
             font-size: 1.2rem;
             font-weight: 300;
         }
+
+
+        .btn {
+            font-family: "Archivo", sans-serif;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            background-color: #1c1c1c;
+            border: none;
+            outline: none;
+            color: #F9F7F1;
+            margin-top: 11rem;
+            padding: 1.2rem 1.5rem;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: #F9F7F1;
+                border: 2px solid #1c1c1c;
+                color: #DDA827;
+            }
+
+        }
     }
 
-    .news {
-        width: auto;
-        border: 1px solid red;
+    .news_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        border-bottom: 4px solid transparent;
+        transition: border-bottom 1.4s ease;
 
-        img {
-            width: 400px;
-            height: 500px;
+        &:hover {
+            border-bottom: 3px solid #1c1c1c;
+        }
+
+        .news {
+            .subtitle {
+                color: #999999;
+                margin: 1.2rem 0rem 1rem 0rem;
+                font-size: 0.9rem;
+                font-weight: 400;
+            }
+
+            .title {
+                position: relative;
+                overflow: hidden;
+                padding-bottom: 2.2rem;
+                font-size: 1.5rem;
+            }
+
+            img {
+                width: 402px;
+                height: 300px;
+            }
         }
     }
 }

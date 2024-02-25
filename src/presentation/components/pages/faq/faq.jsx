@@ -18,7 +18,8 @@ export function Faq() {
   return (
     <section id="perguntas-frequentes" className={styles['faq-container']}>
       <div className={styles.faq_box}>
-        <h2>Perguntas frequentes</h2>
+        <p className={styles.subtitle}>FAQ <hr className={styles.linha}/></p>
+        <h1 className={styles.title}>Perguntas frequentes</h1>
         <div className={styles['faq-list']}>
           {faqItems.map((item, index) => (
             <div

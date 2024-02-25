@@ -7,7 +7,7 @@ import {
   Navigate
 } from 'react-router-dom'
 import { Home } from 'presentation/pages/Home'
-import { Contact } from 'presentation/pages/contact'
+import { Operation } from 'presentation/pages/Operation'
 
 export function App() {
   return (
@@ -22,29 +22,30 @@ export function App() {
                   name="description"
                   content="A VRWEB oferece serviços de criação de sites profissionais e design responsivo. Impulsione sua presença online com nossas soluções de desenvolvimento web."
                 />
-                <meta name="keywords" content="criação de sites, web design" />
-                <title>VRWEB | Criação e Desenvolvimento de Sites</title>
+                <meta name="keywords" content="Criação de sites, Desenvolvimento de sites, Web design, Empresa de sites, Web development, VRWEB, Criação de websites profissionais, Marketing digital, SEO, E-commerce, Landing pages, Responsivo, Agência digital, Soluções web, Site personalizado, Design responsivo, Otimização de sites, Serviços web, Estratégias de marketing online, Gestão de conteúdo, Experiência do usuário, Tecnologia web, Design intuitivo, Performance do site, Integração de mídia social, Consultoria web, Projeto web, Desenvolvimento de aplicativos web, Soluções de comércio eletrônico, Suporte técnico." />
+                <title>VRWEB - Criação e Desenvolvimento de Sites</title>
               </Helmet>
               <Home />
             </div>
           }
         />
-        <Route
-          path="/contato"
+         <Route
+          path="/como-funciona"
           element={
             <div>
               <Helmet>
-                <title>Contato | Solicite um Orçamento - VRWEB</title>
                 <meta
                   name="description"
-                  content="Entre em contato com a VRWEB para solicitar um orçamento de criação de sites profissionais e design responsivo. Impulsione sua presença online com nossas soluções de desenvolvimento web."
-                />
+                  content="Descubra como a VRWEB transforma suas ideias em realidade. Oferecemos serviços personalizados de criação de sites profissionais e design responsivo. Desde a concepção até a entrega final, nossa equipe trabalha em estreita colaboração com você para garantir que sua visão seja realizada."
+                  />
                 <meta
                   name="keywords"
-                  content="contato VRWEB, solicitar orçamento, criação de sites, web design"
-                />
+                  content="Criação de sites, Desenvolvimento de sites, Web design, Empresa de sites, Web development, VRWEB, Criação de websites profissionais, Marketing digital, SEO, E-commerce, Landing pages, Responsivo, Agência digital, Soluções web, Site personalizado, Design responsivo, Otimização de sites, Serviços web, Estratégias de marketing online, Gestão de conteúdo, Experiência do usuário, Tecnologia web, Design intuitivo, Performance do site, Integração de mídia social, Consultoria web, Projeto web, Desenvolvimento de aplicativos web, Soluções de comércio eletrônico, Suporte técnico.
+"
+                  />
+                  <title>Como funciona? - VRWEB | Criação e Desenvolvimento de Sites</title>
               </Helmet>
-              <Contact />
+              <Operation />
             </div>
           }
         />

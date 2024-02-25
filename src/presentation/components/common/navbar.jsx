@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react'
 import { Link as LinkRouter } from 'react-router-dom'
 
 import { ICON } from 'presentation/assets/icons/icon'
-import { useWindowSize } from 'presentation/hooks/navbar/navbar-window-size'
+import { useWindowSize } from 'presentation/hooks/navbar-size'
 
-import styles from 'presentation/styles/components/navbar.module.scss'
+import styles from 'presentation/components/common/navbar.module.scss'
 
 export function Navbar() {
   const { width: screenWidth } = useWindowSize()
@@ -61,7 +61,11 @@ export function Navbar() {
               </LinkRouter>
             </li>
             <li>
-              <LinkRouter className={styles.link} onClick={menuToggleHandler}>
+              <LinkRouter
+                to="/como-funciona"
+                className={styles.link}
+                onClick={menuToggleHandler}
+              >
                 Como funciona?
               </LinkRouter>
             </li>
@@ -71,7 +75,7 @@ export function Navbar() {
               </LinkRouter>
             </li>
             <li>
-              <LinkRouter className={styles.link} onClick={menuToggleHandler}>
+              <LinkRouter to="/contato" className={styles.link} onClick={menuToggleHandler}>
                 Contato
               </LinkRouter>
             </li>
