@@ -1,0 +1,23 @@
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    .subtitle {}
+
+    .title {}
+
+    .plans_box {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .basic {
+        }
+
+
+
+        .custom {
+            border: 1px solid red;
+        }
+    }
+}

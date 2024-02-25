@@ -1,34 +1,43 @@
 .container {
     font-family: "Archivo", sans-serif;
     font-weight: 500;
-    max-width: 1280px;
-    margin: 8.5rem auto 8rem auto;
+    margin: 12rem auto 14rem auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+
+    .image_box {
+        width: 50%;
+        height: 800px;
+
+        img {
+            width: 100%;
+        }
+    }
 
     .activities_box {
-        padding: 0 2rem 0 2rem;
+        padding: 0 12rem 0 4rem;
         width: 50%;
 
         .texts {
             .subtitle {
+                font-size: 1.2rem;
+                margin-bottom: 1.2rem;
+
                 .linha {
                     display: inline-block;
                     margin-bottom: 0.4rem;
                     width: 2.5rem;
-                    border: 1px solid #DDA827;;
+                    border: 1px solid #DDA827;
                 }
-
-                font-size: 1.3rem;
-                margin-bottom: 1.2rem;
             }
 
             .title {
                 font-size: 2.5rem;
-                text-align: center;
+                text-align: right;
                 font-weight: 500;
             }
         }
+
     }
 }

@@ -1,9 +1,10 @@
 import { useState } from 'react'
 
+import { ICON } from 'presentation/assets/icons/icon'
+
 import faqItems from 'main/providers/data/faqData'
 
-import { ICON } from 'presentation/assets/icons/icon'
-import styles from 'presentation/components/layout/main-components/faq-components/faq.module.scss'
+import styles from 'presentation/components/pages/faq/faq.module.scss'
 
 export function Faq() {
   const [isOpen, setIsOpen] = useState(Array(4).fill(false))

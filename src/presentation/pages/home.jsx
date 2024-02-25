@@ -3,11 +3,15 @@ import { useEffect } from 'react'
 import { Navbar } from 'presentation/components/common/navbar'
 import { Header } from 'presentation/components/pages/home-header/home-header'
 import { CompanyActivities } from 'presentation/components/pages/company-activities/company-activities'
-import { Main } from 'presentation/components/layout/main-components/main'
+import { ChooseBenefits } from 'presentation/components/pages/choose-benefits/choose-benefits'
+import { Services } from 'presentation/components/pages/services/services'
+
 import { Footer } from 'presentation/components/layout/footer-components/footer'
 import { ScrollTop } from 'utils/fixed/scroll-top-components/scroll-top'
 
-import 'presentation/styles/pages/home.scss'
+import 'presentation/styles/pages/Home.scss'
+import { Blog } from 'presentation/components/pages/blog/blog'
+import { Faq } from 'presentation/components/pages/faq/faq'
 
 export function Home() {
   useEffect(() => {
@@ -16,7 +20,7 @@ export function Home() {
       const $body = document.body
       const $panel = document.querySelectorAll('.panel')
 
-      const scroll = $window.pageYOffset + $window.innerHeight / 2
+      const scroll = $window.pageYOffset + $window.innerHeight * 0.2
 
       $panel.forEach((panel) => {
         const $this = panel
@@ -48,8 +52,11 @@ export function Home() {
     <main>
       <Navbar />
       <Header className="panel" data-color="white" />
-      <CompanyActivities />
-      <Main className="panel" data-color="black white purple" />
+      <CompanyActivities className="panel" data-color="black" />
+      <ChooseBenefits className="panel" data-color="white" />
+      <Services />
+      <Blog className="panel" data-color="white" />
+      <Faq />
       <Footer />
 
       <ScrollTop />

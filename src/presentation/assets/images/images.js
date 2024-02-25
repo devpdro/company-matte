@@ -28,6 +28,7 @@ import analiseDeMercado from 'presentation/assets/images/img/analise-de-mercado 
 import pesquisa from 'presentation/assets/images/img/pesquisa.png'
 import aumentar from 'presentation/assets/images/img/aumentar.png'
 import certificado from 'presentation/assets/images/img/certificado-de-garantia.png'
+import dados from 'presentation/assets/images/img/dados-verificados.png'
 
 const images = {
   certificado,
@@ -59,7 +60,8 @@ const images = {
   hours,
   analiseDeMercado,
   pesquisa,
-  aumentar
+  aumentar,
+  dados
 }
 
 export default images

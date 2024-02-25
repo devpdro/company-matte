@@ -6,7 +6,7 @@ import {
   Route,
   Navigate
 } from 'react-router-dom'
-import { Home } from 'presentation/pages/home'
+import { Home } from 'presentation/pages/Home'
 import { Contact } from 'presentation/pages/contact'
 
 export function App() {

@@ -1,21 +1,19 @@
 .container {
     margin-top: 3.2rem;
-    padding-bottom: 2rem;
+    padding: 2rem 2rem;
     display: flex;
-
     align-items: flex-start;
     justify-content: space-between;
-    border-bottom: 1px solid #2E2D2D;
-    transition: border-bottom 0.4s ease;
-    height: 170px;
+    border: 1px solid #2E2D2D;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    transition: all 0.4s ease;
 
     &:hover {
-        border-bottom: 1px solid #DDA827;
+        border: 1px solid #DDA827;
+        box-shadow: 0px 0px 10px rgba(221, 168, 39, 0.5);
+        background-color: #DDA827;
 
-        .numbering_box .number {
-            background-color: #DDA827;
-            border: 1px solid #FDC529;
-        }
     }
 
     .numbering_box {
@@ -40,10 +38,9 @@
         }
 
         .paragraph {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             line-height: 1.5rem;
             font-weight: 400;
-
         }
     }
 }

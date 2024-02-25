@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { Navbar } from 'presentation/components/common/navbar'
 import { MainContact } from 'presentation/components/layout/main-components/main-contact'
 
-import 'presentation/styles/pages/home.scss'
+import 'presentation/styles/pages/Home.scss'
 
 export function Contact() {
   useEffect(() => {

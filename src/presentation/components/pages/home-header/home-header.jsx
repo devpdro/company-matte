@@ -6,9 +6,12 @@ export function Header() {
       <div className={styles.header}>
         <div className={`${styles.box_title}`}>
           <h1 className={styles.title}>
-            Transforme ideias <br /> em sites incríveis!
+            Transforme suas <br />
+            ideias em sites <br /> incríveis!
           </h1>
-          <button className={styles.btn}><p className={styles.text_btn}>Como funciona?</p></button>
+          <button className={styles.btn}>
+            <p className={styles.text_btn}>Como funciona?</p>
+          </button>
         </div>
         <div className={`${styles.box_overlay}`}>
           <p className={styles.text_overlay}>

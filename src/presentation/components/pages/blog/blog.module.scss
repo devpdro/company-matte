@@ -1,0 +1,49 @@
+.container {
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: #000;
+
+    .texts {
+        width: 25%;
+        margin-right: 3rem;
+
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+
+            .linha {
+                display: inline-block;
+                margin-bottom: 0.2rem;
+                width: 3rem;
+                border-top: 2px solid #DDA827;
+            }
+        }
+
+        .title {
+            font-size: 3.5em;
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        .paragraph {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+    }
+
+    .news {
+        width: auto;
+        border: 1px solid red;
+
+        img {
+            width: 400px;
+            height: 500px;
+        }
+    }
+}
