@@ -6,8 +6,8 @@ import {
   Route,
   Navigate
 } from 'react-router-dom'
-import { Home } from 'presentation/pages/Home'
-import { Operation } from 'presentation/pages/Operation'
+import { Home } from 'presentation/pages/home'
+import { Operation } from 'presentation/pages/operation'
 
 export function App() {
   return (
