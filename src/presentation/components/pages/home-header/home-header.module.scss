@@ -29,6 +29,7 @@
       z-index: 2;
 
       .title {
+        padding: 0 2rem 0 0;
         font-size: 4.5rem;
         color: #F9F7F1;
       }
@@ -48,12 +49,17 @@
         &:hover {
           color: #F9F7F1;
           background-color: #1c1c1c;
+
+          .text_btn::after {
+            width: 100%;
+            left: 0;
+          }
         }
 
         .text_btn {
           overflow: hidden;
           position: relative;
-          padding: 0.2rem 0;
+          padding: 0rem 0 0rem 0;
 
           &::after,
           &::before {
@@ -62,14 +68,9 @@
             bottom: 0;
             right: 0;
             width: 0;
-            height: 2px;
+            height: 1px;
             background-color: #F9F7F1;
             transition: width 0.5s ease, right 8s ease 1.5s;
-          }
-
-          &:hover::after {
-            width: 100%;
-            left: 0;
           }
         }
       }
@@ -132,4 +133,14 @@
   }
 }
 
-@media screen and (min-width: 919px) and (max-width: 1018px) {}
+@media screen and (max-width: 1024px) {
+  .text_overlay {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .box_title {
+    top: 12% !important;
+  }
+}

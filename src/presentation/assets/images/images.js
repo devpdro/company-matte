@@ -13,13 +13,17 @@ import vitrineProdutos from 'presentation/assets/images/img/interface-de-usuario
 import negocio from 'presentation/assets/images/img/negocio.png'
 import otomizacaoWeb from 'presentation/assets/images/img/otimizacao-da-web.png'
 import responsivo from 'presentation/assets/images/img/responsivo.png'
+import empresa from 'presentation/assets/images/img/empresa.jpg'
+import pessoasEmpresa from 'presentation/assets/images/img/empresa.png'
 
 const images = {
   pessoasEscritorio,
   inovacao,
+  empresa,
   vitrineProdutos, 
   negocio, 
   otomizacaoWeb, 
+  pessoasEmpresa,
   responsivo, 
   computadorRapido,
   computadorPortatil,

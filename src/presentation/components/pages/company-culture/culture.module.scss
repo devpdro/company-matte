@@ -1,26 +1,44 @@
 .container {
     font-family: "Archivo", sans-serif;
     font-weight: 500;
-    margin: 12rem auto 14rem auto;
+    max-width: 1080px;
+    margin: 10rem auto 16rem auto;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 
     .image_box {
+        position: relative;
         width: 50%;
-        height: 800px;
+        height: 480px;
+        padding-left: 2rem;
 
-        img {
-            width: 100%;
+        .people_company {
+            position: absolute;
+            width: 50%;
+            height: 400px;
+            box-shadow: 0 4px 8px 0 rgba(28, 28, 28, 0.5);
+            z-index: 1;
+        }
+
+        .company {
+            position: absolute;
+            height: 350px;
+            background-size: cover;
+            left: 20%;
+            bottom: 0%;
+            width: 50%;
+            box-shadow: 0 4px 8px 0 rgba(28, 28, 28, 0.5);
         }
     }
 
     .activities_box {
-        padding: 0 12rem 0 4rem;
+        padding: 0 2rem 0 0rem;
         width: 50%;
 
         .texts {
             .subtitle {
+                text-align: left;
                 font-size: 1.2rem;
                 margin-bottom: 1.2rem;
 
@@ -34,10 +52,121 @@
 
             .title {
                 font-size: 2.5rem;
-                text-align: right;
+                text-align: left;
                 font-weight: 500;
             }
         }
 
+        .topics_box {
+            .btn {
+                font-family: "Archivo", sans-serif;
+                font-weight: 600;
+                position: relative;
+                outline: none;
+                border: none;
+                overflow: hidden;
+                text-transform: uppercase;
+                padding: 1rem 1.5rem;
+                margin-top: 2.5rem;
+                background-color: #1c1c1c;
+                color: #F9F7F1;
+                border: 2px solid #F9F7F1;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    border: 2px solid #1c1c1c;
+                    color: #1c1c1c;
+                    background-color: #F9F7F1;
+
+                    .text_btn::after {
+                        width: 100%;
+                        left: 0;
+                    }
+                }
+
+                .text_btn {
+                    overflow: hidden;
+                    position: relative;
+                    padding: 0rem 0 0rem 0;
+
+                    &::after,
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        width: 0;
+                        height: 1px;
+                        background-color: #1c1c1c;
+                        transition: width 0.5s ease, right 8s ease 1.5s;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 529px) and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        margin: 4rem auto 10rem auto;
+
+        .image_box {
+            width: 72%;
+            height: 550px;
+
+            .people_company {
+                width: 72%;
+                height: 470px;
+                background-size: cover;
+                background-position: center;
+
+            }
+
+            .company {
+                width: 72%;
+                height: 420px;
+                background-size: cover;
+                background-position: center;
+                z-index: 1;
+            }
+        }
+
+        .activities_box {
+            width: 72%;
+            margin-top: 3rem;
+            padding: 0 0rem 0 0rem;
+        }
+    }
+}
+
+@media screen and (max-width: 528px) {
+
+    .container {
+
+        margin: 0rem auto 8rem auto;
+        flex-direction: column;
+
+        .image_box {
+            width: 100%;
+
+            .people_company {
+                width: 70%;
+                height: 430px;
+            }
+
+            .company {
+                height: 380px;
+                width: 70%;
+                z-index: 1;
+            }
+        }
+
+        .activities_box {
+            margin-top: 3rem;
+            width: 95%;
+            margin-left: 2rem;
+        }
     }
 }

@@ -56,11 +56,6 @@ export function Navbar() {
               </LinkRouter>
             </li>
             <li>
-              <LinkRouter className={styles.link} onClick={menuToggleHandler}>
-                Serviços
-              </LinkRouter>
-            </li>
-            <li>
               <LinkRouter
                 to="/como-funciona"
                 className={styles.link}
@@ -75,7 +70,11 @@ export function Navbar() {
               </LinkRouter>
             </li>
             <li>
-              <LinkRouter to="/contato" className={styles.link} onClick={menuToggleHandler}>
+              <LinkRouter
+                to="/contato"
+                className={styles.link}
+                onClick={menuToggleHandler}
+              >
                 Contato
               </LinkRouter>
             </li>

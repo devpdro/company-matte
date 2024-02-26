@@ -1,8 +1,7 @@
 .container {
-    margin-top: 3.2rem;
+    margin-top: 3rem;
     padding-bottom: 2rem;
     display: flex;
-
     align-items: flex-start;
     justify-content: space-between;
     border-bottom: 1px solid #2E2D2D;
@@ -44,6 +43,27 @@
             line-height: 1.5rem;
             font-weight: 400;
 
+        }
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 807px) {
+    .container {
+        height: 190px;
+
+        .numbering_box {
+            margin-right: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        height: 200px;
+
+        .numbering_box {
+            margin-right: 1rem;
         }
     }
 }

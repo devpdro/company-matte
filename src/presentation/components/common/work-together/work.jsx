@@ -1,6 +1,6 @@
 import { Contents } from './components/contents'
 
-import styles from 'presentation/components/common/work-together/services.module.scss'
+import styles from 'presentation/components/common/work-together/work.module.scss'
 
 export function WorkTogether() {
   return (

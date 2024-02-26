@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 
 import { Navbar } from 'presentation/components/common/navbar'
 import { ChooseBenefits } from 'presentation/components/pages/company-culture/culture'
-import { WorkTogether } from 'presentation/components/common/work-together/services'
+import { WorkTogether } from 'presentation/components/common/work-together/work'
 
 export function Operation() {
   useEffect(() => {
