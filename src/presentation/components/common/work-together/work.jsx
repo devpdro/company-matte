@@ -16,7 +16,7 @@ export function WorkTogether() {
               Pronto para <br /> trabalhar juntos?
             </h1>
             <button className={styles.btn} type="submit">
-              Construa um projeto conosco
+              <p className={styles.text_btn}>Construa um projeto conosco</p>
             </button>
           </div>
         </div>
