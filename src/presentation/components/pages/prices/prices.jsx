@@ -6,6 +6,22 @@ import styles from 'presentation/components/pages/prices/prices.module.scss'
 export function Prices() {
   return (
     <section className={`${styles.container} panel`} data-color="white">
+      <div className={styles.texts_box_responsive}>
+        <p className={styles.subtitle}>
+          <hr className={styles.linha} />
+          Orçamento
+        </p>
+        <h1 className={styles.title}>
+          Contrate um site <br /> profissional
+        </h1>
+        <p className={styles.paragraph}>
+          Em caso de dúvida entre em contato com nossa central de atendimento.
+        </p>
+        <button className={styles.btn}>
+          <ICON.FaWhatsapp className={styles.icon} />
+          <p className={styles.text_btn}>(19) 97163-6739</p>
+        </button>
+      </div>
       <div className={styles.plans_box}>
         <div className={styles.texts_box}>
           <p className={styles.subtitle}>
