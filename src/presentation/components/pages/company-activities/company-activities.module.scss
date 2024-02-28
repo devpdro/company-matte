@@ -66,6 +66,16 @@
         .activities_box {
             margin-bottom: 5rem;
             width: 98%;
+
+            .texts {
+                .subtitle {
+                    font-size: 1.2rem;
+                }
+
+                .title {
+                    font-size: 2.2rem;
+                }
+            }
         }
     }
 }

@@ -300,17 +300,179 @@
                 width: 100%;
                 margin-top: 0rem;
                 margin-bottom: 2rem;
+
+                .title {
+                    font-size: 2.8rem;
+                    line-height: 2.8rem;
+                }
+
+                .subtitle {
+                    font-size: 0.9rem;
+                }
+
+                .btn {
+                    margin-top: 1.5rem;
+                }
             }
 
             .basic {
                 width: 90%;
                 margin-right: 0rem;
                 margin-bottom: 4rem;
+
+                .prices_box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 2rem;
+                    padding-bottom: 1.2rem;
+                    border-bottom: 1px solid #2e2d2d52;
+
+
+                    .discount {
+                        font-size: 0.9rem;
+                        text-decoration: line-through;
+                        margin-right: 1rem;
+                        color: #2E2D2D;
+                    }
+
+                    .total_box {
+                        display: flex;
+                        color: red;
+
+                        .coin {
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: center;
+                        }
+
+                        .value {
+                            font-size: 2.2rem;
+                        }
+
+                        .month {
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: center;
+                        }
+                    }
+                }
+
+                .title {
+                    font-size: 1.8rem;
+                }
+
+                .payment {
+                    text-align: center;
+                    font-size: 0.9rem;
+                    color: #2E2D2D;
+                    margin-top: 0.7rem;
+                }
+
+                .choose_box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .choose_btn {
+                        font-family: "Archivo", sans-serif;
+                        font-weight: 600;
+                        color: #DDA827;
+                        background-color: #F2E1BA;
+                        margin-top: 2rem;
+                        padding: 1rem 3rem;
+                        border-radius: 35px;
+                        outline: none;
+                        font-size: 1.3rem;
+                        margin-bottom: 0.2rem;
+                        border: 2px solid #DDA827;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
             }
 
             .custom {
                 width: 90%;
                 margin-left: 0rem;
+                margin-bottom: 2rem;
+
+                .prices_box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 2rem;
+                    padding-bottom: 1.2rem;
+                    border-bottom: 1px solid #2e2d2d52;
+
+
+                    .discount {
+                        font-size: 0.9rem;
+                        text-decoration: line-through;
+                        margin-right: 1rem;
+                        color: #2E2D2D;
+                    }
+
+                    .total_box {
+                        display: flex;
+                        color: red;
+
+                        .coin {
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: center;
+                        }
+
+                        .value {
+                            font-size: 2.2rem;
+                        }
+
+                        .month {
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: center;
+                        }
+                    }
+                }
+
+                .title {
+                    font-size: 1.8rem;
+                }
+
+                .payment {
+                    text-align: center;
+                    font-size: 0.9rem;
+                    color: #2E2D2D;
+                    margin-top: 0.7rem;
+                }
+
+                .choose_box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .choose_btn {
+                        font-family: "Archivo", sans-serif;
+                        font-weight: 600;
+                        background-color: #cccccc8e;
+                        color: #2E2D2D;
+                        margin-top: 2rem;
+                        padding: 1rem 3rem;
+                        border-radius: 35px;
+                        border: none;
+                        outline: none;
+                        font-size: 1.3rem;
+                        margin-bottom: 0.2rem;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
             }
         }
     }
