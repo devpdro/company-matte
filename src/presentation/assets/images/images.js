@@ -15,8 +15,20 @@ import otomizacaoWeb from 'presentation/assets/images/img/otimizacao-da-web.png'
 import responsivo from 'presentation/assets/images/img/responsivo.png'
 import empresa from 'presentation/assets/images/img/empresa.jpg'
 import pessoasEmpresa from 'presentation/assets/images/img/empresa.png'
+import aplicativoNativo from 'presentation/assets/images/img/aplicativo-nativo.webp'
+import experienciaUsuario from 'presentation/assets/images/img/experiencia-usuario.webp'
+import webDesign from 'presentation/assets/images/img/web-design.webp'
+import sistema from 'presentation/assets/images/img/sistema-web.webp'
+import desenvolvimentoSoftware from 'presentation/assets/images/img/desenvolvimento-de-software.webp'
+import razoes from 'presentation/assets/images/img/5-razoes.webp'
 
 const images = {
+  razoes,
+  desenvolvimentoSoftware,
+  sistema,
+  aplicativoNativo,
+  experienciaUsuario,
+  webDesign,
   pessoasEscritorio,
   inovacao,
   empresa,

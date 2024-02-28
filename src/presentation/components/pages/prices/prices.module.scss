@@ -1,5 +1,5 @@
 .container {
-    max-width: 1380px;
+    max-width: 1290px;
     margin: 12rem auto 8rem auto;
     font-family: "Archivo", sans-serif;
     font-weight: 500;
@@ -37,9 +37,9 @@
 
             .title {
                 padding-top: 0.5rem;
-                font-size: 3rem;
+                font-size: 2.9rem;
                 font-weight: 600;
-                line-height: 3.1rem;
+                line-height: 3rem;
             }
 
             .paragraph {
@@ -62,7 +62,7 @@
                 overflow: hidden;
                 text-transform: uppercase;
                 padding: 1.2rem 1.5rem;
-                margin-top: 2rem;
+                margin-top: 1.5rem;
                 background-color: #1c1c1c;
                 color: #F9F7F1;
                 border: 2px solid #F9F7F1;
@@ -90,7 +90,9 @@
             width: 30%;
             border-radius: 15px;
             box-shadow: 0px 3px 10px 0px rgba(218, 146, 70, 0.6);
-            margin-right: 2.5rem;
+            margin-right: 1.8rem;
+            margin-top: 0.7rem;
+            margin-bottom: 1rem;
 
             .icon_box {
                 display: flex;
@@ -111,6 +113,24 @@
             .title {
                 text-align: center;
                 font-size: 2rem;
+            }
+
+            .list_text {
+                display: flex;
+                align-items: center;
+                background-color: #CCCCCC;
+                padding: 1rem 1.2rem;
+                margin-top: 1rem;
+                border-radius: 25px;
+                font-size: 1.1rem;
+                font-weight: 500;
+                color: #666666c7;
+
+                .icon {
+                    margin-right: 1rem;
+                    font-size: 1.5rem;
+                    color: #666666c7;
+                }
             }
 
             .prices_box {
@@ -187,9 +207,11 @@
         .custom {
             padding: 2.2rem 2rem;
             width: 30%;
-            margin-left: 2.5rem;
+            margin-left: 1.8rem;
             border-radius: 15px;
             box-shadow: 0px 3px 10px 0px rgba(218, 146, 70, 0.6);
+            margin-top: 1rem;
+            margin-bottom: 1rem;
 
             .icon_box {
                 display: flex;
@@ -210,6 +232,24 @@
             .title {
                 text-align: center;
                 font-size: 2rem;
+            }
+
+            .list_text {
+                display: flex;
+                align-items: center;
+                background-color: #dda92746;
+                padding: 1rem 1.2rem;
+                margin-top: 1rem;
+                border-radius: 25px;
+                font-size: 1.1rem;
+                font-weight: 500;
+                color: #1c1c1c;
+
+                .icon {
+                    margin-right: 1rem;
+                    font-size: 1.4rem;
+                    color: #DDA827;
+                }
             }
 
             .prices_box {

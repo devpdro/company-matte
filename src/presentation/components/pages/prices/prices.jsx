@@ -46,10 +46,14 @@ export function Prices() {
           <h1 className={styles.title}>Site Sob Medida</h1>
           <PricesBenefits
             three="One page ou Multipage​"
-            four="Google friendly"
-            five="Formulários inteligentes"
-            seven="Botões para gerar leads​"
+            four="Otimização SEO para Google"
+            five="Botões para gerar leads"
+            seven="Formulários inteligentes​"
           />
+          <li className={styles.list_text}>
+            <ICON.AiOutlineClose className={styles.icon} />
+            Hospedagem e suporte mensal
+          </li>
           <div className={styles.prices_box}>
             <p className={styles.discount}>De R$ 789,90</p>
             <div className={styles.total_box}>
@@ -73,9 +77,13 @@ export function Prices() {
           <PricesBenefits
             three="Todos os tipos de sites"
             four="Otimização SEO para Google"
-            five="Formulários inteligentes"
-            seven="Hospedagem e suporte mensal"
+            five="Botões para gerar leads"
+            seven="Formulários inteligentes"
           />
+          <li className={styles.list_text}>
+            <ICON.FaCheck className={styles.icon} />
+            Hospedagem e suporte mensal
+          </li>
           <div className={styles.prices_box}>
             <div className={styles.total_box}>
               <span className={styles.value}>Sob Orçamento</span>

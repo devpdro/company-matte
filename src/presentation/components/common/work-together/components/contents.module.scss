@@ -60,6 +60,11 @@
 @media screen and (max-width: 600px) {
     .container {
         width: 20rem;
+        .texts_box {
+            .title {
+                font-size: 1.4rem;
+            }
+        }
     }
 }
 
