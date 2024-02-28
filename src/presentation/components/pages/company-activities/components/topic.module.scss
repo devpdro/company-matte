@@ -7,6 +7,7 @@
     border-bottom: 1px solid #2E2D2D;
     transition: border-bottom 0.4s ease;
     height: 170px;
+    overflow-x: hidden;
 
     &:hover {
         border-bottom: 1px solid #DDA827;
@@ -65,6 +66,21 @@
         .numbering_box {
             margin-right: 1rem;
         }
+
+        .texts_box {
+
+            .title {
+                font-weight: 500;
+                font-size: 1.4rem;
+            }
+
+            .paragraph {
+                font-size: 1.1rem;
+                line-height: 1.5rem;
+                font-weight: 300;
+
+            }
+        }
     }
 }
 
@@ -74,6 +90,21 @@
 
         .numbering_box {
             margin-right: 1rem;
+        }
+
+        .texts_box {
+
+            .title {
+                font-weight: 500;
+                font-size: 1.4rem;
+            }
+
+            .paragraph {
+                font-size: 1.1rem;
+                line-height: 1.5rem;
+                font-weight: 300;
+
+            }
         }
     }
 }
