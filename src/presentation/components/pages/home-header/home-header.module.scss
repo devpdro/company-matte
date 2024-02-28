@@ -37,6 +37,7 @@
       .btn {
         font-family: "Archivo", sans-serif;
         font-weight: 600;
+        color: #1c1c1c;
         text-transform: uppercase;
         padding: 1rem 1.5rem;
         margin-top: 2rem;
@@ -142,5 +143,18 @@
 @media screen and (max-width: 600px) {
   .box_title {
     top: 12% !important;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .box_title {
+    top: 8% !important;
+
+
+    .title {
+      padding: 0 2rem 0 0;
+      font-size: 3.5rem;
+      color: #F9F7F1;
+    }
   }
 }
