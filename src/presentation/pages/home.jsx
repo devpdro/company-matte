@@ -8,6 +8,7 @@ import { WorkTogether } from 'presentation/components/common/work-together/work'
 import { Blog } from 'presentation/components/pages/blog/blog'
 import { Prices } from 'presentation/components/pages/prices/prices'
 import { Faq } from 'presentation/components/pages/faq/faq'
+import { Footer } from 'presentation/components/common/footer'
 
 import 'presentation/styles/global/changing-colors.scss'
 
@@ -56,6 +57,7 @@ export function Home() {
       <Prices className="panel" data-color="white" />
       <Blog className="panel" data-color="white" />
       <Faq />
+      <Footer />
     </main>
   )
 }

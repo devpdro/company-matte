@@ -1,0 +1,70 @@
+.footer {
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
+    background-color: #212121;
+    color: #F9F7F1;
+    padding: 4rem 1rem 4rem 1rem;
+
+    .container {
+        max-width: 1280px;
+        margin: 0 auto;
+
+        .logo_box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #2E2D2D;
+            padding-bottom: 2rem;
+
+            .logo {
+                h1 {
+                    font-size: 1rem;
+                }
+            }
+
+            .nav {
+                .list {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 600;
+
+                    li {
+                        font-size: 0.9rem;
+                        position: relative;
+                        overflow: hidden;
+                        transition: all 0.3s ease;
+                        text-transform: uppercase;
+                        margin-left: 2rem;
+                    }
+                }
+            }
+        }
+
+        .copyright_box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 2rem;
+
+            .copyright {}
+
+            .icons_box {
+                .list_icons {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    li {
+                        font-size: 0.9rem;
+                        position: relative;
+                        overflow: hidden;
+                        transition: all 0.3s ease;
+                        text-transform: uppercase;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

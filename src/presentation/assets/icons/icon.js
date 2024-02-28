@@ -6,8 +6,10 @@ import { VscArrowSmallRight } from 'react-icons/vsc'
 import { LuArrowUpRight } from 'react-icons/lu'
 import { FaWhatsapp } from "react-icons/fa";
 import { GoGraph } from "react-icons/go";
+import { HiOutlineChatBubbleBottomCenterText } from "react-icons/hi2";
 
 export const ICON = {
+  HiOutlineChatBubbleBottomCenterText,
   BiDesktop,
   FaCheck,
   AiOutlineClose,

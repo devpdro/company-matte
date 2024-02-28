@@ -83,6 +83,33 @@
           align-items: center;
           justify-content: center;
 
+          .btn_chat {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #DDA827;
+            border-radius: 10px;
+            padding: 0.6rem 0.9rem 0.5rem 0.9rem;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+              background-color: rgba(242, 225, 186, 0.219)
+            }
+
+            .icon {
+              margin-right: 0.5rem;
+              font-size: 1.5rem;
+              color: #DDA827;
+            }
+
+            .chat {
+              font-family: "Archivo", sans-serif;
+              font-weight: 600;
+              text-transform: uppercase;
+              font-size: 0.8rem;
+            }
+          }
+
           &:not(:last-child) {
             margin-bottom: 1.2rem;
 
@@ -99,7 +126,7 @@
             text-transform: uppercase;
             text-decoration: none;
             font-size: 0.8rem;
-            margin: 0rem 0.9rem;
+            margin: 0rem 0.6rem;
             padding: 0.2rem 0;
             transition: all 0.3s ease;
             position: relative;

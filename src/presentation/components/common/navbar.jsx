@@ -51,7 +51,7 @@ export function Navbar() {
         >
           <ul>
             <li>
-              <LinkRouter className={styles.link} onClick={menuToggleHandler}>
+              <LinkRouter className={styles.link} >
                 Sobre
               </LinkRouter>
             </li>
@@ -59,13 +59,12 @@ export function Navbar() {
               <LinkRouter
                 to="/como-funciona"
                 className={styles.link}
-                onClick={menuToggleHandler}
               >
                 Como funciona?
               </LinkRouter>
             </li>
             <li>
-              <LinkRouter className={styles.link} onClick={menuToggleHandler}>
+              <LinkRouter className={styles.link}>
                 Blog
               </LinkRouter>
             </li>
@@ -73,10 +72,17 @@ export function Navbar() {
               <LinkRouter
                 to="/contato"
                 className={styles.link}
-                onClick={menuToggleHandler}
               >
                 Contato
               </LinkRouter>
+            </li>
+            <li>
+              <button className={styles.btn_chat}>
+                <ICON.HiOutlineChatBubbleBottomCenterText
+                  className={styles.icon}
+                />
+                <p className={styles.chat}>Fale com a gente</p>
+              </button>
             </li>
           </ul>
         </nav>
