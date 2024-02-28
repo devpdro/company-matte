@@ -152,15 +152,21 @@
 }
 
 @media screen and (max-width: 600px) {
-  .box_title {
-    top: 10% !important;
+  .container {
+    .header {
+      .box_title {
+        top: 15% !important;
+        left: 8% !important;
 
-    .title {
-      font-size: 3.8rem !important;
+        .title {
+          font-size: 3.8rem !important;
+        }
+
+        .btn {
+          margin-top: 1.2rem !important;
+        }
+      }
     }
 
-    .btn {
-      margin-top: 1.5rem !important;
-    }
   }
 }
