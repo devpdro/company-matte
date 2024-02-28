@@ -60,7 +60,7 @@
 
 @media screen and (min-width: 551px) and (max-width: 600px) {
     .container {
-        height: 250px;
+        height: 230px;
 
         .numbering_box {
             margin-right: 1rem;
@@ -71,6 +71,7 @@
 @media screen and (max-width: 550px) {
     .container {
         height: 255px;
+        padding-top: 2rem;
 
         .numbering_box {
             margin-right: 1rem;
