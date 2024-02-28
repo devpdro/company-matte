@@ -29,7 +29,7 @@ export function CompanyActivities() {
           <Topic
             numbering="03"
             title="Profissional"
-            paragraph="Busca uma solução tecnológica para promover seus serviços, marca e facilitar o contato com clientes? Criaremos um projeto personalizado para você."
+            paragraph="Busca uma solução web para promover seus serviços, marca e facilitar o contato com clientes? Criaremos um projeto personalizado para você."
           />
         </div>
       </div>
@@ -47,7 +47,7 @@ export function CompanyActivities() {
           <Topic
             numbering="01"
             title="Arquitetura de Software"
-            paragraph="Desenvolvimento de conceitos arquitetônicos, criação de estratégias de implementação e definição de padrões de projeto para sistemas de software."
+            paragraph="Criamos conceitos arquitetônicos, estratégias de implementação e padrões de projeto para sistemas de software e websites."
           />
           <Topic
             numbering="02"
