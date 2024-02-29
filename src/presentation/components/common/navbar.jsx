@@ -51,39 +51,36 @@ export function Navbar() {
         >
           <ul>
             <li>
-              <LinkRouter className={styles.link} >
-                Sobre
-              </LinkRouter>
+              <LinkRouter className={styles.link}>Sobre</LinkRouter>
             </li>
             <li>
-              <LinkRouter
-                to="/como-funciona"
-                className={styles.link}
-              >
+              <LinkRouter to="/como-funciona" className={styles.link}>
                 Como funciona?
               </LinkRouter>
             </li>
             <li>
-              <LinkRouter className={styles.link}>
-                Blog
-              </LinkRouter>
+              <LinkRouter className={styles.link}>Blog</LinkRouter>
             </li>
             <li>
-              <LinkRouter
-                to="/contato"
-                className={styles.link}
-              >
+              <LinkRouter to="/contato" className={styles.link}>
                 Contato
               </LinkRouter>
             </li>
-            <li>
-              <button className={styles.btn_chat}>
-                <ICON.HiOutlineChatBubbleBottomCenterText
-                  className={styles.icon}
-                />
-                <p className={styles.chat}>Fale com a gente</p>
-              </button>
-            </li>
+            <a
+              href="https://api.whatsapp.com/send?phone=5519971636739&text=Ol%C3%A1,%20gostaria%20de%20fazer%20meu%20site."
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.link}
+            >
+              <li>
+                <button className={styles.btn_chat}>
+                  <ICON.HiOutlineChatBubbleBottomCenterText
+                    className={styles.icon}
+                  />
+                  <p className={styles.chat}>Fale com a gente</p>
+                </button>
+              </li>
+            </a>
           </ul>
         </nav>
         <div className={styles.header__content__toggle}>

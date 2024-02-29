@@ -17,10 +17,6 @@ export function PricesBenefits({ three, four, five, seven }) {
       icon: FaCheck
     },
     { text: four, icon: FaCheck },
-    {
-      text: five,
-      icon: FaCheck
-    },
     { text: 'Integrações customizadas', icon: FaCheck },
     { text: seven, icon: FaCheck },
     { text: 'Integração com redes sociais​', icon: FaCheck },

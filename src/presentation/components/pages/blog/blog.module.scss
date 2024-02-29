@@ -30,6 +30,7 @@
 
             .title {
                 font-size: 3.5rem;
+                font-weight: 500;
             }
         }
 
@@ -151,7 +152,7 @@
 
 @media screen and (max-width: 600px) {
     .container {
-        margin: 5rem auto 4rem auto;
+        margin: 4rem auto 5rem auto;
 
         .texts_container {
             display: flex;
@@ -423,8 +424,6 @@
         margin: 8rem auto 12rem auto;
 
         .texts_container {
-
-
             .texts_box {
                 .subtitle {
                     font-size: 1.2rem;
@@ -444,17 +443,7 @@
         }
 
         .news {
-
-
             .article {
-
-
-                .img1 {}
-
-                .img2 {}
-
-                .img3 {}
-
                 .title {
                     font-size: 1.4rem;
                 }

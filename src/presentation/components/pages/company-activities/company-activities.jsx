@@ -24,7 +24,7 @@ export function CompanyActivities() {
           <Topic
             numbering="02"
             title="Empresa"
-            paragraph="Não encontrou um sistema completo que atenda às necessidades da sua empresa? Desenvolvemos sistemas personalizadas que transformaram suas ideias em produtos exclusivos."
+            paragraph="Não encontrou um website completo que atenda às necessidades da sua empresa? Desenvolvemos websites personalizadas que transformaram suas ideias em produtos exclusivos."
           />
           <Topic
             numbering="03"
@@ -47,7 +47,7 @@ export function CompanyActivities() {
           <Topic
             numbering="01"
             title="Arquitetura de Software"
-            paragraph="Criamos conceitos arquitetônicos, estratégias de implementação e padrões de projeto para sistemas de software e websites."
+            paragraph="Desenvolvemos conceitos arquitetônicos, estratégias de implementação personalizadas e padrões de design inovadores para websites."
           />
           <Topic
             numbering="02"

@@ -43,16 +43,19 @@ export function Prices() {
           <div className={styles.icon_box}>
             <ICON.BiDesktop className={styles.icon_desktop} />
           </div>
-          <h1 className={styles.title}>Site Sob Medida</h1>
+          <h1 className={styles.title}>Site Expresso</h1>
           <PricesBenefits
             three="One page ou Multipage​"
-            four="Otimização SEO para Google"
-            five="Botões para gerar leads"
-            seven="Formulários inteligentes​"
+            four="Google friendly"
+            seven="Formulários simples"
           />
           <li className={styles.list_text}>
             <ICON.AiOutlineClose className={styles.icon} />
-            Hospedagem e suporte mensal
+            Hospedagem e domínio incluso
+          </li>
+          <li className={styles.list_text}>
+            <ICON.AiOutlineClose className={styles.icon} />
+            Suporte mensal incluído
           </li>
           <div className={styles.prices_box}>
             <p className={styles.discount}>De R$ 789,90</p>
@@ -77,12 +80,15 @@ export function Prices() {
           <PricesBenefits
             three="Todos os tipos de sites"
             four="Otimização SEO para Google"
-            five="Botões para gerar leads"
             seven="Formulários inteligentes"
           />
           <li className={styles.list_text}>
             <ICON.FaCheck className={styles.icon} />
-            Hospedagem e suporte mensal
+            Hospedagem e domínio incluso
+          </li>
+          <li className={styles.list_text}>
+            <ICON.FaCheck className={styles.icon} />
+            Suporte mensal incluído
           </li>
           <div className={styles.prices_box}>
             <div className={styles.total_box}>

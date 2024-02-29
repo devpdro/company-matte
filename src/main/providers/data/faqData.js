@@ -1,29 +1,49 @@
 const faqItems = [
   {
-    question: 'Meu site vai funcionar em celulares e tablets?',
+    question: 'Qual é o prazo médio de desenvolvimento para um site?',
     answer:
-      'Sim, nossos sites são totalmente responsivos. Desta forma, o usuário terá a melhor experiência independente do dispositivo que estiver utilizando para acessar o site.'
+      'O prazo médio para desenvolvimento de um site varia de 14 a 45 dias úteis, dependendo da sua complexidade. Projetos mais elaborados podem demandar mais tempo para garantir qualidade e funcionalidade.'
   },
   {
-    question: 'Posso solicitar alterações no site?',
+    question: 'Os sites são compatíveis com smartphones e tablets?',
     answer:
-      'Sim, nossa equipe de suporte irá te auxiliar em qualquer alteração de estrutura e/ou funcionalidades em seu site.'
+      'Todos os nossos sites são responsivos, o que implica que são desenvolvidos em três versões distintas: para PC, Tablet e Smartphone. Isso assegura que os usuários desfrutem da melhor experiência possível, independentemente do dispositivo que utilizem para acessar o site.'
   },
   {
-    question: 'Meu site vai aparecer no Google?',
+    question: 'Qual é a garantia de segurança ao contratar um site com a VRWEB?',
     answer:
-      'Com certeza! Está incluído em nosso trabalho de desenvolvimento de sites cadastrar seu site no Google e nos mecanismos de rastreamento e otimizar ele para as boas práticas.'
+      'A VRWEB oferece um contrato digital detalhado antes do desenvolvimento do seu site, abordando prazos, custos e responsabilidades. Isso garante transparência e validade jurídica ao processo de contratação dos nossos serviços.'
   },
   {
-    question: 'Quais são as formas de pagamento?',
+    question: 'Quais são os requisitos iniciais para dar início a criação de um site?',
     answer:
-      'Aceitamos pagamento por PIX e boleto. Após o pagamento, pode levar até 72 horas para ser identificado pelo nosso sistema.'
+      'Para iniciar seu site, você precisa de um domínio, hospedagem e desenvolvimento. A VRWEB oferece suporte em todas as etapas, desde a escolha do domínio até o desenvolvimento do site.'
   },
   {
     question: 'Vou ter algum custo após a publicação do site?',
     answer:
-      'Sim. Quando o desenvolvimento do seu site tiver sido concluído, chegará o momento de “colocá-lo no ar”. Para isto, temos planos de hospedagem de acordo com a complexidade e com o tamanho dos bancos de dados. Os planos partem de R$ 30,00 por mês.'
-  }
+      'Para os sites sob medida, não há mensalidade obrigatória, pois tudo está incluso. No entanto, para o site expresso, há uma mensalidade a partir de R$85/mês. Esse valor engloba suporte, atualizações e hospedagem, oferecendo um pacote completo para manter seu site funcionando de maneira eficiente.'
+  },
+  {
+    question: 'Quais são os benefícios de optar por um site One Page para a minha empresa?',
+    answer:
+      'Optar por um site One Page para sua empresa traz benefícios como simplicidade, eficiência e design moderno. Com todo o conteúdo em um único local e seções bem definidas, oferece uma experiência dinâmica e leve, com excelente desempenho, especialmente em dispositivos móveis.'
+  },
+  {
+    question: 'Quais são as etapas envolvidas no processo de criação de sites?',
+    answer:
+      'Nosso processo começa com o briefing, onde coletamos informações detalhadas sobre o projeto. Em seguida, desenvolvemos um layout personalizado e o transformamos em um site funcional durante a etapa de desenvolvimento. Realizamos testes rigorosos para garantir desempenho e funcionalidade. Após isso, revisamos todos os detalhes conforme suas especificações antes de lançar o site para o público.'
+  },
+   {
+    question: 'Quais opções de pagamento estão disponíveis?',
+    answer:
+      'Facilitamos o pagamento do seu site ao aceitar parcelamentos em até 12x sem juros. Aceitamos cartão de crédito, débito e pix. Além disso, oferecemos 10% de desconto para pagamentos à vista.'
+  },
+   {
+    question: 'Quais são os requisitos iniciais para dar início a criação de um site?',
+    answer:
+      'Para iniciar seu site, você precisa de um domínio, hospedagem e desenvolvimento. Na VRWEB, acompanhamos você desde a escolha do domínio até a conclusão do desenvolvimento, garantindo uma experiência completa.'
+  },
 ]
 
 export default faqItems
