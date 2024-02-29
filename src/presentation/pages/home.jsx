@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 
 import { Navbar } from 'presentation/components/common/navbar'
-import { Header } from 'presentation/components/pages/home-header/home-header'
+import { HomeHeader } from 'presentation/components/pages/home-header/home-header'
 import { CompanyActivities } from 'presentation/components/pages/company-activities/company-activities'
 import { ChooseBenefits } from 'presentation/components/pages/company-culture/culture'
 import { WorkTogether } from 'presentation/components/common/work-together/work'
@@ -50,7 +50,7 @@ export function Home() {
   return (
     <main>
       <Navbar />
-      <Header className="panel" data-color="white" />
+      <HomeHeader className="panel" data-color="white" />
       <CompanyActivities className="panel" data-color="black" />
       <ChooseBenefits className="panel" data-color="white" />
       <WorkTogether />

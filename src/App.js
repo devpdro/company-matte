@@ -7,6 +7,7 @@ import {
   Navigate
 } from 'react-router-dom'
 import { Home } from 'presentation/pages/home'
+import { About } from 'presentation/pages/about'
 
 export function App() {
   return (
@@ -25,6 +26,22 @@ export function App() {
                 <title>VRWEB - Criação e Desenvolvimento de Sites</title>
               </Helmet>
               <Home />
+            </div>
+          }
+        />
+         <Route
+          path="/quem-somos"
+          element={
+            <div>
+              <Helmet>
+                <meta
+                  name="description"
+                  content="A VRWEB oferece serviços de criação de sites profissionais e design responsivo. Impulsione sua presença online com nossas soluções de desenvolvimento web."
+                />
+                <meta name="keywords" content="Criação de sites, Desenvolvimento de sites, Web design, Empresa de sites, Web development, VRWEB, Criação de websites profissionais, Marketing digital, SEO, E-commerce, Landing pages, Responsivo, Agência digital, Soluções web, Site personalizado, Design responsivo, Otimização de sites, Serviços web, Estratégias de marketing online, Gestão de conteúdo, Experiência do usuário, Tecnologia web, Design intuitivo, Performance do site, Integração de mídia social, Consultoria web, Projeto web, Desenvolvimento de aplicativos web, Soluções de comércio eletrônico, Suporte técnico." />
+                <title>Quem somos - VRWEB | Criação e Desenvolvimento de Sites</title>
+              </Helmet>
+              <About />
             </div>
           }
         />

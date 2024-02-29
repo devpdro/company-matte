@@ -1,0 +1,49 @@
+.container {
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
+    max-width: 1280px;
+    margin: 7.5rem auto 12rem auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    .about_box {
+        width: 70%;
+        padding-right: 8rem;
+
+        .subtitle {
+            text-align: left;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+
+            .linha {
+                display: inline-block;
+                margin-left: 0.2rem;
+                margin-bottom: 0.3rem;
+                width: 2.5rem;
+                border: 1px solid #DDA827;
+            }
+
+        }
+
+        .title {
+            font-size: 2rem;
+            font-weight: 400;
+        }
+
+    }
+
+    .explication {
+        width: 55%;
+
+        .paragraph {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            font-weight: 300;
+            margin-top: 1.8rem;
+        }
+
+
+    }
+}

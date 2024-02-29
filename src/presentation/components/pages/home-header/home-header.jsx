@@ -1,6 +1,6 @@
 import styles from 'presentation/components/pages/home-header/home-header.module.scss'
 
-export function Header() {
+export function HomeHeader() {
   return (
     <header className={`${styles.container} panel`} data-color="white">
       <div className={styles.header}>

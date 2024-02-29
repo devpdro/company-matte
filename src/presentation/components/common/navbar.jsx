@@ -51,7 +51,7 @@ export function Navbar() {
         >
           <ul>
             <li>
-              <LinkRouter className={styles.link}>Sobre</LinkRouter>
+              <LinkRouter to="/quem-somos" className={styles.link}>Sobre</LinkRouter>
             </li>
             <li>
               <LinkRouter to="/como-funciona" className={styles.link}>
