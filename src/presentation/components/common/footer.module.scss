@@ -96,7 +96,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
     .footer {
         .logo_footer {
             display: block;
@@ -119,8 +119,55 @@
                     .list {
 
                         li {
-                            font-size: 0.9rem;
-                            margin: 0 0.6rem;
+                            margin: 0 1rem;
+                        }
+                    }
+                }
+            }
+
+            .copyright_box {
+                .copyright {
+                    font-size: 0.8rem;
+                    color: #f9f7f193;
+                }
+
+                .icons_box {
+                    .list_icons {
+                        li {
+                            font-size: 0.8rem !important;
+                            margin-left: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        .logo_footer {
+            display: block;
+            text-align: center;
+            margin-bottom: 1.7rem;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            .logo_box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .logo {
+                    display: none;
+                }
+
+                .nav {
+                    .list {
+                        li {
+                            font-size: 0.8rem;
+                            margin: 0 0.5rem;
                         }
                     }
                 }
