@@ -4,7 +4,7 @@ import styles from 'presentation/components/pages/about-header/about-header.modu
 
 export function AboutHeader() {
   return (
-    <header className={`${styles.container}`}>
+    <header className={`${styles.container} panel`} data-color="white">
       <div className={styles.header}>
         <div className={`${styles.box_title}`}>
           <h1 className={styles.title}>

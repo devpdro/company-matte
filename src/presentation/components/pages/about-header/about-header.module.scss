@@ -42,6 +42,7 @@
                 justify-content: center;
                 font-family: "Archivo", sans-serif;
                 font-weight: 600;
+                background-color: #F9F7F1;
                 color: #1c1c1c;
                 text-transform: uppercase;
                 padding: 1rem 1.5rem;
@@ -167,18 +168,19 @@
     .container {
         .header {
             .box_title {
-                top: 17% !important;
+                top: 19% !important;
                 left: 1% !important;
                 padding: 0 2rem 0 1.5rem;
 
                 .title {
-                    font-size: 3.2rem !important;
+                    font-size: 2.6rem !important;
 
                     margin-bottom: 0.8rem;
                 }
 
                 .btn {
                     margin-top: 1rem !important;
+                    padding: 0.9rem 1.2rem;
                 }
             }
         }

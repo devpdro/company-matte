@@ -45,7 +45,7 @@ export function About() {
   return (
     <main>
       <Navbar />
-      <AboutHeader />
+      <AboutHeader className="panel" data-color="white"/>
       <AboutUs className="panel" data-color="white" />
       <OurMission />
       <Technologies />
