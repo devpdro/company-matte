@@ -2,6 +2,7 @@
   font-family: "Archivo", sans-serif;
   font-weight: 500;
   margin: 6.5rem 0 16.5rem 0;
+  padding: 0 2rem;
 
   .box_container {
     max-width: 1280px;
@@ -157,278 +158,150 @@
   }
 }
 
-@media (max-width: 1006px) {
-  .box_container {
-    max-width: 1180px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center !important;
-    align-items: center !important;
-    flex-wrap: wrap;
+@media screen and (min-width: 897px) and (max-width: 1140px) {
+  .container {
+    margin: 4.5rem 0 16.5rem 0;
 
-    .box_title {
-      padding-left: 0rem !important;
-      position: relative !important;
-      top: none !important;
+    .box_container {
 
-      p {
-        margin-bottom: 3.2rem;
-        font-size: 3.8rem !important;
+      .box_title {
+        position: sticky;
 
-        span {
-          font-weight: 900;
-        }
-      }
-    }
-
-    .box_information {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      width: 90% !important;
-      margin-left: 0rem !important;
-
-      .box_one {
-        width: 100%;
-        padding: 3rem 2rem;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        background-color: #c6a1f8;
-        box-shadow:
-          rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-
-        img {
-          width: 100px;
-          margin-bottom: 1rem;
+        .subtitle {
+          font-size: 1.1rem;
+          margin-bottom: 0.3rem;
         }
 
         .title {
-          color: #1c1c1c;
-          font-size: 3rem;
-          padding-bottom: 1rem;
-
-          span {
-            font-weight: 900;
-          }
-        }
-
-        .explication {
-          color: #1c1c1c;
-          font-size: 2rem;
+          font-size: 2.7rem;
+          font-weight: 500;
+          margin-bottom: 4rem;
         }
       }
 
-      .box_two {
-        margin: 4rem 0rem;
-        padding: 3rem 2rem;
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        background-color: #f2d147;
-        box-shadow:
-          rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      .box_information {
+        width: 55%;
 
-        img {
-          width: 100px;
-          margin-bottom: 1rem;
-        }
+        .box_one {
 
-        .title {
-          color: #1c1c1c;
-          font-size: 3rem;
-          padding-bottom: 1rem;
+          .icon {
+            font-size: 3.8rem;
+          }
 
-          span {
-            font-weight: 900;
+          .title {
+            font-size: 2rem;
+          }
+
+          .explication {
+            font-size: 1.2rem;
           }
         }
 
-        .explication {
-          color: #1c1c1c;
-          font-size: 2rem;
-        }
-      }
+        .box_two {
 
-      .box_three {
-        padding: 3rem 2rem;
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        background-color: #25cc8a;
-        box-shadow:
-          rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          .icon {
+            font-size: 3.8rem;
+          }
 
-        img {
-          width: 100px;
-          margin-bottom: 1rem;
-        }
+          .title {
+            font-size: 2rem;
+          }
 
-        .title {
-          color: #1c1c1c;
-          font-size: 3rem;
-          line-height: 3.4rem;
-          padding-bottom: 1rem;
-
-          span {
-            font-weight: 900;
+          .explication {
+            font-size: 1.2rem;
           }
         }
 
-        .explication {
-          color: #1c1c1c;
-          font-size: 2rem;
+        .box_three {
+
+          .icon {
+            font-size: 3.8rem;
+          }
+
+          .title {
+            font-size: 2rem;
+          }
+
+          .explication {
+            font-size: 1.2rem;
+          }
         }
       }
     }
   }
 }
 
-@media (min-width: 1007px) and (max-width: 1240px) {
-  .box_container {
-    max-width: 1180px;
-    margin: 0 auto;
-    display: flex;
-    display: flex;
-    justify-content: space-between !important;
-    align-items: flex-start !important;
-    padding: 0 2rem;
+@media screen and (max-width: 897px) {
+  .container {
+    margin: 4.5rem 0 16.5rem 0;
+    padding: 0 0rem;
 
-    .box_title {
-      position: sticky !important;
-      top: 0 !important;
-
-      p {
-        margin-bottom: 0.2rem !important;
-        font-size: 3.9rem !important;
-
-        span {
-          font-weight: 900;
-        }
-      }
-    }
-
-    .box_information {
-      display: flex;
-      align-items: center;
+    .box_container {
       justify-content: center;
+      align-items: center;
       flex-direction: column;
-      width: 53% !important;
-      margin-left: 0.9rem !important;
 
-      .box_one {
-        width: 100%;
-        padding: 3rem 2rem;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        background-color: #c6a1f8;
-        box-shadow:
-          rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      .box_title {
+        position: static;
 
-        img {
-          width: 100px;
-          margin-bottom: 1rem;
+        .subtitle {
+          font-size: 1.1rem;
+          margin-bottom: 0.3rem;
         }
 
         .title {
-          color: #1c1c1c;
-          font-size: 3rem;
-          padding-bottom: 1rem;
-
-          span {
-            font-weight: 900;
-          }
-        }
-
-        .explication {
-          color: #1c1c1c;
-          font-size: 2rem;
+          font-size: 2.7rem;
+          font-weight: 500;
+          margin-bottom: 4rem;
         }
       }
 
-      .box_two {
-        margin: 4rem 0rem;
-        padding: 3rem 2rem;
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        background-color: #f2d147;
-        box-shadow:
-          rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      .box_information {
+        width: 90%;
 
-        img {
-          width: 100px;
-          margin-bottom: 1rem;
-        }
+        .box_one {
 
-        .title {
-          color: #1c1c1c;
-          font-size: 3rem;
-          padding-bottom: 1rem;
+          .icon {
+            font-size: 3.8rem;
+          }
 
-          span {
-            font-weight: 900;
+          .title {
+            font-size: 2rem;
+          }
+
+          .explication {
+            font-size: 1.2rem;
           }
         }
 
-        .explication {
-          color: #1c1c1c;
-          font-size: 2rem;
-        }
-      }
+        .box_two {
 
-      .box_three {
-        padding: 3rem 2rem;
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        background-color: #25cc8a;
-        box-shadow:
-          rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          .icon {
+            font-size: 3.8rem;
+          }
 
-        img {
-          width: 100px;
-          margin-bottom: 1rem;
-        }
+          .title {
+            font-size: 2rem;
+          }
 
-        .title {
-          color: #1c1c1c;
-          font-size: 3rem;
-          line-height: 3.4rem;
-          padding-bottom: 1rem;
-
-          span {
-            font-weight: 900;
+          .explication {
+            font-size: 1.2rem;
           }
         }
 
-        .explication {
-          color: #1c1c1c;
-          font-size: 2rem;
+        .box_three {
+
+          .icon {
+            font-size: 3.8rem;
+          }
+
+          .title {
+            font-size: 2rem;
+          }
+
+          .explication {
+            font-size: 1.2rem;
+          }
         }
       }
     }

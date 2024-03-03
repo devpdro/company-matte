@@ -43,14 +43,14 @@ export const SampleCard = styled.div`
   @media screen and (min-width: 868px) and (max-width: 1180px) {
     padding: 2rem 3rem 2rem 3rem !important;
     width: 24% !important;
-    height: 570px !important;
+    height: 420px !important;
     margin-right: 5.5rem !important;
   }
 
   @media screen and (max-width: 867px) {
     padding: 2rem 3rem 3rem 3rem !important;
     width: 20% !important;
-    height: 580px !important;
+    height: 490px !important;
     margin-right: 5.5rem !important;
   }
 `
@@ -69,20 +69,20 @@ export const TitleBox = styled.h6`
   font-weight: 600;
   margin-bottom: 1rem;
   @media (max-width: 867px) {
-    font-size: 2.4rem !important;
+    font-size: 2.2rem !important;
   }
 `
 
 export const SubtitleBox = styled.p`
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.8rem;
   text-align: left !important;
   padding: 0rem;
 
   @media (max-width: 867px) {
     margin-top: 1rem !important;
-    font-size: 1.8rem !important;
+    font-size: 1.5rem !important;
   }
 `
 
@@ -118,10 +118,7 @@ export function Functionalities() {
   )
 
   return (
-    <section
-      id="funcionalidades"
-      className={`${styles.container}`}
-    >
+    <section id="funcionalidades" className={`${styles.container}`}>
       <div className={styles.box_title}>
         <p className={styles.subtitle}>
           Oferecemos <hr className={styles.linha} />

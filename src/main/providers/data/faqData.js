@@ -39,11 +39,6 @@ const faqItems = [
     answer:
       'Facilitamos o pagamento do seu site ao aceitar parcelamentos em até 12x sem juros. Aceitamos cartão de crédito, débito e pix. Além disso, oferecemos 10% de desconto para pagamentos à vista.'
   },
-   {
-    question: 'Quais são os requisitos iniciais para dar início a criação de um site?',
-    answer:
-      'Para iniciar seu site, você precisa de um domínio, hospedagem e desenvolvimento. Na VRWEB, acompanhamos você desde a escolha do domínio até a conclusão do desenvolvimento, garantindo uma experiência completa.'
-  },
 ]
 
 export default faqItems
