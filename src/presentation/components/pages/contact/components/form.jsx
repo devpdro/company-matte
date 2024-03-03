@@ -133,7 +133,7 @@ export function Form() {
             render={({ field }) => (
               <input
                 autoComplete="off"
-                type="text"
+                type="number"
                 {...field}
                 value={telefoneValue}
                 onChange={(e) => {
@@ -169,7 +169,7 @@ export function Form() {
                   field.onChange(e)
                   setMensagemValue(e.target.value)
                 }}
-                className={styles.textarea}
+                className={styles.input}
               />
             )}
           />
