@@ -1,10 +1,11 @@
 .footer {
     font-family: "Archivo", sans-serif;
     font-weight: 500;
-    background-color: #212121;
+    background-color: #1c1c1c;
     color: #F9F7F1;
     padding: 4rem 1rem 4rem 1rem;
     overflow-x: hidden;
+    z-index: 4;
 
     .logo_footer {
         display: none;

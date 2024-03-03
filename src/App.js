@@ -9,6 +9,7 @@ import {
 import { Home } from 'presentation/pages/home'
 import { About } from 'presentation/pages/about'
 import { Operation } from 'presentation/pages/operation'
+import { Contact } from 'presentation/pages/contact'
 
 export function App() {
   return (
@@ -63,6 +64,26 @@ export function App() {
                   <title>Como funciona? - VRWEB | Criação e Desenvolvimento de Sites</title>
               </Helmet>
               <Operation />
+            </div>
+          }
+        />
+         <Route
+          path="/contato"
+          element={
+            <div>
+              <Helmet>
+                <meta
+                  name="description"
+                  content="Descubra como a VRWEB transforma suas ideias em realidade. Oferecemos serviços personalizados de criação de sites profissionais e design responsivo. Desde a concepção até a entrega final, nossa equipe trabalha em estreita colaboração com você para garantir que sua visão seja realizada."
+                  />
+                <meta
+                  name="keywords"
+                  content="Criação de sites, Desenvolvimento de sites, Web design, Empresa de sites, Web development, VRWEB, Criação de websites profissionais, Marketing digital, SEO, E-commerce, Landing pages, Responsivo, Agência digital, Soluções web, Site personalizado, Design responsivo, Otimização de sites, Serviços web, Estratégias de marketing online, Gestão de conteúdo, Experiência do usuário, Tecnologia web, Design intuitivo, Performance do site, Integração de mídia social, Consultoria web, Projeto web, Desenvolvimento de aplicativos web, Soluções de comércio eletrônico, Suporte técnico.
+"
+                  />
+                  <title>Como funciona? - VRWEB | Criação e Desenvolvimento de Sites</title>
+              </Helmet>
+              <Contact />
             </div>
           }
         />

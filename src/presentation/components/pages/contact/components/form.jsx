@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useForm, Controller } from 'react-hook-form'
 
 import { yupResolver } from '@hookform/resolvers/yup'
@@ -7,12 +7,11 @@ import * as yup from 'yup'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
-import anime from 'animejs'
 import emailjs from 'emailjs-com'
 
 import { ICON } from 'presentation/assets/icons/icon'
 
-import styles from 'presentation/components/layout/main-components/forms-components/form.module.scss'
+import styles from 'presentation/components/pages/contact/components/form.module.scss'
 
 const schema = yup.object().shape({
   nome: yup.string().required('Campo Nome é obrigatório'),
@@ -20,59 +19,15 @@ const schema = yup.object().shape({
     .string()
     .email('E-mail inválido')
     .required('Campo E-mail é obrigatório'),
-  mensagem: yup.string().required('Campo Mensagem é obrigatório')
+  mensagem: yup.string().required('Campo Mensagem é obrigatório'),
+  telefone: yup.string().required('Campo Telefone é obrigatório')
 })
 
 export function Form() {
   const [nomeValue, setNomeValue] = useState('')
   const [emailValue, setEmailValue] = useState('')
   const [mensagemValue, setMensagemValue] = useState('')
-
-  useEffect(() => {
-    const animateForm = () => {
-      anime
-        .timeline()
-        .add({
-          targets: '.animateRow',
-          opacity: [0, 1],
-          translateY: [-80, 0],
-          easing: 'easeOutExpo',
-          duration: 2500
-        })
-        .add(
-          {
-            targets: '.animateRowTwo',
-            opacity: [0, 1],
-            translateY: [-40, 0],
-            easing: 'easeOutExpo',
-            duration: 2500
-          },
-          '-=2000'
-        )
-        .add(
-          {
-            targets: '.animateRowThree',
-            opacity: [0, 1],
-            translateY: [-40, 0],
-            easing: 'easeOutExpo',
-            duration: 2500
-          },
-          '-=2000'
-        )
-        .add(
-          {
-            targets: '.animateButton',
-            opacity: [0, 1],
-            translateY: [-40, 0],
-            easing: 'easeOutExpo',
-            duration: 2500
-          },
-          '-=2000'
-        )
-    }
-
-    animateForm()
-  }, [])
+  const [telefoneValue, setTelefoneValue] = useState('')
 
   const {
     handleSubmit,
@@ -105,14 +60,12 @@ export function Form() {
   return (
     <section className={styles.container}>
       <ToastContainer />
-      <form onSubmit={sendEmail}>
+      <form className={styles.form} onSubmit={sendEmail}>
         <div
-          className={`animateRow ${styles.form_group} ${
-            errors.nome ? styles.error : ''
-          }`}
+          className={`${styles.form_group} ${errors.nome ? styles.error : ''}`}
         >
-          <label htmlFor="nome" className={styles.label}>
-            Nome:
+          <label htmlFor="nome" className={styles.label_nome}>
+            Seu nome:
           </label>
           <Controller
             name="nome"
@@ -136,12 +89,12 @@ export function Form() {
           <div className={styles.error}>{errors.nome.message}</div>
         )}
         <div
-          className={`animateRowTwo ${styles.form_group} ${
+          className={` ${styles.form_group} ${
             errors.email ? styles.error : ''
           }`}
         >
-          <label htmlFor="email" className={styles.label}>
-            Email:
+          <label htmlFor="email" className={styles.label_email}>
+            Seu e-mail:
           </label>
           <Controller
             name="email"
@@ -167,18 +120,48 @@ export function Form() {
           <div className={styles.error}>{errors.email.message}</div>
         )}
         <div
+          className={`${styles.form_group} ${
+            errors.telefone ? styles.error : ''
+          }`}
+        >
+          <label htmlFor="telefone" className={styles.label_telefone}>
+            Seu telefone:
+          </label>
+          <Controller
+            name="telefone"
+            control={control}
+            render={({ field }) => (
+              <input
+                autoComplete="off"
+                type="text"
+                {...field}
+                value={telefoneValue}
+                onChange={(e) => {
+                  field.onChange(e)
+                  setTelefoneValue(e.target.value)
+                }}
+                className={styles.input}
+              />
+            )}
+          />
+        </div>
+        {errors.telefone && (
+          <div className={styles.error}>{errors.telefone.message}</div>
+        )}
+        <div
           className={`animateRowThree ${styles.form_group} ${
             errors.mensagem ? styles.error : ''
           }`}
         >
           <label className={styles.label_textarea} htmlFor="mensagem">
-            Mensagem:
+            Descreva o que precisa:
           </label>
           <Controller
             name="mensagem"
             control={control}
             render={({ field }) => (
-              <textarea
+              <input
+                type="text"
                 {...field}
                 autoComplete="off"
                 value={mensagemValue}
@@ -195,8 +178,9 @@ export function Form() {
           <div className={styles.error}>{errors.mensagem.message}</div>
         )}
         <div className={`animateButton ${styles.btn_form}`}>
-          <button type="submit">
-            Enviar <ICON.VscArrowSmallRight className={styles.icon} />
+          <button className={styles.btn} type="submit">
+            <p className={styles.text_btn}>Enviar</p>
+            <ICON.VscArrowSmallRight className={styles.icon} />
           </button>
         </div>
       </form>

@@ -1,20 +1,17 @@
 .container {
-    height: 100vh;
-    font-family:
-        'Darker Grotesque',
-        -apple-system,
-        Roboto,
-        Arial,
-        sans-serif;
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin-top: 3rem;
+    margin: 8rem 0 6rem 0;
 
     .box_container {
         width: 1280px;
         margin: 0 auto;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         padding: 0 2rem;
 
@@ -23,52 +20,55 @@
             font-size: 1rem;
             display: flex;
             align-items: flex-start;
-            justify-content: space-between;
+            justify-content: center;
             flex-direction: column;
 
             .subtitle {
-                margin-top: 1rem;
-                font-size: 1.4rem;
-                line-height: 0rem;
+                font-size: 1.5rem;
+                font-weight: 400;
+                margin-left: 0.1rem;
+                margin-top: 3.2rem;
+
+                .linha {
+                    display: inline-block;
+                    margin-left: 0.5rem;
+                    margin-bottom: 0.4rem;
+                    width: 2.5rem;
+                    border: 1px solid #DDA827;
+                }
             }
 
             .title {
-                font-size: 5.5rem;
-                line-height: 6.2rem;
+                font-size: 3rem;
+                line-height: 4rem;
+                font-weight: 600;
             }
 
             .information {
-                font-size: 1.8rem;
+                font-size: 1.7rem;
+                font-weight: 400;
             }
 
             .text_email {
                 margin-top: 3.5rem;
                 font-size: 1.8rem;
+                font-weight: 400;
             }
 
-            a {
-                text-decoration: none;
-                color: #F9F7F1;
+            .box_email {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 0.3rem;
 
                 .email {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-top: 0.1rem;
                     font-size: 1.5rem;
-                    font-weight: 550;
-                    border-bottom: 2px solid transparent;
-                    transition: border-bottom 0.3s ease;
-                    padding-bottom: 0.2rem;
+                    font-weight: 400;
+                }
 
-                    &:hover {
-                        border-bottom: 2px solid #F9F7F1;
-                    }
-
-                    .icon {
-                        font-size: 1.2rem;
-                        margin: 1rem 0rem 0.5rem 0rem;
-                    }
+                .icon {
+                    font-size: 1.5rem;
+                    margin-left: 0.3rem;
                 }
             }
         }
@@ -80,76 +80,70 @@
 }
 
 @media (max-width: 776px) {
-    .box_container {
-        width: 1280px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        
-        .box_text {
-            padding-left: 0.4rem;
-            padding-right: 0.6rem;
-            padding-top: 24.2rem!important;
-            width: 100%;
-            font-size: 1rem;
+    .container {
+        margin: 3rem 0 0rem 0 !important;
+
+        .box_container {
+            width: 1280px;
+            margin: 0 auto;
             display: flex;
             align-items: flex-start;
-            justify-content: space-between;
+            justify-content: flex-start;
             flex-direction: column;
+            margin: 0rem 0 0rem 0 !important;
 
-            .subtitle {
-                font-size: 1.4rem;
-                line-height: 0rem;
-                margin-bottom: 0.5rem;
-            }
+            .box_text {
+                padding-left: 0.4rem;
+                padding-right: 0.6rem;
+                margin-top: 2rem;
+                width: 100%;
+                font-size: 1rem;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
 
-            .title {
-                font-size: 4rem!important;
-                line-height: 4rem!important;
-                margin-bottom: 0.5rem;
-            }
+                .subtitle {
+                    font-size: 1.4rem !important;
+                    margin-bottom: 0.3rem;
+                }
 
-            .information {
-                font-size: 1.8rem;
-            }
+                .title {
+                    font-size: 2.5rem !important;
+                    line-height: 2.7rem !important;
+                    margin-bottom: 0.5rem;
+                }
 
-            .text_email {
-                margin-top: 3.5rem;
-                font-size: 1.8rem;
-            }
+                .information {
+                    font-size: 1.4rem !important;
+                    padding-right: 2rem;
+                }
 
-            a {
-                text-decoration: none;
-                color: #F9F7F1;
+                .text_email {
+                    margin-top: 2.5rem !important;
+                    font-size: 1.4rem !important;
+                    margin-bottom: 0.3rem;
+                }
 
-                .email {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-top: 0.1rem;
-                    font-size: 1.5rem;
-                    font-weight: 550;
-                    border-bottom: 2px solid transparent;
-                    transition: border-bottom 0.3s ease;
-                    padding-bottom: 0.2rem;
-
-                    &:hover {
-                        border-bottom: 2px solid #F9F7F1;
+                .box_email {
+                    .email {
+                        font-size: 1.4rem !important;
+                        font-weight: 400;
                     }
 
                     .icon {
-                        font-size: 1.2rem;
-                        margin: 1rem 0rem 0.5rem 0rem;
+                        font-size: 1.4rem !important;
+                        margin-left: 0.3rem !important;
+                        margin-top: 0.2rem;
                     }
                 }
-            }
-        }
 
-        .box_form {
-            width: 90%;
-            padding-bottom: 4rem;
+            }
+
+            .box_form {
+                width: 90%;
+                margin-bottom: 4rem;
+            }
         }
     }
 }
