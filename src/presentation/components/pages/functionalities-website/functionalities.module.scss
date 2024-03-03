@@ -1,23 +1,33 @@
 .container {
-  margin-top: 6rem;
-  margin-bottom: 10.5rem;
-  font-family:
-    'Darker Grotesque',
-    -apple-system,
-    Roboto,
-    Arial,
-    sans-serif;
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  margin: 6rem 0 0rem 0;
 
   .box_title {
-    text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: left;
+
+    .subtitle {
+      text-align: left;
+      font-size: 1.2rem;
+      margin-bottom: 0.6rem;
+      margin-left: 0.3rem;
+      margin-top: 0.7rem;
+      font-weight: 400;
+
+      .linha {
+        display: inline-block;
+        margin-bottom: 0.4rem;
+        width: 2.5rem;
+        margin-left: 0.3rem;
+        border: 1px solid #DDA827;
+      }
+    }
 
     .title {
-      font-weight: 0 !important;
       font-size: 3.5rem;
-
-      span {
-        font-weight: 900;
-      }
+      font-weight: 500;
     }
   }
 }
@@ -25,11 +35,9 @@
 @media (max-width: 867px) {
   .box_title {
 
-
     .title {
-      padding: 0rem 2rem 0rem 2rem!important;
+      padding: 0rem 2rem 0rem 2rem !important;
       font-size: 3.3rem !important;
-
 
       span {
         font-weight: 900;
@@ -43,7 +51,7 @@
     text-align: center;
 
     .title {
-      padding: 0rem 2rem 0rem 2rem!important;
+      padding: 0rem 2rem 0rem 2rem !important;
       font-size: 2.8rem !important;
 
 

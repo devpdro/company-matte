@@ -43,7 +43,7 @@ export function Navbar() {
   return (
     <nav className={styles.navbar} id="navbar">
       <div className={styles.header__content}>
-        <div className={styles.box_logo}></div>
+        <div className={styles.box_logo}><LinkRouter to="/">Logo</LinkRouter></div>
         <nav
           className={`${styles.header__content__nav} ${
             menuOpen && screenWidth <= 3840 ? styles.isMenu : ''

@@ -21,8 +21,10 @@ import webDesign from 'presentation/assets/images/img/web-design.webp'
 import sistema from 'presentation/assets/images/img/sistema-web.webp'
 import desenvolvimentoSoftware from 'presentation/assets/images/img/desenvolvimento-de-software.webp'
 import razoes from 'presentation/assets/images/img/5-razoes.webp'
+import pessoasTrabalhando from 'presentation/assets/images/img/pessoas-trabalhando.webp'
 
 const images = {
+  pessoasTrabalhando,
   razoes,
   desenvolvimentoSoftware,
   sistema,

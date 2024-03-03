@@ -2,10 +2,12 @@
     font-family: "Archivo", sans-serif;
     font-weight: 500;
     max-width: 1280px;
-    margin: 7.5rem auto 12rem auto;
+    margin: 7rem auto 12rem auto;
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    overflow-x: hidden;
+    padding: 0 2rem;
 
     .about_box {
         width: 70%;
@@ -15,7 +17,7 @@
             text-align: left;
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
-            font-weight: 300;
+            font-weight: 400;
 
             .linha {
                 display: inline-block;
@@ -38,12 +40,69 @@
         width: 55%;
 
         .paragraph {
-            font-size: 1rem;
+            font-size: 1.1rem;
             line-height: 1.5rem;
             font-weight: 300;
             margin-top: 1.8rem;
         }
 
 
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .container {
+        margin: 5rem auto 12rem auto;
+        padding: 0 0rem;
+
+        .about_box {
+
+            padding-right: 2.5rem;
+            padding-left: 2rem;
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .title {
+                font-size: 1.8rem;
+            }
+        }
+
+        .explication {
+            width: 100%;
+            padding: 0 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 5rem auto 9rem auto;
+
+        .about_box {
+            width: 100%;
+            padding-right: 2.5rem;
+            padding-left: 2rem;
+            margin-bottom: 0rem;
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .title {
+                font-size: 1.5rem;
+            }
+        }
+
+        .explication {
+            width: 100%;
+            padding: 0 2rem;
+        }
     }
 }

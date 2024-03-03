@@ -38,15 +38,6 @@ export function OurMission() {
             cliente, prosperidade e crescimento constante e sustentável.
           </p>
         </div>
-        <div className={styles.box}>
-          <ICON.IoConstructOutline className={styles.icon} />
-          <h1 className={styles.title}>Atributos da Visão</h1>
-          <p className={styles.paragraph}>
-            Atributos da nossa visão incluem solidez, respeito pelos indivíduos,
-            atuação como uma empresa cidadã, compromisso com o sucesso do
-            cliente, prosperidade e crescimento constante e sustentável.
-          </p>
-        </div>
       </div>
     </header>
   )

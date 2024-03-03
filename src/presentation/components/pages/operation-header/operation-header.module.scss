@@ -30,7 +30,7 @@
             z-index: 2;
 
             .title {
-                font-size: 3.5rem;
+                font-size: 4rem;
                 color: #F9F7F1;
                 font-weight: 600;
                 margin-bottom: 2rem;
@@ -79,106 +79,65 @@
                         transition: width 0.5s ease, right 8s ease 1.5s;
                     }
                 }
-            }
 
-            .icon {
-                font-size: 1.5rem;
-                margin-left: 0.2rem;
+                .icon {
+                    font-size: 1.5rem;
+                    margin-left: 0.2rem;
+                }
             }
         }
+    }
 
-        .box_overlay {
+    .box_overlay {
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        z-index: 2;
+
+        .text_overlay {
+            width: 480px;
+            height: 180px;
+            padding: 2.2rem 4rem;
             position: absolute;
             bottom: 0%;
             right: 0%;
-            z-index: 2;
+            background-color: #F9F7F1;
+            font-size: 2.3rem;
+            font-weight: 200;
+            color: #1c1c1c;
 
-            .text_overlay {
-                width: 480px;
-                height: 180px;
-                padding: 2.2rem 4rem;
-                position: absolute;
-                bottom: 0%;
-                right: 0%;
-                background-color: #F9F7F1;
-                font-size: 2.3rem;
-                font-weight: 200;
+            .linha {
+                display: inline-block;
+                margin-left: 2rem;
+                margin-bottom: 0.5rem;
+                width: 2.5rem;
+                border: 1px solid #DDA827;
+            }
+
+            span {
+                position: relative;
+                text-transform: uppercase;
+                font-size: 0.9rem;
+                font-weight: 400;
+                overflow: hidden;
                 color: #1c1c1c;
+                padding: 0.2rem 0;
 
-                .linha {
-                    display: inline-block;
-                    margin-left: 2rem;
-                    margin-bottom: 0.5rem;
-                    width: 2.5rem;
-                    border: 1px solid #DDA827;
+                &::after,
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 0;
+                    height: 2px;
+                    background-color: #DDA827;
+                    transition: width 0.5s ease, right 8s ease 1.5s;
                 }
 
-                span {
-                    position: relative;
-                    text-transform: uppercase;
-                    font-size: 0.9rem;
-                    font-weight: 400;
-                    overflow: hidden;
-                    color: #1c1c1c;
-                    padding: 0.2rem 0;
-
-                    &::after,
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        bottom: 0;
-                        right: 0;
-                        width: 0;
-                        height: 2px;
-                        background-color: #DDA827;
-                        transition: width 0.5s ease, right 8s ease 1.5s;
-                    }
-
-                    &:hover::after {
-                        width: 100%;
-                        left: 0;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1084px) {
-    .text_overlay {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 807px) {
-    .container {
-
-        .header {
-            margin-top: 5.2rem !important;
-
-            .box_title {
-                top: 10% !important;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .container {
-        .header {
-            .box_title {
-                top: 17% !important;
-                left: 1% !important;
-                padding: 0 2rem 0 1.5rem;
-
-                .title {
-                    font-size: 3.2rem !important;
-
-                    margin-bottom: 0.8rem;
-                }
-
-                .btn {
-                    margin-top: 1rem !important;
+                &:hover::after {
+                    width: 100%;
+                    left: 0;
                 }
             }
         }

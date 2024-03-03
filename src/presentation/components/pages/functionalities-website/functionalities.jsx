@@ -7,7 +7,7 @@ import cardData from 'main/providers/data/cardData'
 import HorizontalScroll from 'presentation/hooks/horizontal-scroll'
 
 import styled from 'styled-components'
-import styles from 'presentation/components/layout/main-components/functionalities-components/functionalities.module.scss'
+import styles from 'presentation/components/pages/functionalities-website/functionalities.module.scss'
 
 export const HorizontalSection = styled.section`
   position: relative;
@@ -31,13 +31,12 @@ export const SampleCard = styled.div`
   position: relative;
   padding: 3rem 3rem;
   background-color: ${(props) => props.cardColor};
-  width: 28%;
-  height: 510px !important;
+  width: 27%;
+  height: 430px !important;
   margin-right: 8.5rem;
-
   box-shadow:
-    rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    rgba(50, 50, 93, 0.25) 0px 13px 17px -5px,
+    rgba(0, 0, 0, 0.1) 0px 8px 16px -8px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -58,29 +57,31 @@ export const SampleCard = styled.div`
 
 export const CardImage = styled.img`
   width: 130px;
-  margin-bottom: 0.5rem;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
   @media (max-width: 867px) {
     width: 110px !important;
   }
 `
 
 export const TitleBox = styled.h6`
-  color: #1c1c1c;
-  font-size: 3rem;
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
   @media (max-width: 867px) {
     font-size: 2.4rem !important;
   }
 `
 
 export const SubtitleBox = styled.p`
-  color: #1c1c1c;
-  font-size: 2rem !important;
-  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.8rem;
   text-align: left !important;
   padding: 0rem;
 
   @media (max-width: 867px) {
-    margin-top: 1rem!important;
+    margin-top: 1rem !important;
     font-size: 1.8rem !important;
   }
 `
@@ -91,12 +92,13 @@ export function Functionalities() {
   }, [])
 
   const colors = [
-    '#92AAFE',
-    '#25CC8A',
-    '#F2D147',
-    '#C6A1F8',
     '#F9F7F1',
-    '#F1C957'
+    '#F2D147',
+    '#25CC8A',
+    '#C6A1F8',
+    '#92AAFE',
+    '#F9F7F1',
+    '#F2D147'
   ]
 
   const SampleCards = React.memo(({ cardData }) =>
@@ -118,18 +120,13 @@ export function Functionalities() {
   return (
     <section
       id="funcionalidades"
-      className={`${styles.container} panel`}
-      data-color="white"
+      className={`${styles.container}`}
     >
-      <div
-        data-aos="fade-down"
-        data-aos-easing="ease"
-        data-aos-duration="850"
-        className={styles.box_title}
-      >
-        <p className={styles.title}>
-          Nossas <span>Funcionalidades</span>
+      <div className={styles.box_title}>
+        <p className={styles.subtitle}>
+          Oferecemos <hr className={styles.linha} />
         </p>
+        <h1 className={styles.title}>Principais recursos</h1>
       </div>
       <HorizontalSection>
         <HorizontalScroll>

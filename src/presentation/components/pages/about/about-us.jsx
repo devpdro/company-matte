@@ -18,10 +18,10 @@ export function AboutUs() {
           Uma agência de desenvolvimento web é especializada em projetar,
           planejar e implementar soluções digitais para empresas de diversos
           setores. Nosso objetivo é fornecer sites de alta qualidade que sejam
-          visualmente atraentes, funcionais e fáceis de gerenciar.
+          visualmente atraentes e funcionais.
         </p>
         <p className={styles.paragraph}>
-          Com mais de 2 anos de experiência na área, nossa agência tem se
+          Com mais de 2 anos de experiência na área, nossa empresa tem se
           destacado pela excelência na entrega de projetos e pela habilidade de
           compreender as necessidades específicas de cada cliente. Durante esse
           tempo, desenvolvemos um profundo conhecimento em diversas tecnologias

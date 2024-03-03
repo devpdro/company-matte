@@ -1,0 +1,80 @@
+.container {
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
+    max-width: 1280px;
+    margin: 0rem auto 8rem auto;
+    padding: 0 2rem;
+
+    .box_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        .texts_box {
+            width: 40%;
+            margin-right: 1.5rem;
+
+            .subtitle {
+                text-align: left;
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+                margin-left: 0.3rem;
+                margin-top: 0.7rem;
+                font-weight: 400;
+
+                .linha {
+                    display: inline-block;
+                    margin-bottom: 0.4rem;
+                    width: 2.5rem;
+                    margin-left: 0.3rem;
+                    border: 1px solid #DDA827;
+                }
+            }
+
+            .title {
+                font-size: 2.3rem;
+                font-weight: 500;
+            }
+        }
+
+        .technologies_box {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            width: 82%;
+            margin-top: 4rem;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        .box_container {
+            flex-direction: column;
+
+            .texts_box {
+                width: 100%;
+                margin-right: 0rem;
+
+                .subtitle {
+                    font-size: 1.1rem;
+                }
+
+                .title {
+                    font-size: 2.1rem;
+                }
+            }
+
+            .technologies_box {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                width: 100%;
+                margin-top: 3rem;
+            }
+        }
+    }
+}

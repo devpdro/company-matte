@@ -2,7 +2,7 @@
     font-family: "Archivo", sans-serif;
     font-weight: 500;
     max-width: 1280px;
-    margin: 13rem auto 13rem auto;
+    margin: 2rem auto 13rem auto;
     overflow-x: hidden;
 
     .texts_container {
@@ -10,7 +10,7 @@
         align-items: flex-end;
         justify-content: space-between;
         margin-bottom: 3.5rem;
-        padding: 0rem 1rem;
+
 
         .texts_box {
             .subtitle {
@@ -72,7 +72,6 @@
         display: flex;
         align-items: flex-start;
         justify-content: center;
-        padding: 0rem 1rem;
 
         .article {
             width: 100%;
@@ -174,11 +173,12 @@
 
                     font-size: 1.1rem;
                     margin-bottom: 0.5rem;
+                    font-weight: 400;
                     margin-left: 0.2rem;
                 }
 
                 .title {
-                    font-size: 3rem;
+                    font-size: 2.6rem;
                 }
             }
 

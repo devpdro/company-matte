@@ -6,11 +6,12 @@ import negocio from 'presentation/assets/images/img/negocio.png'
 import otimizacaoWeb from 'presentation/assets/images/img/otimizacao-da-web.png'
 import responsivo from 'presentation/assets/images/img/responsivo.png'
 
+
 const cardData = [
   {
     title: 'Responsividade',
     text: 'Proporcionamos uma experiência perfeita em qualquer dispositivo: Computador, Notebook, Tablet e Celular, utilizando tecnologia de ponta para adaptação completa.',
-    image: responsivo
+    image: responsivo 
   },
   {
     title: 'Blog Integrado',

@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom'
 import { Home } from 'presentation/pages/home'
 import { About } from 'presentation/pages/about'
+import { Operation } from 'presentation/pages/operation'
 
 export function App() {
   return (
@@ -61,7 +62,7 @@ export function App() {
                   />
                   <title>Como funciona? - VRWEB | Criação e Desenvolvimento de Sites</title>
               </Helmet>
-              <Home />
+              <Operation />
             </div>
           }
         />
