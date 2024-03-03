@@ -17,7 +17,7 @@
 
         .texts_box {
             width: 40%;
-            padding: 0rem 4rem 0 0rem;
+            padding: 0rem 4rem 0 2rem;
             margin-top: 1rem;
 
             .subtitle {
@@ -158,16 +158,19 @@
                         display: flex;
                         align-items: flex-start;
                         justify-content: center;
+                        color: #1c1c1c;
                     }
 
                     .value {
                         font-size: 2.5rem;
+                        color: #1c1c1c;
                     }
 
                     .month {
                         display: flex;
                         align-items: flex-end;
                         justify-content: center;
+                        color: #1c1c1c;
                     }
                 }
             }
@@ -277,13 +280,16 @@
                         display: flex;
                         align-items: flex-start;
                         justify-content: center;
+                        color: #1c1c1c;
                     }
 
                     .value {
+                        color: #1c1c1c;
                         font-size: 2.5rem;
                     }
 
                     .month {
+                        color: #1c1c1c;
                         display: flex;
                         align-items: flex-end;
                         justify-content: center;

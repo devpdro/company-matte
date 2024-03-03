@@ -15,6 +15,7 @@
       text-align: left;
       font-size: 1.2rem;
       margin-bottom: 0.8rem;
+      font-weight: 400;
 
       .linha {
         margin-left: 0.2rem;
@@ -80,8 +81,15 @@
 }
 
 @media (max-width: 776px) {
-  h2 {
-    font-size: 3.2rem !important;
-    text-align: left;
+  .faq-container {
+    .faq_box {
+      .subtitle {
+        font-size: 1.1rem;
+      }
+
+      .title {
+        font-size: 2.7rem;
+      }
+    }
   }
 }
