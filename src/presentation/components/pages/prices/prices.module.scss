@@ -16,8 +16,8 @@
         padding-right: 2rem;
 
         .texts_box {
-            width: 35%;
-            padding: 0rem 2rem 0 2rem;
+            width: 40%;
+            padding: 0rem 4rem 0 0rem;
             margin-top: 1rem;
 
             .subtitle {
@@ -37,7 +37,7 @@
 
             .title {
                 padding-top: 0.5rem;
-                font-size: 2.9rem;
+                font-size: 3rem;
                 font-weight: 600;
                 line-height: 3rem;
             }
@@ -86,11 +86,12 @@
         }
 
         .basic {
-            padding: 2.2rem 2rem;
+            padding: 2.2rem 1.7rem;
             width: 30%;
+            height: 1201px;
             border-radius: 15px;
             box-shadow: 0px 3px 10px 0px rgba(218, 146, 70, 0.6);
-            margin-right: 1.8rem;
+            margin-right: 1.3rem;
             margin-top: 0.7rem;
             margin-bottom: 1rem;
 
@@ -151,7 +152,7 @@
 
                 .total_box {
                     display: flex;
-                    color: red;
+                    color: #1c1c1c;
 
                     .coin {
                         display: flex;
@@ -205,9 +206,9 @@
         }
 
         .custom {
-            padding: 2.2rem 2rem;
+            padding: 2.2rem 1.7rem;
             width: 30%;
-            margin-left: 1.8rem;
+            margin-left: 1.3rem;
             border-radius: 15px;
             box-shadow: 0px 3px 10px 0px rgba(218, 146, 70, 0.6);
             margin-top: 1rem;
@@ -270,7 +271,7 @@
 
                 .total_box {
                     display: flex;
-                    color: red;
+                    color: #1c1c1c;
 
                     .coin {
                         display: flex;

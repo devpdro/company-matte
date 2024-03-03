@@ -61,8 +61,8 @@ export function Prices() {
             <p className={styles.discount}>De R$ 789,90</p>
             <div className={styles.total_box}>
               <span className={styles.coin}>R$</span>
-              <span className={styles.value}>51,90</span>
-              <span className={styles.month}>/mês</span>
+              <span className={styles.value}>48,90</span>
+              <span className={styles.month}>/12x</span>
             </div>
           </div>
           <p className={styles.payment}>Pagamento em até 12x sem juros</p>
