@@ -12,12 +12,12 @@ const faqItems = [
   {
     question: 'Qual é a garantia de segurança ao contratar um site com a VRWEB?',
     answer:
-      'A VRWEB oferece um contrato digital detalhado antes do desenvolvimento do seu site, abordando prazos, custos e responsabilidades. Isso garante transparência e validade jurídica ao processo de contratação dos nossos serviços.'
+      'A Matte oferece um contrato digital detalhado antes do desenvolvimento do seu site, abordando prazos, custos e responsabilidades. Isso garante transparência e validade jurídica ao processo de contratação dos nossos serviços.'
   },
   {
     question: 'Quais são os requisitos iniciais para dar início a criação de um site?',
     answer:
-      'Para iniciar seu site, você precisa de um domínio, hospedagem e desenvolvimento. A VRWEB oferece suporte em todas as etapas, desde a escolha do domínio até o desenvolvimento do site.'
+      'Para iniciar seu site, você precisa de um domínio, hospedagem e desenvolvimento. A Matte oferece suporte em todas as etapas, desde a escolha do domínio até o desenvolvimento do site.'
   },
   {
     question: 'Vou ter algum custo após a publicação do site?',

@@ -1,7 +1,7 @@
 .container {
   font-family: "Archivo", sans-serif;
   font-weight: 500;
-  margin: 6.5rem 0 16.5rem 0;
+  margin: 6.5rem 0 11rem 0;
   padding: 0 2rem;
   overflow-x: hidden;
 
@@ -161,12 +161,12 @@
 
 @media screen and (min-width: 897px) and (max-width: 1140px) {
   .container {
-    margin: 4.5rem 0 16.5rem 0;
+    margin: 4.5rem 0 10rem 0;
 
     .box_container {
-
       .box_title {
         position: sticky;
+        top: 0;
 
         .subtitle {
           font-size: 1.1rem;
@@ -234,7 +234,7 @@
 
 @media screen and (max-width: 897px) {
   .container {
-    margin: 4.5rem 0 16.5rem 0;
+    margin: 4.5rem 0 8rem 0;
     padding: 0 0rem;
 
     .box_container {

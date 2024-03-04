@@ -15,7 +15,7 @@ export function AboutUs() {
       </div>
       <div className={styles.explication}>
         <p className={styles.paragraph}>
-          Uma agência de desenvolvimento web é especializada em projetar,
+          Uma empresa de desenvolvimento web é especializada em projetar,
           planejar e implementar soluções digitais para empresas de diversos
           setores. Nosso objetivo é fornecer sites de alta qualidade que sejam
           visualmente atraentes e funcionais.

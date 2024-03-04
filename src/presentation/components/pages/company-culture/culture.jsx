@@ -34,7 +34,7 @@ export function ChooseBenefits() {
           <Benefits
             numbering="01"
             title="Melhor preço de mercado"
-            paragraph="Estamos empenhados em criar o seu site profissional, projetado não apenas para atender às necessidades atuais, mas também para preservar os recursos futuros. Oferecemos os melhores preços do mercado, além de um atendimento exclusivo, porque a realização dos seus objetivos é nossa prioridade máxima."
+            paragraph="Na Matte, estamos empenhados em criar o seu site profissional, projetado não apenas para atender às necessidades atuais, mas também para preservar os recursos futuros. Oferecemos os melhores preços do mercado, além de um atendimento exclusivo, porque a realização dos seus objetivos é nossa prioridade máxima."
           />
           <button className={styles.btn}>
             <p className={styles.text_btn}>Como funciona?</p>

@@ -146,8 +146,20 @@
 }
 
 @media screen and (max-width: 1084px) {
-    .text_overlay {
-        display: none;
+    .container {
+        .header {
+            margin-top: 5.3rem !important;
+
+            .box_title {
+                .title {
+                    margin-bottom: 1.5rem !important;
+                }
+            }
+
+            .text_overlay {
+                display: none;
+            }
+        }
     }
 }
 

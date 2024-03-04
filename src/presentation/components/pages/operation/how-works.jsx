@@ -31,9 +31,6 @@ export function HowWorks() {
             </span>
           </div>
           <div
-            data-aos="fade-left"
-            data-aos-easing="ease"
-            data-aos-duration="950"
             className={styles.box_three}
           >
             <ICON.CiViewList className={styles.icon} />

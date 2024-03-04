@@ -1,7 +1,4 @@
-import React, { useEffect } from 'react'
-
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import React from 'react'
 
 import cardData from 'main/providers/data/cardData'
 import HorizontalScroll from 'presentation/hooks/horizontal-scroll'
@@ -87,10 +84,6 @@ export const SubtitleBox = styled.p`
 `
 
 export function Functionalities() {
-  useEffect(() => {
-    AOS.init()
-  }, [])
-
   const colors = [
     '#F9F7F1',
     '#F2D147',
@@ -104,9 +97,6 @@ export function Functionalities() {
   const SampleCards = React.memo(({ cardData }) =>
     cardData.map((data, i) => (
       <SampleCard
-        data-aos="fade-left"
-        data-aos-easing="ease"
-        data-aos-duration="850"
         key={`sampleCard-${i}`}
         cardColor={colors[i % colors.length]}
       >

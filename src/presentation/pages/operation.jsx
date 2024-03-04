@@ -5,10 +5,6 @@ import { OperationHeader } from 'presentation/components/pages/operation-header/
 import { HowWorks } from 'presentation/components/pages/operation/how-works'
 import { Functionalities } from 'presentation/components/pages/functionalities-website/functionalities'
 import { Technologies } from 'presentation/components/pages/technologies-used/technologies'
-import { WorkTogether } from 'presentation/components/common/work-together/work'
-import { Prices } from 'presentation/components/pages/prices/prices'
-import { Blog } from 'presentation/components/pages/blog/blog'
-import { Faq } from 'presentation/components/pages/faq/faq'
 import { Footer } from 'presentation/components/common/footer'
 
 export function Operation() {
@@ -52,10 +48,6 @@ export function Operation() {
       <HowWorks />
       <Functionalities />
       <Technologies />
-      <WorkTogether />
-      <Prices />
-      <Blog />
-      <Faq />
       <Footer />
     </main>
   )
