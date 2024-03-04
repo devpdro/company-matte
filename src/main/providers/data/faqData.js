@@ -10,9 +10,9 @@ const faqItems = [
       'Todos os nossos sites são responsivos, o que implica que são desenvolvidos em três versões distintas: para PC, Tablet e Smartphone. Isso assegura que os usuários desfrutem da melhor experiência possível, independentemente do dispositivo que utilizem para acessar o site.'
   },
   {
-    question: 'Qual é a garantia de segurança ao contratar um site com a VRWEB?',
+    question: 'Qual é a garantia de segurança ao contratar um site?',
     answer:
-      'A Matte oferece um contrato digital detalhado antes do desenvolvimento do seu site, abordando prazos, custos e responsabilidades. Isso garante transparência e validade jurídica ao processo de contratação dos nossos serviços.'
+      'Oferecemos um contrato digital detalhado antes do desenvolvimento do seu site, abordando prazos, custos e responsabilidades. Isso garante transparência e validade jurídica ao processo de contratação dos nossos serviços.'
   },
   {
     question: 'Quais são os requisitos iniciais para dar início a criação de um site?',

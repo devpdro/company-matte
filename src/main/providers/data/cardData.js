@@ -1,11 +1,10 @@
 import blog from 'presentation/assets/images/img/blog.png'
 import computadorRapido from 'presentation/assets/images/img/computador-rápido.png'
-import inovacao from 'presentation/assets/images/img/inovacao.png'
-import interfaceUsuario from 'presentation/assets/images/img/interface-de-usuario.png'
 import negocio from 'presentation/assets/images/img/negocio.png'
 import otimizacaoWeb from 'presentation/assets/images/img/otimizacao-da-web.png'
 import responsivo from 'presentation/assets/images/img/responsivo.png'
-
+import design from 'presentation/assets/images/img/design-ux.png'
+import suporte from 'presentation/assets/images/img/suporte-tecnico.png'
 
 const cardData = [
   {
@@ -24,9 +23,9 @@ const cardData = [
     image: otimizacaoWeb
   },
   {
-    title: 'Área Restrita',
-    text: 'Acesso exclusivo para usuários cadastrados, permitindo o acesso a informações confidenciais, como documentos, planilhas, imagens e outros arquivos.',
-    image: inovacao
+    title: 'Design UI/UX',
+    text: 'Priorizamos o design intuitivo e agradável. Com uma abordagem centrada no usuário, criamos interfaces que facilitam a navegação e proporcionam uma experiência atraente. Nosso foco está em garantir que seu site seja visualmente agradável e funcional.',
+    image: design
   },
   {
     title: 'Destaque para Parceiros',
@@ -34,9 +33,9 @@ const cardData = [
     image: negocio
   },
   {
-    title: 'Vitrine de Produtos',
-    text: 'Apresente seus produtos de maneira atraente, com informações detalhadas e fotos de alta qualidade. Organize-os em categorias para facilitar a navegação e sugira produtos relacionados para impulsionar as vendas.',
-    image: interfaceUsuario
+    title: 'Suporte Contínuo',
+    text: 'Proporcionamos suporte contínuo e atualizações semanais para garantir a segurança e o bom funcionamento do seu site. Além disso, você pode solicitar alterações mensais e nossa equipe de desenvolvimento web cuidará de tudo.',
+    image: suporte
   },
   {
     title: 'Tecnologia de Ponta',

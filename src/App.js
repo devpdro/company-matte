@@ -20,12 +20,14 @@ export function App() {
           element={
             <div>
               <Helmet>
+                <meta name="facebook-domain-verification" content="7y4vnrbfajjqs0c26hfez4fanjikm3" />
+                <meta name="robots" content="index, follow"/>
                 <meta
                   name="description"
-                  content="A VRWEB oferece serviços de criação de sites profissionais e design responsivo. Impulsione sua presença online com nossas soluções de desenvolvimento web."
+                  content="Transforme sua visão em realidade com a Matte. Somos uma empresa especializada em desenvolvimento de sites, pronta para tornar suas ideias em projetos funcionais e atrativos."
                 />
-                <meta name="keywords" content="Criação de sites, Desenvolvimento de sites, Web design, Empresa de sites, Web development, VRWEB, Criação de websites profissionais, Marketing digital, SEO, E-commerce, Landing pages, Responsivo, Agência digital, Soluções web, Site personalizado, Design responsivo, Otimização de sites, Serviços web, Estratégias de marketing online, Gestão de conteúdo, Experiência do usuário, Tecnologia web, Design intuitivo, Performance do site, Integração de mídia social, Consultoria web, Projeto web, Desenvolvimento de aplicativos web, Soluções de comércio eletrônico, Suporte técnico." />
-                <title>VRWEB - Criação e Desenvolvimento de Sites</title>
+                <meta name="keywords" content="Criação de sites, Desenvolvimento de sites, Web design, Empresa de sites, Web development, Matte, Criação de websites profissionais, Marketing digital, SEO, E-commerce, Landing pages, Responsivo, Soluções web, Site personalizado, Design responsivo, Otimização de sites, Serviços web, Experiência do usuário, Tecnologia web, Design intuitivo, Performance do site, Integração de mídia social, Projeto web." />
+                <title>Desenvolvimento de Site Personalizado | Matte - Transforme sua ideia em realidade</title>
               </Helmet>
               <Home />
             </div>
@@ -36,12 +38,14 @@ export function App() {
           element={
             <div>
               <Helmet>
+                <meta name="facebook-domain-verification" content="7y4vnrbfajjqs0c26hfez4fanjikm3" />
+                <meta name="robots" content="index, follow"/>
                 <meta
                   name="description"
-                  content="A VRWEB oferece serviços de criação de sites profissionais e design responsivo. Impulsione sua presença online com nossas soluções de desenvolvimento web."
+                  content="Uma empresa de desenvolvimento web é especializada em projetar, planejar e implementar soluções digitais para empresas de diversos setores. Nosso objetivo é fornecer sites de alta qualidade que sejam visualmente atraentes e funcionais."
                 />
-                <meta name="keywords" content="Criação de sites, Desenvolvimento de sites, Web design, Empresa de sites, Web development, VRWEB, Criação de websites profissionais, Marketing digital, SEO, E-commerce, Landing pages, Responsivo, Agência digital, Soluções web, Site personalizado, Design responsivo, Otimização de sites, Serviços web, Estratégias de marketing online, Gestão de conteúdo, Experiência do usuário, Tecnologia web, Design intuitivo, Performance do site, Integração de mídia social, Consultoria web, Projeto web, Desenvolvimento de aplicativos web, Soluções de comércio eletrônico, Suporte técnico." />
-                <title>Quem somos - VRWEB | Criação e Desenvolvimento de Sites</title>
+                <meta name="keywords" content="Criação de sites, Desenvolvimento de sites, Web design, Empresa de sites, Web development, Matte, Criação de websites profissionais, Marketing digital, SEO, E-commerce, Landing pages, Responsivo, Soluções web, Site personalizado, Design responsivo, Otimização de sites, Serviços web, Experiência do usuário, Tecnologia web, Design intuitivo, Performance do site, Integração de mídia social, Projeto web." />
+                <title>Quem somos | Matte - Especialistas em desenvolvimento web</title>
               </Helmet>
               <About />
             </div>
@@ -52,16 +56,17 @@ export function App() {
           element={
             <div>
               <Helmet>
+                <meta name="facebook-domain-verification" content="7y4vnrbfajjqs0c26hfez4fanjikm3" />
+                <meta name="robots" content="index, follow"/>
                 <meta
                   name="description"
-                  content="Descubra como a VRWEB transforma suas ideias em realidade. Oferecemos serviços personalizados de criação de sites profissionais e design responsivo. Desde a concepção até a entrega final, nossa equipe trabalha em estreita colaboração com você para garantir que sua visão seja realizada."
+                  content="Desenvolvemos sites do zero! Conheça nossos serviços de Desenvolvimento Web."
                   />
                 <meta
                   name="keywords"
-                  content="Criação de sites, Desenvolvimento de sites, Web design, Empresa de sites, Web development, VRWEB, Criação de websites profissionais, Marketing digital, SEO, E-commerce, Landing pages, Responsivo, Agência digital, Soluções web, Site personalizado, Design responsivo, Otimização de sites, Serviços web, Estratégias de marketing online, Gestão de conteúdo, Experiência do usuário, Tecnologia web, Design intuitivo, Performance do site, Integração de mídia social, Consultoria web, Projeto web, Desenvolvimento de aplicativos web, Soluções de comércio eletrônico, Suporte técnico.
-"
+                 content="Criação de sites, Desenvolvimento de sites, Web design, Empresa de sites, Web development, Matte, Criação de websites profissionais, Marketing digital, SEO, E-commerce, Landing pages, Responsivo, Soluções web, Site personalizado, Design responsivo, Otimização de sites, Serviços web, Experiência do usuário, Tecnologia web, Design intuitivo, Performance do site, Integração de mídia social, Projeto web."
                   />
-                  <title>Como funciona? - VRWEB | Criação e Desenvolvimento de Sites</title>
+                  <title>Como funciona? | Matte - Entenda o processo conosco</title>
               </Helmet>
               <Operation />
             </div>
@@ -72,16 +77,17 @@ export function App() {
           element={
             <div>
               <Helmet>
+                <meta name="facebook-domain-verification" content="7y4vnrbfajjqs0c26hfez4fanjikm3" />
+                <meta name="robots" content="index, follow"/>
                 <meta
                   name="description"
-                  content="Descubra como a VRWEB transforma suas ideias em realidade. Oferecemos serviços personalizados de criação de sites profissionais e design responsivo. Desde a concepção até a entrega final, nossa equipe trabalha em estreita colaboração com você para garantir que sua visão seja realizada."
+                  content="Transforme sua visão em realidade com a Matte. Somos uma empresa especializada em desenvolvimento de sites, pronta para tornar suas ideias em projetos funcionais e atrativos."
                   />
                 <meta
                   name="keywords"
-                  content="Criação de sites, Desenvolvimento de sites, Web design, Empresa de sites, Web development, VRWEB, Criação de websites profissionais, Marketing digital, SEO, E-commerce, Landing pages, Responsivo, Agência digital, Soluções web, Site personalizado, Design responsivo, Otimização de sites, Serviços web, Estratégias de marketing online, Gestão de conteúdo, Experiência do usuário, Tecnologia web, Design intuitivo, Performance do site, Integração de mídia social, Consultoria web, Projeto web, Desenvolvimento de aplicativos web, Soluções de comércio eletrônico, Suporte técnico.
-"
+                content="Criação de sites, Desenvolvimento de sites, Web design, Empresa de sites, Web development, Matte, Criação de websites profissionais, Marketing digital, SEO, E-commerce, Landing pages, Responsivo, Soluções web, Site personalizado, Design responsivo, Otimização de sites, Serviços web, Experiência do usuário, Tecnologia web, Design intuitivo, Performance do site, Integração de mídia social, Projeto web."
                   />
-                  <title>Como funciona? - VRWEB | Criação e Desenvolvimento de Sites</title>
+                  <title>Entre em contato | Matte - Transforme sua ideia em realidade</title>
               </Helmet>
               <Contact />
             </div>
