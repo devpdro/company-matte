@@ -1,3 +1,5 @@
+import { ICON } from 'presentation/assets/icons/icon'
+
 import styles from 'presentation/components/pages/home-header/home-header.module.scss'
 
 export function HomeHeader() {
@@ -10,7 +12,8 @@ export function HomeHeader() {
             ideias em sites <br /> incríveis!
           </h1>
           <button className={styles.btn}>
-            <p className={styles.text_btn}>Como funciona?</p>
+            <p className={styles.text_btn}>Entre em contato</p>
+            <ICON.VscArrowSmallRight className={styles.icon} />
           </button>
         </div>
         <div className={`${styles.box_overlay}`}>

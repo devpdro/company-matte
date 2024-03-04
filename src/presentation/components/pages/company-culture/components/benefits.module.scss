@@ -1,5 +1,5 @@
 .container {
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     border-radius: 15px;
     transition: all 0.4s ease;
     overflow-x: hidden;
@@ -8,6 +8,7 @@
         width: 96%;
 
         .paragraph {
+            padding: 1rem 0 1rem 0;
             font-size: 1.1rem;
             line-height: 1.5rem;
             font-weight: 400;

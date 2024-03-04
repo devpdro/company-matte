@@ -25,6 +25,19 @@ a {
   text-decoration: none;
 }
 
+img {
+  image-rendering: -webkit-optimize-contrast;
+  /* Propriedade para melhorar o contraste e a qualidade da imagem */
+  image-rendering: crisp-edges;
+  /* Propriedade para tornar as bordas mais nítidas */
+  image-rendering: optimizeQuality;
+  /* Propriedade para otimizar a qualidade da imagem */
+  image-rendering: smooth;
+  /* Propriedade para suavizar a imagem */
+  image-resolution: 300dpi;
+  /* Definindo a resolução da imagem */
+}
+
 body::-webkit-scrollbar {
   width: 10px;
 }

@@ -18,6 +18,7 @@
             position: absolute;
             width: 50%;
             height: 400px;
+            background-size: cover;
             box-shadow: 0 4px 8px 0 rgba(28, 28, 28, 0.5);
             z-index: 1;
         }
@@ -42,7 +43,8 @@
                 text-align: left;
                 font-size: 1.2rem;
                 margin-bottom: 1.2rem;
-font-weight: 400;
+                font-weight: 400;
+
                 .linha {
                     display: inline-block;
                     margin-bottom: 0.4rem;
@@ -67,8 +69,8 @@ font-weight: 400;
                 border: none;
                 overflow: hidden;
                 text-transform: uppercase;
-                padding: 1rem 1.5rem;
-                margin-top: 2.5rem;
+                padding: 1.2rem 1.5rem;
+                margin-top: 1.5rem;
                 background-color: #1c1c1c;
                 color: #F9F7F1;
                 border: 2px solid #F9F7F1;
@@ -146,7 +148,7 @@ font-weight: 400;
 
     .container {
 
-        margin: 0rem auto 8rem auto;
+        margin: 0rem auto 6rem auto;
         flex-direction: column;
 
         .image_box {
@@ -160,7 +162,6 @@ font-weight: 400;
             .company {
                 height: 380px;
                 width: 70%;
-                z-index: 1;
             }
         }
 

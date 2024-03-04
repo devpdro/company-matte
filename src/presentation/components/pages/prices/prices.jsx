@@ -18,8 +18,8 @@ export function Prices() {
           Em caso de dúvida entre em contato com nossa central de atendimento.
         </p>
         <button className={styles.btn}>
-          <ICON.FaWhatsapp className={styles.icon} />
-          <p className={styles.text_btn}>(19) 97163-6739</p>
+          <ICON.HiOutlineChatBubbleBottomCenterText className={styles.icon} />
+          <p className={styles.text_btn}>Fale com a gente</p>
         </button>
       </div>
       <div className={styles.plans_box}>
@@ -35,8 +35,8 @@ export function Prices() {
             Em caso de dúvida entre em contato com nossa central de atendimento.
           </p>
           <button className={styles.btn}>
-            <ICON.FaWhatsapp className={styles.icon} />
-            <p className={styles.text_btn}>(19) 97163-6739</p>
+            <ICON.HiOutlineChatBubbleBottomCenterText className={styles.icon} />
+            <p className={styles.text_btn}>Fale com a gente</p>
           </button>
         </div>
         <div className={styles.basic}>
@@ -58,10 +58,10 @@ export function Prices() {
             Suporte mensal incluído
           </li>
           <div className={styles.prices_box}>
-            <p className={styles.discount}>De R$ 789,90</p>
+            <p className={styles.discount}>De R$ 583,50</p>
             <div className={styles.total_box}>
               <span className={styles.coin}>R$</span>
-              <span className={styles.value}>48,90</span>
+              <span className={styles.value}>38,90</span>
               <span className={styles.month}>/12x</span>
             </div>
           </div>

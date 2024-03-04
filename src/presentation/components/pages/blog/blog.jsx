@@ -18,9 +18,10 @@ export function Blog() {
       <div className={styles.news}>
         <div className={styles.article}>
           <img
+            loading="lazy"
             className={styles.img1}
             src={IMAGE.razoes}
-            alt="Razões para criar um software personalizado para sua empresa"
+            alt="Software personalizado"
           />
           <p className={styles.subtitle}>Negócios</p>
           <h1 className={styles.title}>
@@ -32,13 +33,23 @@ export function Blog() {
           <p className={styles.data}>12 de janeiro de 2024</p>
         </div>
         <div className={styles.article}>
-          <img className={styles.img2} src={IMAGE.sistema} alt="Sistema" />
+          <img
+            className={styles.img2}
+            loading="lazy"
+            src={IMAGE.sistema}
+            alt="Sistema"
+          />
           <p className={styles.subtitle}>Negócios</p>
           <h1 className={styles.title}>Como funciona um sistema web?</h1>
           <p className={styles.data}>9 de fevereiro de 2024</p>
         </div>
         <div className={styles.article}>
-          <img className={styles.img3} src={IMAGE.webDesign} alt="Web Design" />
+          <img
+            className={styles.img3}
+            loading="lazy"
+            src={IMAGE.webDesign}
+            alt="Web Design"
+          />
           <p className={styles.subtitle}>Tecnologia</p>
           <h1 className={styles.title}>
             Como Criar um Site para Minha Empresa: O Guia Completo

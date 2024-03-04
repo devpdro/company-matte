@@ -8,11 +8,13 @@ export function ChooseBenefits() {
     <section className={`${styles.container} panel`} data-color="white">
       <div className={styles.image_box}>
         <img
+          loading="lazy"
           className={styles.people_company}
           src={IMAGE.empresa}
           alt="Empresa"
         />
         <img
+          loading="lazy"
           className={styles.company}
           src={IMAGE.pessoasEmpresa}
           alt="Empresa"
@@ -32,7 +34,7 @@ export function ChooseBenefits() {
           <Benefits
             numbering="01"
             title="Melhor preço de mercado"
-            paragraph="Na VRWEB, estamos empenhados em criar seu site profissional, projetado não apenas para atender às necessidades atuais, mas também para preservar os recursos futuros. Oferecemos os melhores preços do mercado, além de um atendimento exclusivo e personalizado, porque a realização dos seus objetivos é nossa prioridade máxima."
+            paragraph="Estamos empenhados em criar o seu site profissional, projetado não apenas para atender às necessidades atuais, mas também para preservar os recursos futuros. Oferecemos os melhores preços do mercado, além de um atendimento exclusivo, porque a realização dos seus objetivos é nossa prioridade máxima."
           />
           <button className={styles.btn}>
             <p className={styles.text_btn}>Como funciona?</p>

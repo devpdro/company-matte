@@ -9,6 +9,9 @@
 
     .logo_footer {
         display: none;
+        .img {
+            width: 170px;
+        }
     }
 
     .container {
@@ -24,9 +27,8 @@
             padding-bottom: 2rem;
 
             .logo {
-                h1 {
-                    font-size: 1rem;
-                    font-weight: 400;
+                .img {
+                    width: 170px;
                 }
             }
 

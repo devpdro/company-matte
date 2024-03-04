@@ -4,6 +4,8 @@ import { Link as LinkRouter } from 'react-router-dom'
 import { ICON } from 'presentation/assets/icons/icon'
 import { useWindowSize } from 'presentation/hooks/navbar-size'
 
+import IMAGE from 'presentation/assets/logo/logo.png'
+
 import styles from 'presentation/components/common/navbar.module.scss'
 
 export function Navbar() {
@@ -43,7 +45,16 @@ export function Navbar() {
   return (
     <nav className={styles.navbar} id="navbar">
       <div className={styles.header__content}>
-        <div className={styles.box_logo}><LinkRouter to="/">Logo</LinkRouter></div>
+        <div className={styles.box_logo}>
+          <LinkRouter to="/">
+            <img
+              loading="lazy"
+              className={styles.img}
+              src={IMAGE}
+              alt="Logo da empresa"
+            />
+          </LinkRouter>
+        </div>
         <nav
           className={`${styles.header__content__nav} ${
             menuOpen && screenWidth <= 3840 ? styles.isMenu : ''
@@ -51,7 +62,9 @@ export function Navbar() {
         >
           <ul>
             <li>
-              <LinkRouter to="/quem-somos" className={styles.link}>Sobre</LinkRouter>
+              <LinkRouter to="/quem-somos" className={styles.link}>
+                Sobre
+              </LinkRouter>
             </li>
             <li>
               <LinkRouter to="/como-funciona" className={styles.link}>

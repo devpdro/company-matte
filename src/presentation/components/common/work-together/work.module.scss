@@ -100,6 +100,8 @@
 
 @media screen and (max-width: 600px) {
     .container {
+        margin: 3rem auto 5.2rem auto !important;
+
         .background {
             flex-wrap: wrap;
             padding: 3.5rem 0rem 3rem 0rem;
@@ -139,6 +141,8 @@
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     .container {
+        margin: 3rem auto 6.5rem auto !important;
+
         .background {
             flex-wrap: wrap;
             padding: 3.5rem 0rem 3rem 0rem;
@@ -186,6 +190,7 @@
 
 @media screen and (min-width: 1025px) and (max-width: 1224px) {
     .container {
+
         .background {
             .texts_box {
                 padding: 0 0rem 0 2rem;
