@@ -1,0 +1,68 @@
+.container {
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
+    max-width: 1240px;
+    margin: 9rem auto 0rem auto;
+
+    .box_navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .list_themes {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            transition: all 0.3s ease;
+
+            .text {
+                font-size: 1.3rem;
+                margin-right: 1.4rem;
+                transition: all 0.3s ease;
+                color: #1c1c1ca1;
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
+
+                &.active {
+                    color: #DDA827;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .search_container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            .btn {
+                font-family: "Archivo", sans-serif;
+                font-weight: 500;
+                padding: 0.5rem 1.3rem 0.5rem 2.5rem;
+                border-radius: 5px;
+                border: 2px solid #DDA827;
+                outline: none;
+                font-weight: 400;
+                font-size: 1.1rem;
+                color: #1c1c1ce1;
+
+                &::placeholder {
+                    font-size: 1.1rem;
+                    color: #1c1c1cb9;
+                }
+            }
+
+            .searchIcon {
+                position: absolute;
+                top: 56%;
+                font-size: 1.6rem;
+                color: #1c1c1cb9;
+                left: 10px;
+                transform: translateY(-50%);
+            }
+        }
+
+    }
+}

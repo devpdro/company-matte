@@ -5,7 +5,7 @@ import { HomeHeader } from 'presentation/components/pages/home-header/home-heade
 import { CompanyActivities } from 'presentation/components/pages/company-activities/company-activities'
 import { ChooseBenefits } from 'presentation/components/pages/company-culture/culture'
 import { WorkTogether } from 'presentation/components/common/work-together/work'
-import { Blog } from 'presentation/components/pages/blog/blog'
+import { BlogHeader } from 'presentation/components/pages/blog-header/blog-header'
 import { Prices } from 'presentation/components/pages/prices/prices'
 import { Faq } from 'presentation/components/pages/faq/faq'
 import { Footer } from 'presentation/components/common/footer'
@@ -55,7 +55,7 @@ export function Home() {
       <ChooseBenefits className="panel" data-color="white" />
       <WorkTogether />
       <Prices className="panel" data-color="white" />
-      <Blog className="panel" data-color="white" />
+      <BlogHeader className="panel" data-color="white" />
       <Faq />
       <Footer />
     </main>

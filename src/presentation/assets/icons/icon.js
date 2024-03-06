@@ -10,7 +10,7 @@ import { IoLogoInstagram } from "react-icons/io";
 import { PiGlobeHemisphereEast } from "react-icons/pi";
 import { FiEye } from "react-icons/fi";
 import { IoConstructOutline  } from "react-icons/io5";
-import { IoIosArrowRoundDown } from "react-icons/io";
+import { IoIosArrowRoundDown, IoIosSearch } from "react-icons/io";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
 import { BsPeople } from "react-icons/bs";
 import { CiViewList } from "react-icons/ci";
@@ -25,6 +25,7 @@ import { SiGooglecloud } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
 
 export const ICON = {
+  IoIosSearch,
   FaNodeJs,
   GrMysql,
   TbBrandNextjs,

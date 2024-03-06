@@ -1,7 +1,7 @@
 import IMAGE from 'presentation/assets/images/images'
-import styles from 'presentation/components/pages/blog/blog.module.scss'
+import styles from 'presentation/components/pages/blog-header/blog-header.module.scss'
 
-export function Blog() {
+export function BlogHeader() {
   return (
     <section className={`${styles.container} panel`} data-color="white">
       <div className={styles.texts_container}>

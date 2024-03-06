@@ -72,7 +72,9 @@ export function Navbar() {
               </LinkRouter>
             </li>
             <li>
-              <LinkRouter className={styles.link}>Blog</LinkRouter>
+              <LinkRouter to="/blog" className={styles.link}>
+                Blog
+              </LinkRouter>
             </li>
             <li>
               <LinkRouter to="/contato" className={styles.link}>

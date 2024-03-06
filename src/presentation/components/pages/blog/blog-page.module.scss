@@ -1,0 +1,21 @@
+.container {
+    font-family: "Archivo", sans-serif;
+
+    .results_container {
+        max-width: 1240px;
+        margin: 5rem auto 0 auto;
+
+        .title {
+            font-weight: 500;
+            margin-bottom: 2.2rem;
+            font-size: 2rem;
+        }
+
+        .posts_container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+}

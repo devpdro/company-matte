@@ -9,7 +9,10 @@ import {
 import { Home } from 'presentation/pages/home'
 import { About } from 'presentation/pages/about'
 import { Operation } from 'presentation/pages/operation'
+import { Blog } from 'presentation/pages/blog'
+import BlogPost from 'presentation/components/pages/blog/blog-post'
 import { Contact } from 'presentation/pages/contact'
+
 
 export function App() {
   return (
@@ -73,6 +76,28 @@ export function App() {
           }
         />
          <Route
+          path="/blog"
+          element={
+            <div>
+              <Helmet>
+                <meta name="facebook-domain-verification" content="7y4vnrbfajjqs0c26hfez4fanjikm3" />
+                <meta name="robots" content="index, follow"/>
+                <meta
+                  name="description"
+                  content="Transforme sua visão em realidade com a Matte. Somos uma empresa especializada em desenvolvimento de sites, pronta para tornar suas ideias em projetos funcionais e atrativos."
+                  />
+                <meta
+                  name="keywords"
+                content="Criação de sites, Desenvolvimento de sites, Web design, Empresa de sites, Web development, Matte, Criação de websites profissionais, Marketing digital, SEO, E-commerce, Landing pages, Responsivo, Soluções web, Site personalizado, Design responsivo, Otimização de sites, Serviços web, Experiência do usuário, Tecnologia web, Design intuitivo, Performance do site, Integração de mídia social, Projeto web."
+                  />
+                  <title>Entre em contato | Matte - Transforme sua ideia em realidade</title>
+              </Helmet>
+              <Blog />
+            </div>
+          }
+        />
+        <Route path="/blog/:id" element={<BlogPost />} />
+         <Route
           path="/contato"
           element={
             <div>
@@ -94,6 +119,7 @@ export function App() {
           }
         />
         <Route path="*" element={<Navigate to="/" />} />
+        
       </Routes>
     </Router>
   )

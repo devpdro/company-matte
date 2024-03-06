@@ -1,14 +1,10 @@
 import { useEffect } from 'react'
 
 import { Navbar } from 'presentation/components/common/navbar'
-import { AboutHeader } from 'presentation/components/pages/about-header/about-header'
-import { AboutUs } from 'presentation/components/pages/about/about-us'
-import { OurMission } from 'presentation/components/pages/our-mission/our-mission'
-import { Technologies } from 'presentation/components/pages/technologies-used/technologies'
-import { BlogHeader } from 'presentation/components/pages/blog-header/blog-header'
+import BlogPage from 'presentation/components/pages/blog/blog-page'
 import { Footer } from 'presentation/components/common/footer'
 
-export function About() {
+export function Blog() {
   useEffect(() => {
     const handleScroll = () => {
       const $window = window
@@ -44,12 +40,8 @@ export function About() {
   }, [])
   return (
     <main>
-      <Navbar />
-      <AboutHeader className="panel" data-color="white" />
-      <AboutUs className="panel" data-color="white" />
-      <OurMission />
-      <Technologies />
-      <BlogHeader />
+      <Navbar className="panel" data-color="white" />
+      <BlogPage className="panel" data-color="white" />
       <Footer />
     </main>
   )
