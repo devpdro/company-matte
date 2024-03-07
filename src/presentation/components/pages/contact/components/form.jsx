@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { useForm, Controller } from 'react-hook-form'
 
+import ReCAPTCHA from 'react-google-recaptcha'
+
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 
@@ -14,20 +16,26 @@ import { ICON } from 'presentation/assets/icons/icon'
 import styles from 'presentation/components/pages/contact/components/form.module.scss'
 
 const schema = yup.object().shape({
-  nome: yup.string().required('Campo Nome é obrigatório'),
+  nome: yup.string().required('Campo obrigatório'),
   email: yup
     .string()
-    .email('E-mail inválido')
-    .required('Campo E-mail é obrigatório'),
-  mensagem: yup.string().required('Campo Mensagem é obrigatório'),
-  telefone: yup.string().required('Campo Telefone é obrigatório')
+    .matches(
+      /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/i,
+      'E-mail inválido'
+    )
+    .required('Campo obrigatório'),
+  mensagem: yup.string().required('Campo obrigatório'),
+  telefone: yup
+    .string()
+    .matches(/^[\d\s]+$/, 'O telefone deve conter apenas números')
+    .required('Campo obrigatório')
 })
 
 export function Form() {
   const [nomeValue, setNomeValue] = useState('')
   const [emailValue, setEmailValue] = useState('')
-  const [mensagemValue, setMensagemValue] = useState('')
   const [telefoneValue, setTelefoneValue] = useState('')
+  const [mensagemValue, setMensagemValue] = useState('')
 
   const {
     handleSubmit,
@@ -40,6 +48,12 @@ export function Form() {
   const sendEmail = handleSubmit(async (data, event) => {
     try {
       const formElement = event.target
+
+      if (!nomeValue || !emailValue || !telefoneValue || !mensagemValue) {
+        toast.error('Por favor, preencha todos os campos.')
+        return
+      }
+
       await emailjs.sendForm(
         'gmailContact',
         'template_3hs5z6j',
@@ -50,12 +64,15 @@ export function Form() {
 
       setNomeValue('')
       setEmailValue('')
+      setTelefoneValue('')
       setMensagemValue('')
     } catch (error) {
       console.error('Erro ao enviar o email:', error)
       toast.error('Erro ao enviar o email')
     }
   })
+
+  const onChange = () => {}
 
   return (
     <section className={styles.container}>
@@ -102,7 +119,7 @@ export function Form() {
             render={({ field }) => (
               <input
                 autoComplete="off"
-                type="email"
+                type="text"
                 {...field}
                 value={emailValue}
                 onChange={(e) => {
@@ -133,12 +150,12 @@ export function Form() {
             render={({ field }) => (
               <input
                 autoComplete="off"
-                type="number"
+                type="text"
                 {...field}
                 value={telefoneValue}
                 onChange={(e) => {
                   field.onChange(e)
-                  setTelefoneValue(e.target.value)
+                  setTelefoneValue(e.target.value.replace(/\D/g, '')) // Remover todos os caracteres não numéricos
                 }}
                 className={styles.input}
               />
@@ -177,6 +194,13 @@ export function Form() {
         {errors.mensagem && (
           <div className={styles.error}>{errors.mensagem.message}</div>
         )}
+        <div className={styles.repcaptcha}>
+          <ReCAPTCHA
+            sitekey="6LdA7ZApAAAAABRgM6ZVpq5EmAJhlVFZPcDuKHRe"
+            onChange={onChange}
+          />
+          ,
+        </div>
         <div className={`animateButton ${styles.btn_form}`}>
           <button className={styles.btn} type="submit">
             <p className={styles.text_btn}>Enviar</p>

@@ -25,6 +25,17 @@ a {
   text-decoration: none;
 }
 
+.email {
+  -webkit-user-select: default !important;
+  /* Safari */
+  -moz-user-select: default !important;
+  /* Firefox */
+  -ms-user-select: default !important;
+  /* IE 10+ */
+  user-select: default !important;
+  /* padrão */
+}
+
 img {
   image-rendering: -webkit-optimize-contrast;
   /* Propriedade para melhorar o contraste e a qualidade da imagem */

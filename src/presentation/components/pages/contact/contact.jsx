@@ -21,8 +21,8 @@ export function MainContact() {
           </p>
 
           <div className={styles.box_email}>
-            <p className={`${styles.email} `}>vrw.developers@gmail.com</p>
-            <ICON.LuArrowUpRight className={styles.icon} />
+            <p className={`${styles.email} `}>contato@mattedev.com.br</p>
+            <ICON.MdOutlineMail className={styles.icon} />
           </div>
         </div>
         <div className={styles.box_form}>

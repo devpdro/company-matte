@@ -45,6 +45,7 @@
             .label_textarea {
                 font-size: 1.4rem;
                 margin-top: 0.5rem;
+                width: 67%;
             }
 
             .input {
@@ -52,6 +53,7 @@
                 font-family: "Archivo", sans-serif;
                 font-weight: 400;
                 color: #1c1c1c;
+                width: 70%;
                 border: none;
                 outline: none;
                 font-size: 1.3rem;
@@ -70,7 +72,7 @@
                 background-color: #1c1c1c;
                 text-transform: uppercase;
                 padding: 0.8rem 1.5rem;
-                margin-top: 3.5rem;
+                margin-top: 0.8rem;
                 font-size: 1rem;
                 border: 2px solid transparent;
                 outline: none;
@@ -115,6 +117,10 @@
                 align-items: center;
                 font-size: 2rem;
             }
+        }
+
+        .repcaptcha {
+            margin-top: 1.7rem;
         }
     }
 }
