@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 
 import { Navbar } from 'presentation/components/common/navbar'
 import BlogPage from 'presentation/components/pages/blog/blog-page'
+import { NewsLetter } from 'presentation/components/pages/newsletter/newsletter'
 import { Footer } from 'presentation/components/common/footer'
 
 export function Blog() {
@@ -42,6 +43,7 @@ export function Blog() {
     <main>
       <Navbar className="panel" data-color="white" />
       <BlogPage className="panel" data-color="white" />
+      <NewsLetter />
       <Footer />
     </main>
   )

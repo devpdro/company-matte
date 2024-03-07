@@ -23,8 +23,10 @@ import { FaWordpressSimple } from "react-icons/fa";
 import { SiStyledcomponents } from "react-icons/si";
 import { SiGooglecloud } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
+import { MdOutlineMail } from "react-icons/md";
 
 export const ICON = {
+  MdOutlineMail,
   IoIosSearch,
   FaNodeJs,
   GrMysql,

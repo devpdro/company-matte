@@ -17,5 +17,68 @@
             justify-content: space-between;
             flex-wrap: wrap;
         }
+
+        .loadMoreButton {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .btn_load {
+                font-family: "Archivo", sans-serif;
+                font-weight: 600;
+                background-color: #F9F7F1;
+                color: #1c1c1c;
+                text-transform: uppercase;
+                padding: 0.9rem 1.3rem 0.8rem 1.3rem;
+                margin-top: 2rem;
+                outline: none;
+                cursor: pointer;
+                border: 2px solid #DDA827;
+                transition: all 0.3s ease;
+                position: relative;
+                overflow: hidden;
+
+                &:hover {
+                    .text_btn::after {
+                        width: 100%;
+                        left: 0;
+                    }
+                }
+
+                .text_btn {
+                    overflow: hidden;
+                    position: relative;
+                    padding: 0rem 0 0rem 0;
+
+                    &::after,
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        width: 0;
+                        height: 1px;
+                        background-color: #1c1c1c;
+                        transition: width 0.5s ease, right 8s ease 1.5s;
+                    }
+                }
+            }
+        }
+
+        .noResults_container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .img_noResults {
+                margin-top: 0.7rem;
+            }
+
+            .noResults {
+                margin-bottom: 4rem;
+                margin-top: 0.7rem;
+                font-size: 1.4rem;
+            }
+        }
     }
 }

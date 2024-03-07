@@ -2,7 +2,7 @@
     font-family: "Archivo", sans-serif;
     font-weight: 500;
     max-width: 1280px;
-    margin: 2rem auto 13rem auto;
+    margin: 2rem auto 12rem auto;
     overflow-x: hidden;
     padding: 0 2rem;
 
@@ -12,26 +12,23 @@
         justify-content: space-between;
         margin-bottom: 3.5rem;
 
-
         .texts_box {
             .subtitle {
-
                 .linha {
                     display: inline-block;
                     margin-bottom: 0.4rem;
                     width: 2.5rem;
                     border: 1px solid #DDA827;
-                    ;
                 }
 
-                font-size: 1.3rem;
+                font-size: 1.2rem;
                 margin-bottom: 0.7rem;
                 margin-left: 0.2rem;
             }
 
             .title {
-                font-size: 3.5rem;
-                font-weight: 400;
+                font-size: 3rem;
+                font-weight: 500;
             }
         }
 
@@ -98,7 +95,7 @@
 
             .img1 {
                 width: 93%;
-                border-radius: 20px;
+                border-radius: 5px;
                 height: 230px;
                 transition: all 0.3s ease;
                 object-fit: cover;
@@ -108,7 +105,7 @@
             .img2 {
                 width: 93%;
                 height: 230px;
-                border-radius: 20px;
+                border-radius: 5px;
                 transition: all 0.3s ease;
                 object-fit: cover;
                 transition: all 0.3s ease;
@@ -117,21 +114,21 @@
             .img3 {
                 width: 93%;
                 height: 230px;
-                border-radius: 20px;
+                border-radius: 7px;
                 transition: all 0.3s ease;
                 object-fit: cover;
                 transition: all 0.3s ease;
             }
 
             .subtitle {
-                padding: 1.2rem 0 0.9rem 0;
+                padding: 1.1rem 0 0.6rem 0;
                 font-size: 1.2rem;
                 color: #DDA827;
                 font-weight: 400;
             }
 
             .title {
-                font-size: 1.9rem;
+                font-size: 1.6rem;
                 font-weight: 500;
                 width: 93%;
                 transition: all 0.3s ease;
@@ -172,14 +169,14 @@
                         ;
                     }
 
-                    font-size: 1.1rem;
+                    font-size: 1.2rem;
                     margin-bottom: 0.5rem;
                     font-weight: 400;
                     margin-left: 0.2rem;
                 }
 
                 .title {
-                    font-size: 2.5rem;
+                    font-size: 2.6rem;
                 }
             }
 

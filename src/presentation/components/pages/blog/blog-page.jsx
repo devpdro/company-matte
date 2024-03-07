@@ -7,7 +7,6 @@ import { NavbarBlog } from 'presentation/components/pages/blog/components/navbar
 import page from 'presentation/components/pages/blog/blog-page.module.scss'
 import post from 'presentation/components/pages/blog/blog-page-post.module.scss'
 
-// Função auxiliar para remover acentos de uma string
 const removeAccents = (str) => {
   return str
     .normalize('NFD')
@@ -18,8 +17,7 @@ const removeAccents = (str) => {
 const BlogPage = () => {
   const [searchQuery, setSearchQuery] = useState('')
   const themes = [...new Set(posts.map((post) => post.subtitle))]
-  const [visiblePosts, setVisiblePosts] = useState(10) // Número inicial de posts visíveis
-
+  const [visiblePosts, setVisiblePosts] = useState(7)
   const filteredPosts = posts.filter(
     (post) =>
       removeAccents(post.title).includes(removeAccents(searchQuery)) ||
@@ -31,7 +29,7 @@ const BlogPage = () => {
   }
 
   const loadMorePosts = () => {
-    setVisiblePosts((prevVisiblePosts) => prevVisiblePosts + 10) // Carregar mais 10 posts
+    setVisiblePosts((prevVisiblePosts) => prevVisiblePosts + 6)
   }
 
   return (
@@ -43,7 +41,7 @@ const BlogPage = () => {
       />
       <div className={`${page.results_container}`}>
         <h1 className={page.title}>
-          {searchQuery ? 'Resultados' : 'Conheça nossos blogs'}
+          {searchQuery ? 'Resultados' : 'Mais recentes'}
         </h1>
         {filteredPosts.length > 0 ? (
           <>
@@ -61,14 +59,17 @@ const BlogPage = () => {
             </div>
             {filteredPosts.length > visiblePosts && (
               <div className={page.loadMoreButton}>
-                <button onClick={loadMorePosts}>Leia mais</button>
+                <button className={page.btn_load} onClick={loadMorePosts}>
+                  <p className={page.text_btn}>Ler mais artigos</p>
+                </button>
               </div>
             )}
           </>
         ) : (
-          <p className={page.noResults}>
-            Nenhum conteúdo relacionado encontrado. Procure outras palavras.
-          </p>
+          <div className={page.noResults_container}>
+            <img className={page.img_noResults} src="" alt="" />
+            <p className={page.noResults}>Tente usar outras palavras...</p>
+          </div>
         )}
       </div>
     </section>
@@ -90,7 +91,7 @@ const BlogPost = ({ id, title, subtitle, date, image }) => {
           <h1 className={post.title}>
             <span className={post.span}>{title}</span>
           </h1>
-          <p className={post.date}>{date}</p>
+          <p className={post.data}>{date}</p>
         </div>
       </Link>
     </div>

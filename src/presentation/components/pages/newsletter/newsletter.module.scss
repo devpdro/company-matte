@@ -1,0 +1,131 @@
+.newsletterContainer {
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
+    max-width: 1240px;
+    margin: 8rem auto 6rem auto;
+    color: #F9F7F1;
+
+    .newsletterContent {
+        background-color: #212121;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        padding: 5rem 2rem;
+
+        .newsletterText {
+            width: 55%;
+
+            .title {
+                font-size: 3rem;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+                font-weight: 400;
+                line-height: 1.7rem;
+            }
+        }
+    }
+
+    .newsletterForm {
+        .form {
+            .label {
+                font-size: 1.1rem;
+                margin-bottom: 1rem;
+            }
+
+            .inputGroup {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                margin-top: 0.5rem;
+
+                .input_error {
+                    outline: 2px solid #ff0000 !important;
+                }
+
+                .searchIcon {
+                    position: absolute;
+                    top: 56%;
+                    font-size: 1.6rem;
+                    color: #1c1c1cb9;
+                    left: 10px;
+                    transform: translateY(-50%);
+                }
+
+                .input_email {
+                    font-family: "Archivo", sans-serif;
+                    font-weight: 500;
+                    padding: 0.7rem 1.3rem 0.7rem 2.5rem;
+                    border-radius: 7px;
+                    outline: none;
+                    font-weight: 400;
+                    font-size: 1.1rem;
+                    color: #1c1c1ce1;
+                    background-color: #ffff;
+                    border: 2px solid #F9F7F1;
+
+
+                    &::placeholder {
+                        font-size: 1.1rem;
+                        color: #1c1c1cb9;
+                    }
+                }
+
+                .btn_submit {
+                    font-family: "Archivo", sans-serif;
+                    font-weight: 600;
+                    color: #1c1c1c;
+                    text-transform: uppercase;
+                    padding: 0.8rem 1.2rem;
+                    background-color: #ffff;
+                    margin-left: 0.7rem;
+                    border-radius: 5px;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    cursor: pointer;
+                    border: none;
+                    outline: none;
+                    transition: all 0.3s ease;
+                    position: relative;
+                    overflow: hidden;
+
+                    &:hover {
+                        .text_btn::after {
+                            width: 100%;
+                            left: 0;
+                        }
+                    }
+
+                    .text_btn {
+                        overflow: hidden;
+                        position: relative;
+                        padding: 0rem 0 0rem 0;
+
+                        &::after,
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            width: 0;
+                            height: 1px;
+                            background-color: #1c1c1c;
+                            transition: width 0.5s ease, right 8s ease 1.5s;
+                        }
+                    }
+                }
+            }
+
+            .error {
+                font-size: 1.1rem;
+                margin-top: 0.5rem;
+                color: #ff0000;
+            }
+        }
+    }
+}

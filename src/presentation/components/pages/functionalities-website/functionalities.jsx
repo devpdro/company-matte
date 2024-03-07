@@ -31,6 +31,7 @@ export const SampleCard = styled.div`
   width: 27%;
   height: 430px !important;
   margin-right: 8.5rem;
+  border-radius: 7px;
   box-shadow:
     rgba(50, 50, 93, 0.25) 0px 13px 17px -5px,
     rgba(0, 0, 0, 0.1) 0px 8px 16px -8px;
