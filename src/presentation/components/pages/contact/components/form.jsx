@@ -89,7 +89,7 @@ export function Form() {
             control={control}
             render={({ field }) => (
               <input
-                autoComplete="off"
+                autoComplete="no"
                 type="text"
                 {...field}
                 value={nomeValue}
@@ -118,7 +118,7 @@ export function Form() {
             control={control}
             render={({ field }) => (
               <input
-                autoComplete="off"
+                autoComplete="no"
                 type="text"
                 {...field}
                 value={emailValue}
@@ -149,7 +149,7 @@ export function Form() {
             control={control}
             render={({ field }) => (
               <input
-                autoComplete="off"
+                autoComplete="no"
                 type="text"
                 {...field}
                 value={telefoneValue}
@@ -180,7 +180,7 @@ export function Form() {
               <input
                 type="text"
                 {...field}
-                autoComplete="off"
+               autoComplete="no"
                 value={mensagemValue}
                 onChange={(e) => {
                   field.onChange(e)

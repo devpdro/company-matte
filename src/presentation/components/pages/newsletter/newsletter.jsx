@@ -1,29 +1,56 @@
+import emailjs from 'emailjs-com'
+
 import { useForm } from 'react-hook-form'
-import * as yup from 'yup'
+
 import { yupResolver } from '@hookform/resolvers/yup'
-import { useState } from 'react'
+import * as yup from 'yup'
+
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 import { ICON } from 'presentation/assets/icons/icon'
+
 import styles from 'presentation/components/pages/newsletter/newsletter.module.scss'
 
 const schema = yup.object().shape({
-  email: yup.string().email('Email inválido').required('Campo obrigatório')
+  email: yup
+    .string()
+    .matches(
+      /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$/,
+      'E-mail inválido'
+    )
+    .required('Campo obrigatório')
 })
 
 export function NewsLetter() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors }
   } = useForm({
     resolver: yupResolver(schema)
   })
-  const [submitted, setSubmitted] = useState(false)
 
-  const onSubmit = (data) => {
-    console.log(data)
-    setSubmitted(true)
+  const onSubmit = async (data, event) => {
+    try {
+      if (!data.email) {
+        toast.error('Por favor, preencha o email.')
+        return
+      }
     
+      await emailjs.sendForm(
+        'gmailContact',
+        'template_oekruyi',
+        event.target, 
+        'GSlDlk4aAeWqGnnRW' 
+      )
+      toast.success('Email cadastrado com sucesso!') 
+      reset()
+    } catch (error) {
+      console.error('Erro ao cadastrar email:', error)
+      toast.error('Erro ao cadastrar email') 
+    }
   }
 
   return (
@@ -40,7 +67,11 @@ export function NewsLetter() {
           </p>
         </div>
         <div className={styles.newsletterForm}>
-          <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+          <form
+            className={styles.form}
+            id="newsletterForm"
+            onSubmit={handleSubmit(onSubmit)}
+          >
             <label className={styles.label} htmlFor="email">
               Seu email
             </label>
@@ -50,6 +81,7 @@ export function NewsLetter() {
                   errors.email && styles.input_error
                 }`}
                 autoComplete="no"
+                name="email"
                 type="text"
                 id="email"
                 placeholder="Email"
@@ -68,6 +100,7 @@ export function NewsLetter() {
           </form>
         </div>
       </div>
+      <ToastContainer />
     </section>
   )
 }

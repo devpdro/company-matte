@@ -1,3 +1,96 @@
-.container {
-    
+.link {
+    color: #1c1c1cc4;
+    padding: 0rem;
+}
+
+.routes {
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
+    max-width: 1240px;
+    margin: 8.5rem auto 0 auto;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    color: #1c1c1ca1;
+    cursor: pointer;
+    padding: 0.5rem 0rem;
+}
+
+.content_container {
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
+    max-width: 880px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem auto 4.5rem auto;
+
+    .texts_box {
+        width: 100%;
+
+        .subtitle {
+            font-size: 1rem;
+            color: #1c1c1c;
+            font-weight: 400;
+        }
+
+        .title {
+            margin: 1rem 0 1rem 0;
+            padding-right: 4rem;
+            font-size: 2rem;
+            color: #1c1c1c;
+            line-height: 2.4rem;
+            font-weight: 400;
+            width: 100%;
+            transition: all 0.3s ease;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .date {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #1c1c1c;
+        }
+    }
+
+    .img_box {
+        width: 100%;
+
+        .img {
+            border-radius: 7px;
+            width: 100%;
+            height: 300px;
+        }
+    }
+}
+
+.texts_container {
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
+    max-width: 1240px;
+    margin: 0 auto;
+
+    .title_post {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 0.4rem;
+        margin-top: 1rem;
+    }
+
+    .paragraph_post {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+    }
+
+    .list_box {
+        padding-left: 2rem;
+
+        li {
+            margin: 0.1rem 0 0.1rem 0;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.4rem;
+        }
+    }
 }

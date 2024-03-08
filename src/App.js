@@ -96,7 +96,7 @@ export function App() {
             </div>
           }
         />
-        <Route path="/blog/:id" element={<BlogPost />} />
+        <Route path="/blog/:routes" element={<BlogPost />} />
          <Route
           path="/contato"
           element={

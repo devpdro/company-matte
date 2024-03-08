@@ -1,64 +1,117 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
+
+import { posts } from 'main/providers/data/blogPostData'
+
+import { Navbar } from 'presentation/components/common/navbar'
+import { NewsLetter } from '../newsletter/newsletter'
 import RelatedPosts from './related-posts'
+import { Footer } from 'presentation/components/common/footer'
+
+import styles from 'presentation/components/pages/blog/blog-post.module.scss'
+
+const removeAccents = (str) => {
+  if (typeof str !== 'string' || str === '') {
+    return ''
+  }
+
+  return str
+    .replace(/[àáâãäå]/g, 'a')
+    .replace(/[èéêë]/g, 'e')
+    .replace(/[ìíîï]/g, 'i')
+    .replace(/[òóôõö]/g, 'o')
+    .replace(/[ùúûü]/g, 'u')
+    .replace(/[ñ]/g, 'n')
+    .replace(/[ç]/g, 'c')
+    .toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^a-z0-9-]/g, '')
+}
 
 const BlogPost = () => {
-  const { id } = useParams()
-  const postId = parseInt(id)
+  const { routes } = useParams()
 
-  // Conteúdo dos posts do blog
-  const posts = [
-    {
-      id: 0,
-      title: 'Título do Primeiro Post',
-      content: 'Conteúdo do Primeiro Post...'
-    },
-    {
-      id: 1,
-      title: 'Título do Segundo Post',
-      content: 'Conteúdo do Segundo Post...'
-    },
-    {
-      id: 2,
-      title: 'Título do terceiro Post',
-      content: 'Conteúdo do terceiro Post...'
-    }
-    // Adicione mais posts conforme necessário
-  ]
+  const post = posts.find(
+    (post) => removeAccents(post.routes) === removeAccents(routes)
+  )
 
-  // Busque o post com o ID fornecido
-  const post = posts.find((post) => post.id === postId)
-
-  // Verifique se o post foi encontrado
   if (!post) {
     return <div>Post não encontrado.</div>
   }
 
-  // Lista de seções do caminho
   const sections = [
     { title: 'Home', url: '/' },
     { title: 'Blog', url: '/blog' },
-    { title: post.title, url: `/blog/${postId}` }
+    { title: post.title, url: `/blog/${routes}` }
   ]
 
-  // Função para gerar o caminho dinâmico
   const generatePath = () => {
-    return sections.map((section, index) => (
-      <span key={index}>
-        {index > 0 && ' > '}
-        <Link to={section.url}>{section.title}</Link>
-      </span>
-    ))
+    return (
+      <div>
+        {sections.map((section, index) => (
+          <span key={index}>
+            {index > 0 && ' > '}
+            <Link className={styles.link} to={section.url}>
+              {section.title}
+            </Link>
+          </span>
+        ))}
+      </div>
+    )
   }
 
   return (
     <div>
-      <div style={{ marginTop: '10rem' }}>{generatePath()}</div>
-      <div>
-        <h1>{post.title}</h1>
-        <p>{post.content}</p>
-        <RelatedPosts posts={posts} currentPostId={postId} />
+      <Navbar />
+      <div className={styles.routes}>{generatePath()}</div>
+      <div className={styles.content_container}>
+        <div className={styles.texts_box}>
+          <p className={styles.subtitle}>{post.subtitle}</p>
+          <h1 className={styles.title}>{post.title}</h1>
+          <p className={styles.date}>{post.date}</p>
+        </div>
+        <div className={styles.img_box}>
+          <img className={styles.img} src={post.image} alt="Imagem do artigo" />
+        </div>
       </div>
+      <div className={styles.texts_container}>
+        <p className={styles.paragraph_post}>{post.paragraphOne}</p>
+        <h1 className={styles.title_post}>{post.titleContentOne}</h1>
+        <p className={styles.paragraph_post}>{post.paragraphTwo}</p>
+        <h1 className={styles.title_post}>{post.titleContentTwo}</h1>
+        <ol className={styles.list_box}>
+          <li>
+            <span>{post.titleListOne}</span>
+            {post.listOne}
+          </li>
+          <li>
+            <span>{post.titleListTwo}</span>
+            {post.listTwo}
+          </li>
+          <li>
+            <span>{post.titleListThree}</span>
+            {post.listThree}
+          </li>
+          <li>
+            <span>{post.titleListFour}</span>
+            {post.listFour}
+          </li>
+          <li>
+            <span>{post.titleListFive}</span>
+            {post.listFive}
+          </li>
+          <li>
+            <span>{post.titleListSix}</span>
+            {post.listSix}
+          </li>
+        </ol>
+        <h1 className={styles.title_post}>{post.titleListSeven}</h1>
+        <p className={styles.paragraph_post}>{post.paragraphThree}</p>
+        <p className={styles.paragraph_post}>{post.paragraphFour}</p>
+      </div>
+      <RelatedPosts posts={posts} currentPostId={routes} />
+      <NewsLetter />
+      <Footer />
     </div>
   )
 }

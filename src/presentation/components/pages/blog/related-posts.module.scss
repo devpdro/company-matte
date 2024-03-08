@@ -1,0 +1,57 @@
+.container {
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
+    max-width: 1240px;
+    margin: 5rem auto 0 auto;
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        .article_box {
+            margin-bottom: 2rem;
+
+            &:hover {
+                .img {
+                    transform: scale(1.1);
+                    transform: translateY(-5px);
+                }
+            }
+
+            .img {
+                width: 93%;
+                height: 230px;
+                border-radius: 7px;
+                transition: all 0.3s ease;
+                object-fit: cover;
+                transition: all 0.3s ease;
+            }
+
+            .subtitle {
+                padding: 0.8rem 0 0.5rem 0;
+                font-size: 1.2rem;
+                color: #DDA827;
+                font-weight: 400;
+            }
+
+            .title {
+                font-size: 1.5rem;
+                color: #1c1c1c;
+                font-weight: 500;
+                width: 93%;
+                transition: all 0.3s ease;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .data {
+                font-size: 1rem;
+                padding: 1rem 0 1rem 0;
+                font-weight: 400;
+                color: #6B7280;
+            }
+        }
+    }
+}

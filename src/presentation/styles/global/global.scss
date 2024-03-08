@@ -36,6 +36,9 @@ a {
   /* padrão */
 }
 
+input:-webkit-autofill {
+  background-color: #F9F7F1; /* Define a cor de fundo desejada */
+} 
 img {
   image-rendering: -webkit-optimize-contrast;
   /* Propriedade para melhorar o contraste e a qualidade da imagem */

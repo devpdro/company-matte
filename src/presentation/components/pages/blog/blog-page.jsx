@@ -12,6 +12,8 @@ const removeAccents = (str) => {
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^a-z0-9-]/g, '')
 }
 
 const BlogPage = () => {
@@ -76,10 +78,13 @@ const BlogPage = () => {
   )
 }
 
-const BlogPost = ({ id, title, subtitle, date, image }) => {
+const BlogPost = ({ title, subtitle, date, image }) => {
   return (
     <div className={`${post.container} panel`} data-color="white">
-      <Link to={`/blog/${id}`} className={post.article_container}>
+      <Link
+        to={`/blog/${removeAccents(title)}`}
+        className={post.article_container}
+      >
         <div className={post.article}>
           <img
             loading="lazy"

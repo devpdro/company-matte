@@ -58,6 +58,11 @@
                 outline: none;
                 font-size: 1.3rem;
                 background-color: #F9F7F1;
+
+            }
+
+            .input:-webkit-autofill {
+                background-color: #F9F7F1;
             }
         }
 
@@ -194,7 +199,7 @@
 
             .btn_form {
                 .btn {
-                    margin-top: 3.5rem;
+                    margin-top: 1rem !important;
                 }
             }
         }
@@ -270,7 +275,7 @@
 
             .btn_form {
                 .btn {
-                    margin-top: 3.5rem;
+                    margin-top: 1rem !important;
                 }
             }
         }
@@ -346,7 +351,7 @@
 
             .btn_form {
                 .btn {
-                    margin-top: 3.5rem;
+                    margin-top: 1rem !important;
                 }
             }
         }
@@ -425,7 +430,7 @@
 
             .btn_form {
                 .btn {
-                    margin-top: 3.5rem;
+                    margin-top: 1rem !important;
                 }
             }
         }

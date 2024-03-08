@@ -1,7 +1,7 @@
 import IMAGE from 'presentation/assets/images/images'
 
 export const posts = [
-  {
+   {
     id: 0,
     title: 'O papel fundamental de um Arquiteto de Software em seu projeto de desenvolvimento',
     subtitle: 'Tecnologia',
