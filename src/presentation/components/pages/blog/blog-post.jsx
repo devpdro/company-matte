@@ -80,32 +80,61 @@ const BlogPost = () => {
         <p className={styles.paragraph_post}>{post.paragraphTwo}</p>
         <h1 className={styles.title_post}>{post.titleContentTwo}</h1>
         <ol className={styles.list_box}>
-          <li>
-            <span>{post.titleListOne}</span>
-            {post.listOne}
-          </li>
-          <li>
-            <span>{post.titleListTwo}</span>
-            {post.listTwo}
-          </li>
-          <li>
-            <span>{post.titleListThree}</span>
-            {post.listThree}
-          </li>
-          <li>
-            <span>{post.titleListFour}</span>
-            {post.listFour}
-          </li>
-          <li>
-            <span>{post.titleListFive}</span>
-            {post.listFive}
-          </li>
-          <li>
-            <span>{post.titleListSix}</span>
-            {post.listSix}
-          </li>
+          {post.titleListOne && (
+            <li>
+              <span>{post.titleListOne}</span>
+              {post.listOne}
+            </li>
+          )}
+          {post.titleListTwo && (
+            <li>
+              <span>{post.titleListTwo}</span>
+              {post.listTwo}
+            </li>
+          )}
+          {post.titleListThree && (
+            <li>
+              <span>{post.titleListThree}</span>
+              {post.listThree}
+            </li>
+          )}
+          {post.titleListFour && (
+            <li>
+              <span>{post.titleListFour}</span>
+              {post.listFour}
+            </li>
+          )}
+          {post.titleListFive && (
+            <li>
+              <span>{post.titleListFive}</span>
+              {post.listFive}
+            </li>
+          )}
         </ol>
-        <h1 className={styles.title_post}>{post.titleListSeven}</h1>
+        {post.titleListSix && (
+          <h1 className={styles.title_post}>{post.titleSecond}</h1>
+        )}
+        <ol className={styles.list_box}>
+          {post.titleListSeven && (
+            <li>
+              <span>{post.titleListSix}</span>
+              {post.listSix}
+            </li>
+          )}
+          {post.titleListSeven && (
+            <li>
+              <span>{post.titleListSeven}</span>
+              {post.listSeven}
+            </li>
+          )}
+          {post.titleListSeven && (
+            <li>
+              <span>{post.titleListEight}</span>
+              {post.listEight}
+            </li>
+          )}
+        </ol>
+        <h1 className={styles.title_post}>{post.titleConclusion}</h1>
         <p className={styles.paragraph_post}>{post.paragraphThree}</p>
         <p className={styles.paragraph_post}>{post.paragraphFour}</p>
       </div>

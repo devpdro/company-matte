@@ -4,14 +4,12 @@ import { Link } from 'react-router-dom'
 import styles from 'presentation/components/pages/blog/related-posts.module.scss'
 
 const RelatedPosts = ({ posts, currentPostId }) => {
-  // Função para selecionar aleatoriamente outros posts relacionados
   const getRelatedPosts = () => {
     const filteredPosts = posts.filter((post) => post.id !== currentPostId)
     const randomIndexes = getRandomIndexes(filteredPosts.length)
     return randomIndexes.map((index) => filteredPosts[index])
   }
 
-  // Função para gerar números aleatórios exclusivos
   const getRandomIndexes = (length) => {
     const indexes = []
     while (indexes.length < 3 && indexes.length < length) {
@@ -26,7 +24,7 @@ const RelatedPosts = ({ posts, currentPostId }) => {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Posts Relacionados</h2>
+      <h2 className={styles.title}>Postagens recomendadas:</h2>
       <div className={styles.content}>
         {relatedPosts.map((relatedPost) => (
           <Link
@@ -41,7 +39,7 @@ const RelatedPosts = ({ posts, currentPostId }) => {
             />
             <p className={styles.subtitle}>{relatedPost.subtitle}</p>
             <h1 className={styles.title}>{relatedPost.title}</h1>
-            <p className={styles.data}>{relatedPost.date}</p>
+            <p className={styles.date_paragraph}>{relatedPost.date}</p>
           </Link>
         ))}
       </div>

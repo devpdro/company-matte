@@ -10,7 +10,7 @@ export const posts = [
   },
   {
     id: 1,
-    title: 'O que é design UX?',
+    title: 'UX: Entendendo a Experiência do Usuário e Aprimorando-a',
     subtitle: 'Tecnologia',
     date: '11 de janeiro de 2024',
     image: IMAGE.razoes
@@ -38,7 +38,7 @@ export const posts = [
   },
    {
     id: 5,
-    title: ' Como fazer seu site engajar os leads?',
+    title: 'Como fazer seu site engajar os leads?',
     subtitle: 'Marketing',
     date: '21 de julho de 2023',
     image: IMAGE.razoes
@@ -66,41 +66,27 @@ export const posts = [
   },
   {
     id: 9,
-    title: '5 Boas Práticas de SEO Para o Seu Site',
-    subtitle: 'SEO',
-    date: '18 de abril de 2023',
-    image: IMAGE.razoes
-  },
-  {
-    id: 10,
-    title: 'Divulgar um Site: 6 Dicas Fáceis Para Você Aplicar Agora',
+    title: 'Divulgar um Site: 3 Dicas Fáceis Para Você Aplicar Agora',
     subtitle: 'Marketing',
     date: '31 de março de 2023',
     image: IMAGE.razoes
   }, 
   {
-    id: 11,
-    title: 'Criar site grátis: 30 melhores ferramentas e dicas',
-    subtitle: 'Negócios',
-    date: '14 de março de 2023',
-    image: IMAGE.razoes
-  },
-  {
-    id: 12,
+    id: 10,
     title: 'Site Responsivo: Descubra seu Poder e Vantagens',
     subtitle: 'Tecnologia',
     date: '27 de fevereiro de 2023',
     image: IMAGE.razoes
   },
    {
-    id: 13,
+    id: 11,
     title: 'Arquitetura de Microsserviços',
     subtitle: 'Tecnologia',
     date: '13 de fevereiro de 2023',
     image: IMAGE.razoes
   },
    {
-    id: 14,
+    id: 12,
     title: 'A Psicologia Das Cores nos Negócios',
     subtitle: 'Marketing',
     date: '30 de janeiro de 2023',

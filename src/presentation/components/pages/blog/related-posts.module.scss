@@ -2,17 +2,20 @@
     font-family: "Archivo", sans-serif;
     font-weight: 500;
     max-width: 1240px;
-    margin: 5rem auto 0 auto;
+    margin: 4rem auto 0 auto;
+
+    .title {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
 
     .content {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
 
-
         .article_box {
-            margin-bottom: 2rem;
-
             &:hover {
                 .img {
                     transform: scale(1.1);
@@ -31,26 +34,27 @@
 
             .subtitle {
                 padding: 0.8rem 0 0.5rem 0;
-                font-size: 1.2rem;
-                color: #DDA827;
+                font-size: 1rem;
                 font-weight: 400;
+                color: #DDA827;
+
             }
 
             .title {
-                font-size: 1.5rem;
+                margin: 0rem 0 0.8rem 0;
                 color: #1c1c1c;
+                font-weight: 400;
+                font-size: 1.5rem;
+                line-height: 1.8rem;
                 font-weight: 500;
                 width: 93%;
                 transition: all 0.3s ease;
-                overflow: hidden;
-                position: relative;
             }
 
-            .data {
+            .date_paragraph {
                 font-size: 1rem;
-                padding: 1rem 0 1rem 0;
-                font-weight: 400;
                 color: #6B7280;
+                font-weight: 400;
             }
         }
     }
