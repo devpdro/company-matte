@@ -82,7 +82,7 @@ export function Navbar() {
               </LinkRouter>
             </li>
             <a
-              href="https://api.whatsapp.com/send?phone=5519971636739&text=Ol%C3%A1,%20gostaria%20de%20fazer%20meu%20site."
+              href="https://api.whatsapp.com/send?phone=5519971636739&text=Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20o%20meu%20projeto."
               target="_blank"
               rel="noopener noreferrer"
               className={styles.link}

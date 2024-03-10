@@ -9,6 +9,7 @@
 
     .logo_footer {
         display: none;
+
         .img {
             width: 170px;
         }
@@ -39,29 +40,33 @@
                     justify-content: center;
                     font-weight: 400;
 
-                    li {
-                        font-size: 0.9rem;
-                        position: relative;
-                        overflow: hidden;
-                        transition: all 0.3s ease;
-                        text-transform: uppercase;
-                        margin-left: 2rem;
+                    .link {
+                        color: #F9F7F1;
 
-                        &::after,
-                        &::before {
-                            content: '';
-                            position: absolute;
-                            bottom: 0;
-                            right: 0;
-                            width: 0;
-                            height: 1px;
-                            background-color: #DDA827;
-                            transition: width 0.5s ease, right 8s ease 1.5s;
-                        }
+                        li {
+                            font-size: 0.9rem;
+                            position: relative;
+                            overflow: hidden;
+                            transition: all 0.3s ease;
+                            text-transform: uppercase;
+                            margin-left: 2rem;
 
-                        &:hover::after {
-                            width: 100%;
-                            left: 0;
+                            &::after,
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+                                width: 0;
+                                height: 1px;
+                                background-color: #DDA827;
+                                transition: width 0.5s ease, right 8s ease 1.5s;
+                            }
+
+                            &:hover::after {
+                                width: 100%;
+                                left: 0;
+                            }
                         }
                     }
                 }
@@ -148,7 +153,9 @@
 }
 
 @media screen and (max-width: 600px) {
-    .footer {padding: 3.5rem 1rem 4rem 1rem;
+    .footer {
+        padding: 3.5rem 1rem 4rem 1rem;
+
         .logo_footer {
             display: block;
             text-align: center;

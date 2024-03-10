@@ -1,46 +1,38 @@
 import { BiDesktop, BiBullseye  } from 'react-icons/bi'
-import { AiOutlineClose } from 'react-icons/ai'
-import { FaAngleDown, FaAngleUp, FaCheck, FaWhatsapp, FaInstagram, FaLinkedin, FaFigma, FaReact  } from 'react-icons/fa'
+import { AiOutlineClose, AiOutlineHtml5 } from 'react-icons/ai'
+import { FaAngleDown, FaAngleUp, FaCheck, FaWhatsapp, FaInstagram, FaLinkedin, FaFigma, FaReact, FaAws, FaWordpressSimple, FaNodeJs  } from 'react-icons/fa'
 import { RxTextAlignRight } from 'react-icons/rx'
 import { VscArrowSmallRight } from 'react-icons/vsc'
 import { LuArrowUpRight } from 'react-icons/lu'
 import { GoGraph } from "react-icons/go";
-import { HiOutlineChatBubbleBottomCenterText } from "react-icons/hi2";
-import { IoLogoInstagram } from "react-icons/io";
+import { HiOutlineChatBubbleBottomCenterText, HiOutlineRocketLaunch } from "react-icons/hi2";
 import { PiGlobeHemisphereEast } from "react-icons/pi";
 import { FiEye } from "react-icons/fi";
-import { IoConstructOutline  } from "react-icons/io5";
-import { IoIosArrowRoundDown, IoIosSearch } from "react-icons/io";
-import { HiOutlineRocketLaunch } from "react-icons/hi2";
-import { BsPeople } from "react-icons/bs";
-import { CiViewList } from "react-icons/ci";
+import { IoIosArrowRoundDown, IoIosSearch, IoLogoInstagram } from "react-icons/io";
+import { BsPeople, BsCardList, BsBrush, BsEye } from "react-icons/bs";
 import { TbBrandNextjs } from "react-icons/tb";
-import { FaNodeJs } from "react-icons/fa";
-import { AiOutlineHtml5 } from "react-icons/ai";
 import { GrMysql } from "react-icons/gr";
-import { SiPostgresql } from "react-icons/si";
-import { FaWordpressSimple } from "react-icons/fa";
-import { SiStyledcomponents } from "react-icons/si";
-import { SiGooglecloud } from "react-icons/si";
-import { FaAws } from "react-icons/fa";
-import { MdOutlineMail } from "react-icons/md";
+import { IoConstructOutline } from "react-icons/io5";
+import { SiGooglecloud, SiPostgresql } from "react-icons/si";
+import { MdOutlineMail,  } from "react-icons/md";
 
 export const ICON = {
   MdOutlineMail,
   IoIosSearch,
   FaNodeJs,
   GrMysql,
+  BsCardList,
   TbBrandNextjs,
   AiOutlineHtml5,
   SiPostgresql,
   FaWordpressSimple,
   SiGooglecloud,
-  SiStyledcomponents,
+  BsBrush,
   FaAws,
   FaReact,
   FaFigma,
-  CiViewList,
   BsPeople,
+  BsEye,
   HiOutlineRocketLaunch,
   IoIosArrowRoundDown,
   IoConstructOutline,

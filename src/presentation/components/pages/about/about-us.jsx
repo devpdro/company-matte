@@ -2,7 +2,7 @@ import styles from 'presentation/components/pages/about/about-us.module.scss'
 
 export function AboutUs() {
   return (
-    <header className={`${styles.container} panel`} data-color="white">
+    <section id='quem-somos' className={`${styles.container} panel`} data-color="white">
       <div className={styles.about_box}>
         <p className={styles.subtitle}>
           Quem Somos <hr className={styles.linha} />
@@ -29,6 +29,6 @@ export function AboutUs() {
           soluções personalizadas e eficazes para nossos clientes.
         </p>
       </div>
-    </header>
+    </section>
   )
 }

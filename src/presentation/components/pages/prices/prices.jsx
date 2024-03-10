@@ -17,10 +17,16 @@ export function Prices() {
         <p className={styles.paragraph}>
           Em caso de dúvida entre em contato com nossa central de atendimento.
         </p>
-        <button className={styles.btn}>
-          <ICON.HiOutlineChatBubbleBottomCenterText className={styles.icon} />
-          <p className={styles.text_btn}>Fale com a gente</p>
-        </button>
+        <a
+          href="https://api.whatsapp.com/send?phone=5519971636739&text=Ol%C3%A1!%20Estou%20com%20algumas%20d%C3%BAvidas%20sobre%20o%20servi%C3%A7o%20de%20sites%20que%20voc%C3%AAs%20oferecem.%20Voc%C3%AAs%20podem%20me%20ajudar?"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className={styles.btn}>
+            <ICON.HiOutlineChatBubbleBottomCenterText className={styles.icon} />
+            <p className={styles.text_btn}>Fale com a gente</p>
+          </button>
+        </a>
       </div>
       <div className={styles.plans_box}>
         <div className={styles.texts_box}>
@@ -34,10 +40,18 @@ export function Prices() {
           <p className={styles.paragraph}>
             Em caso de dúvida entre em contato com nossa central de atendimento.
           </p>
-          <button className={styles.btn}>
-            <ICON.HiOutlineChatBubbleBottomCenterText className={styles.icon} />
-            <p className={styles.text_btn}>Fale com a gente</p>
-          </button>
+          <a
+            href="https://api.whatsapp.com/send?phone=5519971636739&text=Ol%C3%A1!%20Estou%20com%20algumas%20d%C3%BAvidas%20sobre%20o%20servi%C3%A7o%20de%20sites%20que%20voc%C3%AAs%20oferecem.%20Voc%C3%AAs%20podem%20me%20ajudar?"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className={styles.btn}>
+              <ICON.HiOutlineChatBubbleBottomCenterText
+                className={styles.icon}
+              />
+              <p className={styles.text_btn}>Fale com a gente</p>
+            </button>
+          </a>
         </div>
         <div className={styles.basic}>
           <div className={styles.icon_box}>
@@ -67,9 +81,15 @@ export function Prices() {
           </div>
           <p className={styles.payment}>Pagamento em até 12x sem juros</p>
           <div className={styles.choose_box}>
-            <button className={styles.choose_btn} type="submit">
-              Escolher
-            </button>
+            <a
+              href="https://api.whatsapp.com/send?phone=5519971636739&text=Ol%C3%A1!%20Estou%20animado%20para%20saber%20mais%20sobre%20o%20Site%20Expresso.%20Podemos%20conversar%20sobre%20como%20ele%20pode%20transformar%20meu%20projeto%3F"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className={styles.choose_btn} type="submit">
+                Escolher
+              </button>
+            </a>
           </div>
         </div>
         <div className={styles.custom}>
@@ -97,9 +117,15 @@ export function Prices() {
           </div>
           <p className={styles.payment}>Pagamento em até 12x sem juros</p>
           <div className={styles.choose_box}>
-            <button className={styles.choose_btn} type="submit">
-              Escolher
-            </button>
+            <a
+              href="https://api.whatsapp.com/send?phone=5519971636739&text=Ol%C3%A1!%20Estou%20animado%20para%20saber%20mais%20sobre%20o%20Site%20Sob%20Medida.%20Podemos%20conversar%20sobre%20como%20ele%20pode%20transformar%20meu%20projeto%3F"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className={styles.choose_btn} type="submit">
+                Escolher
+              </button>
+            </a>
           </div>
         </div>
       </div>

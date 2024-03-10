@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 import {
   BrowserRouter as Router,
@@ -15,6 +15,12 @@ import { Contact } from 'presentation/pages/contact'
 
 
 export function App() {
+  useEffect(() => {
+    const images = document.querySelectorAll('img');
+    images.forEach(image => {
+      image.setAttribute('loading', 'lazy');
+    });
+  }, []);
   return (
     <Router>
       <Routes>

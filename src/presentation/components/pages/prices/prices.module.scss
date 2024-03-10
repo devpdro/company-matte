@@ -58,6 +58,7 @@
                 font-weight: 600;
                 position: relative;
                 outline: none;
+                cursor: pointer;
                 border: none;
                 overflow: hidden;
                 text-transform: uppercase;
@@ -199,6 +200,7 @@
                     margin-bottom: 0.2rem;
                     border: 2px solid #DDA827;
                     transition: all 0.3s ease;
+                    cursor: pointer;
 
                     &:hover {
                         transform: scale(1.1);
@@ -318,6 +320,7 @@
                     border-radius: 35px;
                     border: none;
                     outline: none;
+                    cursor: pointer;
                     font-size: 1.5rem;
                     margin-bottom: 0.2rem;
                     transition: all 0.3s ease;

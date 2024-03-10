@@ -5,7 +5,7 @@ import styles from 'presentation/components/pages/operation/how-works.module.scs
 export function HowWorks() {
   return (
     <section
-      id="como-funciona?"
+      id="como-funciona"
       className={`${styles.container} panel`}
       data-color="white"
     >
@@ -18,7 +18,7 @@ export function HowWorks() {
         </div>
         <div className={styles.box_information}>
           <div className={styles.box_one}>
-            <ICON.CiViewList className={styles.icon} />
+            <ICON.BsCardList className={styles.icon} />
             <h2 className={styles.title}>Escolha o tipo de site</h2>
             <p className={styles.explication}>
               Imagine um site que se adapta perfeitamente às suas necessidades e
@@ -26,7 +26,7 @@ export function HowWorks() {
             </p>
           </div>
           <div className={styles.box_two}>
-            <ICON.CiViewList className={styles.icon} />
+            <ICON.BsBrush className={styles.icon} />
             <h6 className={styles.title}>Personalize seu site</h6>
             <span className={styles.explication}>
               Adicione recursos incríveis ao seu site - um blog dinâmico,
@@ -35,7 +35,7 @@ export function HowWorks() {
             </span>
           </div>
           <div className={styles.box_three}>
-            <ICON.CiViewList className={styles.icon} />
+            <ICON.BsEye className={styles.icon} />
             <h6 className={styles.title}>Transforme sua visão em realidade</h6>
             <span className={styles.explication}>
               Com a nossa ajuda e suas ideias em mãos, nossa equipe trabalhará

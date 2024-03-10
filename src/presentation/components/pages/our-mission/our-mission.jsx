@@ -4,7 +4,7 @@ import styles from 'presentation/components/pages/our-mission/our-mission.module
 
 export function OurMission() {
   return (
-    <header className={`${styles.container} panel`} data-color="white">
+    <section className={`${styles.container} panel`} data-color="white">
       <div className={styles.box_title}>
         <p className={styles.subtitle}>software house</p>
         <h1 className={styles.title}>Nossa missão</h1>
@@ -39,6 +39,6 @@ export function OurMission() {
           </p>
         </div>
       </div>
-    </header>
+    </section>
   )
 }

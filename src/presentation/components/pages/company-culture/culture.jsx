@@ -1,9 +1,18 @@
+import React, { useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
+
 import { Benefits } from 'presentation/components/pages/company-culture/components/benefits'
 
 import IMAGE from 'presentation/assets/images/images'
 import styles from 'presentation/components/pages/company-culture/culture.module.scss'
 
 export function ChooseBenefits() {
+  const location = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location.pathname])
+
   return (
     <section className={`${styles.container} panel`} data-color="white">
       <div className={styles.image_box}>
@@ -36,9 +45,11 @@ export function ChooseBenefits() {
             title="Melhor preço de mercado"
             paragraph="Na Matte, estamos empenhados em criar o seu site profissional, projetado não apenas para atender às necessidades atuais, mas também para preservar os recursos futuros. Oferecemos os melhores preços do mercado, além de um atendimento exclusivo, porque a realização dos seus objetivos é nossa prioridade máxima."
           />
-          <button className={styles.btn}>
-            <p className={styles.text_btn}>Como funciona?</p>
-          </button>
+          <Link to="/como-funciona">
+            <button className={styles.btn}>
+              <p className={styles.text_btn}>Como funciona?</p>
+            </button>
+          </Link>
         </div>
       </div>
     </section>

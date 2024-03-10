@@ -22,7 +22,7 @@ const faqItems = [
   {
     question: 'Vou ter algum custo após a publicação do site?',
     answer:
-      'Para os sites sob medida, não há mensalidade obrigatória, pois tudo está incluso. No entanto, para o site expresso, há uma mensalidade a partir de R$85/mês. Esse valor engloba suporte, atualizações e hospedagem, oferecendo um pacote completo para manter seu site funcionando de maneira eficiente.'
+      'Para os sites sob medida, não há mensalidade, pois tudo está incluso. No entanto, para o site expresso, há uma mensalidade a partir de R$85/mês. Esse valor engloba suporte, atualizações e hospedagem, oferecendo um pacote completo para manter seu site funcionando de maneira eficiente.'
   },
   {
     question: 'Quais são os benefícios de optar por um site One Page para a minha empresa?',
