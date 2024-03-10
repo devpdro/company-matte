@@ -62,7 +62,7 @@ export const posts = [
     title: 'Como testar a responsividade de um site',
     subtitle: 'Tecnologia',
     date: '10 de maio de 2023',
-    image: IMAGE.responsivo
+    image: IMAGE.responsivoBlog
   },
   {
     id: 9,
@@ -76,7 +76,7 @@ export const posts = [
     title: 'Site Responsivo: Descubra seu Poder e Vantagens',
     subtitle: 'Tecnologia',
     date: '27 de fevereiro de 2023',
-    image: IMAGE.responsivo
+    image: IMAGE.siteResponsivoDois
   },
    {
     id: 11,

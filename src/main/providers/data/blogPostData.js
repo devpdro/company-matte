@@ -7,7 +7,7 @@ import leads from 'presentation/assets/images/img/engajar-leads-site-blog.webp';
 import seo from 'presentation/assets/images/img/seo-blog.webp';
 import seoSearch from 'presentation/assets/images/img/seo-search-blog.webp';
 import ferramentas from 'presentation/assets/images/img/ferramentas-blog.webp';
-import responsivo from 'presentation/assets/images/img/site-responsivo-blog.webp';
+import responsivo from 'presentation/assets/images/img/site-responsividade-blog.webp';
 import microsservicos from 'presentation/assets/images/img/microsservicos-blog.webp';
 import psicologia from 'presentation/assets/images/img/psicologia-cores-blog.webp';
 import correcaoBugs from 'presentation/assets/images/img/correcao-bugs-blog.webp';
@@ -19,6 +19,7 @@ import marketing from 'presentation/assets/images/img/marketing-restaurante-blog
 import ferramentasDesigner from 'presentation/assets/images/img/ferramentas-web-designer-blog.webp';
 import websiteSignificado from 'presentation/assets/images/img/website-significaado-blog.webp';
 import startups from 'presentation/assets/images/img/desenvolvimento-startups-blog.webp';
+import siteResponsivoDois from 'presentation/assets/images/img/site-responsivo-blog-dois.webp';
 
 export const posts = [
    {
@@ -167,15 +168,15 @@ export const posts = [
     paragraphOne: "Hoje em dia, é crucial que seu site engaje os leads para garantir o sucesso do seu negócio. Ele não só funciona como a porta de entrada para seus produtos ou serviços, mas também desempenha um papel fundamental na conversão de visitantes em clientes. Vários elementos do seu site podem influenciar o engajamento dos leads, desde o conteúdo até o design e a funcionalidade.",
     titleContentTwo: 'Dicas e Melhores Práticas para Engajar os Leads:',
     titleListOne: "Aplique técnicas de SEO:",
-    listOne: "Otimizar seu site para os mecanismos de busca pode aumentar sua visibilidade online e atrair mais tráfego qualificado.",
+    listOne: " Otimizar seu site para os mecanismos de busca pode aumentar sua visibilidade online e atrair mais tráfego qualificado.",
     titleListTwo: "Apresente sua solução de maneira clara:",
-    listTwo: "Certifique-se de que os benefícios e vantagens do seu produto ou serviço sejam facilmente compreendidos pelos visitantes do seu site.",
+    listTwo: " Certifique-se de que os benefícios e vantagens do seu produto ou serviço sejam facilmente compreendidos pelos visitantes do seu site.",
     titleListThree: "Utilize chamadas para ação (CTA):",
-    listThree: "Inclua botões ou links que incentivem os visitantes a realizar uma ação específica, como solicitar um orçamento ou se inscrever em uma newsletter.",
+    listThree: " Inclua botões ou links que incentivem os visitantes a realizar uma ação específica, como solicitar um orçamento ou se inscrever em uma newsletter.",
     titleListFour: "Otimize para dispositivos móveis:",
-    listFour: "Garanta que seu site seja totalmente funcional e de fácil navegação em smartphones e tablets, pois muitos usuários acessam a internet por meio desses dispositivos.",
+    listFour: " Garanta que seu site seja totalmente funcional e de fácil navegação em smartphones e tablets, pois muitos usuários acessam a internet por meio desses dispositivos.",
     titleListFive: "Analise e ajuste constantemente:",
-    listFive: "Utilize ferramentas de análise para monitorar o desempenho do seu site e faça ajustes conforme necessário para melhorar a experiência do usuário e aumentar as taxas de conversão.",
+    listFive: " Utilize ferramentas de análise para monitorar o desempenho do seu site e faça ajustes conforme necessário para melhorar a experiência do usuário e aumentar as taxas de conversão.",
     titleConclusion: "Conclusão:",
     paragraphThree: "Engajar os leads é essencial para o sucesso de qualquer negócio online. Ao implementar as estratégias discutidas neste artigo e manter-se atento às mudanças no comportamento do usuário e no mercado, você estará no caminho certo para construir um site eficaz que gere resultados tangíveis para o seu negócio."
 },
@@ -189,21 +190,21 @@ export const posts = [
     paragraphOne: "Esta será uma orientação completa para você sobre meta tags e sua aplicação em páginas e sites. As meta tags, apesar de não serem visíveis para os usuários, desempenham um papel crucial na otimização de mecanismos de pesquisa para uma página. Elas fornecem informações sobre sua página da web aos mecanismos de pesquisa e aos visitantes.",
     titleContentOne: 'O que são Meta Tags?',
     paragraphTwo:
-      'Meta tags são elementos cruciais para uma estratégia eficaz de SEO (Search Engine Optimization). Elas são inseridas no código HTML da página e fornecem informações importantes aos mecanismos de pesquisa sobre o conteúdo da página. As meta tags ajudam os mecanismos de pesquisa a entenderem do que se trata a página e a exibirem resultados relevantes aos usuários em suas pesquisas.',
+      ' Meta tags são elementos cruciais para uma estratégia eficaz de SEO (Search Engine Optimization). Elas são inseridas no código HTML da página e fornecem informações importantes aos mecanismos de pesquisa sobre o conteúdo da página. As meta tags ajudam os mecanismos de pesquisa a entenderem do que se trata a página e a exibirem resultados relevantes aos usuários em suas pesquisas.',
     titleContentTwo: 'Por que são Importantes as Meta Tags em SEO?',
     titleListOne: "Fornecem informações essenciais:",
     listOne:
-      'As meta tags fornecem informações valiosas aos mecanismos de pesquisa sobre o conteúdo da página, ajudando-os a entender do que se trata e a classificá-la adequadamente nos resultados de pesquisa.',
+      ' As meta tags fornecem informações valiosas aos mecanismos de pesquisa sobre o conteúdo da página, ajudando-os a entender do que se trata e a classificá-la adequadamente nos resultados de pesquisa.',
     titleListTwo: "Melhoram a relevância:",
-    listTwo: "Ao utilizar meta tags relevantes e precisas, você aumenta a relevância da sua página nos resultados de pesquisa, o que pode levar a um melhor posicionamento nos rankings.",
+    listTwo: " Ao utilizar meta tags relevantes e precisas, você aumenta a relevância da sua página nos resultados de pesquisa, o que pode levar a um melhor posicionamento nos rankings.",
     titleListThree: "Aumentam a visibilidade:",
-    listThree: "Meta tags bem otimizadas podem aumentar a visibilidade da sua página nos resultados de pesquisa, atraindo mais tráfego qualificado para o seu site.",
+    listThree: " Meta tags bem otimizadas podem aumentar a visibilidade da sua página nos resultados de pesquisa, atraindo mais tráfego qualificado para o seu site.",
     titleListFour: "Ajudam na experiência do usuário:",
-    listFour: "Ao fornecer informações claras e precisas sobre o conteúdo da página, as meta tags ajudam os usuários a entenderem do que se trata a página antes de clicarem no link, melhorando sua experiência de pesquisa.",
+    listFour: " Ao fornecer informações claras e precisas sobre o conteúdo da página, as meta tags ajudam os usuários a entenderem do que se trata a página antes de clicarem no link, melhorando sua experiência de pesquisa.",
     titleListFive: "Contribuem para a indexação:",
-    listFive: "As meta tags auxiliam os mecanismos de pesquisa na indexação adequada das páginas, garantindo que elas sejam incluídas nos resultados de pesquisa relevantes.",
+    listFive: " As meta tags auxiliam os mecanismos de pesquisa na indexação adequada das páginas, garantindo que elas sejam incluídas nos resultados de pesquisa relevantes.",
     titleListSix: "Impactam a taxa de cliques:",
-    listSix: "Meta tags bem elaboradas podem influenciar a taxa de cliques (CTR) da sua página nos resultados de pesquisa, aumentando a probabilidade de os usuários clicarem no seu link em vez dos concorrentes.",
+    listSix: " Meta tags bem elaboradas podem influenciar a taxa de cliques (CTR) da sua página nos resultados de pesquisa, aumentando a probabilidade de os usuários clicarem no seu link em vez dos concorrentes.",
     titleConclusion: "Conclusão:",
     paragraphThree: "As meta tags desempenham um papel fundamental na estratégia de SEO de uma página, fornecendo informações importantes aos mecanismos de pesquisa e aos usuários. Ao utilizar meta tags relevantes e precisas, você pode melhorar a visibilidade, a relevância e a experiência do usuário da sua página nos resultados de pesquisa, o que pode levar a um aumento no tráfego e nas conversões. Certifique-se de otimizar suas meta tags de acordo com as melhores práticas de SEO para obter os melhores resultados.",
     paragraphFour: "Ao implementar meta tags eficazes em suas páginas, você pode melhorar significativamente sua presença online e alcançar seus objetivos de negócios através de uma estratégia de SEO bem-sucedida.",
@@ -228,7 +229,8 @@ export const posts = [
   titleListFive: "Presença nas Redes Sociais:",
   listFive: " Compartilhe seu conteúdo nas redes sociais para aumentar sua visibilidade e atrair mais tráfego para o seu site.",
   titleSecond: "Monitoramento e Análise:",
-  titleListSix: "Use ferramentas como o Google Analytics e o Google Search Console para acompanhar o desempenho do seu site e fazer ajustes conforme necessário.",
+  titleListSix: "Use ferramentas:",
+  listSix: " Como o Google Analytics e o Google Search Console para acompanhar o desempenho do seu site e fazer ajustes conforme necessário.",
   titleListSeven: "Acompanhamento de Tendências:",
   listSeven: " Fique atualizado sobre as mudanças nos algoritmos de busca do Google e ajuste sua estratégia de SEO de acordo para permanecer relevante.",
   titleListEight: "Otimização para Dispositivos Móveis:",
@@ -301,7 +303,7 @@ export const posts = [
   subtitle: "Tecnologia",
   title: "Site Responsivo: Descubra seu Poder e Vantagens",
   date: "27 de fevereiro de 2023",
-  image: responsivo,
+  image: siteResponsivoDois,
   paragraphOne: "Um site responsivo é uma poderosa ferramenta na era digital de hoje, permitindo que os usuários acessem conteúdo de forma eficaz em uma variedade de dispositivos, desde desktops até smartphones e tablets.",
   titleContentTwo: "O Que é um Site Responsivo",
   titleListOne: "Vantagens de um Site Responsivo:",

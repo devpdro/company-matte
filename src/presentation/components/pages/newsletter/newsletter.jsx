@@ -38,18 +38,18 @@ export function NewsLetter() {
         toast.error('Por favor, preencha o email.')
         return
       }
-    
+
       await emailjs.sendForm(
         'gmailContact',
         'template_oekruyi',
-        event.target, 
-        'GSlDlk4aAeWqGnnRW' 
+        event.target,
+        'GSlDlk4aAeWqGnnRW'
       )
-      toast.success('Email cadastrado com sucesso!') 
+      toast.success('Email cadastrado com sucesso!')
       reset()
     } catch (error) {
       console.error('Erro ao cadastrar email:', error)
-      toast.error('Erro ao cadastrar email') 
+      toast.error('Erro ao cadastrar email')
     }
   }
 
@@ -63,7 +63,7 @@ export function NewsLetter() {
           <h1 className={styles.title}>Esteja sempre atualizado!</h1>
           <p className={styles.subtitle}>
             Negócios, estratégia, design e muito mais do mundo da tecnologia,
-            <br /> entregue gratuitamente para você.
+            entregue gratuitamente para você.
           </p>
         </div>
         <div className={styles.newsletterForm}>

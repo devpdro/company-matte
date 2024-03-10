@@ -66,3 +66,44 @@
 
     }
 }
+
+@media screen and (max-width: 894px) {
+    .container {
+        margin: 7rem auto 0rem auto;
+
+        .box_navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+
+            .list_themes {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .text {
+                    font-size: 1.3rem;
+                    margin-right: 1.1rem;
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+
+        .search_container {
+            margin-top: 0.7rem;
+
+            .btn {
+                font-size: 1.2rem !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 895px) and (max-width: 1023px) {
+    .container {
+        margin: 6.8rem auto 0rem auto !important;
+    }
+}

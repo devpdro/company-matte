@@ -61,8 +61,12 @@ const BlogPost = () => {
   }
 
   return (
-    <div className={`panel`} data-color="white">
-      <Navbar />
+    <div
+      style={{ backgroundColor: '#F9F7F1', color: '#1c1c1c' }}
+      className={`panel`}
+      data-color="white"
+    >
+      <Navbar className={`panel`} data-color="white" />
       <div className={styles.routes}>{generatePath()}</div>
       <div className={styles.content_container}>
         <div className={styles.texts_box}>

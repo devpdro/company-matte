@@ -4,6 +4,7 @@
     max-width: 1240px;
     margin: 8rem auto 6rem auto;
     color: #F9F7F1;
+    padding: 0 2rem;
 
     .newsletterContent {
         background-color: #212121;
@@ -14,16 +15,17 @@
         padding: 5rem 2rem;
 
         .newsletterText {
-            width: 55%;
+            width: 54%;
 
             .title {
                 font-size: 3rem;
-                font-weight: 600;
+                font-weight: 500;
                 margin-bottom: 0.5rem;
             }
 
             .subtitle {
                 font-size: 1.2rem;
+                width: 90%;
                 font-weight: 400;
                 line-height: 1.7rem;
             }
@@ -81,7 +83,7 @@
                     font-weight: 600;
                     color: #1c1c1c;
                     text-transform: uppercase;
-                    padding: 0.8rem 1.2rem;
+                    padding: 0.9rem 1.2rem;
                     background-color: #ffff;
                     margin-left: 0.7rem;
                     border-radius: 5px;

@@ -18,7 +18,7 @@ import leads from 'presentation/assets/images/img/engajar-leads-site-blog.webp';
 import seo from 'presentation/assets/images/img/seo-blog.webp';
 import seoSearch from 'presentation/assets/images/img/seo-search-blog.webp';
 import ferramentas from 'presentation/assets/images/img/ferramentas-blog.webp';
-import responsivoBlog from 'presentation/assets/images/img/site-responsivo-blog.webp';
+import responsivoBlog from 'presentation/assets/images/img/site-responsividade-blog.webp';
 import microsservicos from 'presentation/assets/images/img/microsservicos-blog.webp';
 import psicologia from 'presentation/assets/images/img/psicologia-cores-blog.webp';
 import correcaoBugs from 'presentation/assets/images/img/correcao-bugs-blog.webp';
@@ -30,7 +30,10 @@ import marketing from 'presentation/assets/images/img/marketing-restaurante-blog
 import ferramentasDesigner from 'presentation/assets/images/img/ferramentas-web-designer-blog.webp';
 import websiteSignificado from 'presentation/assets/images/img/website-significaado-blog.webp';
 import startups from 'presentation/assets/images/img/desenvolvimento-startups-blog.webp';
+import siteResponsivoDois from 'presentation/assets/images/img/site-responsivo-blog-dois.webp';
+
 const images = {
+  siteResponsivoDois,
   psicologia,
   microsservicos,
   siteInstitucional,

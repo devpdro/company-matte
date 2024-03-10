@@ -50,6 +50,8 @@ const BlogPage = () => {
             <div className={page.posts_container}>
               {filteredPosts.slice(0, visiblePosts).map((post) => (
                 <BlogPost
+                  className={`panel`}
+                  data-color="white"
                   key={post.id}
                   id={post.id}
                   title={post.title}
