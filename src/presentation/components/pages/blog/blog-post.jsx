@@ -47,7 +47,7 @@ const BlogPost = () => {
 
   const generatePath = () => {
     return (
-      <div>
+      <div className={`panel`} data-color="white">
         {sections.map((section, index) => (
           <span key={index}>
             {index > 0 && ' > '}
@@ -61,7 +61,7 @@ const BlogPost = () => {
   }
 
   return (
-    <div>
+    <div className={`panel`} data-color="white">
       <Navbar />
       <div className={styles.routes}>{generatePath()}</div>
       <div className={styles.content_container}>
@@ -138,8 +138,13 @@ const BlogPost = () => {
         <p className={styles.paragraph_post}>{post.paragraphThree}</p>
         <p className={styles.paragraph_post}>{post.paragraphFour}</p>
       </div>
-      <RelatedPosts posts={posts} currentPostId={routes} />
-      <NewsLetter />
+      <RelatedPosts
+        className="panel"
+        data-color="white"
+        posts={posts}
+        currentPostId={routes}
+      />
+      <NewsLetter className="panel" data-color="white" />
       <Footer />
     </div>
   )

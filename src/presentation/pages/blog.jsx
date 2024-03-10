@@ -43,7 +43,7 @@ export function Blog() {
     <main>
       <Navbar className="panel" data-color="white" />
       <BlogPage className="panel" data-color="white" />
-      <NewsLetter />
+      <NewsLetter className="panel" data-color="white" />
       <Footer />
     </main>
   )

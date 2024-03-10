@@ -43,11 +43,11 @@ export function Operation() {
     }, [])
   return (
     <main>
-      <Navbar />
+      <Navbar className="panel" data-color="white" />
       <OperationHeader className="panel" data-color="white" />
-      <HowWorks />
-      <Functionalities />
-      <Technologies />
+      <HowWorks className="panel" data-color="white" />
+      <Functionalities className="panel" data-color="white" />
+      <Technologies className="panel" data-color="white" />
       <Footer />
     </main>
   )

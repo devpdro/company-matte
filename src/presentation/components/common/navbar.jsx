@@ -43,7 +43,7 @@ export function Navbar() {
   }
 
   return (
-    <nav className={styles.navbar} id="navbar">
+    <nav className={`${styles.navbar} panel`} data-color="white" id="navbar">
       <div className={styles.header__content}>
         <div className={styles.box_logo}>
           <LinkRouter to="/">

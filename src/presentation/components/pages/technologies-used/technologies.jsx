@@ -4,7 +4,7 @@ import styles from 'presentation/components/pages/technologies-used/technologies
 
 export function Technologies() {
   return (
-    <section className={`${styles.container}`}>
+    <section className={`${styles.container} panel`} data-color="white">
       <div className={styles.box_container}>
         <div className={styles.texts_box}>
           <p className={styles.subtitle}>

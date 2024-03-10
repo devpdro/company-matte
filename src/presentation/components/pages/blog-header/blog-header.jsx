@@ -20,41 +20,43 @@ export function BlogHeader() {
           <img
             loading="lazy"
             className={styles.img1}
-            src={IMAGE.razoes}
+            src={IMAGE.arquiteto}
             alt="Software personalizado"
           />
-          <p className={styles.subtitle}>Negócios</p>
+          <p className={styles.subtitle}>Tecnologia</p>
           <h1 className={styles.title}>
             <span className={styles.span}>
-              5 razões para investir em um software personalizado para a sua
-              empresa
+              O papel fundamental de um Arquiteto de Software em seu projeto de
+              desenvolvimento
             </span>
           </h1>
-          <p className={styles.data}>12 de janeiro de 2024</p>
+          <p className={styles.data}>11 de março de 2024</p>
         </div>
         <div className={styles.article}>
           <img
             className={styles.img2}
             loading="lazy"
-            src={IMAGE.sistema}
+            src={IMAGE.marketing}
             alt="Sistema"
           />
-          <p className={styles.subtitle}>Negócios</p>
-          <h1 className={styles.title}>Como funciona um sistema web?</h1>
-          <p className={styles.data}>9 de fevereiro de 2024</p>
+          <p className={styles.subtitle}>Marketing</p>
+          <h1 className={styles.title}>
+            Como fazer seu site engajar os leads?
+          </h1>
+          <p className={styles.data}>21 de julho de 2023</p>
         </div>
         <div className={styles.article}>
           <img
             className={styles.img3}
             loading="lazy"
-            src={IMAGE.webDesign}
+            src={IMAGE.siteInstitucional}
             alt="Web Design"
           />
-          <p className={styles.subtitle}>Tecnologia</p>
+          <p className={styles.subtitle}>Negócios</p>
           <h1 className={styles.title}>
-            Como Criar um Site para Minha Empresa: O Guia Completo
+            Site Institucional: O Que é e Qual a Importância?
           </h1>
-          <p className={styles.data}>23 de fevereiro de 2024</p>
+          <p className={styles.data}>21 de janeiro de 2024</p>
         </div>
       </div>
     </section>

@@ -4,7 +4,11 @@ import styles from 'presentation/components/pages/operation/how-works.module.scs
 
 export function HowWorks() {
   return (
-    <section id="como-funciona?" className={`${styles.container} `}>
+    <section
+      id="como-funciona?"
+      className={`${styles.container} panel`}
+      data-color="white"
+    >
       <div className={styles.box_container}>
         <div className={`${styles.box_title}`}>
           <p className={styles.subtitle}>
@@ -30,9 +34,7 @@ export function HowWorks() {
               Faça seu site ser verdadeiramente único.
             </span>
           </div>
-          <div
-            className={styles.box_three}
-          >
+          <div className={styles.box_three}>
             <ICON.CiViewList className={styles.icon} />
             <h6 className={styles.title}>Transforme sua visão em realidade</h6>
             <span className={styles.explication}>

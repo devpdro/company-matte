@@ -36,7 +36,7 @@ export function Form() {
   const [emailValue, setEmailValue] = useState('')
   const [telefoneValue, setTelefoneValue] = useState('')
   const [mensagemValue, setMensagemValue] = useState('')
-
+  const [recaptchaToken, setRecaptchaToken] = useState('')
   const {
     handleSubmit,
     control,
@@ -47,17 +47,25 @@ export function Form() {
 
   const sendEmail = handleSubmit(async (data, event) => {
     try {
-      const formElement = event.target
-
+      if (!recaptchaToken) {
+        toast.error('Por favor, verifique o ReCAPTCHA.')
+        return
+      }
       if (!nomeValue || !emailValue || !telefoneValue || !mensagemValue) {
         toast.error('Por favor, preencha todos os campos.')
         return
       }
-
-      await emailjs.sendForm(
+      const { nome, email, telefone, mensagem } = data
+      await emailjs.send(
         'gmailContact',
         'template_3hs5z6j',
-        formElement,
+        {
+          nome,
+          email,
+          telefone,
+          mensagem,
+          recaptcha_token: recaptchaToken
+        },
         'GSlDlk4aAeWqGnnRW'
       )
       toast.success('Email enviado com sucesso! Retornaremos em breve.')
@@ -72,7 +80,10 @@ export function Form() {
     }
   })
 
-  const onChange = () => {}
+  const onChange = (token) => {
+    // Armazenar o token do ReCAPTCHA
+    setRecaptchaToken(token)
+  }
 
   return (
     <section className={styles.container}>
@@ -180,7 +191,7 @@ export function Form() {
               <input
                 type="text"
                 {...field}
-               autoComplete="no"
+                autoComplete="no"
                 value={mensagemValue}
                 onChange={(e) => {
                   field.onChange(e)

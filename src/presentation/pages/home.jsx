@@ -49,11 +49,11 @@ export function Home() {
 
   return (
     <main>
-      <Navbar />
+      <Navbar className="panel" data-color="white" />
       <HomeHeader className="panel" data-color="white" />
       <CompanyActivities className="panel" data-color="black" />
       <ChooseBenefits className="panel" data-color="white" />
-      <WorkTogether />
+      <WorkTogether/>
       <Prices className="panel" data-color="white" />
       <BlogHeader className="panel" data-color="white" />
       <Faq />

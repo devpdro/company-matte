@@ -44,12 +44,12 @@ export function About() {
   }, [])
   return (
     <main>
-      <Navbar />
+      <Navbar className="panel" data-color="white" />
       <AboutHeader className="panel" data-color="white" />
       <AboutUs className="panel" data-color="white" />
-      <OurMission />
-      <Technologies />
-      <BlogHeader />
+      <OurMission className="panel" data-color="white" />
+      <Technologies className="panel" data-color="white" />
+      <BlogHeader className="panel" data-color="white" />
       <Footer />
     </main>
   )

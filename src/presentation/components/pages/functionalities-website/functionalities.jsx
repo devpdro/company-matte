@@ -109,7 +109,11 @@ export function Functionalities() {
   )
 
   return (
-    <section id="funcionalidades" className={`${styles.container}`}>
+    <section
+      id="funcionalidades"
+      className={`${styles.container} panel`}
+      data-color="white"
+    >
       <div className={styles.box_title}>
         <p className={styles.subtitle}>
           Oferecemos <hr className={styles.linha} />

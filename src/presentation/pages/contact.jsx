@@ -40,8 +40,8 @@ export function Contact() {
   }, [])
   return (
     <main>
-      <Navbar />
-      <MainContact />
+      <Navbar className="panel" data-color="white" />
+      <MainContact className="panel" data-color="white" />
       <Footer />
     </main>
   )

@@ -1,29 +1,27 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import styles from 'presentation/components/pages/blog/related-posts.module.scss'
+import styles from 'presentation/components/pages/blog/related-posts.module.scss';
 
 const RelatedPosts = ({ posts, currentPostId }) => {
-  const getRelatedPosts = () => {
-    const filteredPosts = posts.filter((post) => post.id !== currentPostId)
-    const randomIndexes = getRandomIndexes(filteredPosts.length)
-    return randomIndexes.map((index) => filteredPosts[index])
-  }
-
-  const getRandomIndexes = (length) => {
-    const indexes = []
-    while (indexes.length < 3 && indexes.length < length) {
-      const randomIndex = Math.floor(Math.random() * length)
-      if (!indexes.includes(randomIndex)) {
-        indexes.push(randomIndex)
-      }
+  const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
     }
-    return indexes
-  }
-  const relatedPosts = getRelatedPosts()
+    return array;
+  };
+
+  const getRelatedPosts = () => {
+    const filteredPosts = posts.filter((post) => post.id !== currentPostId);
+    const shuffledPosts = shuffleArray(filteredPosts);
+    return shuffledPosts.slice(0, 3);
+  };
+
+  const relatedPosts = getRelatedPosts();
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} panel`} data-color="white">
       <h2 className={styles.title}>Postagens recomendadas:</h2>
       <div className={styles.content}>
         {relatedPosts.map((relatedPost) => (
@@ -45,6 +43,6 @@ const RelatedPosts = ({ posts, currentPostId }) => {
       </div>
     </div>
   )
-}
+};
 
-export default RelatedPosts
+export default RelatedPosts;
