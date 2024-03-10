@@ -1,10 +1,10 @@
-import blog from 'presentation/assets/images/img/blog.png'
-import computadorRapido from 'presentation/assets/images/img/computador-rápido.png'
-import negocio from 'presentation/assets/images/img/negocio.png'
-import otimizacaoWeb from 'presentation/assets/images/img/otimizacao-da-web.png'
-import responsivo from 'presentation/assets/images/img/responsivo.png'
-import design from 'presentation/assets/images/img/design-ux.png'
-import suporte from 'presentation/assets/images/img/suporte-tecnico.png'
+import blog from 'presentation/assets/images/img/blog.webp'
+import computadorRapido from 'presentation/assets/images/img/computador-rápido.webp'
+import negocio from 'presentation/assets/images/img/negocio.webp'
+import otimizacaoWeb from 'presentation/assets/images/img/otimizacao-da-web.webp'
+import responsivo from 'presentation/assets/images/img/responsivo.webp'
+import design from 'presentation/assets/images/img/design-ux.webp'
+import suporte from 'presentation/assets/images/img/suporte-tecnico.webp'
 
 const cardData = [
   {

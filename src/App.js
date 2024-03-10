@@ -90,13 +90,13 @@ export function App() {
                 <meta name="robots" content="index, follow"/>
                 <meta
                   name="description"
-                  content="Transforme sua visão em realidade com a Matte. Somos uma empresa especializada em desenvolvimento de sites, pronta para tornar suas ideias em projetos funcionais e atrativos."
+                  content="Construímos soluções do início ao fim! Explore o nosso blog sobre Desenvolvimento Web, Aplicativos, Design de Experiência e Interface do Usuário, além de outras áreas."
                   />
                 <meta
                   name="keywords"
                 content="Criação de sites, Desenvolvimento de sites, Web design, Empresa de sites, Web development, Matte, Criação de websites profissionais, Marketing digital, SEO, E-commerce, Landing pages, Responsivo, Soluções web, Site personalizado, Design responsivo, Otimização de sites, Serviços web, Experiência do usuário, Tecnologia web, Design intuitivo, Performance do site, Integração de mídia social, Projeto web."
                   />
-                  <title>Entre em contato | Matte - Transforme sua ideia em realidade</title>
+                  <title>Blog Matte: Novidades, Dicas e Tendências em Diversas Áreas</title>
               </Helmet>
               <Blog />
             </div>
