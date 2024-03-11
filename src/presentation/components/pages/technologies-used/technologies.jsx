@@ -16,17 +16,56 @@ export function Technologies() {
           </h1>
         </div>
         <div className={styles.technologies_box}>
-          <IconWithTitle title="Figma" iconName="FaFigma" />
-          <IconWithTitle title="React" iconName="FaReact" />
-          <IconWithTitle title="React Native" iconName="FaReact" />
-          <IconWithTitle title="Nextjs" iconName="TbBrandNextjs" />
-          <IconWithTitle title="Nodejs" iconName="FaNodeJs" />
-          <IconWithTitle title="MySQL" iconName="GrMysql" />
-          <IconWithTitle title="HTML5 e CSS3" iconName="AiOutlineHtml5" />
-          <IconWithTitle title="PostgreSQL" iconName="SiPostgresql" />
-          <IconWithTitle title="WordPress" iconName="FaWordpressSimple" />
-          <IconWithTitle title="Google Cloud" iconName="SiGooglecloud" />
-          <IconWithTitle title="Amazon AWS" iconName="FaAws" />
+          <IconWithTitle
+            tooltip="Criação e compartilhamento de protótipos de sites."
+            title="Figma"
+            iconName="FaFigma"
+          />
+          <IconWithTitle
+            tooltip="Desenvolvimento de interfaces dinâmicas e responsivas."
+            title="React"
+            iconName="FaReact"
+          />
+          <IconWithTitle
+            tooltip="Desenvolvimento de aplicativos móveis com React."
+            title="React Native"
+            iconName="FaReact"
+          />
+          <IconWithTitle
+            tooltip="Criação de servidores web escaláveis."
+            title="Next.js"
+            iconName="TbBrandNextjs"
+          />
+          <IconWithTitle
+            tooltip="Plataforma para desenvolvimento de servidores web escaláveis."
+            title="Node.js"
+            iconName="FaNodeJs"
+          />
+          <IconWithTitle
+            title="HTML5 e CSS3"
+            iconName="AiOutlineHtml5"
+            tooltip="Tecnologias essenciais para a construção web."
+          />
+          <IconWithTitle
+            title="PostgreSQL"
+            iconName="SiPostgresql"
+            tooltip="Banco de dados poderoso e versátil."
+          />
+          <IconWithTitle
+            title="WordPress"
+            iconName="FaWordpressSimple"
+            tooltip="Plataforma popular para criar sites e blogs."
+          />
+          <IconWithTitle
+            title="Google Cloud"
+            iconName="SiGooglecloud"
+            tooltip="Infraestrutura escalável para serviços web."
+          />
+          <IconWithTitle
+            title="Amazon AWS"
+            iconName="FaAws"
+            tooltip="Plataforma robusta para hospedagem e computação em nuvem."
+          />
         </div>
       </div>
     </section>

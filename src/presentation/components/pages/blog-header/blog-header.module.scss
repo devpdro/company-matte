@@ -202,39 +202,41 @@
         .news {
             flex-direction: column;
 
-            .article {
-                margin-bottom: 2rem;
+            .link {
+                .article {
+                    margin-bottom: 2rem;
 
-                .img1 {
-                    width: 100% !important;
-                }
+                    .img1 {
+                        width: 100% !important;
+                    }
 
-                .img2 {
-                    width: 100% !important;
-                }
+                    .img2 {
+                        width: 100% !important;
+                    }
 
-                .img3 {
-                    width: 100% !important;
-                }
+                    .img3 {
+                        width: 100% !important;
+                    }
 
-                .title {
-                    font-size: 1.5rem!important;
-                    font-weight: 500;
-                    width: 100% !important;
-                }
+                    .title {
+                        font-size: 1.5rem !important;
+                        font-weight: 500;
+                        width: 100% !important;
+                    }
 
-                .subtitle {
-                    padding: 1.1rem 0 0.7rem 0;
-                    font-size: 1.1rem!important;
-                    color: #DDA827;
-                    font-weight: 400;
-                }
+                    .subtitle {
+                        padding: 1.1rem 0 0.7rem 0;
+                        font-size: 1.1rem !important;
+                        color: #DDA827;
+                        font-weight: 400;
+                    }
 
-                .data {
-                    font-size: 0.9rem;
-                    padding: 0.8rem 0 1rem 0;
-                    font-weight: 400;
-                    color: #6B7280;
+                    .data {
+                        font-size: 0.9rem;
+                        padding: 0.8rem 0 1rem 0;
+                        font-weight: 400;
+                        color: #6B7280;
+                    }
                 }
             }
         }
@@ -248,12 +250,11 @@
         .texts_container {
             display: flex;
             align-items: flex-end;
-            justify-content: space-around;
+            justify-content: space-between;
             margin-bottom: 2.5rem;
 
             .texts_box {
                 .subtitle {
-
                     .linha {
                         display: inline-block;
                         margin-bottom: 0.4rem;
@@ -289,41 +290,42 @@
             justify-content: center;
             flex-direction: column;
 
-            .article {
-                margin-bottom: 2rem;
-                width: 70%;
+            .link {
+                .article {
+                    margin-bottom: 2rem;
 
-                .img1 {
-                    width: 100%;
-                }
+                    .img1 {
+                        width: 100%;
+                    }
 
-                .img2 {
-                    width: 100%;
-                }
+                    .img2 {
+                        width: 100%;
+                    }
 
-                .img3 {
-                    width: 100%;
-                }
+                    .img3 {
+                        width: 100%;
+                    }
 
-                .title {
-                    width: 100%;
-                    font-size: 1.5rem;
-                    font-weight: 500;
-                    width: 93%;
-                }
+                    .title {
+                        width: 100%;
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        width: 100%;
+                    }
 
-                .subtitle {
-                    padding: 1.2rem 0 0.7rem 0;
-                    font-size: 1.1rem;
-                    color: #DDA827;
-                    font-weight: 400;
-                }
+                    .subtitle {
+                        padding: 0.9rem 0 0.5rem 0;
+                        font-size: 1.1rem;
+                        color: #DDA827;
+                        font-weight: 400;
+                    }
 
-                .data {
-                    font-size: 0.9rem;
-                    padding: 0.8rem 0 1rem 0;
-                    font-weight: 400;
-                    color: #6B7280;
+                    .data {
+                        font-size: 0.9rem;
+                        padding: 0.8rem 0 1rem 0;
+                        font-weight: 400;
+                        color: #6B7280;
+                    }
                 }
             }
         }
@@ -337,7 +339,7 @@
         .texts_container {
             display: flex;
             align-items: flex-end;
-            justify-content: space-around;
+            justify-content: space-between;
             margin-bottom: 2.5rem;
 
             .texts_box {
@@ -378,41 +380,43 @@
             justify-content: center;
             flex-direction: column;
 
-            .article {
-                margin-bottom: 2rem;
-                width: 69%;
+            .link {
+                .article {
+                    margin-bottom: 2rem;
 
-                .img1 {
-                    width: 100%;
-                }
 
-                .img2 {
-                    width: 100%;
-                }
+                    .img1 {
+                        width: 100%;
+                    }
 
-                .img3 {
-                    width: 100%;
-                }
+                    .img2 {
+                        width: 100%;
+                    }
 
-                .title {
-                    width: 100%;
-                    font-size: 1.5rem;
-                    font-weight: 500;
-                    width: 93%;
-                }
+                    .img3 {
+                        width: 100%;
+                    }
 
-                .subtitle {
-                    padding: 1.2rem 0 0.7rem 0;
-                    font-size: 1.1rem;
-                    color: #DDA827;
-                    font-weight: 400;
-                }
+                    .title {
+                        width: 100%;
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        width: 100%;
+                    }
 
-                .data {
-                    font-size: 0.9rem;
-                    padding: 0.8rem 0 1rem 0;
-                    font-weight: 400;
-                    color: #6B7280;
+                    .subtitle {
+                        padding: 1.2rem 0 0.7rem 0;
+                        font-size: 1.1rem;
+                        color: #DDA827;
+                        font-weight: 400;
+                    }
+
+                    .data {
+                        font-size: 0.9rem;
+                        padding: 0.8rem 0 1rem 0;
+                        font-weight: 400;
+                        color: #6B7280;
+                    }
                 }
             }
         }

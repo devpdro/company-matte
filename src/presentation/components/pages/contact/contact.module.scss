@@ -4,7 +4,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 3rem;
     margin: 8rem 0 8rem 0;
 
     .box_container {
@@ -39,19 +38,19 @@
             }
 
             .title {
-                font-size: 3rem;
+                font-size: 2.8rem;
                 line-height: 4rem;
                 font-weight: 600;
             }
 
             .information {
-                font-size: 1.5rem;
+                font-size: 1.4rem;
                 font-weight: 400;
             }
 
             .text_email {
                 margin-top: 3.5rem;
-                font-size: 1.5rem;
+                font-size: 1.4rem;
                 font-weight: 400;
             }
 
@@ -87,12 +86,12 @@
 
 
                 .email {
-                    font-size: 1.5rem;
+                    font-size: 1.4rem;
                     font-weight: 400;
                 }
 
                 .icon {
-                    font-size: 1.5rem;
+                    font-size: 1.4rem;
                     margin-left: 0.3rem;
                 }
             }
@@ -106,16 +105,16 @@
 
 @media (max-width: 867px) {
     .container {
-        margin: 3rem 0 0rem 0 !important;
+        margin: 0rem 0 0rem 0 !important;
 
         .box_container {
-            width: 1280px;
+            width: 1280px !important;
             margin: 0 auto;
             display: flex;
+            padding: 0 1.2rem;
             align-items: flex-start;
             justify-content: flex-start;
             flex-direction: column;
-            margin: 0rem 0 0rem 0 !important;
 
             .box_text {
                 padding-left: 0.4rem;
@@ -129,35 +128,35 @@
                 flex-direction: column;
 
                 .subtitle {
-                    font-size: 1.4rem !important;
+                    font-size: 1.2rem !important;
                     margin-bottom: 0.3rem;
                 }
 
                 .title {
-                    font-size: 2.5rem !important;
+                    font-size: 2rem !important;
                     line-height: 2.7rem !important;
                     margin-bottom: 0.5rem;
                 }
 
                 .information {
-                    font-size: 1.4rem !important;
+                    font-size: 1.2rem !important;
                     padding-right: 2rem;
                 }
 
                 .text_email {
                     margin-top: 2.5rem !important;
-                    font-size: 1.4rem !important;
-                    margin-bottom: 0.3rem;
+                    font-size: 1.2rem !important;
+                    margin-bottom: 0rem;
                 }
 
                 .box_email {
                     .email {
-                        font-size: 1.4rem !important;
+                        font-size: 1.2rem !important;
                         font-weight: 400;
                     }
 
                     .icon {
-                        font-size: 1.4rem !important;
+                        font-size: 1.2rem !important;
                         margin-left: 0.3rem !important;
                         margin-top: 0.2rem;
                     }
@@ -167,7 +166,7 @@
 
             .box_form {
                 width: 90%;
-                margin-bottom: 4rem;
+                margin-bottom: 2.5rem;
             }
         }
     }
@@ -175,7 +174,7 @@
 
 @media (min-width: 868px) and (max-width: 1024px) {
     .container {
-        margin: 3rem 0 0rem 0 !important;
+        margin: 0rem 0 0rem 0 !important;
 
         .box_container {
             width: 1280px;
@@ -184,7 +183,6 @@
             align-items: flex-start;
             justify-content: flex-start;
             flex-direction: column;
-            margin: 0rem 0 0rem 0 !important;
 
             .box_text {
                 padding-left: 0.4rem;
@@ -198,12 +196,12 @@
                 flex-direction: column;
 
                 .subtitle {
-                    font-size: 1.4rem !important;
+                    font-size: 1.3rem !important;
                     margin-bottom: 0.3rem;
                 }
 
                 .title {
-                    font-size: 2.5rem !important;
+                    font-size: 2.4rem !important;
                     line-height: 2.7rem !important;
                     margin-bottom: 0.5rem;
                 }
@@ -216,7 +214,7 @@
                 .text_email {
                     margin-top: 2.5rem !important;
                     font-size: 1.4rem !important;
-                    margin-bottom: 0.3rem;
+                    margin-bottom: 0rem;
                 }
 
                 .box_email {

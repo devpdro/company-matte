@@ -4,15 +4,16 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate
+  Navigate,
+  
 } from 'react-router-dom'
+
 import { Home } from 'presentation/pages/home'
 import { About } from 'presentation/pages/about'
 import { Operation } from 'presentation/pages/operation'
 import { Blog } from 'presentation/pages/blog'
 import BlogPost from 'presentation/components/pages/blog/blog-post'
 import { Contact } from 'presentation/pages/contact'
-
 
 export function App() {
   useEffect(() => {
@@ -102,7 +103,7 @@ export function App() {
             </div>
           }
         />
-        <Route path="/blog/:routes" element={<BlogPost />} />
+         <Route path="/blog/:routes" element={<BlogPost />} />
          <Route
           path="/contato"
           element={
@@ -125,7 +126,6 @@ export function App() {
           }
         />
         <Route path="*" element={<Navigate to="/" />} />
-        
       </Routes>
     </Router>
   )

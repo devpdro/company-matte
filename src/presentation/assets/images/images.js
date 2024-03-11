@@ -3,7 +3,7 @@ import computadorRapido from 'presentation/assets/images/img/computador-rápido.
 import negocio from 'presentation/assets/images/img/negocio.webp'
 import otomizacaoWeb from 'presentation/assets/images/img/otimizacao-da-web.webp'
 import responsivo from 'presentation/assets/images/img/responsivo.webp'
-import empresa from 'presentation/assets/images/img/empresa.webp'
+import empresa from 'presentation/assets/images/img/empresa-people.webp'
 import pessoasEmpresa from 'presentation/assets/images/img/empresa.webp'
 import aplicativoNativo from 'presentation/assets/images/img/aplicativo-nativo.webp'
 import experienciaUsuario from 'presentation/assets/images/img/experiencia-usuario.webp'
@@ -31,8 +31,11 @@ import ferramentasDesigner from 'presentation/assets/images/img/ferramentas-web-
 import websiteSignificado from 'presentation/assets/images/img/website-significaado-blog.webp';
 import startups from 'presentation/assets/images/img/desenvolvimento-startups-blog.webp';
 import siteResponsivoDois from 'presentation/assets/images/img/site-responsivo-blog-dois.webp';
+import outraPalavras from 'presentation/assets/images/img/other-words.webp';
+
 
 const images = {
+  outraPalavras,
   siteResponsivoDois,
   psicologia,
   microsservicos,

@@ -39,7 +39,7 @@ const cardData = [
   },
   {
     title: 'Tecnologia de Ponta',
-    text: 'Nossa especialização em soluções personalizadas com a Stack JavaScript garante uma experiência excepcional para seus usuários, alinhada às necessidades únicas do seu negócio.',
+    "text": "Nossa especialização em soluções personalizadas com tecnologias modernas garante uma experiência excepcional para seus usuários, alinhada às necessidades únicas do seu negócio.",
     image: computadorRapido
   }
 ]

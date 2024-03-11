@@ -351,7 +351,7 @@ export const posts = [
 {
   id: 12,
   routes: "a-psicologia-das-cores-nos-negocios",
-  subtitle: "Marketing",
+  subtitle: "Negócios, Marketing",
   title: "A Psicologia Das Cores nos Negócios",
   date: "30 de janeiro de 2023",
   image: psicologia,

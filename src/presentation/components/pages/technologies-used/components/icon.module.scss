@@ -7,6 +7,27 @@
     border-radius: 15px;
     margin-bottom: 1rem;
     margin-right: 1.6rem;
+    position: relative;
+    font-family: "Archivo", sans-serif;
+
+    &:hover::after {
+        font-family: "Archivo", sans-serif;
+        font-weight: 400;
+        content: attr(data-tooltip);
+        position: absolute;
+        background-color: #F9F7F1;
+        color: #1c1c1c;
+        border: 1px solid #DDA827;
+        padding: 0.6rem 1.1rem;
+        border-radius: 7px;
+        font-size: 0.9rem;
+        top: calc(100% + 5px);
+        left: 100%;
+        transform: translateX(-50%);
+        z-index: 999;
+        width: 200px;
+        text-align: center;
+    }
 
     .icon {
         margin-right: 0.9rem;
@@ -25,8 +46,12 @@
         padding: 0.8em 1rem;
         margin-right: 1rem;
 
+        &:hover::after {
+            display: none;
+        }
+
         .icon {
-            margin-right: 0.5rem!important;
+            margin-right: 0.5rem !important;
             font-size: 1.5rem;
         }
 

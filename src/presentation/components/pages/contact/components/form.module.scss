@@ -6,7 +6,6 @@
     padding-left: 1rem;
 
     .form {
-
         .error {
             margin-bottom: 0.1rem;
             font-size: 1rem;
@@ -59,14 +58,15 @@
                 font-size: 1.3rem;
                 background-color: #F9F7F1;
 
-            }
-
-            .input:-webkit-autofill {
-                background-color: #F9F7F1;
+                &:-webkit-autofill {
+                    -webkit-box-shadow: 0 0 0px 1000px #F9F7F1 inset;
+                }
             }
         }
 
         .btn_form {
+            margin-top: 3rem;
+
             .btn {
                 display: flex;
                 align-items: center;
@@ -122,10 +122,6 @@
                 align-items: center;
                 font-size: 2rem;
             }
-        }
-
-        .repcaptcha {
-            margin-top: 1.7rem;
         }
     }
 }
@@ -371,7 +367,6 @@
         .form {
             display: block;
 
-
             .error {
                 margin-bottom: 0.1rem;
                 font-size: 1rem;
@@ -388,49 +383,49 @@
                 }
 
                 .label_nome {
-                    width: 40%;
-
-                    font-size: 1.4rem;
-                    margin-top: 0.5rem;
+                    width: 34%;
+                    font-size: 1.2rem;
+                    margin-top: 1rem;
 
                 }
 
                 .label_email {
-                    width: 41%;
-
-                    margin-top: 0.5rem;
-                    font-size: 1.4rem;
+                    width: 34%;
+                    font-size: 1.2rem;
+                    margin-top: 1rem;
 
                 }
 
                 .label_telefone {
-                    width: 52%;
-                    font-size: 1.4rem;
-                    margin-top: 0.5rem;
+                    width: 40%;
+                    font-size: 1.2rem;
+                    margin-top: 1rem;
                 }
 
                 .label_textarea {
-                    font-size: 1.4rem;
-                    width: 178%;
-                    margin-top: 0.6rem;
+                    font-size: 1.2rem;
+                    width: 112%;
+                    margin-top: 1rem;
                 }
 
                 .input {
-                    padding: 1.7rem 0 1.1rem 0.2rem;
+                    padding: 2.2rem 0 1.1rem 0.2rem;
                     font-family: "Archivo", sans-serif;
                     font-weight: 400;
                     width: 90%;
                     color: #1c1c1c;
                     border: none;
                     outline: none;
-                    font-size: 1.3rem;
+                    font-size: 1.1rem;
                     background-color: #F9F7F1;
                 }
             }
 
             .btn_form {
+                margin-top: 2.7rem !important;
+
                 .btn {
-                    margin-top: 1rem !important;
+                    padding: 0.6rem 1.2rem;
                 }
             }
         }

@@ -88,7 +88,7 @@ export const posts = [
    {
     id: 12,
     title: 'A Psicologia Das Cores nos Negócios',
-    subtitle: 'Marketing',
+    subtitle: 'Negócios',
     date: '30 de janeiro de 2023',
     image: IMAGE.psicologia
   },

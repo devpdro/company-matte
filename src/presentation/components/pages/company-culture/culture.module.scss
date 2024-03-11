@@ -111,29 +111,59 @@
     }
 }
 
-@media screen and (min-width: 529px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .container {
         flex-direction: column;
         margin: 4rem auto 10rem auto;
 
         .image_box {
-            width: 72%;
-            height: 550px;
+            width: 50%;
+            height: 520px;
 
             .people_company {
                 width: 72%;
-                height: 470px;
+                height: 440px;
                 background-size: cover;
                 background-position: center;
-
             }
 
             .company {
                 width: 72%;
-                height: 420px;
+                height: 390px;
                 background-size: cover;
                 background-position: center;
-                z-index: 1;
+            }
+        }
+
+        .activities_box {
+            width: 72%;
+            margin-top: 3rem;
+            padding: 0 0rem 0 0rem;
+        }
+    }
+}
+
+@media screen and (min-width: 529px) and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        margin: 4rem auto 10rem auto;
+
+        .image_box {
+            width: 70%;
+            height: 520px;
+
+            .people_company {
+                width: 73%;
+                height: 440px;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .company {
+                width: 73%;
+                height: 390px;
+                background-size: cover;
+                background-position: center;
             }
         }
 

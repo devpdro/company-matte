@@ -1,8 +1,8 @@
 .newsletterContainer {
     font-family: "Archivo", sans-serif;
     font-weight: 500;
-    max-width: 1240px;
-    margin: 8rem auto 6rem auto;
+    max-width: 1300px;
+    margin: 7rem auto 6rem auto;
     color: #F9F7F1;
     padding: 0 2rem;
 
@@ -21,6 +21,7 @@
                 font-size: 3rem;
                 font-weight: 500;
                 margin-bottom: 0.5rem;
+
             }
 
             .subtitle {
@@ -34,6 +35,8 @@
 
     .newsletterForm {
         .form {
+            padding-left: 1rem;
+
             .label {
                 font-size: 1.1rem;
                 margin-bottom: 1rem;
@@ -68,9 +71,12 @@
                     font-weight: 400;
                     font-size: 1.1rem;
                     color: #1c1c1ce1;
-                    background-color: #ffff;
+                    background-color: #F9F7F1;
                     border: 2px solid #F9F7F1;
 
+                    &:-webkit-autofill {
+                        -webkit-box-shadow: 0 0 0px 1000px #F9F7F1 inset;
+                    }
 
                     &::placeholder {
                         font-size: 1.1rem;
@@ -84,7 +90,7 @@
                     color: #1c1c1c;
                     text-transform: uppercase;
                     padding: 0.9rem 1.2rem;
-                    background-color: #ffff;
+                    background-color: #F9F7F1;
                     margin-left: 0.7rem;
                     border-radius: 5px;
                     font-size: 0.9rem;
@@ -125,6 +131,155 @@
 
             .error {
                 font-size: 1.1rem;
+                margin-top: 0.5rem;
+                color: #ff0000;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 894px) {
+    .newsletterContainer {
+        margin: 5rem auto 4.5rem auto;
+
+        .newsletterContent {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 3.5rem 2rem 4rem 2rem;
+
+            .newsletterText {
+                width: 90%;
+                margin-bottom: 1rem;
+                text-align: center;
+
+                .title {
+                    font-size: 2.4rem;
+                }
+
+                .subtitle {
+                    text-align: center;
+                    font-size: 1.1rem;
+                    width: 100%;
+                }
+            }
+
+            .newsletterForm {
+                .form {
+                    .label {
+                        font-size: 1rem;
+                    }
+
+                    .searchIcon {
+                        position: absolute;
+                        top: 56%;
+                        font-size: 1.4rem;
+                        color: #1c1c1cb9;
+                        left: 10px;
+                        transform: translateY(-50%);
+                    }
+
+                    .inputGroup {
+                        .input_email {
+                            padding: 0.7rem 1rem 0.7rem 2.2rem;
+
+                            &::placeholder {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        .btn_submit {
+                            padding: 1rem 1.1rem;
+                            background-color: #ffff;
+                            margin-left: 0.5rem;
+                            border-radius: 5px;
+                            font-size: 0.8rem;
+                            font-weight: 500;
+                            cursor: pointer;
+                            border: none;
+                        }
+                    }
+                }
+            }
+
+            .error {
+                font-size: 1rem !important;
+                margin-top: 0.5rem;
+                color: #ff0000;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 895px) and (max-width: 1124px) {
+    .newsletterContainer {
+        margin: 6rem auto 4.5rem auto;
+
+        .newsletterContent {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 3rem 4rem 3rem;
+
+            .newsletterText {
+                padding-right: 1rem;
+                margin-bottom: 1rem;
+
+
+                .title {
+                    font-size: 2.4rem;
+                    padding-right: 1rem;
+                }
+
+                .subtitle {
+                    font-size: 1.1rem;
+                    width: 90%;
+                }
+            }
+
+            .newsletterForm {
+                .form {
+                    .label {
+                        font-size: 1rem;
+                    }
+
+                    .searchIcon {
+                        position: absolute;
+                        top: 56%;
+                        font-size: 1.4rem;
+                        color: #1c1c1cb9;
+                        left: 10px;
+                        transform: translateY(-50%);
+                    }
+
+                    .inputGroup {
+                        .input_email {
+                            padding: 0.7rem 1rem 0.7rem 2.2rem;
+
+                            &::placeholder {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        .btn_submit {
+                            padding: 1rem 1.1rem;
+                            background-color: #ffff;
+                            margin-left: 0.5rem;
+                            border-radius: 5px;
+                            font-size: 0.8rem;
+                            font-weight: 500;
+                            cursor: pointer;
+                            border: none;
+                        }
+                    }
+                }
+            }
+
+            .error {
+                font-size: 1rem !important;
                 margin-top: 0.5rem;
                 color: #ff0000;
             }

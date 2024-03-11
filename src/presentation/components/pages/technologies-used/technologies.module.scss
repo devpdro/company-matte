@@ -10,7 +10,6 @@
         align-items: center;
         justify-content: center;
 
-
         .texts_box {
             width: 40%;
             margin-right: 1.5rem;
@@ -50,6 +49,36 @@
 }
 
 @media screen and (max-width: 600px) {
+    .container {
+        .box_container {
+            flex-direction: column;
+
+            .texts_box {
+                width: 100%;
+                margin-right: 0rem;
+
+                .subtitle {
+                    font-size: 1.1rem;
+                }
+
+                .title {
+                    font-size: 2.3rem;
+                }
+            }
+
+            .technologies_box {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                width: 100%;
+                margin-top: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1280px) {
     .container {
         .box_container {
             flex-direction: column;

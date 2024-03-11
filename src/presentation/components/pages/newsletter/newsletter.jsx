@@ -80,7 +80,7 @@ export function NewsLetter() {
                 className={`${styles.input_email} ${
                   errors.email && styles.input_error
                 }`}
-                autoComplete="no"
+                autocomplete="new-password"
                 name="email"
                 type="text"
                 id="email"

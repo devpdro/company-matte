@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import { useForm, Controller } from 'react-hook-form'
 
-import ReCAPTCHA from 'react-google-recaptcha'
-
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 
@@ -36,7 +34,7 @@ export function Form() {
   const [emailValue, setEmailValue] = useState('')
   const [telefoneValue, setTelefoneValue] = useState('')
   const [mensagemValue, setMensagemValue] = useState('')
-  const [recaptchaToken, setRecaptchaToken] = useState('')
+
   const {
     handleSubmit,
     control,
@@ -47,10 +45,6 @@ export function Form() {
 
   const sendEmail = handleSubmit(async (data, event) => {
     try {
-      if (!recaptchaToken) {
-        toast.error('Por favor, verifique o ReCAPTCHA.')
-        return
-      }
       if (!nomeValue || !emailValue || !telefoneValue || !mensagemValue) {
         toast.error('Por favor, preencha todos os campos.')
         return
@@ -63,8 +57,7 @@ export function Form() {
           nome,
           email,
           telefone,
-          mensagem,
-          recaptcha_token: recaptchaToken
+          mensagem
         },
         'GSlDlk4aAeWqGnnRW'
       )
@@ -79,11 +72,6 @@ export function Form() {
       toast.error('Erro ao enviar o email')
     }
   })
-
-  const onChange = (token) => {
-    // Armazenar o token do ReCAPTCHA
-    setRecaptchaToken(token)
-  }
 
   return (
     <section className={styles.container}>
@@ -100,7 +88,7 @@ export function Form() {
             control={control}
             render={({ field }) => (
               <input
-                autoComplete="no"
+                autocomplete="new-password"
                 type="text"
                 {...field}
                 value={nomeValue}
@@ -129,7 +117,7 @@ export function Form() {
             control={control}
             render={({ field }) => (
               <input
-                autoComplete="no"
+                autocomplete="new-password"
                 type="text"
                 {...field}
                 value={emailValue}
@@ -160,7 +148,7 @@ export function Form() {
             control={control}
             render={({ field }) => (
               <input
-                autoComplete="no"
+                autocomplete="new-password"
                 type="text"
                 {...field}
                 value={telefoneValue}
@@ -191,7 +179,7 @@ export function Form() {
               <input
                 type="text"
                 {...field}
-                autoComplete="no"
+                autocomplete="new-password"
                 value={mensagemValue}
                 onChange={(e) => {
                   field.onChange(e)
@@ -205,13 +193,7 @@ export function Form() {
         {errors.mensagem && (
           <div className={styles.error}>{errors.mensagem.message}</div>
         )}
-        <div className={styles.repcaptcha}>
-          <ReCAPTCHA
-            sitekey="6LdA7ZApAAAAABRgM6ZVpq5EmAJhlVFZPcDuKHRe"
-            onChange={onChange}
-          />
-          ,
-        </div>
+        <div className={styles.repcaptcha}></div>
         <div className={`animateButton ${styles.btn_form}`}>
           <button className={styles.btn} type="submit">
             <p className={styles.text_btn}>Enviar</p>
