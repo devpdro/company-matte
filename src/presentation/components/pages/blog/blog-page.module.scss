@@ -1,7 +1,7 @@
 .container {
     font-family: "Archivo", sans-serif;
     background-color: #F9F7F1;
-    padding: 0 3rem;
+    padding: 0 2rem;
 
     .results_container {
         max-width: 1240px;
@@ -88,10 +88,11 @@
 @media screen and (max-width: 894px) {
     .container {
         .results_container {
+           
             margin: 4.3rem auto 0 auto;
 
             .title {
-                font-size: 1.9rem;
+                font-size: 1.5rem;
                 margin-bottom: 1.7rem;
             }
 
