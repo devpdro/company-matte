@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 
 import { ICON } from 'presentation/assets/icons/icon'
 
-import IMAGE from 'presentation/assets/logo/logo-black.png'
+import IMAGE from 'presentation/assets/logo/logo-black.webp'
 import styles from 'presentation/components/common/footer.module.scss'
 
 export function Footer() {
@@ -70,7 +70,7 @@ export function Footer() {
               </a>
               <a
                 className={styles.link}
-                href=""
+                href="https://www.instagram.com/mattedeev/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

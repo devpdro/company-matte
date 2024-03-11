@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import { posts } from 'main/providers/data/blogPageData'
 import { NavbarBlog } from 'presentation/components/pages/blog/components/navbar-blog'
 
-import IMAGE from 'presentation/assets/images/images'
 import page from 'presentation/components/pages/blog/blog-page.module.scss'
 import post from 'presentation/components/pages/blog/blog-page-post.module.scss'
 
@@ -72,11 +71,6 @@ const BlogPage = () => {
           </>
         ) : (
           <div className={page.noResults_container}>
-            <img
-              className={page.img_noResults}
-              src={IMAGE.outraPalavras}
-              alt="Outras palavras"
-            />
             <p className={page.noResults}>Tente usar outras palavras...</p>
           </div>
         )}

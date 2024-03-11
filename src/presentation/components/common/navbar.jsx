@@ -4,7 +4,7 @@ import { Link as LinkRouter } from 'react-router-dom'
 import { ICON } from 'presentation/assets/icons/icon'
 import { useWindowSize } from 'presentation/hooks/navbar-size'
 
-import IMAGE from 'presentation/assets/logo/logo.png'
+import IMAGE from 'presentation/assets/logo/logo.webp'
 
 import styles from 'presentation/components/common/navbar.module.scss'
 
