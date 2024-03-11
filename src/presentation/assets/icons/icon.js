@@ -14,7 +14,7 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { GrMysql } from "react-icons/gr";
 import { IoConstructOutline } from "react-icons/io5";
 import { SiGooglecloud, SiPostgresql } from "react-icons/si";
-import { MdOutlineMail,  } from "react-icons/md";
+import { MdOutlineMail  } from "react-icons/md";
 
 export const ICON = {
   MdOutlineMail,

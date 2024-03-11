@@ -58,15 +58,36 @@ export function Footer() {
           </div>
           <div className={styles.icons_box}>
             <ul className={styles.list_icons}>
-              <li>
-                <ICON.FaWhatsapp className={styles.icon} />
-              </li>
-              <li>
-                <ICON.FaInstagram className={styles.icon} />
-              </li>
-              <li>
-                <ICON.FaLinkedin className={styles.icon} />
-              </li>
+              <a
+                className={styles.link}
+                href="https://api.whatsapp.com/send?phone=5519971636739&text=Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20o%20meu%20projeto."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <li>
+                  <ICON.FaWhatsapp className={styles.icon} />
+                </li>
+              </a>
+              <a
+                className={styles.link}
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <li>
+                  <ICON.FaInstagram className={styles.icon} />
+                </li>
+              </a>
+              <a
+                className={styles.link}
+                href="https://www.linkedin.com/company/mattedev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <li>
+                  <ICON.FaLinkedin className={styles.icon} />
+                </li>
+              </a>
             </ul>
           </div>
         </div>

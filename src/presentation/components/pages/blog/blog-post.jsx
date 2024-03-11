@@ -70,7 +70,7 @@ const BlogPost = () => {
               data-color="white"
               to={section.url}
             >
-              {section.title}
+              <span>{section.title}</span>
             </Link>
           </span>
         ))}

@@ -67,7 +67,7 @@ export const TitleBox = styled.h6`
   font-weight: 600;
   margin-bottom: 1rem;
   @media (max-width: 867px) {
-    font-size: 2.2rem !important;
+    font-size: 2rem !important;
   }
 `
 
@@ -80,7 +80,7 @@ export const SubtitleBox = styled.p`
 
   @media (max-width: 867px) {
     margin-top: 1rem !important;
-    font-size: 1.5rem !important;
+    font-size: 1.3rem !important;
   }
 `
 
@@ -97,10 +97,7 @@ export function Functionalities() {
 
   const SampleCards = React.memo(({ cardData }) =>
     cardData.map((data, i) => (
-      <SampleCard
-        key={`sampleCard-${i}`}
-        cardColor={colors[i % colors.length]}
-      >
+      <SampleCard key={`sampleCard-${i}`} cardColor={colors[i % colors.length]}>
         <CardImage src={data.image} alt={`Imagem ${i}`} />
         <TitleBox>{data.title}</TitleBox>
         <SubtitleBox>{data.text}</SubtitleBox>

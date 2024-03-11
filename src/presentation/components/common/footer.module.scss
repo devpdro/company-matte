@@ -90,13 +90,17 @@
                     align-items: center;
                     justify-content: center;
 
-                    li {
-                        font-size: 1.5rem;
-                        position: relative;
-                        overflow: hidden;
-                        transition: all 0.3s ease;
-                        text-transform: uppercase;
-                        margin-left: 1.7rem;
+                    .link {
+                        color: #F9F7F1;
+
+                        li {
+                            font-size: 1.5rem;
+                            position: relative;
+                            overflow: hidden;
+                            transition: all 0.3s ease;
+                            text-transform: uppercase;
+                            margin-left: 1.7rem;
+                        }
                     }
                 }
             }
@@ -177,7 +181,7 @@
                     .list {
                         li {
                             font-size: 0.8rem !important;
-                            margin: 0 0.6rem!important;
+                            margin: 0 0.5rem !important;
                         }
                     }
                 }
@@ -191,8 +195,11 @@
 
                 .icons_box {
                     .list_icons {
-                        li {
-                            margin-left: 0.8rem;
+                        .link {
+
+                            li {
+                                margin-left: 0.8rem;
+                            }
                         }
                     }
                 }

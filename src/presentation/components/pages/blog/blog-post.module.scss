@@ -1,6 +1,32 @@
 .link {
     color: #1c1c1cc4;
+    overflow: hidden;
+    position: relative;
+    transition: color 0.3s ease;
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 1px;
+        background-color: #DDA827;
+        transition: width 0.5s ease, right 8s ease 1.5s;
+    }
+
+    &:hover::after {
+        width: 100%;
+        left: 0;
+    }
+
+    &:hover {
+        color: #DDA827;
+    }
 }
+
+
 
 .routes {
     font-family: "Archivo", sans-serif;
